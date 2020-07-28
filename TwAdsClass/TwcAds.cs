@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections;
 using System.Threading;
-using System.Windows.Forms;
 using TwinCAT.Ads;
 
 namespace TwAdsClass
@@ -58,18 +57,15 @@ namespace TwAdsClass
             {
                 pvc = Pvc;
                 isDiffComputer = IsDiffComputer;
-                //MessageBox.Show("1");
                 _client = new TcAdsClient();
-                //MessageBox.Show("2");
                 notificationHandles = new ArrayList();
-                //_client.AdsNotificationEx += new AdsNotificationExEventHandler(adsClient_AdsNotificationEx);
+                _client.AdsNotificationEx += new AdsNotificationExEventHandler(adsClient_AdsNotificationEx);
                 if (isDiffComputer)
                     _client.Connect(new AmsNetId(IpAddress), Port);//不同电脑
                 else
                     _client.Connect(851);//同一电脑
-                //MessageBox.Show("3");
+
                 _handBool = _client.CreateVariableHandle(pvc.Test);
-                //MessageBox.Show("4");
                 //测试PLC连接并注册
                 tr = new Thread(() =>
                 {
@@ -129,6 +125,13 @@ namespace TwAdsClass
                     if (pvc.Type[i] == "Struct5")
                         pvc.HandId[i] = _client.AddDeviceNotificationEx(address, AdsTransMode.OnChange, 100, 0, this, typeof(Struct5));
 
+                    if (pvc.Type[i] == "Word")
+                        pvc.HandId[i] = _client.AddDeviceNotificationEx(address, AdsTransMode.OnChange, 100, 0, this, typeof(ushort));
+                    if (pvc.Type[i] == "Error_data")
+                        pvc.HandId[i] = _client.AddDeviceNotificationEx(address, AdsTransMode.OnChange, 100, 0, this, typeof(Error_data));
+                    if (pvc.Type[i] == "team_date")
+                        pvc.HandId[i] = _client.AddDeviceNotificationEx(address, AdsTransMode.OnChange, 100, 0, this, typeof(team_date));
+                    
                     notificationHandles.Add(pvc.HandId[i]);
                 }
             }

@@ -29,7 +29,7 @@ namespace 触摸屏界面
         {
             InitializeComponent();
         }
-
+        
         #region 界面
         private void superTabItem1_Click(object sender, EventArgs e)
         {
@@ -315,7 +315,7 @@ namespace 触摸屏界面
             try
             {
                 int i=0;
-                int I_AddressCount = 100;
+                int I_AddressCount = 300;
                 pvc.Test = "MAIN.Test";
                 pvc.ControlsName = new string[I_AddressCount];
                 pvc.Address = new string[I_AddressCount];
@@ -329,6 +329,7 @@ namespace 触摸屏界面
                     {
                         pvc.ControlsName[i] = control.Name;
                         pvc.Address[i] = control.Tag.ToString().Split(';')[0];
+                        if (!pvc.Address[i].StartsWith("MAIN.")) pvc.Address[i] = "MAIN." + pvc.Address[i];
                         pvc.Type[i] = control.Tag.ToString().Split(';')[1];
                         i++;
                     }
@@ -339,6 +340,7 @@ namespace 触摸屏界面
                     {
                         pvc.ControlsName[i] = control.Name;
                         pvc.Address[i] = control.Tag.ToString().Split(';')[0];
+                        if (!pvc.Address[i].StartsWith("MAIN.")) pvc.Address[i] = "MAIN." + pvc.Address[i];
                         pvc.Type[i] = control.Tag.ToString().Split(';')[1];
                         i++;
                     }
@@ -349,6 +351,7 @@ namespace 触摸屏界面
                     {
                         pvc.ControlsName[i] = control.Name;
                         pvc.Address[i] = control.Tag.ToString().Split(';')[0];
+                        if (!pvc.Address[i].StartsWith("MAIN.")) pvc.Address[i] = "MAIN." + pvc.Address[i];
                         pvc.Type[i] = control.Tag.ToString().Split(';')[1];
                         i++;
                     }
@@ -359,6 +362,7 @@ namespace 触摸屏界面
                     {
                         pvc.ControlsName[i] = control.Name;
                         pvc.Address[i] = control.Tag.ToString().Split(';')[0];
+                        if (!pvc.Address[i].StartsWith("MAIN.")) pvc.Address[i] = "MAIN." + pvc.Address[i];
                         pvc.Type[i] = control.Tag.ToString().Split(';')[1];
                         i++;
                     }
@@ -369,6 +373,7 @@ namespace 触摸屏界面
                     {
                         pvc.ControlsName[i] = control.Name;
                         pvc.Address[i] = control.Tag.ToString().Split(';')[0];
+                        if (!pvc.Address[i].StartsWith("MAIN.")) pvc.Address[i] = "MAIN." + pvc.Address[i];
                         pvc.Type[i] = control.Tag.ToString().Split(';')[1];
                         i++;
                     }
@@ -379,6 +384,7 @@ namespace 触摸屏界面
                     {
                         pvc.ControlsName[i] = control.Name;
                         pvc.Address[i] = control.Tag.ToString().Split(';')[0];
+                        if (!pvc.Address[i].StartsWith("MAIN.")) pvc.Address[i] = "MAIN." + pvc.Address[i];
                         pvc.Type[i] = control.Tag.ToString().Split(';')[1];
                         i++;
                     }
@@ -389,6 +395,7 @@ namespace 触摸屏界面
                     {
                         pvc.ControlsName[i] = control.Name;
                         pvc.Address[i] = control.Tag.ToString().Split(';')[0];
+                        if (!pvc.Address[i].StartsWith("MAIN.")) pvc.Address[i] = "MAIN." + pvc.Address[i];
                         pvc.Type[i] = control.Tag.ToString().Split(';')[1];
                         i++;
                     }
@@ -399,6 +406,7 @@ namespace 触摸屏界面
                     {
                         pvc.ControlsName[i] = control.Name;
                         pvc.Address[i] = control.Tag.ToString().Split(';')[0];
+                        if (!pvc.Address[i].StartsWith("MAIN.")) pvc.Address[i] = "MAIN." + pvc.Address[i];
                         pvc.Type[i] = control.Tag.ToString().Split(';')[1];
                         i++;
                     }
@@ -409,6 +417,7 @@ namespace 触摸屏界面
                     {
                         pvc.ControlsName[i] = control.Name;
                         pvc.Address[i] = control.Tag.ToString().Split(';')[0];
+                        if (!pvc.Address[i].StartsWith("MAIN.")) pvc.Address[i] = "MAIN." + pvc.Address[i];
                         pvc.Type[i] = control.Tag.ToString().Split(';')[1];
                         i++;
                     }
@@ -497,7 +506,7 @@ namespace 触摸屏界面
         {
             try
             {
-                if (control.Tag != null)
+                if (control.Tag != null && !string.IsNullOrEmpty(control.Tag.ToString()))
                 {
                     int index = Array.IndexOf(pvc.ControlsName, control.Name);
 
@@ -510,11 +519,13 @@ namespace 触摸屏界面
                     //指示灯
                     if (control is DevComponents.DotNetBar.Controls.SymbolBox)
                     {
+
                         bool bl = (bool)pvc.value[index];
                         if (bl)
                             (control as DevComponents.DotNetBar.Controls.SymbolBox).SymbolColor = Color.Lime;
                         else
                             (control as DevComponents.DotNetBar.Controls.SymbolBox).SymbolColor = Color.Red;
+
                     }
 
                     //按钮
@@ -538,14 +549,14 @@ namespace 触摸屏界面
                     {
 
                         Struct4 stru = new Struct4();
-                        stru=(Struct4)pvc.value[index];
+                        stru = (Struct4)pvc.value[index];
                         ShowTable(stru);
                     }
                 }
             }
             catch(Exception r)
             {
-
+                MessageBox.Show(control.Name );
             }
         }
         /// <summary>
@@ -581,9 +592,9 @@ namespace 触摸屏界面
                 }
                 this.sgc1.Refresh();
             }
-            catch
+            catch(Exception r)
             {
-
+                MessageBox.Show(r.Message);
             }
         }
 
@@ -691,6 +702,240 @@ namespace 触摸屏界面
                 OnResizeEnd(e);
             }
         }
-        
+        private void boolChange(Control T,Control F)
+        {
+            int index = Array.IndexOf(pvc.ControlsName, T.Name);
+            tas.WriterData(pvc.Address[index], true);
+            index = Array.IndexOf(pvc.ControlsName, F.Name);
+            tas.WriterData(pvc.Address[index], false);
+        }
+
+        private void buttonX40_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX40, buttonX41);
+        }
+
+        private void buttonX41_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX41, buttonX40);
+        }
+
+        private void buttonX43_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX43, buttonX42);
+        }
+
+        private void buttonX42_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX42, buttonX43);
+        }
+
+        private void buttonX45_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX45, buttonX44);
+        }
+
+        private void buttonX44_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX44, buttonX45);
+        }
+
+        private void labelX17_Click(object sender, EventArgs e)
+        {
+            int index = Array.IndexOf(pvc.ControlsName, labelX17.Name);
+            tas.WriterData(pvc.Address[index], !(bool)(pvc.value[index]));
+        }
+
+        private void buttonX3_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX3, buttonX4);
+        }
+
+        private void buttonX4_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX4, buttonX3);
+        }
+
+        private void buttonX5_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX5, buttonX6);
+        }
+
+        private void buttonX6_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX6, buttonX5);
+        }
+
+        private void buttonX10_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX10, buttonX9);
+        }
+
+        private void buttonX9_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX9, buttonX10);
+        }
+
+        private void buttonX8_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX8, buttonX7);
+        }
+
+        private void buttonX7_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX7, buttonX8);
+        }
+
+        private void buttonX14_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX14, buttonX13);
+        }
+
+        private void buttonX13_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX13, buttonX14);
+        }
+
+        private void buttonX12_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX12, buttonX11);
+        }
+
+        private void buttonX11_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX11, buttonX12);
+        }
+
+        private void buttonX26_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX26, buttonX25);
+        }
+
+        private void buttonX25_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX25, buttonX26);
+        }
+
+        private void buttonX24_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX24, buttonX23);
+        }
+
+        private void buttonX23_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX23, buttonX24);
+        }
+
+        private void buttonX22_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX22, buttonX21);
+        }
+
+        private void buttonX21_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX21, buttonX22);
+        }
+
+        private void buttonX20_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX20, buttonX19);
+        }
+
+        private void buttonX19_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX19, buttonX20);
+        }
+
+        private void buttonX18_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX18, buttonX17);
+        }
+
+        private void buttonX17_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX17, buttonX18);
+        }
+
+        private void buttonX16_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX16, buttonX15);
+        }
+
+        private void buttonX15_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX15, buttonX16);
+        }
+
+        private void buttonX38_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX38, buttonX37);
+        }
+
+        private void buttonX37_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX37, buttonX38);
+        }
+
+        private void buttonX36_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX36, buttonX35);
+        }
+
+        private void buttonX35_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX35, buttonX36);
+        }
+
+        private void buttonX34_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX34, buttonX33);
+        }
+
+        private void buttonX33_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX33, buttonX34);
+        }
+
+        private void buttonX32_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX32, buttonX31);
+        }
+
+        private void buttonX31_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX31, buttonX32);
+        }
+
+        private void buttonX28_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX28, buttonX27);
+        }
+
+        private void buttonX27_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX27, buttonX28);
+        }
+
+        private void buttonX30_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX30, buttonX29);
+        }
+
+        private void buttonX29_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX29, buttonX30);
+        }
+
+        private void labelX26_Click(object sender, EventArgs e)
+        {
+            int index = Array.IndexOf(pvc.ControlsName, labelX26.Name);
+            tas.WriterData(pvc.Address[index], !(bool)(pvc.value[index]));
+        }
+
+        private void labelX31_Click(object sender, EventArgs e)
+        {
+            int index = Array.IndexOf(pvc.ControlsName, labelX31.Name);
+            tas.WriterData(pvc.Address[index], !(bool)(pvc.value[index]));
+        }
     }
 }
