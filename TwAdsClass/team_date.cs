@@ -10,13 +10,13 @@ namespace TwAdsClass
     public struct team_date
     {
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 20)]
-        public Int16[] DATA_TEAM;
+        public short[] DATA_TEAM;
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 20)]
-        public Int16[] DATA_BATCH;
+        public short[] DATA_BATCH;
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 20)]
-        public Int16[] DATA_STATION;
+        public short[] DATA_STATION;
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 20)]
-        public Int16[] DATA_NUMBER;
+        public short[] DATA_NUMBER;
     }
     //DATA_TEAM: ARRAY[0..19] OF INT;	//日期
     //DATA_BATCH: ARRAY[0..19] OF INT;	//批次

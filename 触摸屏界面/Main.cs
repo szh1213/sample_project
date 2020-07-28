@@ -121,19 +121,28 @@ namespace 触摸屏界面
                 control.Left = (int)(control.Left * percentWidth);
                 control.Top = (int)(control.Top * percentHeight);
             }
-            foreach (Control control in this.superTabControlPanel2.Controls)
+            foreach (Control panelex in this.superTabControlPanel2.Controls)
             {
-                if (control is DataGridView)
-                    continue;
-                //按比例改变控件大小
-                control.Width = (int)(control.Width * percentWidth);
-                
+                if (!panelex.Name.StartsWith("panelEx")) continue;
+                panelex.Width = (int)(panelex.Width * percentWidth);
+                panelex.Height = (int)(panelex.Height * percentHeight);
+
                 //为了不使控件之间覆盖 位置也要按比例变化
-                control.Left = (int)(control.Left * percentWidth);
-                control.Top = (int)(control.Top * percentHeight);
+                panelex.Left = (int)(panelex.Left * percentWidth);
+                panelex.Top = (int)(panelex.Top * percentHeight);
+                foreach (Control control in panelex.Controls)
+                {
+                    //按比例改变控件大小
+                    control.Width = (int)(control.Width * percentWidth);
+                    control.Height = (int)(control.Height * percentHeight);
+                    control.Font = new Font(control.Font.Name, control.Font.Size * percentWidth);
+                    //为了不使控件之间覆盖 位置也要按比例变化
+                    control.Left = (int)(control.Left * percentWidth);
+                    control.Top = (int)(control.Top * percentHeight);
+                }
+                
+                
             }
-            foreach (Control cc in groupPanel1.Controls)
-                cc.Font = new Font(cc.Font.Name, labelX22.Font.Size * percentWidth);
             foreach (Control control in this.superTabControlPanel3.Controls)
             {
                 if (control is DataGridView)
@@ -148,49 +157,6 @@ namespace 触摸屏界面
                 control.Top = (int)(control.Top * percentHeight);
             }
             foreach (Control control in this.superTabControlPanel4.Controls)
-            {
-                if (control is DataGridView)
-                    continue;
-                //按比例改变控件大小
-                control.Width = (int)(control.Width * percentWidth);
-                control.Height = (int)(control.Height * percentHeight);
-                control.Font = new Font(control.Font.Name, control.Font.Size * percentWidth);
-
-                //为了不使控件之间覆盖 位置也要按比例变化
-                control.Left = (int)(control.Left * percentWidth);
-                control.Top = (int)(control.Top * percentHeight);
-            }
-            foreach (Control control in this.groupPanel1.Controls)
-            {
-                if (control is DataGridView)
-                    continue;
-                //按比例改变控件大小
-                control.Width = (int)(control.Width * percentWidth);
-                control.Height = (int)(control.Height * percentHeight);
-                Font lastFont = this.sgc1.DefaultVisualStyles.CellStyles.Default.Font;
-                Font newFont = new Font(lastFont.Name, lastFont.Size * percentWidth);
-                this.sgc1.DefaultVisualStyles.CellStyles.Default.Font = newFont;
-                //this.sgc1.DefaultVisualStyles.ColumnHeaderStyles.Default.Font = newFont;
-                this.sgc1.DefaultVisualStyles.RowStyles.Default.RowHeaderStyle.Font = newFont;
-               
-                //为了不使控件之间覆盖 位置也要按比例变化
-                control.Left = (int)(control.Left * percentWidth);
-                control.Top = (int)(control.Top * percentHeight);
-            }
-            foreach (Control control in this.groupPanel2.Controls)
-            {
-                if (control is DataGridView)
-                    continue;
-                //按比例改变控件大小
-                control.Width = (int)(control.Width * percentWidth);
-                control.Height = (int)(control.Height * percentHeight);
-                control.Font = new Font(control.Font.Name, control.Font.Size * percentWidth);
-
-                //为了不使控件之间覆盖 位置也要按比例变化
-                control.Left = (int)(control.Left * percentWidth);
-                control.Top = (int)(control.Top * percentHeight);
-            }
-            foreach (Control control in this.groupPanel3.Controls)
             {
                 if (control is DataGridView)
                     continue;
@@ -334,37 +300,20 @@ namespace 触摸屏界面
                         i++;
                     }
                 }
-                foreach (Control control in this.groupPanel1.Controls)
+                foreach (Control panelex in this.superTabControlPanel2.Controls)
                 {
-                    if (control.Tag != null && !string.IsNullOrEmpty(control.Tag.ToString()))
+                    if (!panelex.Name.StartsWith("panelEx")) continue;
+                    foreach (Control control in panelex.Controls)
                     {
-                        pvc.ControlsName[i] = control.Name;
-                        pvc.Address[i] = control.Tag.ToString().Split(';')[0];
-                        if (!pvc.Address[i].StartsWith("MAIN.")) pvc.Address[i] = "MAIN." + pvc.Address[i];
-                        pvc.Type[i] = control.Tag.ToString().Split(';')[1];
-                        i++;
-                    }
-                }
-                foreach (Control control in this.groupPanel2.Controls)
-                {
-                    if (control.Tag != null && !string.IsNullOrEmpty(control.Tag.ToString()))
-                    {
-                        pvc.ControlsName[i] = control.Name;
-                        pvc.Address[i] = control.Tag.ToString().Split(';')[0];
-                        if (!pvc.Address[i].StartsWith("MAIN.")) pvc.Address[i] = "MAIN." + pvc.Address[i];
-                        pvc.Type[i] = control.Tag.ToString().Split(';')[1];
-                        i++;
-                    }
-                }
-                foreach (Control control in this.groupPanel3.Controls)
-                {
-                    if (control.Tag != null && !string.IsNullOrEmpty(control.Tag.ToString()))
-                    {
-                        pvc.ControlsName[i] = control.Name;
-                        pvc.Address[i] = control.Tag.ToString().Split(';')[0];
-                        if (!pvc.Address[i].StartsWith("MAIN.")) pvc.Address[i] = "MAIN." + pvc.Address[i];
-                        pvc.Type[i] = control.Tag.ToString().Split(';')[1];
-                        i++;
+                        if (control.Tag != null && !string.IsNullOrEmpty(control.Tag.ToString()))
+                        {
+
+                            pvc.ControlsName[i] = control.Name;
+                            pvc.Address[i] = control.Tag.ToString().Split(';')[0];
+                            if (!pvc.Address[i].StartsWith("MAIN.")) pvc.Address[i] = "MAIN." + pvc.Address[i];
+                            pvc.Type[i] = control.Tag.ToString().Split(';')[1];
+                            i++;
+                        }
                     }
                 }
                 foreach (Control control in this.superTabControlPanel3.Controls)
@@ -466,17 +415,13 @@ namespace 触摸屏界面
                     {
                         SetValue(control);
                     }
-                    foreach (Control control in this.groupPanel1.Controls)
+                    foreach (Control panelex in this.superTabControlPanel2.Controls)
                     {
-                        SetValue(control);
-                    }
-                    foreach (Control control in this.groupPanel2.Controls)
-                    {
-                        SetValue(control);
-                    }
-                    foreach (Control control in this.groupPanel3.Controls)
-                    {
-                        SetValue(control);
+                        if (!panelex.Name.StartsWith("panelEx")) continue;
+                        foreach (Control control in panelex.Controls)
+                        {
+                            SetValue(control);
+                        }
                     }
                     foreach (Control control in this.superTabControlPanel3.Controls)
                     {
@@ -548,47 +493,47 @@ namespace 触摸屏界面
                     if (control is DevComponents.DotNetBar.SuperGrid.SuperGridControl)
                     {
 
-                        Struct4 stru = new Struct4();
-                        stru = (Struct4)pvc.value[index];
-                        ShowTable(stru);
+                        team_date td = new team_date();
+                        td = (team_date)pvc.value[index];
+                        ShowTable(td);
+
                     }
                 }
             }
             catch(Exception r)
             {
-                MessageBox.Show(control.Name );
+                MessageBox.Show(control.Name,r.Message);
             }
         }
         /// <summary>
         /// 显示表格
         /// </summary>
-        private void ShowTable(Struct4 stru)
+        private void ShowTable(team_date stru)
         {
             try
             {
                 this.sgc1.PrimaryGrid.Rows.Clear();
                 
-                for (int i = 0; i < stru.fVal.Length; i++)
+                for (int i = 0; i < stru.DATA_TEAM.Length; i++)
                 {
                     this.sgc1.PrimaryGrid.InsertRow(i);
                     GridRow gr = this.sgc1.PrimaryGrid.Rows[i] as GridRow;
-                    //序号
-                    gr[0].Value = stru.fVal[i];
+                    
                     //日期
-                    gr[1].Value = stru.byVal[i];// "2020-" + (i / 2 + 1).ToString("00") + "-01 12:02:01";
+                    gr[0].Value = stru.DATA_TEAM[i];// "2020-" + (i / 2 + 1).ToString("00") + "-01 12:02:01";
                     //批次
-                    gr[2].Value = stru.nData[i];
+                    gr[1].Value = stru.DATA_BATCH[i];
                     //工位
-                    gr[3].Value = (i + 1) * 10 - 2;
+                    gr[2].Value = stru.DATA_STATION[i];
                     //次数
-                    gr[4].Value = (i + 3) * 2 - 3;
+                    gr[3].Value = stru.DATA_NUMBER[i];
                     //优先级
-                    gr[5].Value = i / 5;
+                    gr[4].Value = i / 5;
                     //插队标识
                     if (i == 10)
-                        gr[6].Value = 1;
+                        gr[3].Value = 1;
                     else
-                        gr[6].Value = 0;
+                        gr[3].Value = 0;
                 }
                 this.sgc1.Refresh();
             }
@@ -709,42 +654,7 @@ namespace 触摸屏界面
             index = Array.IndexOf(pvc.ControlsName, F.Name);
             tas.WriterData(pvc.Address[index], false);
         }
-
-        private void buttonX40_Click(object sender, EventArgs e)
-        {
-            boolChange(buttonX40, buttonX41);
-        }
-
-        private void buttonX41_Click(object sender, EventArgs e)
-        {
-            boolChange(buttonX41, buttonX40);
-        }
-
-        private void buttonX43_Click(object sender, EventArgs e)
-        {
-            boolChange(buttonX43, buttonX42);
-        }
-
-        private void buttonX42_Click(object sender, EventArgs e)
-        {
-            boolChange(buttonX42, buttonX43);
-        }
-
-        private void buttonX45_Click(object sender, EventArgs e)
-        {
-            boolChange(buttonX45, buttonX44);
-        }
-
-        private void buttonX44_Click(object sender, EventArgs e)
-        {
-            boolChange(buttonX44, buttonX45);
-        }
-
-        private void labelX17_Click(object sender, EventArgs e)
-        {
-            int index = Array.IndexOf(pvc.ControlsName, labelX17.Name);
-            tas.WriterData(pvc.Address[index], !(bool)(pvc.value[index]));
-        }
+        
 
         private void buttonX3_Click(object sender, EventArgs e)
         {
@@ -926,16 +836,139 @@ namespace 触摸屏界面
             boolChange(buttonX29, buttonX30);
         }
 
-        private void labelX26_Click(object sender, EventArgs e)
+        private void buttonX40_Click(object sender, EventArgs e)
         {
-            int index = Array.IndexOf(pvc.ControlsName, labelX26.Name);
+            int index = Array.IndexOf(pvc.ControlsName, buttonX40.Name);
             tas.WriterData(pvc.Address[index], !(bool)(pvc.value[index]));
         }
 
-        private void labelX31_Click(object sender, EventArgs e)
+        private void buttonX41_Click(object sender, EventArgs e)
         {
-            int index = Array.IndexOf(pvc.ControlsName, labelX31.Name);
+            int index = Array.IndexOf(pvc.ControlsName, buttonX41.Name);
             tas.WriterData(pvc.Address[index], !(bool)(pvc.value[index]));
         }
+
+        private void buttonX42_Click(object sender, EventArgs e)
+        {
+            int index = Array.IndexOf(pvc.ControlsName, buttonX42.Name);
+            tas.WriterData(pvc.Address[index], !(bool)(pvc.value[index]));
+        }
+
+        private void buttonX56_Click(object sender, EventArgs e)
+        {
+            int index = Array.IndexOf(pvc.ControlsName, buttonX56.Name);
+            tas.WriterData(pvc.Address[index], !(bool)(pvc.value[index]));
+        }
+        private void buttonX55_Click(object sender, EventArgs e)
+        {
+            int index = Array.IndexOf(pvc.ControlsName, buttonX55.Name);
+            tas.WriterData(pvc.Address[index], !(bool)(pvc.value[index]));
+        }
+        private void buttonX57_Click(object sender, EventArgs e)
+        {
+            int index = Array.IndexOf(pvc.ControlsName, buttonX57.Name);
+            tas.WriterData(pvc.Address[index], !(bool)(pvc.value[index]));
+        }
+        private void buttonX43_Click(object sender, EventArgs e)
+        {
+            int index = Array.IndexOf(pvc.ControlsName, buttonX43.Name);
+            tas.WriterData(pvc.Address[index], !(bool)(pvc.value[index]));
+        }
+        private void buttonX44_Click(object sender, EventArgs e)
+        {
+            int index = Array.IndexOf(pvc.ControlsName, buttonX44.Name);
+            tas.WriterData(pvc.Address[index], !(bool)(pvc.value[index]));
+        }
+        private void buttonX59_Click(object sender, EventArgs e)
+        {
+            int index = Array.IndexOf(pvc.ControlsName, buttonX59.Name);
+            tas.WriterData(pvc.Address[index], !(bool)(pvc.value[index]));
+        }
+        private void buttonX58_Click(object sender, EventArgs e)
+        {
+            int index = Array.IndexOf(pvc.ControlsName, buttonX58.Name);
+            tas.WriterData(pvc.Address[index], !(bool)(pvc.value[index]));
+        }
+        private void buttonX46_Click(object sender, EventArgs e)
+        {
+            int index = Array.IndexOf(pvc.ControlsName, buttonX46.Name);
+            tas.WriterData(pvc.Address[index], !(bool)(pvc.value[index]));
+        }
+        private void buttonX45_Click(object sender, EventArgs e)
+        {
+            int index = Array.IndexOf(pvc.ControlsName, buttonX45.Name);
+            tas.WriterData(pvc.Address[index], !(bool)(pvc.value[index]));
+        }
+        private void buttonX47_Click(object sender, EventArgs e)
+        {
+            int index = Array.IndexOf(pvc.ControlsName, buttonX47.Name);
+            tas.WriterData(pvc.Address[index], !(bool)(pvc.value[index]));
+        }
+        private void buttonX48_Click(object sender, EventArgs e)
+        {
+            int index = Array.IndexOf(pvc.ControlsName, buttonX48.Name);
+            tas.WriterData(pvc.Address[index], !(bool)(pvc.value[index]));
+        }
+        private void buttonX49_Click(object sender, EventArgs e)
+        {
+            int index = Array.IndexOf(pvc.ControlsName, buttonX49.Name);
+            tas.WriterData(pvc.Address[index], !(bool)(pvc.value[index]));
+        }
+        private void buttonX50_Click(object sender, EventArgs e)
+        {
+            int index = Array.IndexOf(pvc.ControlsName, buttonX50.Name);
+            tas.WriterData(pvc.Address[index], !(bool)(pvc.value[index]));
+        }
+        private void buttonX51_Click(object sender, EventArgs e)
+        {
+            int index = Array.IndexOf(pvc.ControlsName, buttonX51.Name);
+            tas.WriterData(pvc.Address[index], !(bool)(pvc.value[index]));
+        }
+        private void buttonX52_Click(object sender, EventArgs e)
+        {
+            int index = Array.IndexOf(pvc.ControlsName, buttonX52.Name);
+            tas.WriterData(pvc.Address[index], !(bool)(pvc.value[index]));
+        }
+        private void buttonX53_Click(object sender, EventArgs e)
+        {
+            int index = Array.IndexOf(pvc.ControlsName, buttonX53.Name);
+            tas.WriterData(pvc.Address[index], !(bool)(pvc.value[index]));
+        }
+        private void buttonX54_Click(object sender, EventArgs e)
+        {
+            int index = Array.IndexOf(pvc.ControlsName, buttonX54.Name);
+            tas.WriterData(pvc.Address[index], !(bool)(pvc.value[index]));
+        }
+
+        private void buttonX60_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX60, buttonX61);
+        }
+
+        private void buttonX61_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX61, buttonX60);
+        }
+
+        private void buttonX62_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX62, buttonX63);
+        }
+
+        private void buttonX63_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX63, buttonX62);
+        }
+
+        private void buttonX64_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX64, buttonX65);
+        }
+
+        private void buttonX65_Click(object sender, EventArgs e)
+        {
+            boolChange(buttonX65, buttonX64);
+        }
+        
     }
 }
