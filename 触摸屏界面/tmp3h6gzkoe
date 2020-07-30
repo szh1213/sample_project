@@ -1,18 +1,13 @@
 import re
-
-
 with open('Main.Designer.cs','r',encoding='utf8')as f:
     txt = f.read()
 
-
-btn = re.findall('this\.(.*?)\.Tag = "HMI\.A\d_.*?\d;BOOL";',txt)
-tag = {bt:re.findall(bt+'\.Tag = "HMI\.(.*?);BOOL',txt)[0] for bt in btn}
-
-
+'''
+btn = re.findall('this\.(.*?)\.Tag = "A\d_.*?_\d;Bool";',txt)
+tag = {bt:re.findall(bt+'\.Tag = "(.*?);Bool',txt)[0] for bt in btn}
 for t in tag:
     for s in ',.)_ ;"':
         txt = txt.replace(t+s,'btn_'+tag[t]+s)
-
 with open('Main.Designer.cs','w',encoding='utf8')as f:
     f.write(txt)
 
@@ -22,28 +17,10 @@ with open('Main.cs','r',encoding='utf8')as f:
 for t in tag:
     for s in ',.)_ ;"':
         txt = txt.replace(t+s,'btn_'+tag[t]+s)
-
 with open('Main.cs','w',encoding='utf8')as f:
     f.write(txt)
-    
-  
-with open('Main.Designer.cs','r',encoding='utf8')as f:
-    txt = f.read()  
-tbx = re.findall('this\.textBox(.*?).Tag = ".+"', txt)
-tbxtag = {'textBox'+t:re.findall('textBox'+t+'\.Tag = "(.*?);',txt)[0].split('.')[1] for t in tbx}
-for t in tbxtag:
-    for s in ',.)_ ;"':
-        txt = txt.replace(t+s,'tbx_'+tbxtag[t]+s)
-with open('Main.Designer.cs','w',encoding='utf8')as f:
-    f.write(txt)
-    
-with open('Main.cs','r',encoding='utf8')as f:
-    txt = f.read()
-for t in tbxtag:
-    for s in ',.)_ ;"':
-        txt = txt.replace(t+s,'tbx_'+tbxtag[t]+s)
-with open('Main.cs','w',encoding='utf8')as f:
-    f.write(txt)
+'''
+tag = re.findall('Tag = "(.*?)";',txt)
 save = '''axis2_0_pos :REAL; 
 axis2_1_pos :REAL; 
 axis2_2_pos :REAL; 
@@ -99,3 +76,14 @@ for t in tag:
         txt = txt.replace('"'+t+'"','"HMI.'+t.replace('MAIN.','')+'"')
 
 '''
+with open('Main.Designer.cs','r',encoding='utf8')as f:
+    txt = f.read()
+tag = re.findall('Tag = "(.*?)";',txt)
+for t in tag:
+    txt = txt.replace('"'+t+'"','"'+t.replace('MAIN.','')+'"')
+    txt = txt.replace('"'+t+'"','"'+t.upper()+'"')
+    txt = txt.replace('"'+t+'"','"'+t.replace(t,'HMI.'+t)+'"')
+    txt = txt.replace('"'+t+'"','"'+t.replace('hmi.','HMI.')+'"')
+    txt = txt.replace('"'+t+'"','"'+t.replace('save.','SAVE.')+'"')
+with open('Main.Designer.cs','w',encoding='utf8')as f:
+    f.write(txt)

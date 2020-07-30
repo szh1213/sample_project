@@ -102,16 +102,16 @@ namespace TwAdsClass
                 for (int i = 0; i < pvc.Address.Length; i++)
                 {
                     string address = pvc.Address[i];
-                    if (pvc.Type[i] == "Bool")
+                    if (pvc.Type[i].ToUpper() == "BOOL")
                         pvc.HandId[i] = _client.AddDeviceNotificationEx(address, AdsTransMode.OnChange, 100, 0, this, typeof(Boolean));
-                    if (pvc.Type[i] == "Byte")
-                        pvc.HandId[i] = _client.AddDeviceNotificationEx(address, AdsTransMode.OnChange, 100, 0, this, typeof(Byte));
-                    if (pvc.Type[i] == "Int")
+                    if (pvc.Type[i].ToUpper() == "BYTE")
+                        pvc.HandId[i] = _client.AddDeviceNotificationEx(address, AdsTransMode.OnChange, 100, 0, this, typeof(byte));
+                    if (pvc.Type[i].ToUpper() == "INT")
                         pvc.HandId[i] = _client.AddDeviceNotificationEx(address, AdsTransMode.OnChange, 100, 0, this, typeof(short));
-                    if (pvc.Type[i] == "Array")
+                    if (pvc.Type[i].ToUpper() == "ARRAY")
                         pvc.HandId[i] = _client.AddDeviceNotificationEx(address, AdsTransMode.OnChange, 100, 0, this, typeof(short[]), new int[] { 4 });
-                    if (pvc.Type[i] == "Real")
-                        pvc.HandId[i] = _client.AddDeviceNotificationEx(address, AdsTransMode.OnChange, 100, 0, this, typeof(Double));
+                    if (pvc.Type[i].ToUpper() == "REAL")
+                        pvc.HandId[i] = _client.AddDeviceNotificationEx(address, AdsTransMode.OnChange, 100, 0, this, typeof(double));
                     if (pvc.Type[i] == "String")
                         pvc.HandId[i] = _client.AddDeviceNotificationEx(address, AdsTransMode.OnChange, 100, 0, this, typeof(String), new int[] { 80 });
                     if (pvc.Type[i] == "Struct1")
@@ -125,11 +125,11 @@ namespace TwAdsClass
                     if (pvc.Type[i] == "Struct5")
                         pvc.HandId[i] = _client.AddDeviceNotificationEx(address, AdsTransMode.OnChange, 100, 0, this, typeof(Struct5));
 
-                    if (pvc.Type[i] == "Word")
+                    if (pvc.Type[i].ToUpper() == "WORD")
                         pvc.HandId[i] = _client.AddDeviceNotificationEx(address, AdsTransMode.OnChange, 100, 0, this, typeof(ushort));
-                    if (pvc.Type[i] == "Error_data")
+                    if (pvc.Type[i].ToUpper() == "ERROR_DATE")
                         pvc.HandId[i] = _client.AddDeviceNotificationEx(address, AdsTransMode.OnChange, 100, 0, this, typeof(Error_data));
-                    if (pvc.Type[i] == "team_date")
+                    if (pvc.Type[i].ToUpper() == "TEAM_DATE")
                         pvc.HandId[i] = _client.AddDeviceNotificationEx(address, AdsTransMode.OnChange, 100, 0, this, typeof(team_date));
                     
                     notificationHandles.Add(pvc.HandId[i]);
@@ -137,7 +137,7 @@ namespace TwAdsClass
             }
             catch (Exception ex)
             {
-                msg = ex.Message;
+                msg = ex.Message+"..1";
             }
         }
         public bool ConnectClose()

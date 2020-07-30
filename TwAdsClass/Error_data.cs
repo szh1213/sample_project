@@ -6,18 +6,8 @@ namespace TwAdsClass
     [StructLayout(LayoutKind.Sequential, Pack = 8)]
     public struct Error_data
     {
-        [MarshalAs(UnmanagedType.U4)]
-        public ushort alarm1;
-        [MarshalAs(UnmanagedType.U4)]
-        public ushort alarm2;
-        [MarshalAs(UnmanagedType.U4)]
-        public ushort alarm3;
-        [MarshalAs(UnmanagedType.U4)]
-        public ushort alarm4;
-        [MarshalAs(UnmanagedType.U4)]
-        public ushort alarm5;
-        [MarshalAs(UnmanagedType.U4)]
-        public ushort alarm6;
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 6)]
+        public ushort[] alarm;
     }
     //DATA_ALARM.alarm1.0	BOOL 旋转电机报警
     //DATA_ALARM.alarm1.1	BOOL 升降电机报警
