@@ -16,6 +16,7 @@ namespace 触摸屏界面
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            
             Application.Run(new Login());
         }
     }

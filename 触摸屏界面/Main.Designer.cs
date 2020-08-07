@@ -30,80 +30,21 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
             this.panelEx3 = new DevComponents.DotNetBar.PanelEx();
             this.panelEx5 = new DevComponents.DotNetBar.PanelEx();
             this.panelEx4 = new DevComponents.DotNetBar.PanelEx();
             this.panelEx6 = new DevComponents.DotNetBar.PanelEx();
             this.superTabControl1 = new DevComponents.DotNetBar.SuperTabControl();
-            this.superTabControlPanel2 = new DevComponents.DotNetBar.SuperTabControlPanel();
-            this.panelEx15 = new DevComponents.DotNetBar.PanelEx();
-            this.tbx_AXIS3_JOG_VEL = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.buttonX64 = new DevComponents.DotNetBar.ButtonX();
-            this.buttonX65 = new DevComponents.DotNetBar.ButtonX();
-            this.labelX7 = new DevComponents.DotNetBar.LabelX();
-            this.panelEx14 = new DevComponents.DotNetBar.PanelEx();
-            this.tbx_AXIS2_JOG_VEL = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.buttonX62 = new DevComponents.DotNetBar.ButtonX();
-            this.buttonX63 = new DevComponents.DotNetBar.ButtonX();
-            this.labelX6 = new DevComponents.DotNetBar.LabelX();
-            this.panelEx13 = new DevComponents.DotNetBar.PanelEx();
-            this.tbx_AXIS1_JOG_VEL = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.buttonX60 = new DevComponents.DotNetBar.ButtonX();
-            this.buttonX61 = new DevComponents.DotNetBar.ButtonX();
-            this.labelX5 = new DevComponents.DotNetBar.LabelX();
-            this.panelEx12 = new DevComponents.DotNetBar.PanelEx();
-            this.buttonX58 = new DevComponents.DotNetBar.ButtonX();
-            this.buttonX59 = new DevComponents.DotNetBar.ButtonX();
-            this.labelX4 = new DevComponents.DotNetBar.LabelX();
-            this.panelEx11 = new DevComponents.DotNetBar.PanelEx();
-            this.buttonX57 = new DevComponents.DotNetBar.ButtonX();
-            this.buttonX55 = new DevComponents.DotNetBar.ButtonX();
-            this.buttonX56 = new DevComponents.DotNetBar.ButtonX();
-            this.labelX3 = new DevComponents.DotNetBar.LabelX();
-            this.panelEx10 = new DevComponents.DotNetBar.PanelEx();
-            this.buttonX54 = new DevComponents.DotNetBar.ButtonX();
-            this.buttonX53 = new DevComponents.DotNetBar.ButtonX();
-            this.buttonX52 = new DevComponents.DotNetBar.ButtonX();
-            this.buttonX51 = new DevComponents.DotNetBar.ButtonX();
-            this.buttonX50 = new DevComponents.DotNetBar.ButtonX();
-            this.buttonX49 = new DevComponents.DotNetBar.ButtonX();
-            this.buttonX48 = new DevComponents.DotNetBar.ButtonX();
-            this.buttonX47 = new DevComponents.DotNetBar.ButtonX();
-            this.buttonX45 = new DevComponents.DotNetBar.ButtonX();
-            this.buttonX46 = new DevComponents.DotNetBar.ButtonX();
-            this.labelX2 = new DevComponents.DotNetBar.LabelX();
-            this.panelEx9 = new DevComponents.DotNetBar.PanelEx();
-            this.buttonX43 = new DevComponents.DotNetBar.ButtonX();
-            this.buttonX44 = new DevComponents.DotNetBar.ButtonX();
-            this.labelX1 = new DevComponents.DotNetBar.LabelX();
-            this.panelEx8 = new DevComponents.DotNetBar.PanelEx();
-            this.tbx_AXIS3_REAL_TOR = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.tbx_AXIS3_REAL_VEL = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.tbx_AXIS3_REAL_POS = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.tbx_AXIS2_REAL_TOR = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.tbx_AXIS2_REAL_VEL = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.tbx_AXIS2_REAL_POS = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.tbx_AXIS1_REAL_TOR = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.tbx_AXIS1_REAL_VEL = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.tbx_AXIS1_REAL_POS = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.buttonX42 = new DevComponents.DotNetBar.ButtonX();
-            this.buttonX41 = new DevComponents.DotNetBar.ButtonX();
-            this.buttonX40 = new DevComponents.DotNetBar.ButtonX();
-            this.reflectionLabel19 = new DevComponents.DotNetBar.Controls.ReflectionLabel();
-            this.reflectionLabel18 = new DevComponents.DotNetBar.Controls.ReflectionLabel();
-            this.reflectionLabel17 = new DevComponents.DotNetBar.Controls.ReflectionLabel();
-            this.reflectionLabel16 = new DevComponents.DotNetBar.Controls.ReflectionLabel();
-            this.superTabItem2 = new DevComponents.DotNetBar.SuperTabItem();
             this.superTabControlPanel1 = new DevComponents.DotNetBar.SuperTabControlPanel();
-            this.buttonX68 = new DevComponents.DotNetBar.ButtonX();
-            this.buttonX67 = new DevComponents.DotNetBar.ButtonX();
+            this.symbolBox2 = new DevComponents.DotNetBar.Controls.SymbolBox();
+            this.reflectionLabel3 = new DevComponents.DotNetBar.Controls.ReflectionLabel();
             this.lb_connectflag = new DevComponents.DotNetBar.LabelX();
-            this.buttonX2 = new DevComponents.DotNetBar.ButtonX();
-            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
+            this.close_plc = new DevComponents.DotNetBar.ButtonX();
+            this.open_plc = new DevComponents.DotNetBar.ButtonX();
             this.reflectionLabel15 = new DevComponents.DotNetBar.LabelX();
             this.reflectionLabel13 = new DevComponents.DotNetBar.LabelX();
             this.reflectionLabel12 = new DevComponents.DotNetBar.LabelX();
@@ -113,111 +54,168 @@
             this.reflectionLabel7 = new DevComponents.DotNetBar.LabelX();
             this.symbolBox1 = new DevComponents.DotNetBar.Controls.SymbolBox();
             this.reflectionLabel2 = new DevComponents.DotNetBar.Controls.ReflectionLabel();
-            this.tbx_COUNT_ALL = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.tbx_SAMPLING2 = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.tbx_SAMPLING = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.tbx_FIRST_VAL = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.tbx_SCE_VAL = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txt_COUNT_ALL = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txt_SAMPLING2 = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txt_SAMPLING = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txt_FIRST_VAL = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txt_SCE_VAL = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.textBoxX2 = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.tbx_SETP_P = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txt_SETP_P = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.superTabItem1 = new DevComponents.DotNetBar.SuperTabItem();
             this.superTabControlPanel4 = new DevComponents.DotNetBar.SuperTabControlPanel();
-            this.buttonX66 = new DevComponents.DotNetBar.ButtonX();
-            this.buttonX39 = new DevComponents.DotNetBar.ButtonX();
             this.labelX67 = new DevComponents.DotNetBar.LabelX();
             this.labelX66 = new DevComponents.DotNetBar.LabelX();
-            this.tbx_AXIS3_ABS_VEL = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txt_AXIS3_ABS_VEL = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX65 = new DevComponents.DotNetBar.LabelX();
-            this.tbx_AXIS2_ABS_VEL = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txt_AXIS2_ABS_VEL = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX64 = new DevComponents.DotNetBar.LabelX();
-            this.tbx_AXIS1_ABS_VEL2 = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txt_AXIS1_ABS_VEL2 = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX63 = new DevComponents.DotNetBar.LabelX();
-            this.tbx_AXIS1_ABS_VEL = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txt_AXIS1_ABS_VEL = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX62 = new DevComponents.DotNetBar.LabelX();
-            this.tbx_AXIS1_ABS_VEL1 = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txt_AXIS1_ABS_VEL1 = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX61 = new DevComponents.DotNetBar.LabelX();
-            this.tbx_AXIS3_CLOSE_POS = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txt_AXIS3_CLOSE_POS = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX57 = new DevComponents.DotNetBar.LabelX();
-            this.tbx_AXIS3_OPEN_POS = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txt_AXIS3_OPEN_POS = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX56 = new DevComponents.DotNetBar.LabelX();
-            this.tbx_AXIS1_SAFE2_POS = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txt_AXIS1_SAFE2_POS = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX55 = new DevComponents.DotNetBar.LabelX();
-            this.tbx_AXIS2_0_POS = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txt_AXIS2_0_POS = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX54 = new DevComponents.DotNetBar.LabelX();
-            this.tbx_AXIS2_9_POS = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txt_AXIS2_9_POS = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX53 = new DevComponents.DotNetBar.LabelX();
-            this.tbx_AXIS2_8_POS = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txt_AXIS2_8_POS = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX52 = new DevComponents.DotNetBar.LabelX();
-            this.tbx_AXIS2_7_POS = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txt_AXIS2_7_POS = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX51 = new DevComponents.DotNetBar.LabelX();
-            this.tbx_AXIS2_6_POS = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txt_AXIS2_6_POS = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX50 = new DevComponents.DotNetBar.LabelX();
-            this.tbx_AXIS1_SAFE1_POS = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txt_AXIS1_SAFE1_POS = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX49 = new DevComponents.DotNetBar.LabelX();
-            this.tbx_AXIS2_5_POS = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txt_AXIS2_5_POS = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX48 = new DevComponents.DotNetBar.LabelX();
-            this.tbx_AXIS2_4_POS = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txt_AXIS2_4_POS = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX47 = new DevComponents.DotNetBar.LabelX();
-            this.tbx_AXIS2_3_POS = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txt_AXIS2_3_POS = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX46 = new DevComponents.DotNetBar.LabelX();
-            this.tbx_AXIS2_2_POS = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txt_AXIS2_2_POS = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX45 = new DevComponents.DotNetBar.LabelX();
-            this.tbx_AXIS2_1_POS = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txt_AXIS2_1_POS = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX44 = new DevComponents.DotNetBar.LabelX();
-            this.tbx_AXIS1_UP_POS = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txt_AXIS1_UP_POS = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX43 = new DevComponents.DotNetBar.LabelX();
-            this.tbx_AXIS1_DOWN_POS2 = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txt_AXIS1_DOWN_POS2 = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX42 = new DevComponents.DotNetBar.LabelX();
-            this.tbx_AXIS1_DOWN_POS = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txt_AXIS1_DOWN_POS = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX41 = new DevComponents.DotNetBar.LabelX();
             this.superTabItem4 = new DevComponents.DotNetBar.SuperTabItem();
             this.superTabControlPanel3 = new DevComponents.DotNetBar.SuperTabControlPanel();
             this.labelX38 = new DevComponents.DotNetBar.LabelX();
-            this.btn_A6_CLOSE9 = new DevComponents.DotNetBar.ButtonX();
-            this.btn_A6_OPEN9 = new DevComponents.DotNetBar.ButtonX();
-            this.btn_A3_CLOSE9 = new DevComponents.DotNetBar.ButtonX();
-            this.btn_A3_OPEN9 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A6_CLOSE9 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A6_OPEN9 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A3_CLOSE9 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A3_OPEN9 = new DevComponents.DotNetBar.ButtonX();
             this.labelX39 = new DevComponents.DotNetBar.LabelX();
-            this.btn_A6_CLOSE8 = new DevComponents.DotNetBar.ButtonX();
-            this.btn_A6_OPEN8 = new DevComponents.DotNetBar.ButtonX();
-            this.btn_A3_CLOSE8 = new DevComponents.DotNetBar.ButtonX();
-            this.btn_A3_OPEN8 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A6_CLOSE8 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A6_OPEN8 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A3_CLOSE8 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A3_OPEN8 = new DevComponents.DotNetBar.ButtonX();
             this.labelX40 = new DevComponents.DotNetBar.LabelX();
-            this.btn_A6_CLOSE7 = new DevComponents.DotNetBar.ButtonX();
-            this.btn_A6_OPEN7 = new DevComponents.DotNetBar.ButtonX();
-            this.btn_A3_CLOSE7 = new DevComponents.DotNetBar.ButtonX();
-            this.btn_A3_OPEN7 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A6_CLOSE7 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A6_OPEN7 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A3_CLOSE7 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A3_OPEN7 = new DevComponents.DotNetBar.ButtonX();
             this.labelX35 = new DevComponents.DotNetBar.LabelX();
-            this.btn_A6_CLOSE6 = new DevComponents.DotNetBar.ButtonX();
-            this.btn_A6_OPEN6 = new DevComponents.DotNetBar.ButtonX();
-            this.btn_A3_CLOSE6 = new DevComponents.DotNetBar.ButtonX();
-            this.btn_A3_OPEN6 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A6_CLOSE6 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A6_OPEN6 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A3_CLOSE6 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A3_OPEN6 = new DevComponents.DotNetBar.ButtonX();
             this.labelX36 = new DevComponents.DotNetBar.LabelX();
-            this.btn_A6_CLOSE5 = new DevComponents.DotNetBar.ButtonX();
-            this.btn_A6_OPEN5 = new DevComponents.DotNetBar.ButtonX();
-            this.btn_A3_CLOSE5 = new DevComponents.DotNetBar.ButtonX();
-            this.btn_A3_OPEN5 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A6_CLOSE5 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A6_OPEN5 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A3_CLOSE5 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A3_OPEN5 = new DevComponents.DotNetBar.ButtonX();
             this.labelX37 = new DevComponents.DotNetBar.LabelX();
-            this.btn_A6_CLOSE4 = new DevComponents.DotNetBar.ButtonX();
-            this.btn_A6_OPEN4 = new DevComponents.DotNetBar.ButtonX();
-            this.btn_A3_CLOSE4 = new DevComponents.DotNetBar.ButtonX();
-            this.btn_A3_OPEN4 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A6_CLOSE4 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A6_OPEN4 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A3_CLOSE4 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A3_OPEN4 = new DevComponents.DotNetBar.ButtonX();
             this.labelX34 = new DevComponents.DotNetBar.LabelX();
-            this.btn_A6_CLOSE3 = new DevComponents.DotNetBar.ButtonX();
-            this.btn_A6_OPEN3 = new DevComponents.DotNetBar.ButtonX();
-            this.btn_A3_CLOSE3 = new DevComponents.DotNetBar.ButtonX();
-            this.btn_A3_OPEN3 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A6_CLOSE3 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A6_OPEN3 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A3_CLOSE3 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A3_OPEN3 = new DevComponents.DotNetBar.ButtonX();
             this.labelX33 = new DevComponents.DotNetBar.LabelX();
-            this.btn_A6_CLOSE2 = new DevComponents.DotNetBar.ButtonX();
-            this.btn_A6_OPEN2 = new DevComponents.DotNetBar.ButtonX();
-            this.btn_A3_CLOSE2 = new DevComponents.DotNetBar.ButtonX();
-            this.btn_A3_OPEN2 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A6_CLOSE2 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A6_OPEN2 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A3_CLOSE2 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A3_OPEN2 = new DevComponents.DotNetBar.ButtonX();
             this.labelX32 = new DevComponents.DotNetBar.LabelX();
-            this.btn_A6_CLOSE1 = new DevComponents.DotNetBar.ButtonX();
-            this.btn_A6_OPEN1 = new DevComponents.DotNetBar.ButtonX();
-            this.btn_A3_CLOSE1 = new DevComponents.DotNetBar.ButtonX();
-            this.btn_A3_OPEN1 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A6_CLOSE1 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A6_OPEN1 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A3_CLOSE1 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A3_OPEN1 = new DevComponents.DotNetBar.ButtonX();
             this.superTabItem3 = new DevComponents.DotNetBar.SuperTabItem();
+            this.superTabControlPanel2 = new DevComponents.DotNetBar.SuperTabControlPanel();
+            this.panelEx15 = new DevComponents.DotNetBar.PanelEx();
+            this.txt_AXIS3_JOG_VEL = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.btm_MOTOR_JOG3FOR = new DevComponents.DotNetBar.ButtonX();
+            this.btm_MOTOR_JOG3BACK = new DevComponents.DotNetBar.ButtonX();
+            this.labelX7 = new DevComponents.DotNetBar.LabelX();
+            this.panelEx14 = new DevComponents.DotNetBar.PanelEx();
+            this.txt_AXIS2_JOG_VEL = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.btm_MOTOR_JOG2FOR = new DevComponents.DotNetBar.ButtonX();
+            this.btm_MOTOR_JOG2BACK = new DevComponents.DotNetBar.ButtonX();
+            this.labelX6 = new DevComponents.DotNetBar.LabelX();
+            this.panelEx13 = new DevComponents.DotNetBar.PanelEx();
+            this.txt_AXIS1_JOG_VEL = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.btm_MOTOR_JOG1FOR = new DevComponents.DotNetBar.ButtonX();
+            this.btm_MOTOR_JOG1BACK = new DevComponents.DotNetBar.ButtonX();
+            this.labelX5 = new DevComponents.DotNetBar.LabelX();
+            this.panelEx12 = new DevComponents.DotNetBar.PanelEx();
+            this.btm_AXIS_CLOSE = new DevComponents.DotNetBar.ButtonX();
+            this.btm_AXIS_OPEN = new DevComponents.DotNetBar.ButtonX();
+            this.labelX4 = new DevComponents.DotNetBar.LabelX();
+            this.panelEx11 = new DevComponents.DotNetBar.PanelEx();
+            this.btm_AXIS_DOWN2 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_AXIS_DOWN = new DevComponents.DotNetBar.ButtonX();
+            this.btm_AXIS_UP = new DevComponents.DotNetBar.ButtonX();
+            this.labelX3 = new DevComponents.DotNetBar.LabelX();
+            this.panelEx10 = new DevComponents.DotNetBar.PanelEx();
+            this.btm_AXIS_POS9 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_AXIS_POS8 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_AXIS_POS7 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_AXIS_POS6 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_AXIS_POS5 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_AXIS_POS4 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_AXIS_POS3 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_AXIS_POS2 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_AXIS_POS1 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_AXIS_POS0 = new DevComponents.DotNetBar.ButtonX();
+            this.labelX2 = new DevComponents.DotNetBar.LabelX();
+            this.panelEx9 = new DevComponents.DotNetBar.PanelEx();
+            this.btm_VAL_OPEN = new DevComponents.DotNetBar.ButtonX();
+            this.btm_VAL_CLOSE = new DevComponents.DotNetBar.ButtonX();
+            this.labelX1 = new DevComponents.DotNetBar.LabelX();
+            this.panelEx8 = new DevComponents.DotNetBar.PanelEx();
+            this.txt_AXIS3_REAL_TOR = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txt_AXIS3_REAL_VEL = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txt_AXIS3_REAL_POS = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txt_AXIS2_REAL_TOR = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txt_AXIS2_REAL_VEL = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txt_AXIS2_REAL_POS = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txt_AXIS1_REAL_TOR = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txt_AXIS1_REAL_VEL = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txt_AXIS1_REAL_POS = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.btm_MOTOR3_BUTT = new DevComponents.DotNetBar.ButtonX();
+            this.btm_MOTOR2_BUTT = new DevComponents.DotNetBar.ButtonX();
+            this.btm_MOTOR1_BUTT = new DevComponents.DotNetBar.ButtonX();
+            this.reflectionLabel19 = new DevComponents.DotNetBar.Controls.ReflectionLabel();
+            this.reflectionLabel18 = new DevComponents.DotNetBar.Controls.ReflectionLabel();
+            this.reflectionLabel17 = new DevComponents.DotNetBar.Controls.ReflectionLabel();
+            this.reflectionLabel16 = new DevComponents.DotNetBar.Controls.ReflectionLabel();
+            this.superTabItem2 = new DevComponents.DotNetBar.SuperTabItem();
             this.superTabControlPanel7 = new DevComponents.DotNetBar.SuperTabControlPanel();
             this.sgc2 = new DevComponents.DotNetBar.SuperGrid.SuperGridControl();
             this.gridColumn12 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
@@ -247,8 +245,8 @@
             this.bubbleButton6 = new DevComponents.DotNetBar.BubbleButton();
             this.bubbleButton7 = new DevComponents.DotNetBar.BubbleButton();
             this.panelEx2 = new DevComponents.DotNetBar.PanelEx();
-            this.labelX9 = new DevComponents.DotNetBar.LabelX();
-            this.labelX8 = new DevComponents.DotNetBar.LabelX();
+            this.lb_PA_PC_switch = new DevComponents.DotNetBar.LabelX();
+            this.lb_RUN_SET = new DevComponents.DotNetBar.LabelX();
             this.lb_data = new DevComponents.DotNetBar.LabelX();
             this.reflectionLabel1 = new DevComponents.DotNetBar.Controls.ReflectionLabel();
             this.gridRow1 = new DevComponents.DotNetBar.SuperGrid.GridRow();
@@ -307,8 +305,6 @@
             this.gridRow54 = new DevComponents.DotNetBar.SuperGrid.GridRow();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.chart_timer = new System.Windows.Forms.Timer(this.components);
-            this.reflectionLabel3 = new DevComponents.DotNetBar.Controls.ReflectionLabel();
-            this.symbolBox2 = new DevComponents.DotNetBar.Controls.SymbolBox();
             this.panelEx1.SuspendLayout();
             this.panelEx3.SuspendLayout();
             this.panelEx5.SuspendLayout();
@@ -316,6 +312,9 @@
             this.panelEx6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.superTabControl1)).BeginInit();
             this.superTabControl1.SuspendLayout();
+            this.superTabControlPanel1.SuspendLayout();
+            this.superTabControlPanel4.SuspendLayout();
+            this.superTabControlPanel3.SuspendLayout();
             this.superTabControlPanel2.SuspendLayout();
             this.panelEx15.SuspendLayout();
             this.panelEx14.SuspendLayout();
@@ -325,9 +324,6 @@
             this.panelEx10.SuspendLayout();
             this.panelEx9.SuspendLayout();
             this.panelEx8.SuspendLayout();
-            this.superTabControlPanel1.SuspendLayout();
-            this.superTabControlPanel4.SuspendLayout();
-            this.superTabControlPanel3.SuspendLayout();
             this.superTabControlPanel7.SuspendLayout();
             this.superTabControlPanel5.SuspendLayout();
             this.superTabControlPanel6.SuspendLayout();
@@ -347,7 +343,7 @@
             this.panelEx1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelEx1.Location = new System.Drawing.Point(0, 0);
             this.panelEx1.Name = "panelEx1";
-            this.panelEx1.Size = new System.Drawing.Size(904, 691);
+            this.panelEx1.Size = new System.Drawing.Size(832, 691);
             this.panelEx1.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.panelEx1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
@@ -365,7 +361,7 @@
             this.panelEx3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelEx3.Location = new System.Drawing.Point(0, 57);
             this.panelEx3.Name = "panelEx3";
-            this.panelEx3.Size = new System.Drawing.Size(904, 634);
+            this.panelEx3.Size = new System.Drawing.Size(832, 634);
             this.panelEx3.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx3.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.panelEx3.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
@@ -384,7 +380,7 @@
             this.panelEx5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelEx5.Location = new System.Drawing.Point(0, 0);
             this.panelEx5.Name = "panelEx5";
-            this.panelEx5.Size = new System.Drawing.Size(904, 634);
+            this.panelEx5.Size = new System.Drawing.Size(832, 634);
             this.panelEx5.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx5.Style.BackColor1.Color = System.Drawing.Color.Transparent;
             this.panelEx5.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
@@ -402,7 +398,7 @@
             this.panelEx4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelEx4.Location = new System.Drawing.Point(0, 0);
             this.panelEx4.Name = "panelEx4";
-            this.panelEx4.Size = new System.Drawing.Size(904, 563);
+            this.panelEx4.Size = new System.Drawing.Size(832, 563);
             this.panelEx4.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx4.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.panelEx4.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
@@ -421,7 +417,7 @@
             this.panelEx6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelEx6.Location = new System.Drawing.Point(0, 0);
             this.panelEx6.Name = "panelEx6";
-            this.panelEx6.Size = new System.Drawing.Size(904, 563);
+            this.panelEx6.Size = new System.Drawing.Size(832, 563);
             this.panelEx6.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx6.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.panelEx6.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
@@ -447,13 +443,13 @@
             this.superTabControl1.ControlBox.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.superTabControl1.ControlBox.MenuBox,
             this.superTabControl1.ControlBox.CloseBox});
-            this.superTabControl1.Controls.Add(this.superTabControlPanel1);
-            this.superTabControl1.Controls.Add(this.superTabControlPanel2);
+            this.superTabControl1.Controls.Add(this.superTabControlPanel6);
+            this.superTabControl1.Controls.Add(this.superTabControlPanel5);
             this.superTabControl1.Controls.Add(this.superTabControlPanel4);
             this.superTabControl1.Controls.Add(this.superTabControlPanel3);
+            this.superTabControl1.Controls.Add(this.superTabControlPanel2);
+            this.superTabControl1.Controls.Add(this.superTabControlPanel1);
             this.superTabControl1.Controls.Add(this.superTabControlPanel7);
-            this.superTabControl1.Controls.Add(this.superTabControlPanel5);
-            this.superTabControl1.Controls.Add(this.superTabControlPanel6);
             this.superTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.superTabControl1.ForeColor = System.Drawing.Color.Black;
             this.superTabControl1.Location = new System.Drawing.Point(0, 0);
@@ -461,7 +457,7 @@
             this.superTabControl1.ReorderTabsEnabled = true;
             this.superTabControl1.SelectedTabFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold);
             this.superTabControl1.SelectedTabIndex = 0;
-            this.superTabControl1.Size = new System.Drawing.Size(904, 563);
+            this.superTabControl1.Size = new System.Drawing.Size(832, 563);
             this.superTabControl1.TabFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.superTabControl1.TabIndex = 0;
             this.superTabControl1.TabLayoutType = DevComponents.DotNetBar.eSuperTabLayoutType.SingleLineFit;
@@ -477,1001 +473,13 @@
             this.superTabControl1.TabsVisible = false;
             this.superTabControl1.Text = "superTabControl1";
             // 
-            // superTabControlPanel2
-            // 
-            this.superTabControlPanel2.Controls.Add(this.panelEx15);
-            this.superTabControlPanel2.Controls.Add(this.panelEx14);
-            this.superTabControlPanel2.Controls.Add(this.panelEx13);
-            this.superTabControlPanel2.Controls.Add(this.panelEx12);
-            this.superTabControlPanel2.Controls.Add(this.panelEx11);
-            this.superTabControlPanel2.Controls.Add(this.panelEx10);
-            this.superTabControlPanel2.Controls.Add(this.panelEx9);
-            this.superTabControlPanel2.Controls.Add(this.panelEx8);
-            this.superTabControlPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel2.Location = new System.Drawing.Point(0, 46);
-            this.superTabControlPanel2.Name = "superTabControlPanel2";
-            this.superTabControlPanel2.Size = new System.Drawing.Size(904, 517);
-            this.superTabControlPanel2.TabIndex = 2;
-            this.superTabControlPanel2.TabItem = this.superTabItem2;
-            // 
-            // panelEx15
-            // 
-            this.panelEx15.CanvasColor = System.Drawing.SystemColors.Control;
-            this.panelEx15.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.panelEx15.Controls.Add(this.tbx_AXIS3_JOG_VEL);
-            this.panelEx15.Controls.Add(this.buttonX64);
-            this.panelEx15.Controls.Add(this.buttonX65);
-            this.panelEx15.Controls.Add(this.labelX7);
-            this.panelEx15.DisabledBackColor = System.Drawing.Color.Empty;
-            this.panelEx15.Location = new System.Drawing.Point(550, 350);
-            this.panelEx15.Name = "panelEx15";
-            this.panelEx15.Size = new System.Drawing.Size(275, 120);
-            this.panelEx15.Style.Alignment = System.Drawing.StringAlignment.Center;
-            this.panelEx15.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.panelEx15.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
-            this.panelEx15.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.panelEx15.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
-            this.panelEx15.Style.GradientAngle = 90;
-            this.panelEx15.TabIndex = 72;
-            this.panelEx15.TextDockConstrained = false;
-            // 
-            // tbx_AXIS3_JOG_VEL
-            // 
-            this.tbx_AXIS3_JOG_VEL.BackColor = System.Drawing.Color.Black;
-            // 
-            // 
-            // 
-            this.tbx_AXIS3_JOG_VEL.Border.Class = "TextBoxBorder";
-            this.tbx_AXIS3_JOG_VEL.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.tbx_AXIS3_JOG_VEL.DisabledBackColor = System.Drawing.Color.White;
-            this.tbx_AXIS3_JOG_VEL.ForeColor = System.Drawing.Color.White;
-            this.tbx_AXIS3_JOG_VEL.Location = new System.Drawing.Point(137, 22);
-            this.tbx_AXIS3_JOG_VEL.Name = "tbx_AXIS3_JOG_VEL";
-            this.tbx_AXIS3_JOG_VEL.PreventEnterBeep = true;
-            this.tbx_AXIS3_JOG_VEL.Size = new System.Drawing.Size(85, 31);
-            this.tbx_AXIS3_JOG_VEL.TabIndex = 45;
-            this.tbx_AXIS3_JOG_VEL.Tag = "SAVE.AXIS3_JOG_VEL;REAL";
-            this.tbx_AXIS3_JOG_VEL.Text = "0";
-            // 
-            // buttonX64
-            // 
-            this.buttonX64.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX64.BackColor = System.Drawing.Color.Transparent;
-            this.buttonX64.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX64.Location = new System.Drawing.Point(14, 68);
-            this.buttonX64.Name = "buttonX64";
-            this.buttonX64.Size = new System.Drawing.Size(75, 30);
-            this.buttonX64.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX64.TabIndex = 38;
-            this.buttonX64.Tag = "HMI.MOTOR_JOG3FOR;BOOL";
-            this.buttonX64.Text = "正向";
-            this.buttonX64.MouseDown += new System.Windows.Forms.MouseEventHandler(this.buttonX64_MouseDown);
-            this.buttonX64.MouseUp += new System.Windows.Forms.MouseEventHandler(this.buttonX64_MouseUp);
-            // 
-            // buttonX65
-            // 
-            this.buttonX65.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX65.BackColor = System.Drawing.Color.Transparent;
-            this.buttonX65.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX65.Location = new System.Drawing.Point(147, 68);
-            this.buttonX65.Name = "buttonX65";
-            this.buttonX65.Size = new System.Drawing.Size(75, 30);
-            this.buttonX65.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX65.TabIndex = 37;
-            this.buttonX65.Tag = "HMI.MOTOR_JOG3BACK;BOOL";
-            this.buttonX65.Text = "反向";
-            this.buttonX65.MouseDown += new System.Windows.Forms.MouseEventHandler(this.buttonX65_MouseDown);
-            this.buttonX65.MouseUp += new System.Windows.Forms.MouseEventHandler(this.buttonX65_MouseUp);
-            // 
-            // labelX7
-            // 
-            this.labelX7.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX7.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX7.ForeColor = System.Drawing.Color.White;
-            this.labelX7.Location = new System.Drawing.Point(15, 18);
-            this.labelX7.Name = "labelX7";
-            this.labelX7.Size = new System.Drawing.Size(84, 30);
-            this.labelX7.TabIndex = 35;
-            this.labelX7.Text = "收发点动";
-            // 
-            // panelEx14
-            // 
-            this.panelEx14.CanvasColor = System.Drawing.SystemColors.Control;
-            this.panelEx14.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.panelEx14.Controls.Add(this.tbx_AXIS2_JOG_VEL);
-            this.panelEx14.Controls.Add(this.buttonX62);
-            this.panelEx14.Controls.Add(this.buttonX63);
-            this.panelEx14.Controls.Add(this.labelX6);
-            this.panelEx14.DisabledBackColor = System.Drawing.Color.Empty;
-            this.panelEx14.Location = new System.Drawing.Point(275, 350);
-            this.panelEx14.Name = "panelEx14";
-            this.panelEx14.Size = new System.Drawing.Size(275, 120);
-            this.panelEx14.Style.Alignment = System.Drawing.StringAlignment.Center;
-            this.panelEx14.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.panelEx14.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
-            this.panelEx14.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.panelEx14.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
-            this.panelEx14.Style.GradientAngle = 90;
-            this.panelEx14.TabIndex = 68;
-            this.panelEx14.TextDockConstrained = false;
-            // 
-            // tbx_AXIS2_JOG_VEL
-            // 
-            this.tbx_AXIS2_JOG_VEL.BackColor = System.Drawing.Color.Black;
-            // 
-            // 
-            // 
-            this.tbx_AXIS2_JOG_VEL.Border.Class = "TextBoxBorder";
-            this.tbx_AXIS2_JOG_VEL.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.tbx_AXIS2_JOG_VEL.DisabledBackColor = System.Drawing.Color.White;
-            this.tbx_AXIS2_JOG_VEL.ForeColor = System.Drawing.Color.White;
-            this.tbx_AXIS2_JOG_VEL.Location = new System.Drawing.Point(137, 22);
-            this.tbx_AXIS2_JOG_VEL.Name = "tbx_AXIS2_JOG_VEL";
-            this.tbx_AXIS2_JOG_VEL.PreventEnterBeep = true;
-            this.tbx_AXIS2_JOG_VEL.Size = new System.Drawing.Size(85, 31);
-            this.tbx_AXIS2_JOG_VEL.TabIndex = 45;
-            this.tbx_AXIS2_JOG_VEL.Tag = "SAVE.AXIS2_JOG_VEL;REAL";
-            this.tbx_AXIS2_JOG_VEL.Text = "0";
-            // 
-            // buttonX62
-            // 
-            this.buttonX62.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX62.BackColor = System.Drawing.Color.Transparent;
-            this.buttonX62.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX62.Location = new System.Drawing.Point(14, 68);
-            this.buttonX62.Name = "buttonX62";
-            this.buttonX62.Size = new System.Drawing.Size(75, 30);
-            this.buttonX62.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX62.TabIndex = 38;
-            this.buttonX62.Tag = "HMI.MOTOR_JOG2FOR;BOOL";
-            this.buttonX62.Text = "正向";
-            this.buttonX62.MouseDown += new System.Windows.Forms.MouseEventHandler(this.buttonX62_MouseDown);
-            this.buttonX62.MouseUp += new System.Windows.Forms.MouseEventHandler(this.buttonX62_MouseUp);
-            // 
-            // buttonX63
-            // 
-            this.buttonX63.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX63.BackColor = System.Drawing.Color.Transparent;
-            this.buttonX63.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX63.Location = new System.Drawing.Point(147, 68);
-            this.buttonX63.Name = "buttonX63";
-            this.buttonX63.Size = new System.Drawing.Size(75, 30);
-            this.buttonX63.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX63.TabIndex = 37;
-            this.buttonX63.Tag = "HMI.MOTOR_JOG2BACK;BOOL";
-            this.buttonX63.Text = "反向";
-            this.buttonX63.MouseDown += new System.Windows.Forms.MouseEventHandler(this.buttonX63_MouseDown);
-            this.buttonX63.MouseUp += new System.Windows.Forms.MouseEventHandler(this.buttonX63_MouseUp);
-            // 
-            // labelX6
-            // 
-            this.labelX6.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX6.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX6.ForeColor = System.Drawing.Color.White;
-            this.labelX6.Location = new System.Drawing.Point(15, 18);
-            this.labelX6.Name = "labelX6";
-            this.labelX6.Size = new System.Drawing.Size(84, 30);
-            this.labelX6.TabIndex = 35;
-            this.labelX6.Text = "旋转点动";
-            // 
-            // panelEx13
-            // 
-            this.panelEx13.CanvasColor = System.Drawing.SystemColors.Control;
-            this.panelEx13.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.panelEx13.Controls.Add(this.tbx_AXIS1_JOG_VEL);
-            this.panelEx13.Controls.Add(this.buttonX60);
-            this.panelEx13.Controls.Add(this.buttonX61);
-            this.panelEx13.Controls.Add(this.labelX5);
-            this.panelEx13.DisabledBackColor = System.Drawing.Color.Empty;
-            this.panelEx13.Location = new System.Drawing.Point(0, 350);
-            this.panelEx13.Name = "panelEx13";
-            this.panelEx13.Size = new System.Drawing.Size(275, 120);
-            this.panelEx13.Style.Alignment = System.Drawing.StringAlignment.Center;
-            this.panelEx13.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.panelEx13.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
-            this.panelEx13.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.panelEx13.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
-            this.panelEx13.Style.GradientAngle = 90;
-            this.panelEx13.TabIndex = 64;
-            this.panelEx13.TextDockConstrained = false;
-            // 
-            // tbx_AXIS1_JOG_VEL
-            // 
-            this.tbx_AXIS1_JOG_VEL.BackColor = System.Drawing.Color.Black;
-            // 
-            // 
-            // 
-            this.tbx_AXIS1_JOG_VEL.Border.Class = "TextBoxBorder";
-            this.tbx_AXIS1_JOG_VEL.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.tbx_AXIS1_JOG_VEL.DisabledBackColor = System.Drawing.Color.White;
-            this.tbx_AXIS1_JOG_VEL.ForeColor = System.Drawing.Color.White;
-            this.tbx_AXIS1_JOG_VEL.Location = new System.Drawing.Point(137, 22);
-            this.tbx_AXIS1_JOG_VEL.Name = "tbx_AXIS1_JOG_VEL";
-            this.tbx_AXIS1_JOG_VEL.PreventEnterBeep = true;
-            this.tbx_AXIS1_JOG_VEL.Size = new System.Drawing.Size(85, 31);
-            this.tbx_AXIS1_JOG_VEL.TabIndex = 45;
-            this.tbx_AXIS1_JOG_VEL.Tag = "SAVE.AXIS1_JOG_VEL;REAL";
-            this.tbx_AXIS1_JOG_VEL.Text = "0";
-            // 
-            // buttonX60
-            // 
-            this.buttonX60.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX60.BackColor = System.Drawing.Color.Transparent;
-            this.buttonX60.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX60.Location = new System.Drawing.Point(14, 68);
-            this.buttonX60.Name = "buttonX60";
-            this.buttonX60.Size = new System.Drawing.Size(75, 30);
-            this.buttonX60.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX60.TabIndex = 38;
-            this.buttonX60.Tag = "HMI.MOTOR_JOG1FOR;BOOL";
-            this.buttonX60.Text = "正向";
-            this.buttonX60.MouseDown += new System.Windows.Forms.MouseEventHandler(this.buttonX60_MouseDown);
-            this.buttonX60.MouseUp += new System.Windows.Forms.MouseEventHandler(this.buttonX60_MouseUp);
-            // 
-            // buttonX61
-            // 
-            this.buttonX61.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX61.BackColor = System.Drawing.Color.Transparent;
-            this.buttonX61.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX61.Location = new System.Drawing.Point(147, 68);
-            this.buttonX61.Name = "buttonX61";
-            this.buttonX61.Size = new System.Drawing.Size(75, 30);
-            this.buttonX61.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX61.TabIndex = 37;
-            this.buttonX61.Tag = "HMI.MOTOR_JOG1BACK;BOOL";
-            this.buttonX61.Text = "反向";
-            this.buttonX61.MouseDown += new System.Windows.Forms.MouseEventHandler(this.buttonX61_MouseDown);
-            this.buttonX61.MouseUp += new System.Windows.Forms.MouseEventHandler(this.buttonX61_MouseUp);
-            // 
-            // labelX5
-            // 
-            this.labelX5.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX5.ForeColor = System.Drawing.Color.White;
-            this.labelX5.Location = new System.Drawing.Point(15, 18);
-            this.labelX5.Name = "labelX5";
-            this.labelX5.Size = new System.Drawing.Size(84, 30);
-            this.labelX5.TabIndex = 35;
-            this.labelX5.Text = "升降点动";
-            // 
-            // panelEx12
-            // 
-            this.panelEx12.CanvasColor = System.Drawing.SystemColors.Control;
-            this.panelEx12.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.panelEx12.Controls.Add(this.buttonX58);
-            this.panelEx12.Controls.Add(this.buttonX59);
-            this.panelEx12.Controls.Add(this.labelX4);
-            this.panelEx12.DisabledBackColor = System.Drawing.Color.Empty;
-            this.panelEx12.Location = new System.Drawing.Point(213, 230);
-            this.panelEx12.Name = "panelEx12";
-            this.panelEx12.Size = new System.Drawing.Size(213, 120);
-            this.panelEx12.Style.Alignment = System.Drawing.StringAlignment.Center;
-            this.panelEx12.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.panelEx12.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
-            this.panelEx12.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.panelEx12.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
-            this.panelEx12.Style.GradientAngle = 90;
-            this.panelEx12.TabIndex = 45;
-            this.panelEx12.TextDockConstrained = false;
-            // 
-            // buttonX58
-            // 
-            this.buttonX58.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX58.BackColor = System.Drawing.Color.Transparent;
-            this.buttonX58.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX58.Location = new System.Drawing.Point(112, 70);
-            this.buttonX58.Name = "buttonX58";
-            this.buttonX58.Size = new System.Drawing.Size(75, 30);
-            this.buttonX58.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX58.TabIndex = 37;
-            this.buttonX58.Tag = "HMI.AXIS_CLOSE;BOOL";
-            this.buttonX58.Text = "关闭";
-            this.buttonX58.Click += new System.EventHandler(this.buttonX58_Click);
-            // 
-            // buttonX59
-            // 
-            this.buttonX59.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX59.BackColor = System.Drawing.Color.Transparent;
-            this.buttonX59.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX59.Location = new System.Drawing.Point(20, 70);
-            this.buttonX59.Name = "buttonX59";
-            this.buttonX59.Size = new System.Drawing.Size(75, 30);
-            this.buttonX59.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX59.TabIndex = 36;
-            this.buttonX59.Tag = "HMI.AXIS_OPEN;BOOL";
-            this.buttonX59.Text = "打开";
-            this.buttonX59.Click += new System.EventHandler(this.buttonX59_Click);
-            // 
-            // labelX4
-            // 
-            this.labelX4.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX4.ForeColor = System.Drawing.Color.White;
-            this.labelX4.Location = new System.Drawing.Point(63, 24);
-            this.labelX4.Name = "labelX4";
-            this.labelX4.Size = new System.Drawing.Size(84, 30);
-            this.labelX4.TabIndex = 35;
-            this.labelX4.Text = "收发电机";
-            // 
-            // panelEx11
-            // 
-            this.panelEx11.CanvasColor = System.Drawing.SystemColors.Control;
-            this.panelEx11.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.panelEx11.Controls.Add(this.buttonX57);
-            this.panelEx11.Controls.Add(this.buttonX55);
-            this.panelEx11.Controls.Add(this.buttonX56);
-            this.panelEx11.Controls.Add(this.labelX3);
-            this.panelEx11.DisabledBackColor = System.Drawing.Color.Empty;
-            this.panelEx11.Location = new System.Drawing.Point(426, 0);
-            this.panelEx11.Name = "panelEx11";
-            this.panelEx11.Size = new System.Drawing.Size(399, 140);
-            this.panelEx11.Style.Alignment = System.Drawing.StringAlignment.Center;
-            this.panelEx11.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.panelEx11.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
-            this.panelEx11.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.panelEx11.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
-            this.panelEx11.Style.GradientAngle = 90;
-            this.panelEx11.TabIndex = 41;
-            this.panelEx11.TextDockConstrained = false;
-            // 
-            // buttonX57
-            // 
-            this.buttonX57.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX57.BackColor = System.Drawing.Color.Transparent;
-            this.buttonX57.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX57.Location = new System.Drawing.Point(261, 68);
-            this.buttonX57.Name = "buttonX57";
-            this.buttonX57.Size = new System.Drawing.Size(84, 30);
-            this.buttonX57.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX57.TabIndex = 38;
-            this.buttonX57.Tag = "HMI.AXIS_DOWN2;BOOL";
-            this.buttonX57.Text = "下降2位";
-            this.buttonX57.Click += new System.EventHandler(this.buttonX57_Click);
-            // 
-            // buttonX55
-            // 
-            this.buttonX55.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX55.BackColor = System.Drawing.Color.Transparent;
-            this.buttonX55.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX55.Location = new System.Drawing.Point(144, 68);
-            this.buttonX55.Name = "buttonX55";
-            this.buttonX55.Size = new System.Drawing.Size(84, 30);
-            this.buttonX55.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX55.TabIndex = 37;
-            this.buttonX55.Tag = "HMI.AXIS_DOWN;BOOL";
-            this.buttonX55.Text = "下降1位";
-            this.buttonX55.Click += new System.EventHandler(this.buttonX55_Click);
-            // 
-            // buttonX56
-            // 
-            this.buttonX56.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX56.BackColor = System.Drawing.Color.Transparent;
-            this.buttonX56.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX56.Location = new System.Drawing.Point(34, 67);
-            this.buttonX56.Name = "buttonX56";
-            this.buttonX56.Size = new System.Drawing.Size(84, 30);
-            this.buttonX56.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX56.TabIndex = 36;
-            this.buttonX56.Tag = "HMI.AXIS_UP;BOOL";
-            this.buttonX56.Text = "上升到位";
-            this.buttonX56.Click += new System.EventHandler(this.buttonX56_Click);
-            // 
-            // labelX3
-            // 
-            this.labelX3.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX3.ForeColor = System.Drawing.Color.White;
-            this.labelX3.Location = new System.Drawing.Point(144, 17);
-            this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(84, 30);
-            this.labelX3.TabIndex = 35;
-            this.labelX3.Text = "升降电机";
-            // 
-            // panelEx10
-            // 
-            this.panelEx10.CanvasColor = System.Drawing.SystemColors.Control;
-            this.panelEx10.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.panelEx10.Controls.Add(this.buttonX54);
-            this.panelEx10.Controls.Add(this.buttonX53);
-            this.panelEx10.Controls.Add(this.buttonX52);
-            this.panelEx10.Controls.Add(this.buttonX51);
-            this.panelEx10.Controls.Add(this.buttonX50);
-            this.panelEx10.Controls.Add(this.buttonX49);
-            this.panelEx10.Controls.Add(this.buttonX48);
-            this.panelEx10.Controls.Add(this.buttonX47);
-            this.panelEx10.Controls.Add(this.buttonX45);
-            this.panelEx10.Controls.Add(this.buttonX46);
-            this.panelEx10.Controls.Add(this.labelX2);
-            this.panelEx10.DisabledBackColor = System.Drawing.Color.Empty;
-            this.panelEx10.Location = new System.Drawing.Point(426, 140);
-            this.panelEx10.Name = "panelEx10";
-            this.panelEx10.Size = new System.Drawing.Size(399, 210);
-            this.panelEx10.Style.Alignment = System.Drawing.StringAlignment.Center;
-            this.panelEx10.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.panelEx10.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
-            this.panelEx10.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.panelEx10.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
-            this.panelEx10.Style.GradientAngle = 90;
-            this.panelEx10.TabIndex = 13;
-            this.panelEx10.TextDockConstrained = false;
-            // 
-            // buttonX54
-            // 
-            this.buttonX54.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX54.BackColor = System.Drawing.Color.Transparent;
-            this.buttonX54.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX54.Location = new System.Drawing.Point(270, 161);
-            this.buttonX54.Name = "buttonX54";
-            this.buttonX54.Size = new System.Drawing.Size(75, 30);
-            this.buttonX54.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX54.TabIndex = 45;
-            this.buttonX54.Tag = "HMI.AXIS_POS9;BOOL";
-            this.buttonX54.Text = "9号位";
-            this.buttonX54.Click += new System.EventHandler(this.buttonX54_Click);
-            // 
-            // buttonX53
-            // 
-            this.buttonX53.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX53.BackColor = System.Drawing.Color.Transparent;
-            this.buttonX53.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX53.Location = new System.Drawing.Point(153, 161);
-            this.buttonX53.Name = "buttonX53";
-            this.buttonX53.Size = new System.Drawing.Size(75, 30);
-            this.buttonX53.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX53.TabIndex = 44;
-            this.buttonX53.Tag = "HMI.AXIS_POS8;BOOL";
-            this.buttonX53.Text = "8号位";
-            this.buttonX53.Click += new System.EventHandler(this.buttonX53_Click);
-            // 
-            // buttonX52
-            // 
-            this.buttonX52.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX52.BackColor = System.Drawing.Color.Transparent;
-            this.buttonX52.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX52.Location = new System.Drawing.Point(34, 161);
-            this.buttonX52.Name = "buttonX52";
-            this.buttonX52.Size = new System.Drawing.Size(75, 30);
-            this.buttonX52.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX52.TabIndex = 43;
-            this.buttonX52.Tag = "HMI.AXIS_POS7;BOOL";
-            this.buttonX52.Text = "7号位";
-            this.buttonX52.Click += new System.EventHandler(this.buttonX52_Click);
-            // 
-            // buttonX51
-            // 
-            this.buttonX51.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX51.BackColor = System.Drawing.Color.Transparent;
-            this.buttonX51.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX51.Location = new System.Drawing.Point(270, 114);
-            this.buttonX51.Name = "buttonX51";
-            this.buttonX51.Size = new System.Drawing.Size(75, 30);
-            this.buttonX51.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX51.TabIndex = 42;
-            this.buttonX51.Tag = "HMI.AXIS_POS6;BOOL";
-            this.buttonX51.Text = "6号位";
-            this.buttonX51.Click += new System.EventHandler(this.buttonX51_Click);
-            // 
-            // buttonX50
-            // 
-            this.buttonX50.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX50.BackColor = System.Drawing.Color.Transparent;
-            this.buttonX50.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX50.Location = new System.Drawing.Point(153, 114);
-            this.buttonX50.Name = "buttonX50";
-            this.buttonX50.Size = new System.Drawing.Size(75, 30);
-            this.buttonX50.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX50.TabIndex = 41;
-            this.buttonX50.Tag = "HMI.AXIS_POS5;BOOL";
-            this.buttonX50.Text = "5号位";
-            this.buttonX50.Click += new System.EventHandler(this.buttonX50_Click);
-            // 
-            // buttonX49
-            // 
-            this.buttonX49.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX49.BackColor = System.Drawing.Color.Transparent;
-            this.buttonX49.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX49.Location = new System.Drawing.Point(34, 114);
-            this.buttonX49.Name = "buttonX49";
-            this.buttonX49.Size = new System.Drawing.Size(75, 30);
-            this.buttonX49.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX49.TabIndex = 40;
-            this.buttonX49.Tag = "HMI.AXIS_POS4;BOOL";
-            this.buttonX49.Text = "4号位";
-            this.buttonX49.Click += new System.EventHandler(this.buttonX49_Click);
-            // 
-            // buttonX48
-            // 
-            this.buttonX48.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX48.BackColor = System.Drawing.Color.Transparent;
-            this.buttonX48.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX48.Location = new System.Drawing.Point(270, 68);
-            this.buttonX48.Name = "buttonX48";
-            this.buttonX48.Size = new System.Drawing.Size(75, 30);
-            this.buttonX48.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX48.TabIndex = 39;
-            this.buttonX48.Tag = "HMI.AXIS_POS3;BOOL";
-            this.buttonX48.Text = "3号位";
-            this.buttonX48.Click += new System.EventHandler(this.buttonX48_Click);
-            // 
-            // buttonX47
-            // 
-            this.buttonX47.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX47.BackColor = System.Drawing.Color.Transparent;
-            this.buttonX47.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX47.Location = new System.Drawing.Point(153, 68);
-            this.buttonX47.Name = "buttonX47";
-            this.buttonX47.Size = new System.Drawing.Size(75, 30);
-            this.buttonX47.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX47.TabIndex = 38;
-            this.buttonX47.Tag = "HMI.AXIS_POS2;BOOL";
-            this.buttonX47.Text = "2号位";
-            this.buttonX47.Click += new System.EventHandler(this.buttonX47_Click);
-            // 
-            // buttonX45
-            // 
-            this.buttonX45.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX45.BackColor = System.Drawing.Color.Transparent;
-            this.buttonX45.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX45.Location = new System.Drawing.Point(34, 68);
-            this.buttonX45.Name = "buttonX45";
-            this.buttonX45.Size = new System.Drawing.Size(75, 30);
-            this.buttonX45.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX45.TabIndex = 37;
-            this.buttonX45.Tag = "HMI.AXIS_POS1;BOOL";
-            this.buttonX45.Text = "1号位";
-            this.buttonX45.Click += new System.EventHandler(this.buttonX45_Click);
-            // 
-            // buttonX46
-            // 
-            this.buttonX46.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX46.BackColor = System.Drawing.Color.Transparent;
-            this.buttonX46.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX46.Location = new System.Drawing.Point(34, 18);
-            this.buttonX46.Name = "buttonX46";
-            this.buttonX46.Size = new System.Drawing.Size(75, 30);
-            this.buttonX46.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX46.TabIndex = 36;
-            this.buttonX46.Tag = "HMI.AXIS_POS0;BOOL";
-            this.buttonX46.Text = "起始位";
-            this.buttonX46.Click += new System.EventHandler(this.buttonX46_Click);
-            // 
-            // labelX2
-            // 
-            this.labelX2.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX2.ForeColor = System.Drawing.Color.White;
-            this.labelX2.Location = new System.Drawing.Point(198, 18);
-            this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(84, 30);
-            this.labelX2.TabIndex = 35;
-            this.labelX2.Text = "旋转电机";
-            // 
-            // panelEx9
-            // 
-            this.panelEx9.CanvasColor = System.Drawing.SystemColors.Control;
-            this.panelEx9.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.panelEx9.Controls.Add(this.buttonX43);
-            this.panelEx9.Controls.Add(this.buttonX44);
-            this.panelEx9.Controls.Add(this.labelX1);
-            this.panelEx9.DisabledBackColor = System.Drawing.Color.Empty;
-            this.panelEx9.Location = new System.Drawing.Point(0, 230);
-            this.panelEx9.Name = "panelEx9";
-            this.panelEx9.Size = new System.Drawing.Size(213, 120);
-            this.panelEx9.Style.Alignment = System.Drawing.StringAlignment.Center;
-            this.panelEx9.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.panelEx9.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
-            this.panelEx9.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.panelEx9.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
-            this.panelEx9.Style.GradientAngle = 90;
-            this.panelEx9.TabIndex = 9;
-            this.panelEx9.TextDockConstrained = false;
-            // 
-            // buttonX43
-            // 
-            this.buttonX43.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX43.BackColor = System.Drawing.Color.Transparent;
-            this.buttonX43.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX43.Location = new System.Drawing.Point(14, 68);
-            this.buttonX43.Name = "buttonX43";
-            this.buttonX43.Size = new System.Drawing.Size(75, 30);
-            this.buttonX43.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX43.TabIndex = 38;
-            this.buttonX43.Tag = "HMI.VAL_OPEN;BOOL";
-            this.buttonX43.Text = "松开";
-            this.buttonX43.Click += new System.EventHandler(this.buttonX43_Click);
-            // 
-            // buttonX44
-            // 
-            this.buttonX44.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX44.BackColor = System.Drawing.Color.Transparent;
-            this.buttonX44.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX44.Location = new System.Drawing.Point(101, 68);
-            this.buttonX44.Name = "buttonX44";
-            this.buttonX44.Size = new System.Drawing.Size(75, 30);
-            this.buttonX44.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX44.TabIndex = 37;
-            this.buttonX44.Tag = "HMI.VAL_CLOSE;BOOL";
-            this.buttonX44.Text = "夹紧";
-            this.buttonX44.Click += new System.EventHandler(this.buttonX44_Click);
-            // 
-            // labelX1
-            // 
-            this.labelX1.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX1.ForeColor = System.Drawing.Color.White;
-            this.labelX1.Location = new System.Drawing.Point(58, 27);
-            this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(84, 30);
-            this.labelX1.TabIndex = 35;
-            this.labelX1.Text = "夹爪控制";
-            // 
-            // panelEx8
-            // 
-            this.panelEx8.CanvasColor = System.Drawing.SystemColors.Control;
-            this.panelEx8.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.panelEx8.Controls.Add(this.tbx_AXIS3_REAL_TOR);
-            this.panelEx8.Controls.Add(this.tbx_AXIS3_REAL_VEL);
-            this.panelEx8.Controls.Add(this.tbx_AXIS3_REAL_POS);
-            this.panelEx8.Controls.Add(this.tbx_AXIS2_REAL_TOR);
-            this.panelEx8.Controls.Add(this.tbx_AXIS2_REAL_VEL);
-            this.panelEx8.Controls.Add(this.tbx_AXIS2_REAL_POS);
-            this.panelEx8.Controls.Add(this.tbx_AXIS1_REAL_TOR);
-            this.panelEx8.Controls.Add(this.tbx_AXIS1_REAL_VEL);
-            this.panelEx8.Controls.Add(this.tbx_AXIS1_REAL_POS);
-            this.panelEx8.Controls.Add(this.buttonX42);
-            this.panelEx8.Controls.Add(this.buttonX41);
-            this.panelEx8.Controls.Add(this.buttonX40);
-            this.panelEx8.Controls.Add(this.reflectionLabel19);
-            this.panelEx8.Controls.Add(this.reflectionLabel18);
-            this.panelEx8.Controls.Add(this.reflectionLabel17);
-            this.panelEx8.Controls.Add(this.reflectionLabel16);
-            this.panelEx8.DisabledBackColor = System.Drawing.Color.Empty;
-            this.panelEx8.Location = new System.Drawing.Point(0, 0);
-            this.panelEx8.Name = "panelEx8";
-            this.panelEx8.Size = new System.Drawing.Size(426, 230);
-            this.panelEx8.Style.Alignment = System.Drawing.StringAlignment.Center;
-            this.panelEx8.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.panelEx8.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
-            this.panelEx8.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.panelEx8.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
-            this.panelEx8.Style.GradientAngle = 90;
-            this.panelEx8.TabIndex = 5;
-            this.panelEx8.TextDockConstrained = false;
-            // 
-            // tbx_AXIS3_REAL_TOR
-            // 
-            this.tbx_AXIS3_REAL_TOR.BackColor = System.Drawing.Color.Black;
-            // 
-            // 
-            // 
-            this.tbx_AXIS3_REAL_TOR.Border.Class = "TextBoxBorder";
-            this.tbx_AXIS3_REAL_TOR.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.tbx_AXIS3_REAL_TOR.DisabledBackColor = System.Drawing.Color.White;
-            this.tbx_AXIS3_REAL_TOR.ForeColor = System.Drawing.Color.White;
-            this.tbx_AXIS3_REAL_TOR.Location = new System.Drawing.Point(322, 162);
-            this.tbx_AXIS3_REAL_TOR.Name = "tbx_AXIS3_REAL_TOR";
-            this.tbx_AXIS3_REAL_TOR.PreventEnterBeep = true;
-            this.tbx_AXIS3_REAL_TOR.Size = new System.Drawing.Size(85, 31);
-            this.tbx_AXIS3_REAL_TOR.TabIndex = 46;
-            this.tbx_AXIS3_REAL_TOR.Tag = "HMI.AXIS3_REAL_TOR;REAL";
-            this.tbx_AXIS3_REAL_TOR.Text = "0";
-            // 
-            // tbx_AXIS3_REAL_VEL
-            // 
-            this.tbx_AXIS3_REAL_VEL.BackColor = System.Drawing.Color.Black;
-            // 
-            // 
-            // 
-            this.tbx_AXIS3_REAL_VEL.Border.Class = "TextBoxBorder";
-            this.tbx_AXIS3_REAL_VEL.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.tbx_AXIS3_REAL_VEL.DisabledBackColor = System.Drawing.Color.White;
-            this.tbx_AXIS3_REAL_VEL.ForeColor = System.Drawing.Color.White;
-            this.tbx_AXIS3_REAL_VEL.Location = new System.Drawing.Point(217, 161);
-            this.tbx_AXIS3_REAL_VEL.Name = "tbx_AXIS3_REAL_VEL";
-            this.tbx_AXIS3_REAL_VEL.PreventEnterBeep = true;
-            this.tbx_AXIS3_REAL_VEL.Size = new System.Drawing.Size(85, 31);
-            this.tbx_AXIS3_REAL_VEL.TabIndex = 45;
-            this.tbx_AXIS3_REAL_VEL.Tag = "HMI.AXIS3_REAL_VEL;REAL";
-            this.tbx_AXIS3_REAL_VEL.Text = "0";
-            // 
-            // tbx_AXIS3_REAL_POS
-            // 
-            this.tbx_AXIS3_REAL_POS.BackColor = System.Drawing.Color.Black;
-            // 
-            // 
-            // 
-            this.tbx_AXIS3_REAL_POS.Border.Class = "TextBoxBorder";
-            this.tbx_AXIS3_REAL_POS.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.tbx_AXIS3_REAL_POS.DisabledBackColor = System.Drawing.Color.White;
-            this.tbx_AXIS3_REAL_POS.ForeColor = System.Drawing.Color.White;
-            this.tbx_AXIS3_REAL_POS.Location = new System.Drawing.Point(115, 162);
-            this.tbx_AXIS3_REAL_POS.Name = "tbx_AXIS3_REAL_POS";
-            this.tbx_AXIS3_REAL_POS.PreventEnterBeep = true;
-            this.tbx_AXIS3_REAL_POS.Size = new System.Drawing.Size(85, 31);
-            this.tbx_AXIS3_REAL_POS.TabIndex = 44;
-            this.tbx_AXIS3_REAL_POS.Tag = "HMI.AXIS3_REAL_POS;REAL";
-            this.tbx_AXIS3_REAL_POS.Text = "0";
-            // 
-            // tbx_AXIS2_REAL_TOR
-            // 
-            this.tbx_AXIS2_REAL_TOR.BackColor = System.Drawing.Color.Black;
-            // 
-            // 
-            // 
-            this.tbx_AXIS2_REAL_TOR.Border.Class = "TextBoxBorder";
-            this.tbx_AXIS2_REAL_TOR.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.tbx_AXIS2_REAL_TOR.DisabledBackColor = System.Drawing.Color.White;
-            this.tbx_AXIS2_REAL_TOR.ForeColor = System.Drawing.Color.White;
-            this.tbx_AXIS2_REAL_TOR.Location = new System.Drawing.Point(322, 114);
-            this.tbx_AXIS2_REAL_TOR.Name = "tbx_AXIS2_REAL_TOR";
-            this.tbx_AXIS2_REAL_TOR.PreventEnterBeep = true;
-            this.tbx_AXIS2_REAL_TOR.Size = new System.Drawing.Size(85, 31);
-            this.tbx_AXIS2_REAL_TOR.TabIndex = 43;
-            this.tbx_AXIS2_REAL_TOR.Tag = "HMI.AXIS2_REAL_TOR;REAL";
-            this.tbx_AXIS2_REAL_TOR.Text = "0";
-            // 
-            // tbx_AXIS2_REAL_VEL
-            // 
-            this.tbx_AXIS2_REAL_VEL.BackColor = System.Drawing.Color.Black;
-            // 
-            // 
-            // 
-            this.tbx_AXIS2_REAL_VEL.Border.Class = "TextBoxBorder";
-            this.tbx_AXIS2_REAL_VEL.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.tbx_AXIS2_REAL_VEL.DisabledBackColor = System.Drawing.Color.White;
-            this.tbx_AXIS2_REAL_VEL.ForeColor = System.Drawing.Color.White;
-            this.tbx_AXIS2_REAL_VEL.Location = new System.Drawing.Point(217, 113);
-            this.tbx_AXIS2_REAL_VEL.Name = "tbx_AXIS2_REAL_VEL";
-            this.tbx_AXIS2_REAL_VEL.PreventEnterBeep = true;
-            this.tbx_AXIS2_REAL_VEL.Size = new System.Drawing.Size(85, 31);
-            this.tbx_AXIS2_REAL_VEL.TabIndex = 42;
-            this.tbx_AXIS2_REAL_VEL.Tag = "HMI.AXIS2_REAL_VEL;REAL";
-            this.tbx_AXIS2_REAL_VEL.Text = "0";
-            // 
-            // tbx_AXIS2_REAL_POS
-            // 
-            this.tbx_AXIS2_REAL_POS.BackColor = System.Drawing.Color.Black;
-            // 
-            // 
-            // 
-            this.tbx_AXIS2_REAL_POS.Border.Class = "TextBoxBorder";
-            this.tbx_AXIS2_REAL_POS.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.tbx_AXIS2_REAL_POS.DisabledBackColor = System.Drawing.Color.White;
-            this.tbx_AXIS2_REAL_POS.ForeColor = System.Drawing.Color.White;
-            this.tbx_AXIS2_REAL_POS.Location = new System.Drawing.Point(115, 114);
-            this.tbx_AXIS2_REAL_POS.Name = "tbx_AXIS2_REAL_POS";
-            this.tbx_AXIS2_REAL_POS.PreventEnterBeep = true;
-            this.tbx_AXIS2_REAL_POS.Size = new System.Drawing.Size(85, 31);
-            this.tbx_AXIS2_REAL_POS.TabIndex = 41;
-            this.tbx_AXIS2_REAL_POS.Tag = "HMI.AXIS2_REAL_POS;REAL";
-            this.tbx_AXIS2_REAL_POS.Text = "0";
-            // 
-            // tbx_AXIS1_REAL_TOR
-            // 
-            this.tbx_AXIS1_REAL_TOR.BackColor = System.Drawing.Color.Black;
-            // 
-            // 
-            // 
-            this.tbx_AXIS1_REAL_TOR.Border.Class = "TextBoxBorder";
-            this.tbx_AXIS1_REAL_TOR.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.tbx_AXIS1_REAL_TOR.DisabledBackColor = System.Drawing.Color.White;
-            this.tbx_AXIS1_REAL_TOR.ForeColor = System.Drawing.Color.White;
-            this.tbx_AXIS1_REAL_TOR.Location = new System.Drawing.Point(322, 68);
-            this.tbx_AXIS1_REAL_TOR.Name = "tbx_AXIS1_REAL_TOR";
-            this.tbx_AXIS1_REAL_TOR.PreventEnterBeep = true;
-            this.tbx_AXIS1_REAL_TOR.Size = new System.Drawing.Size(85, 31);
-            this.tbx_AXIS1_REAL_TOR.TabIndex = 40;
-            this.tbx_AXIS1_REAL_TOR.Tag = "HMI.AXIS1_REAL_TOR;REAL";
-            this.tbx_AXIS1_REAL_TOR.Text = "0";
-            // 
-            // tbx_AXIS1_REAL_VEL
-            // 
-            this.tbx_AXIS1_REAL_VEL.BackColor = System.Drawing.Color.Black;
-            // 
-            // 
-            // 
-            this.tbx_AXIS1_REAL_VEL.Border.Class = "TextBoxBorder";
-            this.tbx_AXIS1_REAL_VEL.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.tbx_AXIS1_REAL_VEL.DisabledBackColor = System.Drawing.Color.White;
-            this.tbx_AXIS1_REAL_VEL.ForeColor = System.Drawing.Color.White;
-            this.tbx_AXIS1_REAL_VEL.Location = new System.Drawing.Point(217, 67);
-            this.tbx_AXIS1_REAL_VEL.Name = "tbx_AXIS1_REAL_VEL";
-            this.tbx_AXIS1_REAL_VEL.PreventEnterBeep = true;
-            this.tbx_AXIS1_REAL_VEL.Size = new System.Drawing.Size(85, 31);
-            this.tbx_AXIS1_REAL_VEL.TabIndex = 39;
-            this.tbx_AXIS1_REAL_VEL.Tag = "HMI.AXIS1_REAL_VEL;REAL";
-            this.tbx_AXIS1_REAL_VEL.Text = "0";
-            // 
-            // tbx_AXIS1_REAL_POS
-            // 
-            this.tbx_AXIS1_REAL_POS.BackColor = System.Drawing.Color.Black;
-            // 
-            // 
-            // 
-            this.tbx_AXIS1_REAL_POS.Border.Class = "TextBoxBorder";
-            this.tbx_AXIS1_REAL_POS.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.tbx_AXIS1_REAL_POS.DisabledBackColor = System.Drawing.Color.White;
-            this.tbx_AXIS1_REAL_POS.ForeColor = System.Drawing.Color.White;
-            this.tbx_AXIS1_REAL_POS.Location = new System.Drawing.Point(115, 68);
-            this.tbx_AXIS1_REAL_POS.Name = "tbx_AXIS1_REAL_POS";
-            this.tbx_AXIS1_REAL_POS.PreventEnterBeep = true;
-            this.tbx_AXIS1_REAL_POS.Size = new System.Drawing.Size(85, 31);
-            this.tbx_AXIS1_REAL_POS.TabIndex = 38;
-            this.tbx_AXIS1_REAL_POS.Tag = "HMI.AXIS1_REAL_POS;REAL";
-            this.tbx_AXIS1_REAL_POS.Text = "0";
-            // 
-            // buttonX42
-            // 
-            this.buttonX42.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX42.BackColor = System.Drawing.Color.Transparent;
-            this.buttonX42.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX42.Location = new System.Drawing.Point(14, 162);
-            this.buttonX42.Name = "buttonX42";
-            this.buttonX42.Size = new System.Drawing.Size(85, 30);
-            this.buttonX42.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX42.TabIndex = 37;
-            this.buttonX42.Tag = "HMI.MOTOR3_BUTT;BOOL";
-            this.buttonX42.Text = "收发电机";
-            this.buttonX42.Click += new System.EventHandler(this.buttonX42_Click);
-            // 
-            // buttonX41
-            // 
-            this.buttonX41.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX41.BackColor = System.Drawing.Color.Transparent;
-            this.buttonX41.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX41.Location = new System.Drawing.Point(14, 115);
-            this.buttonX41.Name = "buttonX41";
-            this.buttonX41.Size = new System.Drawing.Size(85, 30);
-            this.buttonX41.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX41.TabIndex = 36;
-            this.buttonX41.Tag = "HMI.MOTOR2_BUTT;BOOL";
-            this.buttonX41.Text = "旋转电机";
-            this.buttonX41.Click += new System.EventHandler(this.buttonX41_Click);
-            // 
-            // buttonX40
-            // 
-            this.buttonX40.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX40.BackColor = System.Drawing.Color.Transparent;
-            this.buttonX40.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX40.Location = new System.Drawing.Point(14, 68);
-            this.buttonX40.Name = "buttonX40";
-            this.buttonX40.Size = new System.Drawing.Size(85, 30);
-            this.buttonX40.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX40.TabIndex = 35;
-            this.buttonX40.Tag = "HMI.MOTOR1_BUTT;BOOL";
-            this.buttonX40.Text = "升降电机";
-            this.buttonX40.Click += new System.EventHandler(this.buttonX40_Click);
-            // 
-            // reflectionLabel19
-            // 
-            this.reflectionLabel19.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.reflectionLabel19.BackgroundStyle.BackColor = System.Drawing.SystemColors.Control;
-            this.reflectionLabel19.BackgroundStyle.BackColor2 = System.Drawing.Color.DeepSkyBlue;
-            this.reflectionLabel19.BackgroundStyle.BackColorGradientAngle = 90;
-            this.reflectionLabel19.BackgroundStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.reflectionLabel19.BackgroundStyle.BorderColor = System.Drawing.Color.Maroon;
-            this.reflectionLabel19.BackgroundStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.reflectionLabel19.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.reflectionLabel19.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.reflectionLabel19.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
-            this.reflectionLabel19.ForeColor = System.Drawing.Color.Black;
-            this.reflectionLabel19.Location = new System.Drawing.Point(322, 14);
-            this.reflectionLabel19.Name = "reflectionLabel19";
-            this.reflectionLabel19.ReflectionEnabled = false;
-            this.reflectionLabel19.Size = new System.Drawing.Size(85, 34);
-            this.reflectionLabel19.TabIndex = 34;
-            this.reflectionLabel19.Text = "<b><font size=\"+5\"><i>转矩</i></font></b>";
-            // 
-            // reflectionLabel18
-            // 
-            this.reflectionLabel18.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.reflectionLabel18.BackgroundStyle.BackColor = System.Drawing.SystemColors.Control;
-            this.reflectionLabel18.BackgroundStyle.BackColor2 = System.Drawing.Color.DeepSkyBlue;
-            this.reflectionLabel18.BackgroundStyle.BackColorGradientAngle = 90;
-            this.reflectionLabel18.BackgroundStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.reflectionLabel18.BackgroundStyle.BorderColor = System.Drawing.Color.Maroon;
-            this.reflectionLabel18.BackgroundStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.reflectionLabel18.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.reflectionLabel18.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.reflectionLabel18.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
-            this.reflectionLabel18.ForeColor = System.Drawing.Color.Black;
-            this.reflectionLabel18.Location = new System.Drawing.Point(217, 14);
-            this.reflectionLabel18.Name = "reflectionLabel18";
-            this.reflectionLabel18.ReflectionEnabled = false;
-            this.reflectionLabel18.Size = new System.Drawing.Size(85, 34);
-            this.reflectionLabel18.TabIndex = 33;
-            this.reflectionLabel18.Text = "<b><font size=\"+5\"><i>速度</i></font></b>";
-            // 
-            // reflectionLabel17
-            // 
-            this.reflectionLabel17.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.reflectionLabel17.BackgroundStyle.BackColor = System.Drawing.SystemColors.Control;
-            this.reflectionLabel17.BackgroundStyle.BackColor2 = System.Drawing.Color.DeepSkyBlue;
-            this.reflectionLabel17.BackgroundStyle.BackColorGradientAngle = 90;
-            this.reflectionLabel17.BackgroundStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.reflectionLabel17.BackgroundStyle.BorderColor = System.Drawing.Color.Maroon;
-            this.reflectionLabel17.BackgroundStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.reflectionLabel17.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.reflectionLabel17.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.reflectionLabel17.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
-            this.reflectionLabel17.ForeColor = System.Drawing.Color.Black;
-            this.reflectionLabel17.Location = new System.Drawing.Point(115, 14);
-            this.reflectionLabel17.Name = "reflectionLabel17";
-            this.reflectionLabel17.ReflectionEnabled = false;
-            this.reflectionLabel17.Size = new System.Drawing.Size(85, 34);
-            this.reflectionLabel17.TabIndex = 32;
-            this.reflectionLabel17.Text = "<b><font size=\"+5\"><i>位置</i></font></b>";
-            // 
-            // reflectionLabel16
-            // 
-            this.reflectionLabel16.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.reflectionLabel16.BackgroundStyle.BackColor = System.Drawing.SystemColors.Control;
-            this.reflectionLabel16.BackgroundStyle.BackColor2 = System.Drawing.Color.DeepSkyBlue;
-            this.reflectionLabel16.BackgroundStyle.BackColorGradientAngle = 90;
-            this.reflectionLabel16.BackgroundStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.reflectionLabel16.BackgroundStyle.BorderColor = System.Drawing.Color.Maroon;
-            this.reflectionLabel16.BackgroundStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.reflectionLabel16.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.reflectionLabel16.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.reflectionLabel16.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
-            this.reflectionLabel16.ForeColor = System.Drawing.Color.Black;
-            this.reflectionLabel16.Location = new System.Drawing.Point(14, 14);
-            this.reflectionLabel16.Name = "reflectionLabel16";
-            this.reflectionLabel16.ReflectionEnabled = false;
-            this.reflectionLabel16.Size = new System.Drawing.Size(85, 34);
-            this.reflectionLabel16.TabIndex = 31;
-            this.reflectionLabel16.Text = "<b><font size=\"+5\"><i>使能</i></font></b>";
-            // 
-            // superTabItem2
-            // 
-            this.superTabItem2.AttachedControl = this.superTabControlPanel2;
-            this.superTabItem2.GlobalItem = false;
-            this.superTabItem2.Image = global::触摸屏界面.Properties.Resources.computer_key;
-            this.superTabItem2.Name = "superTabItem2";
-            this.superTabItem2.Text = "手动操作";
-            // 
             // superTabControlPanel1
             // 
             this.superTabControlPanel1.Controls.Add(this.symbolBox2);
             this.superTabControlPanel1.Controls.Add(this.reflectionLabel3);
-            this.superTabControlPanel1.Controls.Add(this.buttonX68);
-            this.superTabControlPanel1.Controls.Add(this.buttonX67);
             this.superTabControlPanel1.Controls.Add(this.lb_connectflag);
-            this.superTabControlPanel1.Controls.Add(this.buttonX2);
-            this.superTabControlPanel1.Controls.Add(this.buttonX1);
+            this.superTabControlPanel1.Controls.Add(this.close_plc);
+            this.superTabControlPanel1.Controls.Add(this.open_plc);
             this.superTabControlPanel1.Controls.Add(this.reflectionLabel15);
             this.superTabControlPanel1.Controls.Add(this.reflectionLabel13);
             this.superTabControlPanel1.Controls.Add(this.reflectionLabel12);
@@ -1481,47 +489,59 @@
             this.superTabControlPanel1.Controls.Add(this.reflectionLabel7);
             this.superTabControlPanel1.Controls.Add(this.symbolBox1);
             this.superTabControlPanel1.Controls.Add(this.reflectionLabel2);
-            this.superTabControlPanel1.Controls.Add(this.tbx_COUNT_ALL);
-            this.superTabControlPanel1.Controls.Add(this.tbx_SAMPLING2);
-            this.superTabControlPanel1.Controls.Add(this.tbx_SAMPLING);
-            this.superTabControlPanel1.Controls.Add(this.tbx_FIRST_VAL);
-            this.superTabControlPanel1.Controls.Add(this.tbx_SCE_VAL);
+            this.superTabControlPanel1.Controls.Add(this.txt_COUNT_ALL);
+            this.superTabControlPanel1.Controls.Add(this.txt_SAMPLING2);
+            this.superTabControlPanel1.Controls.Add(this.txt_SAMPLING);
+            this.superTabControlPanel1.Controls.Add(this.txt_FIRST_VAL);
+            this.superTabControlPanel1.Controls.Add(this.txt_SCE_VAL);
             this.superTabControlPanel1.Controls.Add(this.textBoxX2);
-            this.superTabControlPanel1.Controls.Add(this.tbx_SETP_P);
+            this.superTabControlPanel1.Controls.Add(this.txt_SETP_P);
             this.superTabControlPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.superTabControlPanel1.Location = new System.Drawing.Point(0, 46);
             this.superTabControlPanel1.Name = "superTabControlPanel1";
-            this.superTabControlPanel1.Size = new System.Drawing.Size(904, 517);
+            this.superTabControlPanel1.Size = new System.Drawing.Size(832, 517);
             this.superTabControlPanel1.TabIndex = 1;
             this.superTabControlPanel1.TabItem = this.superTabItem1;
             // 
-            // buttonX68
+            // symbolBox2
             // 
-            this.buttonX68.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX68.BackColor = System.Drawing.Color.Transparent;
-            this.buttonX68.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX68.Location = new System.Drawing.Point(372, 335);
-            this.buttonX68.Name = "buttonX68";
-            this.buttonX68.Size = new System.Drawing.Size(105, 41);
-            this.buttonX68.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX68.TabIndex = 55;
-            this.buttonX68.Tag = "";
-            this.buttonX68.Text = "参数写入";
-            this.buttonX68.Click += new System.EventHandler(this.buttonX68_Click);
+            this.symbolBox2.BackColor = System.Drawing.Color.Transparent;
             // 
-            // buttonX67
             // 
-            this.buttonX67.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX67.BackColor = System.Drawing.Color.Transparent;
-            this.buttonX67.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX67.Location = new System.Drawing.Point(372, 273);
-            this.buttonX67.Name = "buttonX67";
-            this.buttonX67.Size = new System.Drawing.Size(105, 41);
-            this.buttonX67.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX67.TabIndex = 54;
-            this.buttonX67.Tag = "";
-            this.buttonX67.Text = "参数读取";
-            this.buttonX67.Click += new System.EventHandler(this.buttonX67_Click);
+            // 
+            this.symbolBox2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.symbolBox2.ForeColor = System.Drawing.Color.DimGray;
+            this.symbolBox2.Location = new System.Drawing.Point(408, 48);
+            this.symbolBox2.Name = "symbolBox2";
+            this.symbolBox2.Size = new System.Drawing.Size(40, 38);
+            this.symbolBox2.Symbol = "";
+            this.symbolBox2.SymbolColor = System.Drawing.Color.Gray;
+            this.symbolBox2.TabIndex = 57;
+            this.symbolBox2.Tag = "HMI.NOT_AIR;BOOL";
+            this.symbolBox2.Text = "symbolBox2";
+            // 
+            // reflectionLabel3
+            // 
+            this.reflectionLabel3.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.reflectionLabel3.BackgroundStyle.BackColor = System.Drawing.SystemColors.Control;
+            this.reflectionLabel3.BackgroundStyle.BackColor2 = System.Drawing.Color.DeepSkyBlue;
+            this.reflectionLabel3.BackgroundStyle.BackColorGradientAngle = 90;
+            this.reflectionLabel3.BackgroundStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.reflectionLabel3.BackgroundStyle.BorderColor = System.Drawing.Color.Maroon;
+            this.reflectionLabel3.BackgroundStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.reflectionLabel3.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.reflectionLabel3.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.reflectionLabel3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.reflectionLabel3.ForeColor = System.Drawing.Color.Black;
+            this.reflectionLabel3.Location = new System.Drawing.Point(280, 48);
+            this.reflectionLabel3.Name = "reflectionLabel3";
+            this.reflectionLabel3.ReflectionEnabled = false;
+            this.reflectionLabel3.Size = new System.Drawing.Size(96, 34);
+            this.reflectionLabel3.TabIndex = 56;
+            this.reflectionLabel3.Text = "<b><font size=\"+5\"><i>无空压</i></font></b>";
             // 
             // lb_connectflag
             // 
@@ -1536,36 +556,36 @@
             this.lb_connectflag.Size = new System.Drawing.Size(84, 34);
             this.lb_connectflag.TabIndex = 53;
             // 
-            // buttonX2
+            // close_plc
             // 
-            this.buttonX2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX2.BackColor = System.Drawing.Color.Transparent;
-            this.buttonX2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.buttonX2.ColorTable = DevComponents.DotNetBar.eButtonColor.Flat;
-            this.buttonX2.Enabled = false;
-            this.buttonX2.Location = new System.Drawing.Point(613, 124);
-            this.buttonX2.Name = "buttonX2";
-            this.buttonX2.Size = new System.Drawing.Size(43, 38);
-            this.buttonX2.Style = DevComponents.DotNetBar.eDotNetBarStyle.OfficeMobile2014;
-            this.buttonX2.Symbol = "";
-            this.buttonX2.SymbolColor = System.Drawing.Color.Lime;
-            this.buttonX2.TabIndex = 52;
-            this.buttonX2.Click += new System.EventHandler(this.buttonX2_Click);
+            this.close_plc.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.close_plc.BackColor = System.Drawing.Color.Transparent;
+            this.close_plc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.close_plc.ColorTable = DevComponents.DotNetBar.eButtonColor.Flat;
+            this.close_plc.Enabled = false;
+            this.close_plc.Location = new System.Drawing.Point(613, 124);
+            this.close_plc.Name = "close_plc";
+            this.close_plc.Size = new System.Drawing.Size(43, 38);
+            this.close_plc.Style = DevComponents.DotNetBar.eDotNetBarStyle.OfficeMobile2014;
+            this.close_plc.Symbol = "";
+            this.close_plc.SymbolColor = System.Drawing.Color.Lime;
+            this.close_plc.TabIndex = 52;
+            this.close_plc.Click += new System.EventHandler(this.close_plc_Click);
             // 
-            // buttonX1
+            // open_plc
             // 
-            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX1.BackColor = System.Drawing.Color.Transparent;
-            this.buttonX1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.Flat;
-            this.buttonX1.Location = new System.Drawing.Point(533, 124);
-            this.buttonX1.Name = "buttonX1";
-            this.buttonX1.Size = new System.Drawing.Size(41, 38);
-            this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.OfficeMobile2014;
-            this.buttonX1.Symbol = "";
-            this.buttonX1.SymbolColor = System.Drawing.Color.Lime;
-            this.buttonX1.TabIndex = 51;
-            this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
+            this.open_plc.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.open_plc.BackColor = System.Drawing.Color.Transparent;
+            this.open_plc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.open_plc.ColorTable = DevComponents.DotNetBar.eButtonColor.Flat;
+            this.open_plc.Location = new System.Drawing.Point(533, 124);
+            this.open_plc.Name = "open_plc";
+            this.open_plc.Size = new System.Drawing.Size(41, 38);
+            this.open_plc.Style = DevComponents.DotNetBar.eDotNetBarStyle.OfficeMobile2014;
+            this.open_plc.Symbol = "";
+            this.open_plc.SymbolColor = System.Drawing.Color.Lime;
+            this.open_plc.TabIndex = 51;
+            this.open_plc.Click += new System.EventHandler(this.open_plc_Click);
             // 
             // reflectionLabel15
             // 
@@ -1796,95 +816,99 @@
             this.reflectionLabel2.TabIndex = 30;
             this.reflectionLabel2.Text = "<b><font size=\"+5\"><i>运行信号</i></font></b>";
             // 
-            // tbx_COUNT_ALL
+            // txt_COUNT_ALL
             // 
-            this.tbx_COUNT_ALL.BackColor = System.Drawing.Color.Black;
-            // 
-            // 
-            // 
-            this.tbx_COUNT_ALL.Border.Class = "TextBoxBorder";
-            this.tbx_COUNT_ALL.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.tbx_COUNT_ALL.DisabledBackColor = System.Drawing.Color.White;
-            this.tbx_COUNT_ALL.ForeColor = System.Drawing.Color.White;
-            this.tbx_COUNT_ALL.Location = new System.Drawing.Point(508, 456);
-            this.tbx_COUNT_ALL.Name = "tbx_COUNT_ALL";
-            this.tbx_COUNT_ALL.PreventEnterBeep = true;
-            this.tbx_COUNT_ALL.Size = new System.Drawing.Size(204, 31);
-            this.tbx_COUNT_ALL.TabIndex = 27;
-            this.tbx_COUNT_ALL.Tag = "SAVE.COUNT_ALL;REAL";
-            this.tbx_COUNT_ALL.Text = "+1543";
-            // 
-            // tbx_SAMPLING2
-            // 
-            this.tbx_SAMPLING2.BackColor = System.Drawing.Color.Black;
+            this.txt_COUNT_ALL.BackColor = System.Drawing.Color.Black;
             // 
             // 
             // 
-            this.tbx_SAMPLING2.Border.Class = "TextBoxBorder";
-            this.tbx_SAMPLING2.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.tbx_SAMPLING2.DisabledBackColor = System.Drawing.Color.White;
-            this.tbx_SAMPLING2.ForeColor = System.Drawing.Color.White;
-            this.tbx_SAMPLING2.Location = new System.Drawing.Point(197, 456);
-            this.tbx_SAMPLING2.Name = "tbx_SAMPLING2";
-            this.tbx_SAMPLING2.PreventEnterBeep = true;
-            this.tbx_SAMPLING2.Size = new System.Drawing.Size(143, 31);
-            this.tbx_SAMPLING2.TabIndex = 22;
-            this.tbx_SAMPLING2.Tag = "SAVE.SAMPLING2;INT";
-            this.tbx_SAMPLING2.Text = "2s";
+            this.txt_COUNT_ALL.Border.Class = "TextBoxBorder";
+            this.txt_COUNT_ALL.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txt_COUNT_ALL.DisabledBackColor = System.Drawing.Color.White;
+            this.txt_COUNT_ALL.ForeColor = System.Drawing.Color.White;
+            this.txt_COUNT_ALL.Location = new System.Drawing.Point(508, 456);
+            this.txt_COUNT_ALL.Name = "txt_COUNT_ALL";
+            this.txt_COUNT_ALL.PreventEnterBeep = true;
+            this.txt_COUNT_ALL.Size = new System.Drawing.Size(204, 31);
+            this.txt_COUNT_ALL.TabIndex = 27;
+            this.txt_COUNT_ALL.Tag = "SAVE.COUNT_ALL;REAL";
+            this.txt_COUNT_ALL.Text = "+1543";
             // 
-            // tbx_SAMPLING
+            // txt_SAMPLING2
             // 
-            this.tbx_SAMPLING.BackColor = System.Drawing.Color.Black;
-            // 
-            // 
-            // 
-            this.tbx_SAMPLING.Border.Class = "TextBoxBorder";
-            this.tbx_SAMPLING.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.tbx_SAMPLING.DisabledBackColor = System.Drawing.Color.White;
-            this.tbx_SAMPLING.ForeColor = System.Drawing.Color.White;
-            this.tbx_SAMPLING.Location = new System.Drawing.Point(196, 394);
-            this.tbx_SAMPLING.Name = "tbx_SAMPLING";
-            this.tbx_SAMPLING.PreventEnterBeep = true;
-            this.tbx_SAMPLING.Size = new System.Drawing.Size(143, 31);
-            this.tbx_SAMPLING.TabIndex = 21;
-            this.tbx_SAMPLING.Tag = "SAVE.SAMPLING;INT";
-            this.tbx_SAMPLING.Text = "2s";
-            // 
-            // tbx_FIRST_VAL
-            // 
-            this.tbx_FIRST_VAL.BackColor = System.Drawing.Color.Black;
+            this.txt_SAMPLING2.BackColor = System.Drawing.Color.Black;
             // 
             // 
             // 
-            this.tbx_FIRST_VAL.Border.Class = "TextBoxBorder";
-            this.tbx_FIRST_VAL.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.tbx_FIRST_VAL.DisabledBackColor = System.Drawing.Color.White;
-            this.tbx_FIRST_VAL.ForeColor = System.Drawing.Color.White;
-            this.tbx_FIRST_VAL.Location = new System.Drawing.Point(196, 335);
-            this.tbx_FIRST_VAL.Name = "tbx_FIRST_VAL";
-            this.tbx_FIRST_VAL.PreventEnterBeep = true;
-            this.tbx_FIRST_VAL.Size = new System.Drawing.Size(143, 31);
-            this.tbx_FIRST_VAL.TabIndex = 20;
-            this.tbx_FIRST_VAL.Tag = "SAVE.FIRST_VAL;INT";
-            this.tbx_FIRST_VAL.Text = "1s";
+            this.txt_SAMPLING2.Border.Class = "TextBoxBorder";
+            this.txt_SAMPLING2.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txt_SAMPLING2.DisabledBackColor = System.Drawing.Color.White;
+            this.txt_SAMPLING2.ForeColor = System.Drawing.Color.White;
+            this.txt_SAMPLING2.Location = new System.Drawing.Point(197, 456);
+            this.txt_SAMPLING2.Name = "txt_SAMPLING2";
+            this.txt_SAMPLING2.PreventEnterBeep = true;
+            this.txt_SAMPLING2.Size = new System.Drawing.Size(143, 31);
+            this.txt_SAMPLING2.TabIndex = 22;
+            this.txt_SAMPLING2.Tag = "SAVE.SAMPLING2;INT";
+            this.txt_SAMPLING2.Text = "2s";
+            this.txt_SAMPLING2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_SAMPLING2_KeyPress);
             // 
-            // tbx_SCE_VAL
+            // txt_SAMPLING
             // 
-            this.tbx_SCE_VAL.BackColor = System.Drawing.Color.Black;
+            this.txt_SAMPLING.BackColor = System.Drawing.Color.Black;
             // 
             // 
             // 
-            this.tbx_SCE_VAL.Border.Class = "TextBoxBorder";
-            this.tbx_SCE_VAL.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.tbx_SCE_VAL.DisabledBackColor = System.Drawing.Color.White;
-            this.tbx_SCE_VAL.ForeColor = System.Drawing.Color.White;
-            this.tbx_SCE_VAL.Location = new System.Drawing.Point(196, 277);
-            this.tbx_SCE_VAL.Name = "tbx_SCE_VAL";
-            this.tbx_SCE_VAL.PreventEnterBeep = true;
-            this.tbx_SCE_VAL.Size = new System.Drawing.Size(143, 31);
-            this.tbx_SCE_VAL.TabIndex = 19;
-            this.tbx_SCE_VAL.Tag = "SAVE.SCE_VAL;INT";
-            this.tbx_SCE_VAL.Text = "1s";
+            this.txt_SAMPLING.Border.Class = "TextBoxBorder";
+            this.txt_SAMPLING.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txt_SAMPLING.DisabledBackColor = System.Drawing.Color.White;
+            this.txt_SAMPLING.ForeColor = System.Drawing.Color.White;
+            this.txt_SAMPLING.Location = new System.Drawing.Point(196, 394);
+            this.txt_SAMPLING.Name = "txt_SAMPLING";
+            this.txt_SAMPLING.PreventEnterBeep = true;
+            this.txt_SAMPLING.Size = new System.Drawing.Size(143, 31);
+            this.txt_SAMPLING.TabIndex = 21;
+            this.txt_SAMPLING.Tag = "SAVE.SAMPLING;INT";
+            this.txt_SAMPLING.Text = "2s";
+            this.txt_SAMPLING.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_SAMPLING_KeyPress);
+            // 
+            // txt_FIRST_VAL
+            // 
+            this.txt_FIRST_VAL.BackColor = System.Drawing.Color.Black;
+            // 
+            // 
+            // 
+            this.txt_FIRST_VAL.Border.Class = "TextBoxBorder";
+            this.txt_FIRST_VAL.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txt_FIRST_VAL.DisabledBackColor = System.Drawing.Color.White;
+            this.txt_FIRST_VAL.ForeColor = System.Drawing.Color.White;
+            this.txt_FIRST_VAL.Location = new System.Drawing.Point(196, 335);
+            this.txt_FIRST_VAL.Name = "txt_FIRST_VAL";
+            this.txt_FIRST_VAL.PreventEnterBeep = true;
+            this.txt_FIRST_VAL.Size = new System.Drawing.Size(143, 31);
+            this.txt_FIRST_VAL.TabIndex = 20;
+            this.txt_FIRST_VAL.Tag = "SAVE.FIRST_VAL;INT";
+            this.txt_FIRST_VAL.Text = "1s";
+            this.txt_FIRST_VAL.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_FIRST_VAL_KeyPress);
+            // 
+            // txt_SCE_VAL
+            // 
+            this.txt_SCE_VAL.BackColor = System.Drawing.Color.Black;
+            // 
+            // 
+            // 
+            this.txt_SCE_VAL.Border.Class = "TextBoxBorder";
+            this.txt_SCE_VAL.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txt_SCE_VAL.DisabledBackColor = System.Drawing.Color.White;
+            this.txt_SCE_VAL.ForeColor = System.Drawing.Color.White;
+            this.txt_SCE_VAL.Location = new System.Drawing.Point(196, 277);
+            this.txt_SCE_VAL.Name = "txt_SCE_VAL";
+            this.txt_SCE_VAL.PreventEnterBeep = true;
+            this.txt_SCE_VAL.Size = new System.Drawing.Size(143, 31);
+            this.txt_SCE_VAL.TabIndex = 19;
+            this.txt_SCE_VAL.Tag = "SAVE.SCE_VAL;INT";
+            this.txt_SCE_VAL.Text = "1s";
+            this.txt_SCE_VAL.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_SCE_VAL_KeyPress);
             // 
             // textBoxX2
             // 
@@ -1903,23 +927,23 @@
             this.textBoxX2.TabIndex = 18;
             this.textBoxX2.Text = "放";
             // 
-            // tbx_SETP_P
+            // txt_SETP_P
             // 
-            this.tbx_SETP_P.BackColor = System.Drawing.Color.Black;
+            this.txt_SETP_P.BackColor = System.Drawing.Color.Black;
             // 
             // 
             // 
-            this.tbx_SETP_P.Border.Class = "TextBoxBorder";
-            this.tbx_SETP_P.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.tbx_SETP_P.DisabledBackColor = System.Drawing.Color.White;
-            this.tbx_SETP_P.ForeColor = System.Drawing.Color.White;
-            this.tbx_SETP_P.Location = new System.Drawing.Point(196, 222);
-            this.tbx_SETP_P.Name = "tbx_SETP_P";
-            this.tbx_SETP_P.PreventEnterBeep = true;
-            this.tbx_SETP_P.Size = new System.Drawing.Size(143, 31);
-            this.tbx_SETP_P.TabIndex = 17;
-            this.tbx_SETP_P.Tag = "HMI.SETP_P;WORD";
-            this.tbx_SETP_P.Text = "抓";
+            this.txt_SETP_P.Border.Class = "TextBoxBorder";
+            this.txt_SETP_P.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txt_SETP_P.DisabledBackColor = System.Drawing.Color.White;
+            this.txt_SETP_P.ForeColor = System.Drawing.Color.White;
+            this.txt_SETP_P.Location = new System.Drawing.Point(196, 222);
+            this.txt_SETP_P.Name = "txt_SETP_P";
+            this.txt_SETP_P.PreventEnterBeep = true;
+            this.txt_SETP_P.Size = new System.Drawing.Size(143, 31);
+            this.txt_SETP_P.TabIndex = 17;
+            this.txt_SETP_P.Tag = "HMI.SETP_P;WORD";
+            this.txt_SETP_P.Text = "抓";
             // 
             // superTabItem1
             // 
@@ -1931,88 +955,58 @@
             // 
             // superTabControlPanel4
             // 
-            this.superTabControlPanel4.Controls.Add(this.buttonX66);
-            this.superTabControlPanel4.Controls.Add(this.buttonX39);
             this.superTabControlPanel4.Controls.Add(this.labelX67);
             this.superTabControlPanel4.Controls.Add(this.labelX66);
-            this.superTabControlPanel4.Controls.Add(this.tbx_AXIS3_ABS_VEL);
+            this.superTabControlPanel4.Controls.Add(this.txt_AXIS3_ABS_VEL);
             this.superTabControlPanel4.Controls.Add(this.labelX65);
-            this.superTabControlPanel4.Controls.Add(this.tbx_AXIS2_ABS_VEL);
+            this.superTabControlPanel4.Controls.Add(this.txt_AXIS2_ABS_VEL);
             this.superTabControlPanel4.Controls.Add(this.labelX64);
-            this.superTabControlPanel4.Controls.Add(this.tbx_AXIS1_ABS_VEL2);
+            this.superTabControlPanel4.Controls.Add(this.txt_AXIS1_ABS_VEL2);
             this.superTabControlPanel4.Controls.Add(this.labelX63);
-            this.superTabControlPanel4.Controls.Add(this.tbx_AXIS1_ABS_VEL);
+            this.superTabControlPanel4.Controls.Add(this.txt_AXIS1_ABS_VEL);
             this.superTabControlPanel4.Controls.Add(this.labelX62);
-            this.superTabControlPanel4.Controls.Add(this.tbx_AXIS1_ABS_VEL1);
+            this.superTabControlPanel4.Controls.Add(this.txt_AXIS1_ABS_VEL1);
             this.superTabControlPanel4.Controls.Add(this.labelX61);
-            this.superTabControlPanel4.Controls.Add(this.tbx_AXIS3_CLOSE_POS);
+            this.superTabControlPanel4.Controls.Add(this.txt_AXIS3_CLOSE_POS);
             this.superTabControlPanel4.Controls.Add(this.labelX57);
-            this.superTabControlPanel4.Controls.Add(this.tbx_AXIS3_OPEN_POS);
+            this.superTabControlPanel4.Controls.Add(this.txt_AXIS3_OPEN_POS);
             this.superTabControlPanel4.Controls.Add(this.labelX56);
-            this.superTabControlPanel4.Controls.Add(this.tbx_AXIS1_SAFE2_POS);
+            this.superTabControlPanel4.Controls.Add(this.txt_AXIS1_SAFE2_POS);
             this.superTabControlPanel4.Controls.Add(this.labelX55);
-            this.superTabControlPanel4.Controls.Add(this.tbx_AXIS2_0_POS);
+            this.superTabControlPanel4.Controls.Add(this.txt_AXIS2_0_POS);
             this.superTabControlPanel4.Controls.Add(this.labelX54);
-            this.superTabControlPanel4.Controls.Add(this.tbx_AXIS2_9_POS);
+            this.superTabControlPanel4.Controls.Add(this.txt_AXIS2_9_POS);
             this.superTabControlPanel4.Controls.Add(this.labelX53);
-            this.superTabControlPanel4.Controls.Add(this.tbx_AXIS2_8_POS);
+            this.superTabControlPanel4.Controls.Add(this.txt_AXIS2_8_POS);
             this.superTabControlPanel4.Controls.Add(this.labelX52);
-            this.superTabControlPanel4.Controls.Add(this.tbx_AXIS2_7_POS);
+            this.superTabControlPanel4.Controls.Add(this.txt_AXIS2_7_POS);
             this.superTabControlPanel4.Controls.Add(this.labelX51);
-            this.superTabControlPanel4.Controls.Add(this.tbx_AXIS2_6_POS);
+            this.superTabControlPanel4.Controls.Add(this.txt_AXIS2_6_POS);
             this.superTabControlPanel4.Controls.Add(this.labelX50);
-            this.superTabControlPanel4.Controls.Add(this.tbx_AXIS1_SAFE1_POS);
+            this.superTabControlPanel4.Controls.Add(this.txt_AXIS1_SAFE1_POS);
             this.superTabControlPanel4.Controls.Add(this.labelX49);
-            this.superTabControlPanel4.Controls.Add(this.tbx_AXIS2_5_POS);
+            this.superTabControlPanel4.Controls.Add(this.txt_AXIS2_5_POS);
             this.superTabControlPanel4.Controls.Add(this.labelX48);
-            this.superTabControlPanel4.Controls.Add(this.tbx_AXIS2_4_POS);
+            this.superTabControlPanel4.Controls.Add(this.txt_AXIS2_4_POS);
             this.superTabControlPanel4.Controls.Add(this.labelX47);
-            this.superTabControlPanel4.Controls.Add(this.tbx_AXIS2_3_POS);
+            this.superTabControlPanel4.Controls.Add(this.txt_AXIS2_3_POS);
             this.superTabControlPanel4.Controls.Add(this.labelX46);
-            this.superTabControlPanel4.Controls.Add(this.tbx_AXIS2_2_POS);
+            this.superTabControlPanel4.Controls.Add(this.txt_AXIS2_2_POS);
             this.superTabControlPanel4.Controls.Add(this.labelX45);
-            this.superTabControlPanel4.Controls.Add(this.tbx_AXIS2_1_POS);
+            this.superTabControlPanel4.Controls.Add(this.txt_AXIS2_1_POS);
             this.superTabControlPanel4.Controls.Add(this.labelX44);
-            this.superTabControlPanel4.Controls.Add(this.tbx_AXIS1_UP_POS);
+            this.superTabControlPanel4.Controls.Add(this.txt_AXIS1_UP_POS);
             this.superTabControlPanel4.Controls.Add(this.labelX43);
-            this.superTabControlPanel4.Controls.Add(this.tbx_AXIS1_DOWN_POS2);
+            this.superTabControlPanel4.Controls.Add(this.txt_AXIS1_DOWN_POS2);
             this.superTabControlPanel4.Controls.Add(this.labelX42);
-            this.superTabControlPanel4.Controls.Add(this.tbx_AXIS1_DOWN_POS);
+            this.superTabControlPanel4.Controls.Add(this.txt_AXIS1_DOWN_POS);
             this.superTabControlPanel4.Controls.Add(this.labelX41);
             this.superTabControlPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.superTabControlPanel4.Location = new System.Drawing.Point(0, 46);
             this.superTabControlPanel4.Name = "superTabControlPanel4";
-            this.superTabControlPanel4.Size = new System.Drawing.Size(904, 517);
+            this.superTabControlPanel4.Size = new System.Drawing.Size(832, 517);
             this.superTabControlPanel4.TabIndex = 4;
             this.superTabControlPanel4.TabItem = this.superTabItem4;
-            // 
-            // buttonX66
-            // 
-            this.buttonX66.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX66.BackColor = System.Drawing.Color.Transparent;
-            this.buttonX66.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX66.Location = new System.Drawing.Point(600, 219);
-            this.buttonX66.Name = "buttonX66";
-            this.buttonX66.Size = new System.Drawing.Size(105, 41);
-            this.buttonX66.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX66.TabIndex = 53;
-            this.buttonX66.Tag = "";
-            this.buttonX66.Text = "参数写入";
-            this.buttonX66.Click += new System.EventHandler(this.buttonX66_Click);
-            // 
-            // buttonX39
-            // 
-            this.buttonX39.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX39.BackColor = System.Drawing.Color.Transparent;
-            this.buttonX39.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX39.Location = new System.Drawing.Point(600, 124);
-            this.buttonX39.Name = "buttonX39";
-            this.buttonX39.Size = new System.Drawing.Size(105, 41);
-            this.buttonX39.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX39.TabIndex = 52;
-            this.buttonX39.Tag = "";
-            this.buttonX39.Text = "参数读取";
-            this.buttonX39.Click += new System.EventHandler(this.buttonX39_Click);
             // 
             // labelX67
             // 
@@ -2042,23 +1036,24 @@
             this.labelX66.TabIndex = 50;
             this.labelX66.Text = "位\r\n置";
             // 
-            // tbx_AXIS3_ABS_VEL
+            // txt_AXIS3_ABS_VEL
             // 
-            this.tbx_AXIS3_ABS_VEL.BackColor = System.Drawing.Color.Black;
+            this.txt_AXIS3_ABS_VEL.BackColor = System.Drawing.Color.Black;
             // 
             // 
             // 
-            this.tbx_AXIS3_ABS_VEL.Border.Class = "TextBoxBorder";
-            this.tbx_AXIS3_ABS_VEL.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.tbx_AXIS3_ABS_VEL.DisabledBackColor = System.Drawing.Color.White;
-            this.tbx_AXIS3_ABS_VEL.ForeColor = System.Drawing.Color.White;
-            this.tbx_AXIS3_ABS_VEL.Location = new System.Drawing.Point(423, 270);
-            this.tbx_AXIS3_ABS_VEL.Name = "tbx_AXIS3_ABS_VEL";
-            this.tbx_AXIS3_ABS_VEL.PreventEnterBeep = true;
-            this.tbx_AXIS3_ABS_VEL.Size = new System.Drawing.Size(84, 31);
-            this.tbx_AXIS3_ABS_VEL.TabIndex = 49;
-            this.tbx_AXIS3_ABS_VEL.Tag = "SAVE.AXIS3_ABS_VEL;REAL";
-            this.tbx_AXIS3_ABS_VEL.Text = "0";
+            this.txt_AXIS3_ABS_VEL.Border.Class = "TextBoxBorder";
+            this.txt_AXIS3_ABS_VEL.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txt_AXIS3_ABS_VEL.DisabledBackColor = System.Drawing.Color.White;
+            this.txt_AXIS3_ABS_VEL.ForeColor = System.Drawing.Color.White;
+            this.txt_AXIS3_ABS_VEL.Location = new System.Drawing.Point(423, 270);
+            this.txt_AXIS3_ABS_VEL.Name = "txt_AXIS3_ABS_VEL";
+            this.txt_AXIS3_ABS_VEL.PreventEnterBeep = true;
+            this.txt_AXIS3_ABS_VEL.Size = new System.Drawing.Size(84, 31);
+            this.txt_AXIS3_ABS_VEL.TabIndex = 49;
+            this.txt_AXIS3_ABS_VEL.Tag = "SAVE.AXIS3_ABS_VEL;REAL";
+            this.txt_AXIS3_ABS_VEL.Text = "0";
+            this.txt_AXIS3_ABS_VEL.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_AXIS3_ABS_VEL_KeyPress);
             // 
             // labelX65
             // 
@@ -2074,23 +1069,24 @@
             this.labelX65.TabIndex = 48;
             this.labelX65.Text = "密封舱速度";
             // 
-            // tbx_AXIS2_ABS_VEL
+            // txt_AXIS2_ABS_VEL
             // 
-            this.tbx_AXIS2_ABS_VEL.BackColor = System.Drawing.Color.Black;
+            this.txt_AXIS2_ABS_VEL.BackColor = System.Drawing.Color.Black;
             // 
             // 
             // 
-            this.tbx_AXIS2_ABS_VEL.Border.Class = "TextBoxBorder";
-            this.tbx_AXIS2_ABS_VEL.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.tbx_AXIS2_ABS_VEL.DisabledBackColor = System.Drawing.Color.White;
-            this.tbx_AXIS2_ABS_VEL.ForeColor = System.Drawing.Color.White;
-            this.tbx_AXIS2_ABS_VEL.Location = new System.Drawing.Point(273, 270);
-            this.tbx_AXIS2_ABS_VEL.Name = "tbx_AXIS2_ABS_VEL";
-            this.tbx_AXIS2_ABS_VEL.PreventEnterBeep = true;
-            this.tbx_AXIS2_ABS_VEL.Size = new System.Drawing.Size(84, 31);
-            this.tbx_AXIS2_ABS_VEL.TabIndex = 47;
-            this.tbx_AXIS2_ABS_VEL.Tag = "SAVE.AXIS2_ABS_VEL;REAL";
-            this.tbx_AXIS2_ABS_VEL.Text = "0";
+            this.txt_AXIS2_ABS_VEL.Border.Class = "TextBoxBorder";
+            this.txt_AXIS2_ABS_VEL.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txt_AXIS2_ABS_VEL.DisabledBackColor = System.Drawing.Color.White;
+            this.txt_AXIS2_ABS_VEL.ForeColor = System.Drawing.Color.White;
+            this.txt_AXIS2_ABS_VEL.Location = new System.Drawing.Point(273, 270);
+            this.txt_AXIS2_ABS_VEL.Name = "txt_AXIS2_ABS_VEL";
+            this.txt_AXIS2_ABS_VEL.PreventEnterBeep = true;
+            this.txt_AXIS2_ABS_VEL.Size = new System.Drawing.Size(84, 31);
+            this.txt_AXIS2_ABS_VEL.TabIndex = 47;
+            this.txt_AXIS2_ABS_VEL.Tag = "SAVE.AXIS2_ABS_VEL;REAL";
+            this.txt_AXIS2_ABS_VEL.Text = "0";
+            this.txt_AXIS2_ABS_VEL.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_AXIS2_ABS_VEL_KeyPress);
             // 
             // labelX64
             // 
@@ -2106,23 +1102,24 @@
             this.labelX64.TabIndex = 46;
             this.labelX64.Text = "旋转速度";
             // 
-            // tbx_AXIS1_ABS_VEL2
+            // txt_AXIS1_ABS_VEL2
             // 
-            this.tbx_AXIS1_ABS_VEL2.BackColor = System.Drawing.Color.Black;
+            this.txt_AXIS1_ABS_VEL2.BackColor = System.Drawing.Color.Black;
             // 
             // 
             // 
-            this.tbx_AXIS1_ABS_VEL2.Border.Class = "TextBoxBorder";
-            this.tbx_AXIS1_ABS_VEL2.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.tbx_AXIS1_ABS_VEL2.DisabledBackColor = System.Drawing.Color.White;
-            this.tbx_AXIS1_ABS_VEL2.ForeColor = System.Drawing.Color.White;
-            this.tbx_AXIS1_ABS_VEL2.Location = new System.Drawing.Point(479, 174);
-            this.tbx_AXIS1_ABS_VEL2.Name = "tbx_AXIS1_ABS_VEL2";
-            this.tbx_AXIS1_ABS_VEL2.PreventEnterBeep = true;
-            this.tbx_AXIS1_ABS_VEL2.Size = new System.Drawing.Size(100, 31);
-            this.tbx_AXIS1_ABS_VEL2.TabIndex = 45;
-            this.tbx_AXIS1_ABS_VEL2.Tag = "SAVE.AXIS1_ABS_VEL2;REAL";
-            this.tbx_AXIS1_ABS_VEL2.Text = "0";
+            this.txt_AXIS1_ABS_VEL2.Border.Class = "TextBoxBorder";
+            this.txt_AXIS1_ABS_VEL2.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txt_AXIS1_ABS_VEL2.DisabledBackColor = System.Drawing.Color.White;
+            this.txt_AXIS1_ABS_VEL2.ForeColor = System.Drawing.Color.White;
+            this.txt_AXIS1_ABS_VEL2.Location = new System.Drawing.Point(479, 174);
+            this.txt_AXIS1_ABS_VEL2.Name = "txt_AXIS1_ABS_VEL2";
+            this.txt_AXIS1_ABS_VEL2.PreventEnterBeep = true;
+            this.txt_AXIS1_ABS_VEL2.Size = new System.Drawing.Size(100, 31);
+            this.txt_AXIS1_ABS_VEL2.TabIndex = 45;
+            this.txt_AXIS1_ABS_VEL2.Tag = "SAVE.AXIS1_ABS_VEL2;REAL";
+            this.txt_AXIS1_ABS_VEL2.Text = "0";
+            this.txt_AXIS1_ABS_VEL2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_AXIS1_ABS_VEL2_KeyPress);
             // 
             // labelX63
             // 
@@ -2138,23 +1135,24 @@
             this.labelX63.TabIndex = 44;
             this.labelX63.Text = "取样升起速度";
             // 
-            // tbx_AXIS1_ABS_VEL
+            // txt_AXIS1_ABS_VEL
             // 
-            this.tbx_AXIS1_ABS_VEL.BackColor = System.Drawing.Color.Black;
+            this.txt_AXIS1_ABS_VEL.BackColor = System.Drawing.Color.Black;
             // 
             // 
             // 
-            this.tbx_AXIS1_ABS_VEL.Border.Class = "TextBoxBorder";
-            this.tbx_AXIS1_ABS_VEL.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.tbx_AXIS1_ABS_VEL.DisabledBackColor = System.Drawing.Color.White;
-            this.tbx_AXIS1_ABS_VEL.ForeColor = System.Drawing.Color.White;
-            this.tbx_AXIS1_ABS_VEL.Location = new System.Drawing.Point(339, 174);
-            this.tbx_AXIS1_ABS_VEL.Name = "tbx_AXIS1_ABS_VEL";
-            this.tbx_AXIS1_ABS_VEL.PreventEnterBeep = true;
-            this.tbx_AXIS1_ABS_VEL.Size = new System.Drawing.Size(105, 31);
-            this.tbx_AXIS1_ABS_VEL.TabIndex = 43;
-            this.tbx_AXIS1_ABS_VEL.Tag = "SAVE.AXIS1_ABS_VEL;REAL";
-            this.tbx_AXIS1_ABS_VEL.Text = "0";
+            this.txt_AXIS1_ABS_VEL.Border.Class = "TextBoxBorder";
+            this.txt_AXIS1_ABS_VEL.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txt_AXIS1_ABS_VEL.DisabledBackColor = System.Drawing.Color.White;
+            this.txt_AXIS1_ABS_VEL.ForeColor = System.Drawing.Color.White;
+            this.txt_AXIS1_ABS_VEL.Location = new System.Drawing.Point(339, 174);
+            this.txt_AXIS1_ABS_VEL.Name = "txt_AXIS1_ABS_VEL";
+            this.txt_AXIS1_ABS_VEL.PreventEnterBeep = true;
+            this.txt_AXIS1_ABS_VEL.Size = new System.Drawing.Size(105, 31);
+            this.txt_AXIS1_ABS_VEL.TabIndex = 43;
+            this.txt_AXIS1_ABS_VEL.Tag = "SAVE.AXIS1_ABS_VEL;REAL";
+            this.txt_AXIS1_ABS_VEL.Text = "0";
+            this.txt_AXIS1_ABS_VEL.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_AXIS1_ABS_VEL_KeyPress);
             // 
             // labelX62
             // 
@@ -2170,23 +1168,24 @@
             this.labelX62.TabIndex = 42;
             this.labelX62.Text = "取样下降速度";
             // 
-            // tbx_AXIS1_ABS_VEL1
+            // txt_AXIS1_ABS_VEL1
             // 
-            this.tbx_AXIS1_ABS_VEL1.BackColor = System.Drawing.Color.Black;
+            this.txt_AXIS1_ABS_VEL1.BackColor = System.Drawing.Color.Black;
             // 
             // 
             // 
-            this.tbx_AXIS1_ABS_VEL1.Border.Class = "TextBoxBorder";
-            this.tbx_AXIS1_ABS_VEL1.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.tbx_AXIS1_ABS_VEL1.DisabledBackColor = System.Drawing.Color.White;
-            this.tbx_AXIS1_ABS_VEL1.ForeColor = System.Drawing.Color.White;
-            this.tbx_AXIS1_ABS_VEL1.Location = new System.Drawing.Point(225, 174);
-            this.tbx_AXIS1_ABS_VEL1.Name = "tbx_AXIS1_ABS_VEL1";
-            this.tbx_AXIS1_ABS_VEL1.PreventEnterBeep = true;
-            this.tbx_AXIS1_ABS_VEL1.Size = new System.Drawing.Size(84, 31);
-            this.tbx_AXIS1_ABS_VEL1.TabIndex = 41;
-            this.tbx_AXIS1_ABS_VEL1.Tag = "SAVE.AXIS1_ABS_VEL1;REAL";
-            this.tbx_AXIS1_ABS_VEL1.Text = "0";
+            this.txt_AXIS1_ABS_VEL1.Border.Class = "TextBoxBorder";
+            this.txt_AXIS1_ABS_VEL1.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txt_AXIS1_ABS_VEL1.DisabledBackColor = System.Drawing.Color.White;
+            this.txt_AXIS1_ABS_VEL1.ForeColor = System.Drawing.Color.White;
+            this.txt_AXIS1_ABS_VEL1.Location = new System.Drawing.Point(225, 174);
+            this.txt_AXIS1_ABS_VEL1.Name = "txt_AXIS1_ABS_VEL1";
+            this.txt_AXIS1_ABS_VEL1.PreventEnterBeep = true;
+            this.txt_AXIS1_ABS_VEL1.Size = new System.Drawing.Size(84, 31);
+            this.txt_AXIS1_ABS_VEL1.TabIndex = 41;
+            this.txt_AXIS1_ABS_VEL1.Tag = "SAVE.AXIS1_ABS_VEL1;REAL";
+            this.txt_AXIS1_ABS_VEL1.Text = "0";
+            this.txt_AXIS1_ABS_VEL1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_AXIS1_ABS_VEL1_KeyPress);
             // 
             // labelX61
             // 
@@ -2202,23 +1201,24 @@
             this.labelX61.TabIndex = 40;
             this.labelX61.Text = "取放瓶速度";
             // 
-            // tbx_AXIS3_CLOSE_POS
+            // txt_AXIS3_CLOSE_POS
             // 
-            this.tbx_AXIS3_CLOSE_POS.BackColor = System.Drawing.Color.Black;
+            this.txt_AXIS3_CLOSE_POS.BackColor = System.Drawing.Color.Black;
             // 
             // 
             // 
-            this.tbx_AXIS3_CLOSE_POS.Border.Class = "TextBoxBorder";
-            this.tbx_AXIS3_CLOSE_POS.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.tbx_AXIS3_CLOSE_POS.DisabledBackColor = System.Drawing.Color.White;
-            this.tbx_AXIS3_CLOSE_POS.ForeColor = System.Drawing.Color.White;
-            this.tbx_AXIS3_CLOSE_POS.Location = new System.Drawing.Point(363, 82);
-            this.tbx_AXIS3_CLOSE_POS.Name = "tbx_AXIS3_CLOSE_POS";
-            this.tbx_AXIS3_CLOSE_POS.PreventEnterBeep = true;
-            this.tbx_AXIS3_CLOSE_POS.Size = new System.Drawing.Size(105, 31);
-            this.tbx_AXIS3_CLOSE_POS.TabIndex = 33;
-            this.tbx_AXIS3_CLOSE_POS.Tag = "SAVE.AXIS3_CLOSE_POS;REAL";
-            this.tbx_AXIS3_CLOSE_POS.Text = "0";
+            this.txt_AXIS3_CLOSE_POS.Border.Class = "TextBoxBorder";
+            this.txt_AXIS3_CLOSE_POS.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txt_AXIS3_CLOSE_POS.DisabledBackColor = System.Drawing.Color.White;
+            this.txt_AXIS3_CLOSE_POS.ForeColor = System.Drawing.Color.White;
+            this.txt_AXIS3_CLOSE_POS.Location = new System.Drawing.Point(363, 82);
+            this.txt_AXIS3_CLOSE_POS.Name = "txt_AXIS3_CLOSE_POS";
+            this.txt_AXIS3_CLOSE_POS.PreventEnterBeep = true;
+            this.txt_AXIS3_CLOSE_POS.Size = new System.Drawing.Size(105, 31);
+            this.txt_AXIS3_CLOSE_POS.TabIndex = 33;
+            this.txt_AXIS3_CLOSE_POS.Tag = "SAVE.AXIS3_CLOSE_POS;REAL";
+            this.txt_AXIS3_CLOSE_POS.Text = "0";
+            this.txt_AXIS3_CLOSE_POS.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_AXIS3_CLOSE_POS_KeyPress);
             // 
             // labelX57
             // 
@@ -2234,23 +1234,24 @@
             this.labelX57.TabIndex = 32;
             this.labelX57.Text = "密封舱关位置";
             // 
-            // tbx_AXIS3_OPEN_POS
+            // txt_AXIS3_OPEN_POS
             // 
-            this.tbx_AXIS3_OPEN_POS.BackColor = System.Drawing.Color.Black;
+            this.txt_AXIS3_OPEN_POS.BackColor = System.Drawing.Color.Black;
             // 
             // 
             // 
-            this.tbx_AXIS3_OPEN_POS.Border.Class = "TextBoxBorder";
-            this.tbx_AXIS3_OPEN_POS.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.tbx_AXIS3_OPEN_POS.DisabledBackColor = System.Drawing.Color.White;
-            this.tbx_AXIS3_OPEN_POS.ForeColor = System.Drawing.Color.White;
-            this.tbx_AXIS3_OPEN_POS.Location = new System.Drawing.Point(225, 82);
-            this.tbx_AXIS3_OPEN_POS.Name = "tbx_AXIS3_OPEN_POS";
-            this.tbx_AXIS3_OPEN_POS.PreventEnterBeep = true;
-            this.tbx_AXIS3_OPEN_POS.Size = new System.Drawing.Size(105, 31);
-            this.tbx_AXIS3_OPEN_POS.TabIndex = 31;
-            this.tbx_AXIS3_OPEN_POS.Tag = "SAVE.AXIS3_OPEN_POS;REAL";
-            this.tbx_AXIS3_OPEN_POS.Text = "0";
+            this.txt_AXIS3_OPEN_POS.Border.Class = "TextBoxBorder";
+            this.txt_AXIS3_OPEN_POS.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txt_AXIS3_OPEN_POS.DisabledBackColor = System.Drawing.Color.White;
+            this.txt_AXIS3_OPEN_POS.ForeColor = System.Drawing.Color.White;
+            this.txt_AXIS3_OPEN_POS.Location = new System.Drawing.Point(225, 82);
+            this.txt_AXIS3_OPEN_POS.Name = "txt_AXIS3_OPEN_POS";
+            this.txt_AXIS3_OPEN_POS.PreventEnterBeep = true;
+            this.txt_AXIS3_OPEN_POS.Size = new System.Drawing.Size(105, 31);
+            this.txt_AXIS3_OPEN_POS.TabIndex = 31;
+            this.txt_AXIS3_OPEN_POS.Tag = "SAVE.AXIS3_OPEN_POS;REAL";
+            this.txt_AXIS3_OPEN_POS.Text = "0";
+            this.txt_AXIS3_OPEN_POS.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_AXIS3_OPEN_POS_KeyPress);
             // 
             // labelX56
             // 
@@ -2266,23 +1267,24 @@
             this.labelX56.TabIndex = 30;
             this.labelX56.Text = "密封舱开位置";
             // 
-            // tbx_AXIS1_SAFE2_POS
+            // txt_AXIS1_SAFE2_POS
             // 
-            this.tbx_AXIS1_SAFE2_POS.BackColor = System.Drawing.Color.Black;
+            this.txt_AXIS1_SAFE2_POS.BackColor = System.Drawing.Color.Black;
             // 
             // 
             // 
-            this.tbx_AXIS1_SAFE2_POS.Border.Class = "TextBoxBorder";
-            this.tbx_AXIS1_SAFE2_POS.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.tbx_AXIS1_SAFE2_POS.DisabledBackColor = System.Drawing.Color.White;
-            this.tbx_AXIS1_SAFE2_POS.ForeColor = System.Drawing.Color.White;
-            this.tbx_AXIS1_SAFE2_POS.Location = new System.Drawing.Point(600, 472);
-            this.tbx_AXIS1_SAFE2_POS.Name = "tbx_AXIS1_SAFE2_POS";
-            this.tbx_AXIS1_SAFE2_POS.PreventEnterBeep = true;
-            this.tbx_AXIS1_SAFE2_POS.Size = new System.Drawing.Size(105, 31);
-            this.tbx_AXIS1_SAFE2_POS.TabIndex = 29;
-            this.tbx_AXIS1_SAFE2_POS.Tag = "SAVE.AXIS1_SAFE2_POS;REAL";
-            this.tbx_AXIS1_SAFE2_POS.Text = "0";
+            this.txt_AXIS1_SAFE2_POS.Border.Class = "TextBoxBorder";
+            this.txt_AXIS1_SAFE2_POS.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txt_AXIS1_SAFE2_POS.DisabledBackColor = System.Drawing.Color.White;
+            this.txt_AXIS1_SAFE2_POS.ForeColor = System.Drawing.Color.White;
+            this.txt_AXIS1_SAFE2_POS.Location = new System.Drawing.Point(600, 472);
+            this.txt_AXIS1_SAFE2_POS.Name = "txt_AXIS1_SAFE2_POS";
+            this.txt_AXIS1_SAFE2_POS.PreventEnterBeep = true;
+            this.txt_AXIS1_SAFE2_POS.Size = new System.Drawing.Size(105, 31);
+            this.txt_AXIS1_SAFE2_POS.TabIndex = 29;
+            this.txt_AXIS1_SAFE2_POS.Tag = "SAVE.AXIS1_SAFE2_POS;REAL";
+            this.txt_AXIS1_SAFE2_POS.Text = "0";
+            this.txt_AXIS1_SAFE2_POS.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_AXIS1_SAFE2_POS_KeyPress);
             // 
             // labelX55
             // 
@@ -2298,23 +1300,24 @@
             this.labelX55.TabIndex = 28;
             this.labelX55.Text = "下降保护终";
             // 
-            // tbx_AXIS2_0_POS
+            // txt_AXIS2_0_POS
             // 
-            this.tbx_AXIS2_0_POS.BackColor = System.Drawing.Color.Black;
+            this.txt_AXIS2_0_POS.BackColor = System.Drawing.Color.Black;
             // 
             // 
             // 
-            this.tbx_AXIS2_0_POS.Border.Class = "TextBoxBorder";
-            this.tbx_AXIS2_0_POS.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.tbx_AXIS2_0_POS.DisabledBackColor = System.Drawing.Color.White;
-            this.tbx_AXIS2_0_POS.ForeColor = System.Drawing.Color.White;
-            this.tbx_AXIS2_0_POS.Location = new System.Drawing.Point(495, 472);
-            this.tbx_AXIS2_0_POS.Name = "tbx_AXIS2_0_POS";
-            this.tbx_AXIS2_0_POS.PreventEnterBeep = true;
-            this.tbx_AXIS2_0_POS.Size = new System.Drawing.Size(84, 31);
-            this.tbx_AXIS2_0_POS.TabIndex = 27;
-            this.tbx_AXIS2_0_POS.Tag = "SAVE.AXIS2_0_POS;REAL";
-            this.tbx_AXIS2_0_POS.Text = "0";
+            this.txt_AXIS2_0_POS.Border.Class = "TextBoxBorder";
+            this.txt_AXIS2_0_POS.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txt_AXIS2_0_POS.DisabledBackColor = System.Drawing.Color.White;
+            this.txt_AXIS2_0_POS.ForeColor = System.Drawing.Color.White;
+            this.txt_AXIS2_0_POS.Location = new System.Drawing.Point(495, 472);
+            this.txt_AXIS2_0_POS.Name = "txt_AXIS2_0_POS";
+            this.txt_AXIS2_0_POS.PreventEnterBeep = true;
+            this.txt_AXIS2_0_POS.Size = new System.Drawing.Size(84, 31);
+            this.txt_AXIS2_0_POS.TabIndex = 27;
+            this.txt_AXIS2_0_POS.Tag = "SAVE.AXIS2_0_POS;REAL";
+            this.txt_AXIS2_0_POS.Text = "0";
+            this.txt_AXIS2_0_POS.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_AXIS2_0_POS_KeyPress);
             // 
             // labelX54
             // 
@@ -2330,23 +1333,24 @@
             this.labelX54.TabIndex = 26;
             this.labelX54.Text = "起始位位置";
             // 
-            // tbx_AXIS2_9_POS
+            // txt_AXIS2_9_POS
             // 
-            this.tbx_AXIS2_9_POS.BackColor = System.Drawing.Color.Black;
+            this.txt_AXIS2_9_POS.BackColor = System.Drawing.Color.Black;
             // 
             // 
             // 
-            this.tbx_AXIS2_9_POS.Border.Class = "TextBoxBorder";
-            this.tbx_AXIS2_9_POS.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.tbx_AXIS2_9_POS.DisabledBackColor = System.Drawing.Color.White;
-            this.tbx_AXIS2_9_POS.ForeColor = System.Drawing.Color.White;
-            this.tbx_AXIS2_9_POS.Location = new System.Drawing.Point(384, 472);
-            this.tbx_AXIS2_9_POS.Name = "tbx_AXIS2_9_POS";
-            this.tbx_AXIS2_9_POS.PreventEnterBeep = true;
-            this.tbx_AXIS2_9_POS.Size = new System.Drawing.Size(84, 31);
-            this.tbx_AXIS2_9_POS.TabIndex = 25;
-            this.tbx_AXIS2_9_POS.Tag = "SAVE.AXIS2_9_POS;REAL";
-            this.tbx_AXIS2_9_POS.Text = "0";
+            this.txt_AXIS2_9_POS.Border.Class = "TextBoxBorder";
+            this.txt_AXIS2_9_POS.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txt_AXIS2_9_POS.DisabledBackColor = System.Drawing.Color.White;
+            this.txt_AXIS2_9_POS.ForeColor = System.Drawing.Color.White;
+            this.txt_AXIS2_9_POS.Location = new System.Drawing.Point(384, 472);
+            this.txt_AXIS2_9_POS.Name = "txt_AXIS2_9_POS";
+            this.txt_AXIS2_9_POS.PreventEnterBeep = true;
+            this.txt_AXIS2_9_POS.Size = new System.Drawing.Size(84, 31);
+            this.txt_AXIS2_9_POS.TabIndex = 25;
+            this.txt_AXIS2_9_POS.Tag = "SAVE.AXIS2_9_POS;REAL";
+            this.txt_AXIS2_9_POS.Text = "0";
+            this.txt_AXIS2_9_POS.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_AXIS2_9_POS_KeyPress);
             // 
             // labelX53
             // 
@@ -2362,23 +1366,24 @@
             this.labelX53.TabIndex = 24;
             this.labelX53.Text = "9号位位置";
             // 
-            // tbx_AXIS2_8_POS
+            // txt_AXIS2_8_POS
             // 
-            this.tbx_AXIS2_8_POS.BackColor = System.Drawing.Color.Black;
+            this.txt_AXIS2_8_POS.BackColor = System.Drawing.Color.Black;
             // 
             // 
             // 
-            this.tbx_AXIS2_8_POS.Border.Class = "TextBoxBorder";
-            this.tbx_AXIS2_8_POS.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.tbx_AXIS2_8_POS.DisabledBackColor = System.Drawing.Color.White;
-            this.tbx_AXIS2_8_POS.ForeColor = System.Drawing.Color.White;
-            this.tbx_AXIS2_8_POS.Location = new System.Drawing.Point(273, 472);
-            this.tbx_AXIS2_8_POS.Name = "tbx_AXIS2_8_POS";
-            this.tbx_AXIS2_8_POS.PreventEnterBeep = true;
-            this.tbx_AXIS2_8_POS.Size = new System.Drawing.Size(84, 31);
-            this.tbx_AXIS2_8_POS.TabIndex = 23;
-            this.tbx_AXIS2_8_POS.Tag = "SAVE.AXIS2_8_POS;REAL";
-            this.tbx_AXIS2_8_POS.Text = "0";
+            this.txt_AXIS2_8_POS.Border.Class = "TextBoxBorder";
+            this.txt_AXIS2_8_POS.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txt_AXIS2_8_POS.DisabledBackColor = System.Drawing.Color.White;
+            this.txt_AXIS2_8_POS.ForeColor = System.Drawing.Color.White;
+            this.txt_AXIS2_8_POS.Location = new System.Drawing.Point(273, 472);
+            this.txt_AXIS2_8_POS.Name = "txt_AXIS2_8_POS";
+            this.txt_AXIS2_8_POS.PreventEnterBeep = true;
+            this.txt_AXIS2_8_POS.Size = new System.Drawing.Size(84, 31);
+            this.txt_AXIS2_8_POS.TabIndex = 23;
+            this.txt_AXIS2_8_POS.Tag = "SAVE.AXIS2_8_POS;REAL";
+            this.txt_AXIS2_8_POS.Text = "0";
+            this.txt_AXIS2_8_POS.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_AXIS2_8_POS_KeyPress);
             // 
             // labelX52
             // 
@@ -2394,23 +1399,24 @@
             this.labelX52.TabIndex = 22;
             this.labelX52.Text = "8号位位置";
             // 
-            // tbx_AXIS2_7_POS
+            // txt_AXIS2_7_POS
             // 
-            this.tbx_AXIS2_7_POS.BackColor = System.Drawing.Color.Black;
+            this.txt_AXIS2_7_POS.BackColor = System.Drawing.Color.Black;
             // 
             // 
             // 
-            this.tbx_AXIS2_7_POS.Border.Class = "TextBoxBorder";
-            this.tbx_AXIS2_7_POS.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.tbx_AXIS2_7_POS.DisabledBackColor = System.Drawing.Color.White;
-            this.tbx_AXIS2_7_POS.ForeColor = System.Drawing.Color.White;
-            this.tbx_AXIS2_7_POS.Location = new System.Drawing.Point(161, 472);
-            this.tbx_AXIS2_7_POS.Name = "tbx_AXIS2_7_POS";
-            this.tbx_AXIS2_7_POS.PreventEnterBeep = true;
-            this.tbx_AXIS2_7_POS.Size = new System.Drawing.Size(84, 31);
-            this.tbx_AXIS2_7_POS.TabIndex = 21;
-            this.tbx_AXIS2_7_POS.Tag = "SAVE.AXIS2_7_POS;REAL";
-            this.tbx_AXIS2_7_POS.Text = "0";
+            this.txt_AXIS2_7_POS.Border.Class = "TextBoxBorder";
+            this.txt_AXIS2_7_POS.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txt_AXIS2_7_POS.DisabledBackColor = System.Drawing.Color.White;
+            this.txt_AXIS2_7_POS.ForeColor = System.Drawing.Color.White;
+            this.txt_AXIS2_7_POS.Location = new System.Drawing.Point(161, 472);
+            this.txt_AXIS2_7_POS.Name = "txt_AXIS2_7_POS";
+            this.txt_AXIS2_7_POS.PreventEnterBeep = true;
+            this.txt_AXIS2_7_POS.Size = new System.Drawing.Size(84, 31);
+            this.txt_AXIS2_7_POS.TabIndex = 21;
+            this.txt_AXIS2_7_POS.Tag = "SAVE.AXIS2_7_POS;REAL";
+            this.txt_AXIS2_7_POS.Text = "0";
+            this.txt_AXIS2_7_POS.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_AXIS2_7_POS_KeyPress);
             // 
             // labelX51
             // 
@@ -2426,23 +1432,24 @@
             this.labelX51.TabIndex = 20;
             this.labelX51.Text = "7号位位置";
             // 
-            // tbx_AXIS2_6_POS
+            // txt_AXIS2_6_POS
             // 
-            this.tbx_AXIS2_6_POS.BackColor = System.Drawing.Color.Black;
+            this.txt_AXIS2_6_POS.BackColor = System.Drawing.Color.Black;
             // 
             // 
             // 
-            this.tbx_AXIS2_6_POS.Border.Class = "TextBoxBorder";
-            this.tbx_AXIS2_6_POS.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.tbx_AXIS2_6_POS.DisabledBackColor = System.Drawing.Color.White;
-            this.tbx_AXIS2_6_POS.ForeColor = System.Drawing.Color.White;
-            this.tbx_AXIS2_6_POS.Location = new System.Drawing.Point(52, 472);
-            this.tbx_AXIS2_6_POS.Name = "tbx_AXIS2_6_POS";
-            this.tbx_AXIS2_6_POS.PreventEnterBeep = true;
-            this.tbx_AXIS2_6_POS.Size = new System.Drawing.Size(84, 31);
-            this.tbx_AXIS2_6_POS.TabIndex = 19;
-            this.tbx_AXIS2_6_POS.Tag = "SAVE.AXIS2_6_POS;REAL";
-            this.tbx_AXIS2_6_POS.Text = "0";
+            this.txt_AXIS2_6_POS.Border.Class = "TextBoxBorder";
+            this.txt_AXIS2_6_POS.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txt_AXIS2_6_POS.DisabledBackColor = System.Drawing.Color.White;
+            this.txt_AXIS2_6_POS.ForeColor = System.Drawing.Color.White;
+            this.txt_AXIS2_6_POS.Location = new System.Drawing.Point(52, 472);
+            this.txt_AXIS2_6_POS.Name = "txt_AXIS2_6_POS";
+            this.txt_AXIS2_6_POS.PreventEnterBeep = true;
+            this.txt_AXIS2_6_POS.Size = new System.Drawing.Size(84, 31);
+            this.txt_AXIS2_6_POS.TabIndex = 19;
+            this.txt_AXIS2_6_POS.Tag = "SAVE.AXIS2_6_POS;REAL";
+            this.txt_AXIS2_6_POS.Text = "0";
+            this.txt_AXIS2_6_POS.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_AXIS2_6_POS_KeyPress);
             // 
             // labelX50
             // 
@@ -2458,23 +1465,24 @@
             this.labelX50.TabIndex = 18;
             this.labelX50.Text = "6号位位置";
             // 
-            // tbx_AXIS1_SAFE1_POS
+            // txt_AXIS1_SAFE1_POS
             // 
-            this.tbx_AXIS1_SAFE1_POS.BackColor = System.Drawing.Color.Black;
+            this.txt_AXIS1_SAFE1_POS.BackColor = System.Drawing.Color.Black;
             // 
             // 
             // 
-            this.tbx_AXIS1_SAFE1_POS.Border.Class = "TextBoxBorder";
-            this.tbx_AXIS1_SAFE1_POS.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.tbx_AXIS1_SAFE1_POS.DisabledBackColor = System.Drawing.Color.White;
-            this.tbx_AXIS1_SAFE1_POS.ForeColor = System.Drawing.Color.White;
-            this.tbx_AXIS1_SAFE1_POS.Location = new System.Drawing.Point(600, 370);
-            this.tbx_AXIS1_SAFE1_POS.Name = "tbx_AXIS1_SAFE1_POS";
-            this.tbx_AXIS1_SAFE1_POS.PreventEnterBeep = true;
-            this.tbx_AXIS1_SAFE1_POS.Size = new System.Drawing.Size(105, 31);
-            this.tbx_AXIS1_SAFE1_POS.TabIndex = 17;
-            this.tbx_AXIS1_SAFE1_POS.Tag = "SAVE.AXIS1_SAFE1_POS;REAL";
-            this.tbx_AXIS1_SAFE1_POS.Text = "0";
+            this.txt_AXIS1_SAFE1_POS.Border.Class = "TextBoxBorder";
+            this.txt_AXIS1_SAFE1_POS.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txt_AXIS1_SAFE1_POS.DisabledBackColor = System.Drawing.Color.White;
+            this.txt_AXIS1_SAFE1_POS.ForeColor = System.Drawing.Color.White;
+            this.txt_AXIS1_SAFE1_POS.Location = new System.Drawing.Point(600, 370);
+            this.txt_AXIS1_SAFE1_POS.Name = "txt_AXIS1_SAFE1_POS";
+            this.txt_AXIS1_SAFE1_POS.PreventEnterBeep = true;
+            this.txt_AXIS1_SAFE1_POS.Size = new System.Drawing.Size(105, 31);
+            this.txt_AXIS1_SAFE1_POS.TabIndex = 17;
+            this.txt_AXIS1_SAFE1_POS.Tag = "SAVE.AXIS1_SAFE1_POS;REAL";
+            this.txt_AXIS1_SAFE1_POS.Text = "0";
+            this.txt_AXIS1_SAFE1_POS.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_AXIS1_SAFE1_POS_KeyPress);
             // 
             // labelX49
             // 
@@ -2490,23 +1498,24 @@
             this.labelX49.TabIndex = 16;
             this.labelX49.Text = "下降保护起";
             // 
-            // tbx_AXIS2_5_POS
+            // txt_AXIS2_5_POS
             // 
-            this.tbx_AXIS2_5_POS.BackColor = System.Drawing.Color.Black;
+            this.txt_AXIS2_5_POS.BackColor = System.Drawing.Color.Black;
             // 
             // 
             // 
-            this.tbx_AXIS2_5_POS.Border.Class = "TextBoxBorder";
-            this.tbx_AXIS2_5_POS.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.tbx_AXIS2_5_POS.DisabledBackColor = System.Drawing.Color.White;
-            this.tbx_AXIS2_5_POS.ForeColor = System.Drawing.Color.White;
-            this.tbx_AXIS2_5_POS.Location = new System.Drawing.Point(495, 370);
-            this.tbx_AXIS2_5_POS.Name = "tbx_AXIS2_5_POS";
-            this.tbx_AXIS2_5_POS.PreventEnterBeep = true;
-            this.tbx_AXIS2_5_POS.Size = new System.Drawing.Size(84, 31);
-            this.tbx_AXIS2_5_POS.TabIndex = 15;
-            this.tbx_AXIS2_5_POS.Tag = "SAVE.AXIS2_5_POS;REAL";
-            this.tbx_AXIS2_5_POS.Text = "0";
+            this.txt_AXIS2_5_POS.Border.Class = "TextBoxBorder";
+            this.txt_AXIS2_5_POS.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txt_AXIS2_5_POS.DisabledBackColor = System.Drawing.Color.White;
+            this.txt_AXIS2_5_POS.ForeColor = System.Drawing.Color.White;
+            this.txt_AXIS2_5_POS.Location = new System.Drawing.Point(495, 370);
+            this.txt_AXIS2_5_POS.Name = "txt_AXIS2_5_POS";
+            this.txt_AXIS2_5_POS.PreventEnterBeep = true;
+            this.txt_AXIS2_5_POS.Size = new System.Drawing.Size(84, 31);
+            this.txt_AXIS2_5_POS.TabIndex = 15;
+            this.txt_AXIS2_5_POS.Tag = "SAVE.AXIS2_5_POS;REAL";
+            this.txt_AXIS2_5_POS.Text = "0";
+            this.txt_AXIS2_5_POS.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_AXIS2_5_POS_KeyPress);
             // 
             // labelX48
             // 
@@ -2522,23 +1531,24 @@
             this.labelX48.TabIndex = 14;
             this.labelX48.Text = "5号位位置";
             // 
-            // tbx_AXIS2_4_POS
+            // txt_AXIS2_4_POS
             // 
-            this.tbx_AXIS2_4_POS.BackColor = System.Drawing.Color.Black;
+            this.txt_AXIS2_4_POS.BackColor = System.Drawing.Color.Black;
             // 
             // 
             // 
-            this.tbx_AXIS2_4_POS.Border.Class = "TextBoxBorder";
-            this.tbx_AXIS2_4_POS.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.tbx_AXIS2_4_POS.DisabledBackColor = System.Drawing.Color.White;
-            this.tbx_AXIS2_4_POS.ForeColor = System.Drawing.Color.White;
-            this.tbx_AXIS2_4_POS.Location = new System.Drawing.Point(384, 370);
-            this.tbx_AXIS2_4_POS.Name = "tbx_AXIS2_4_POS";
-            this.tbx_AXIS2_4_POS.PreventEnterBeep = true;
-            this.tbx_AXIS2_4_POS.Size = new System.Drawing.Size(84, 31);
-            this.tbx_AXIS2_4_POS.TabIndex = 13;
-            this.tbx_AXIS2_4_POS.Tag = "SAVE.AXIS2_4_POS;REAL";
-            this.tbx_AXIS2_4_POS.Text = "0";
+            this.txt_AXIS2_4_POS.Border.Class = "TextBoxBorder";
+            this.txt_AXIS2_4_POS.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txt_AXIS2_4_POS.DisabledBackColor = System.Drawing.Color.White;
+            this.txt_AXIS2_4_POS.ForeColor = System.Drawing.Color.White;
+            this.txt_AXIS2_4_POS.Location = new System.Drawing.Point(384, 370);
+            this.txt_AXIS2_4_POS.Name = "txt_AXIS2_4_POS";
+            this.txt_AXIS2_4_POS.PreventEnterBeep = true;
+            this.txt_AXIS2_4_POS.Size = new System.Drawing.Size(84, 31);
+            this.txt_AXIS2_4_POS.TabIndex = 13;
+            this.txt_AXIS2_4_POS.Tag = "SAVE.AXIS2_4_POS;REAL";
+            this.txt_AXIS2_4_POS.Text = "0";
+            this.txt_AXIS2_4_POS.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_AXIS2_4_POS_KeyPress);
             // 
             // labelX47
             // 
@@ -2554,23 +1564,24 @@
             this.labelX47.TabIndex = 12;
             this.labelX47.Text = "4号位位置";
             // 
-            // tbx_AXIS2_3_POS
+            // txt_AXIS2_3_POS
             // 
-            this.tbx_AXIS2_3_POS.BackColor = System.Drawing.Color.Black;
+            this.txt_AXIS2_3_POS.BackColor = System.Drawing.Color.Black;
             // 
             // 
             // 
-            this.tbx_AXIS2_3_POS.Border.Class = "TextBoxBorder";
-            this.tbx_AXIS2_3_POS.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.tbx_AXIS2_3_POS.DisabledBackColor = System.Drawing.Color.White;
-            this.tbx_AXIS2_3_POS.ForeColor = System.Drawing.Color.White;
-            this.tbx_AXIS2_3_POS.Location = new System.Drawing.Point(273, 370);
-            this.tbx_AXIS2_3_POS.Name = "tbx_AXIS2_3_POS";
-            this.tbx_AXIS2_3_POS.PreventEnterBeep = true;
-            this.tbx_AXIS2_3_POS.Size = new System.Drawing.Size(84, 31);
-            this.tbx_AXIS2_3_POS.TabIndex = 11;
-            this.tbx_AXIS2_3_POS.Tag = "SAVE.AXIS2_3_POS;REAL";
-            this.tbx_AXIS2_3_POS.Text = "0";
+            this.txt_AXIS2_3_POS.Border.Class = "TextBoxBorder";
+            this.txt_AXIS2_3_POS.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txt_AXIS2_3_POS.DisabledBackColor = System.Drawing.Color.White;
+            this.txt_AXIS2_3_POS.ForeColor = System.Drawing.Color.White;
+            this.txt_AXIS2_3_POS.Location = new System.Drawing.Point(273, 370);
+            this.txt_AXIS2_3_POS.Name = "txt_AXIS2_3_POS";
+            this.txt_AXIS2_3_POS.PreventEnterBeep = true;
+            this.txt_AXIS2_3_POS.Size = new System.Drawing.Size(84, 31);
+            this.txt_AXIS2_3_POS.TabIndex = 11;
+            this.txt_AXIS2_3_POS.Tag = "SAVE.AXIS2_3_POS;REAL";
+            this.txt_AXIS2_3_POS.Text = "0";
+            this.txt_AXIS2_3_POS.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_AXIS2_3_POS_KeyPress);
             // 
             // labelX46
             // 
@@ -2586,23 +1597,24 @@
             this.labelX46.TabIndex = 10;
             this.labelX46.Text = "3号位位置";
             // 
-            // tbx_AXIS2_2_POS
+            // txt_AXIS2_2_POS
             // 
-            this.tbx_AXIS2_2_POS.BackColor = System.Drawing.Color.Black;
+            this.txt_AXIS2_2_POS.BackColor = System.Drawing.Color.Black;
             // 
             // 
             // 
-            this.tbx_AXIS2_2_POS.Border.Class = "TextBoxBorder";
-            this.tbx_AXIS2_2_POS.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.tbx_AXIS2_2_POS.DisabledBackColor = System.Drawing.Color.White;
-            this.tbx_AXIS2_2_POS.ForeColor = System.Drawing.Color.White;
-            this.tbx_AXIS2_2_POS.Location = new System.Drawing.Point(161, 370);
-            this.tbx_AXIS2_2_POS.Name = "tbx_AXIS2_2_POS";
-            this.tbx_AXIS2_2_POS.PreventEnterBeep = true;
-            this.tbx_AXIS2_2_POS.Size = new System.Drawing.Size(84, 31);
-            this.tbx_AXIS2_2_POS.TabIndex = 9;
-            this.tbx_AXIS2_2_POS.Tag = "SAVE.AXIS2_2_POS;REAL";
-            this.tbx_AXIS2_2_POS.Text = "0";
+            this.txt_AXIS2_2_POS.Border.Class = "TextBoxBorder";
+            this.txt_AXIS2_2_POS.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txt_AXIS2_2_POS.DisabledBackColor = System.Drawing.Color.White;
+            this.txt_AXIS2_2_POS.ForeColor = System.Drawing.Color.White;
+            this.txt_AXIS2_2_POS.Location = new System.Drawing.Point(161, 370);
+            this.txt_AXIS2_2_POS.Name = "txt_AXIS2_2_POS";
+            this.txt_AXIS2_2_POS.PreventEnterBeep = true;
+            this.txt_AXIS2_2_POS.Size = new System.Drawing.Size(84, 31);
+            this.txt_AXIS2_2_POS.TabIndex = 9;
+            this.txt_AXIS2_2_POS.Tag = "SAVE.AXIS2_2_POS;REAL";
+            this.txt_AXIS2_2_POS.Text = "0";
+            this.txt_AXIS2_2_POS.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_AXIS2_2_POS_KeyPress);
             // 
             // labelX45
             // 
@@ -2618,23 +1630,24 @@
             this.labelX45.TabIndex = 8;
             this.labelX45.Text = "2号位位置";
             // 
-            // tbx_AXIS2_1_POS
+            // txt_AXIS2_1_POS
             // 
-            this.tbx_AXIS2_1_POS.BackColor = System.Drawing.Color.Black;
+            this.txt_AXIS2_1_POS.BackColor = System.Drawing.Color.Black;
             // 
             // 
             // 
-            this.tbx_AXIS2_1_POS.Border.Class = "TextBoxBorder";
-            this.tbx_AXIS2_1_POS.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.tbx_AXIS2_1_POS.DisabledBackColor = System.Drawing.Color.White;
-            this.tbx_AXIS2_1_POS.ForeColor = System.Drawing.Color.White;
-            this.tbx_AXIS2_1_POS.Location = new System.Drawing.Point(52, 370);
-            this.tbx_AXIS2_1_POS.Name = "tbx_AXIS2_1_POS";
-            this.tbx_AXIS2_1_POS.PreventEnterBeep = true;
-            this.tbx_AXIS2_1_POS.Size = new System.Drawing.Size(84, 31);
-            this.tbx_AXIS2_1_POS.TabIndex = 7;
-            this.tbx_AXIS2_1_POS.Tag = "SAVE.AXIS2_1_POS;REAL";
-            this.tbx_AXIS2_1_POS.Text = "0";
+            this.txt_AXIS2_1_POS.Border.Class = "TextBoxBorder";
+            this.txt_AXIS2_1_POS.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txt_AXIS2_1_POS.DisabledBackColor = System.Drawing.Color.White;
+            this.txt_AXIS2_1_POS.ForeColor = System.Drawing.Color.White;
+            this.txt_AXIS2_1_POS.Location = new System.Drawing.Point(52, 370);
+            this.txt_AXIS2_1_POS.Name = "txt_AXIS2_1_POS";
+            this.txt_AXIS2_1_POS.PreventEnterBeep = true;
+            this.txt_AXIS2_1_POS.Size = new System.Drawing.Size(84, 31);
+            this.txt_AXIS2_1_POS.TabIndex = 7;
+            this.txt_AXIS2_1_POS.Tag = "SAVE.AXIS2_1_POS;REAL";
+            this.txt_AXIS2_1_POS.Text = "0";
+            this.txt_AXIS2_1_POS.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_AXIS2_1_POS_KeyPress);
             // 
             // labelX44
             // 
@@ -2650,23 +1663,24 @@
             this.labelX44.TabIndex = 6;
             this.labelX44.Text = "1号位位置";
             // 
-            // tbx_AXIS1_UP_POS
+            // txt_AXIS1_UP_POS
             // 
-            this.tbx_AXIS1_UP_POS.BackColor = System.Drawing.Color.Black;
+            this.txt_AXIS1_UP_POS.BackColor = System.Drawing.Color.Black;
             // 
             // 
             // 
-            this.tbx_AXIS1_UP_POS.Border.Class = "TextBoxBorder";
-            this.tbx_AXIS1_UP_POS.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.tbx_AXIS1_UP_POS.DisabledBackColor = System.Drawing.Color.White;
-            this.tbx_AXIS1_UP_POS.ForeColor = System.Drawing.Color.White;
-            this.tbx_AXIS1_UP_POS.Location = new System.Drawing.Point(52, 270);
-            this.tbx_AXIS1_UP_POS.Name = "tbx_AXIS1_UP_POS";
-            this.tbx_AXIS1_UP_POS.PreventEnterBeep = true;
-            this.tbx_AXIS1_UP_POS.Size = new System.Drawing.Size(84, 31);
-            this.tbx_AXIS1_UP_POS.TabIndex = 5;
-            this.tbx_AXIS1_UP_POS.Tag = "SAVE.AXIS1_UP_POS;REAL";
-            this.tbx_AXIS1_UP_POS.Text = "0";
+            this.txt_AXIS1_UP_POS.Border.Class = "TextBoxBorder";
+            this.txt_AXIS1_UP_POS.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txt_AXIS1_UP_POS.DisabledBackColor = System.Drawing.Color.White;
+            this.txt_AXIS1_UP_POS.ForeColor = System.Drawing.Color.White;
+            this.txt_AXIS1_UP_POS.Location = new System.Drawing.Point(52, 270);
+            this.txt_AXIS1_UP_POS.Name = "txt_AXIS1_UP_POS";
+            this.txt_AXIS1_UP_POS.PreventEnterBeep = true;
+            this.txt_AXIS1_UP_POS.Size = new System.Drawing.Size(84, 31);
+            this.txt_AXIS1_UP_POS.TabIndex = 5;
+            this.txt_AXIS1_UP_POS.Tag = "SAVE.AXIS1_UP_POS;REAL";
+            this.txt_AXIS1_UP_POS.Text = "0";
+            this.txt_AXIS1_UP_POS.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_AXIS1_UP_POS_KeyPress);
             // 
             // labelX43
             // 
@@ -2682,23 +1696,24 @@
             this.labelX43.TabIndex = 4;
             this.labelX43.Text = "升起位置";
             // 
-            // tbx_AXIS1_DOWN_POS2
+            // txt_AXIS1_DOWN_POS2
             // 
-            this.tbx_AXIS1_DOWN_POS2.BackColor = System.Drawing.Color.Black;
+            this.txt_AXIS1_DOWN_POS2.BackColor = System.Drawing.Color.Black;
             // 
             // 
             // 
-            this.tbx_AXIS1_DOWN_POS2.Border.Class = "TextBoxBorder";
-            this.tbx_AXIS1_DOWN_POS2.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.tbx_AXIS1_DOWN_POS2.DisabledBackColor = System.Drawing.Color.White;
-            this.tbx_AXIS1_DOWN_POS2.ForeColor = System.Drawing.Color.White;
-            this.tbx_AXIS1_DOWN_POS2.Location = new System.Drawing.Point(52, 174);
-            this.tbx_AXIS1_DOWN_POS2.Name = "tbx_AXIS1_DOWN_POS2";
-            this.tbx_AXIS1_DOWN_POS2.PreventEnterBeep = true;
-            this.tbx_AXIS1_DOWN_POS2.Size = new System.Drawing.Size(84, 31);
-            this.tbx_AXIS1_DOWN_POS2.TabIndex = 3;
-            this.tbx_AXIS1_DOWN_POS2.Tag = "SAVE.AXIS1_DOWN_POS2;REAL";
-            this.tbx_AXIS1_DOWN_POS2.Text = "0";
+            this.txt_AXIS1_DOWN_POS2.Border.Class = "TextBoxBorder";
+            this.txt_AXIS1_DOWN_POS2.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txt_AXIS1_DOWN_POS2.DisabledBackColor = System.Drawing.Color.White;
+            this.txt_AXIS1_DOWN_POS2.ForeColor = System.Drawing.Color.White;
+            this.txt_AXIS1_DOWN_POS2.Location = new System.Drawing.Point(52, 174);
+            this.txt_AXIS1_DOWN_POS2.Name = "txt_AXIS1_DOWN_POS2";
+            this.txt_AXIS1_DOWN_POS2.PreventEnterBeep = true;
+            this.txt_AXIS1_DOWN_POS2.Size = new System.Drawing.Size(84, 31);
+            this.txt_AXIS1_DOWN_POS2.TabIndex = 3;
+            this.txt_AXIS1_DOWN_POS2.Tag = "SAVE.AXIS1_DOWN_POS2;REAL";
+            this.txt_AXIS1_DOWN_POS2.Text = "0";
+            this.txt_AXIS1_DOWN_POS2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_AXIS1_DOWN_POS2_KeyPress);
             // 
             // labelX42
             // 
@@ -2714,23 +1729,24 @@
             this.labelX42.TabIndex = 2;
             this.labelX42.Text = "下降2位置";
             // 
-            // tbx_AXIS1_DOWN_POS
+            // txt_AXIS1_DOWN_POS
             // 
-            this.tbx_AXIS1_DOWN_POS.BackColor = System.Drawing.Color.Black;
+            this.txt_AXIS1_DOWN_POS.BackColor = System.Drawing.Color.Black;
             // 
             // 
             // 
-            this.tbx_AXIS1_DOWN_POS.Border.Class = "TextBoxBorder";
-            this.tbx_AXIS1_DOWN_POS.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.tbx_AXIS1_DOWN_POS.DisabledBackColor = System.Drawing.Color.White;
-            this.tbx_AXIS1_DOWN_POS.ForeColor = System.Drawing.Color.White;
-            this.tbx_AXIS1_DOWN_POS.Location = new System.Drawing.Point(52, 82);
-            this.tbx_AXIS1_DOWN_POS.Name = "tbx_AXIS1_DOWN_POS";
-            this.tbx_AXIS1_DOWN_POS.PreventEnterBeep = true;
-            this.tbx_AXIS1_DOWN_POS.Size = new System.Drawing.Size(84, 31);
-            this.tbx_AXIS1_DOWN_POS.TabIndex = 1;
-            this.tbx_AXIS1_DOWN_POS.Tag = "SAVE.AXIS1_DOWN_POS;REAL";
-            this.tbx_AXIS1_DOWN_POS.Text = "0";
+            this.txt_AXIS1_DOWN_POS.Border.Class = "TextBoxBorder";
+            this.txt_AXIS1_DOWN_POS.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txt_AXIS1_DOWN_POS.DisabledBackColor = System.Drawing.Color.White;
+            this.txt_AXIS1_DOWN_POS.ForeColor = System.Drawing.Color.White;
+            this.txt_AXIS1_DOWN_POS.Location = new System.Drawing.Point(52, 82);
+            this.txt_AXIS1_DOWN_POS.Name = "txt_AXIS1_DOWN_POS";
+            this.txt_AXIS1_DOWN_POS.PreventEnterBeep = true;
+            this.txt_AXIS1_DOWN_POS.Size = new System.Drawing.Size(84, 31);
+            this.txt_AXIS1_DOWN_POS.TabIndex = 1;
+            this.txt_AXIS1_DOWN_POS.Tag = "SAVE.AXIS1_DOWN_POS;REAL";
+            this.txt_AXIS1_DOWN_POS.Text = "0";
+            this.txt_AXIS1_DOWN_POS.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_AXIS1_DOWN_POS_KeyPress);
             // 
             // labelX41
             // 
@@ -2757,54 +1773,54 @@
             // superTabControlPanel3
             // 
             this.superTabControlPanel3.Controls.Add(this.labelX38);
-            this.superTabControlPanel3.Controls.Add(this.btn_A6_CLOSE9);
-            this.superTabControlPanel3.Controls.Add(this.btn_A6_OPEN9);
-            this.superTabControlPanel3.Controls.Add(this.btn_A3_CLOSE9);
-            this.superTabControlPanel3.Controls.Add(this.btn_A3_OPEN9);
+            this.superTabControlPanel3.Controls.Add(this.btm_A6_CLOSE9);
+            this.superTabControlPanel3.Controls.Add(this.btm_A6_OPEN9);
+            this.superTabControlPanel3.Controls.Add(this.btm_A3_CLOSE9);
+            this.superTabControlPanel3.Controls.Add(this.btm_A3_OPEN9);
             this.superTabControlPanel3.Controls.Add(this.labelX39);
-            this.superTabControlPanel3.Controls.Add(this.btn_A6_CLOSE8);
-            this.superTabControlPanel3.Controls.Add(this.btn_A6_OPEN8);
-            this.superTabControlPanel3.Controls.Add(this.btn_A3_CLOSE8);
-            this.superTabControlPanel3.Controls.Add(this.btn_A3_OPEN8);
+            this.superTabControlPanel3.Controls.Add(this.btm_A6_CLOSE8);
+            this.superTabControlPanel3.Controls.Add(this.btm_A6_OPEN8);
+            this.superTabControlPanel3.Controls.Add(this.btm_A3_CLOSE8);
+            this.superTabControlPanel3.Controls.Add(this.btm_A3_OPEN8);
             this.superTabControlPanel3.Controls.Add(this.labelX40);
-            this.superTabControlPanel3.Controls.Add(this.btn_A6_CLOSE7);
-            this.superTabControlPanel3.Controls.Add(this.btn_A6_OPEN7);
-            this.superTabControlPanel3.Controls.Add(this.btn_A3_CLOSE7);
-            this.superTabControlPanel3.Controls.Add(this.btn_A3_OPEN7);
+            this.superTabControlPanel3.Controls.Add(this.btm_A6_CLOSE7);
+            this.superTabControlPanel3.Controls.Add(this.btm_A6_OPEN7);
+            this.superTabControlPanel3.Controls.Add(this.btm_A3_CLOSE7);
+            this.superTabControlPanel3.Controls.Add(this.btm_A3_OPEN7);
             this.superTabControlPanel3.Controls.Add(this.labelX35);
-            this.superTabControlPanel3.Controls.Add(this.btn_A6_CLOSE6);
-            this.superTabControlPanel3.Controls.Add(this.btn_A6_OPEN6);
-            this.superTabControlPanel3.Controls.Add(this.btn_A3_CLOSE6);
-            this.superTabControlPanel3.Controls.Add(this.btn_A3_OPEN6);
+            this.superTabControlPanel3.Controls.Add(this.btm_A6_CLOSE6);
+            this.superTabControlPanel3.Controls.Add(this.btm_A6_OPEN6);
+            this.superTabControlPanel3.Controls.Add(this.btm_A3_CLOSE6);
+            this.superTabControlPanel3.Controls.Add(this.btm_A3_OPEN6);
             this.superTabControlPanel3.Controls.Add(this.labelX36);
-            this.superTabControlPanel3.Controls.Add(this.btn_A6_CLOSE5);
-            this.superTabControlPanel3.Controls.Add(this.btn_A6_OPEN5);
-            this.superTabControlPanel3.Controls.Add(this.btn_A3_CLOSE5);
-            this.superTabControlPanel3.Controls.Add(this.btn_A3_OPEN5);
+            this.superTabControlPanel3.Controls.Add(this.btm_A6_CLOSE5);
+            this.superTabControlPanel3.Controls.Add(this.btm_A6_OPEN5);
+            this.superTabControlPanel3.Controls.Add(this.btm_A3_CLOSE5);
+            this.superTabControlPanel3.Controls.Add(this.btm_A3_OPEN5);
             this.superTabControlPanel3.Controls.Add(this.labelX37);
-            this.superTabControlPanel3.Controls.Add(this.btn_A6_CLOSE4);
-            this.superTabControlPanel3.Controls.Add(this.btn_A6_OPEN4);
-            this.superTabControlPanel3.Controls.Add(this.btn_A3_CLOSE4);
-            this.superTabControlPanel3.Controls.Add(this.btn_A3_OPEN4);
+            this.superTabControlPanel3.Controls.Add(this.btm_A6_CLOSE4);
+            this.superTabControlPanel3.Controls.Add(this.btm_A6_OPEN4);
+            this.superTabControlPanel3.Controls.Add(this.btm_A3_CLOSE4);
+            this.superTabControlPanel3.Controls.Add(this.btm_A3_OPEN4);
             this.superTabControlPanel3.Controls.Add(this.labelX34);
-            this.superTabControlPanel3.Controls.Add(this.btn_A6_CLOSE3);
-            this.superTabControlPanel3.Controls.Add(this.btn_A6_OPEN3);
-            this.superTabControlPanel3.Controls.Add(this.btn_A3_CLOSE3);
-            this.superTabControlPanel3.Controls.Add(this.btn_A3_OPEN3);
+            this.superTabControlPanel3.Controls.Add(this.btm_A6_CLOSE3);
+            this.superTabControlPanel3.Controls.Add(this.btm_A6_OPEN3);
+            this.superTabControlPanel3.Controls.Add(this.btm_A3_CLOSE3);
+            this.superTabControlPanel3.Controls.Add(this.btm_A3_OPEN3);
             this.superTabControlPanel3.Controls.Add(this.labelX33);
-            this.superTabControlPanel3.Controls.Add(this.btn_A6_CLOSE2);
-            this.superTabControlPanel3.Controls.Add(this.btn_A6_OPEN2);
-            this.superTabControlPanel3.Controls.Add(this.btn_A3_CLOSE2);
-            this.superTabControlPanel3.Controls.Add(this.btn_A3_OPEN2);
+            this.superTabControlPanel3.Controls.Add(this.btm_A6_CLOSE2);
+            this.superTabControlPanel3.Controls.Add(this.btm_A6_OPEN2);
+            this.superTabControlPanel3.Controls.Add(this.btm_A3_CLOSE2);
+            this.superTabControlPanel3.Controls.Add(this.btm_A3_OPEN2);
             this.superTabControlPanel3.Controls.Add(this.labelX32);
-            this.superTabControlPanel3.Controls.Add(this.btn_A6_CLOSE1);
-            this.superTabControlPanel3.Controls.Add(this.btn_A6_OPEN1);
-            this.superTabControlPanel3.Controls.Add(this.btn_A3_CLOSE1);
-            this.superTabControlPanel3.Controls.Add(this.btn_A3_OPEN1);
+            this.superTabControlPanel3.Controls.Add(this.btm_A6_CLOSE1);
+            this.superTabControlPanel3.Controls.Add(this.btm_A6_OPEN1);
+            this.superTabControlPanel3.Controls.Add(this.btm_A3_CLOSE1);
+            this.superTabControlPanel3.Controls.Add(this.btm_A3_OPEN1);
             this.superTabControlPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.superTabControlPanel3.Location = new System.Drawing.Point(0, 46);
             this.superTabControlPanel3.Name = "superTabControlPanel3";
-            this.superTabControlPanel3.Size = new System.Drawing.Size(904, 517);
+            this.superTabControlPanel3.Size = new System.Drawing.Size(832, 517);
             this.superTabControlPanel3.TabIndex = 3;
             this.superTabControlPanel3.TabItem = this.superTabItem3;
             // 
@@ -2822,57 +1838,57 @@
             this.labelX38.TabIndex = 44;
             this.labelX38.Text = "9号位阀门";
             // 
-            // btn_A6_CLOSE9
+            // btm_A6_CLOSE9
             // 
-            this.btn_A6_CLOSE9.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_A6_CLOSE9.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_A6_CLOSE9.Location = new System.Drawing.Point(615, 468);
-            this.btn_A6_CLOSE9.Name = "btn_A6_CLOSE9";
-            this.btn_A6_CLOSE9.Size = new System.Drawing.Size(75, 30);
-            this.btn_A6_CLOSE9.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_A6_CLOSE9.TabIndex = 43;
-            this.btn_A6_CLOSE9.Tag = "HMI.A6_CLOSE9;BOOL";
-            this.btn_A6_CLOSE9.Text = "A6关闭";
-            this.btn_A6_CLOSE9.Click += new System.EventHandler(this.btn_A6_CLOSE9_Click);
+            this.btm_A6_CLOSE9.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A6_CLOSE9.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_A6_CLOSE9.Location = new System.Drawing.Point(615, 468);
+            this.btm_A6_CLOSE9.Name = "btm_A6_CLOSE9";
+            this.btm_A6_CLOSE9.Size = new System.Drawing.Size(75, 30);
+            this.btm_A6_CLOSE9.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A6_CLOSE9.TabIndex = 43;
+            this.btm_A6_CLOSE9.Tag = "HMI.A6_CLOSE9;BOOL";
+            this.btm_A6_CLOSE9.Text = "A6关闭";
+            this.btm_A6_CLOSE9.Click += new System.EventHandler(this.btm_A6_CLOSE9_Click);
             // 
-            // btn_A6_OPEN9
+            // btm_A6_OPEN9
             // 
-            this.btn_A6_OPEN9.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_A6_OPEN9.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_A6_OPEN9.Location = new System.Drawing.Point(615, 415);
-            this.btn_A6_OPEN9.Name = "btn_A6_OPEN9";
-            this.btn_A6_OPEN9.Size = new System.Drawing.Size(75, 30);
-            this.btn_A6_OPEN9.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_A6_OPEN9.TabIndex = 42;
-            this.btn_A6_OPEN9.Tag = "HMI.A6_OPEN9;BOOL";
-            this.btn_A6_OPEN9.Text = "A6打开";
-            this.btn_A6_OPEN9.Click += new System.EventHandler(this.btn_A6_OPEN9_Click);
+            this.btm_A6_OPEN9.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A6_OPEN9.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_A6_OPEN9.Location = new System.Drawing.Point(615, 415);
+            this.btm_A6_OPEN9.Name = "btm_A6_OPEN9";
+            this.btm_A6_OPEN9.Size = new System.Drawing.Size(75, 30);
+            this.btm_A6_OPEN9.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A6_OPEN9.TabIndex = 42;
+            this.btm_A6_OPEN9.Tag = "HMI.A6_OPEN9;BOOL";
+            this.btm_A6_OPEN9.Text = "A6打开";
+            this.btm_A6_OPEN9.Click += new System.EventHandler(this.btm_A6_OPEN9_Click);
             // 
-            // btn_A3_CLOSE9
+            // btm_A3_CLOSE9
             // 
-            this.btn_A3_CLOSE9.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_A3_CLOSE9.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_A3_CLOSE9.Location = new System.Drawing.Point(511, 468);
-            this.btn_A3_CLOSE9.Name = "btn_A3_CLOSE9";
-            this.btn_A3_CLOSE9.Size = new System.Drawing.Size(75, 30);
-            this.btn_A3_CLOSE9.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_A3_CLOSE9.TabIndex = 41;
-            this.btn_A3_CLOSE9.Tag = "HMI.A3_CLOSE9;BOOL";
-            this.btn_A3_CLOSE9.Text = "A3关闭";
-            this.btn_A3_CLOSE9.Click += new System.EventHandler(this.btn_A3_CLOSE9_Click);
+            this.btm_A3_CLOSE9.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A3_CLOSE9.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_A3_CLOSE9.Location = new System.Drawing.Point(511, 468);
+            this.btm_A3_CLOSE9.Name = "btm_A3_CLOSE9";
+            this.btm_A3_CLOSE9.Size = new System.Drawing.Size(75, 30);
+            this.btm_A3_CLOSE9.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A3_CLOSE9.TabIndex = 41;
+            this.btm_A3_CLOSE9.Tag = "HMI.A3_CLOSE9;BOOL";
+            this.btm_A3_CLOSE9.Text = "A3关闭";
+            this.btm_A3_CLOSE9.Click += new System.EventHandler(this.btm_A3_CLOSE9_Click);
             // 
-            // btn_A3_OPEN9
+            // btm_A3_OPEN9
             // 
-            this.btn_A3_OPEN9.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_A3_OPEN9.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_A3_OPEN9.Location = new System.Drawing.Point(511, 415);
-            this.btn_A3_OPEN9.Name = "btn_A3_OPEN9";
-            this.btn_A3_OPEN9.Size = new System.Drawing.Size(75, 30);
-            this.btn_A3_OPEN9.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_A3_OPEN9.TabIndex = 40;
-            this.btn_A3_OPEN9.Tag = "HMI.A3_OPEN9;BOOL";
-            this.btn_A3_OPEN9.Text = "A3打开";
-            this.btn_A3_OPEN9.Click += new System.EventHandler(this.btn_A3_OPEN9_Click);
+            this.btm_A3_OPEN9.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A3_OPEN9.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_A3_OPEN9.Location = new System.Drawing.Point(511, 415);
+            this.btm_A3_OPEN9.Name = "btm_A3_OPEN9";
+            this.btm_A3_OPEN9.Size = new System.Drawing.Size(75, 30);
+            this.btm_A3_OPEN9.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A3_OPEN9.TabIndex = 40;
+            this.btm_A3_OPEN9.Tag = "HMI.A3_OPEN9;BOOL";
+            this.btm_A3_OPEN9.Text = "A3打开";
+            this.btm_A3_OPEN9.Click += new System.EventHandler(this.btm_A3_OPEN9_Click);
             // 
             // labelX39
             // 
@@ -2888,57 +1904,57 @@
             this.labelX39.TabIndex = 39;
             this.labelX39.Text = "8号位阀门";
             // 
-            // btn_A6_CLOSE8
+            // btm_A6_CLOSE8
             // 
-            this.btn_A6_CLOSE8.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_A6_CLOSE8.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_A6_CLOSE8.Location = new System.Drawing.Point(388, 468);
-            this.btn_A6_CLOSE8.Name = "btn_A6_CLOSE8";
-            this.btn_A6_CLOSE8.Size = new System.Drawing.Size(75, 30);
-            this.btn_A6_CLOSE8.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_A6_CLOSE8.TabIndex = 38;
-            this.btn_A6_CLOSE8.Tag = "HMI.A6_CLOSE8;BOOL";
-            this.btn_A6_CLOSE8.Text = "A6关闭";
-            this.btn_A6_CLOSE8.Click += new System.EventHandler(this.btn_A6_CLOSE8_Click);
+            this.btm_A6_CLOSE8.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A6_CLOSE8.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_A6_CLOSE8.Location = new System.Drawing.Point(388, 468);
+            this.btm_A6_CLOSE8.Name = "btm_A6_CLOSE8";
+            this.btm_A6_CLOSE8.Size = new System.Drawing.Size(75, 30);
+            this.btm_A6_CLOSE8.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A6_CLOSE8.TabIndex = 38;
+            this.btm_A6_CLOSE8.Tag = "HMI.A6_CLOSE8;BOOL";
+            this.btm_A6_CLOSE8.Text = "A6关闭";
+            this.btm_A6_CLOSE8.Click += new System.EventHandler(this.btm_A6_CLOSE8_Click);
             // 
-            // btn_A6_OPEN8
+            // btm_A6_OPEN8
             // 
-            this.btn_A6_OPEN8.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_A6_OPEN8.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_A6_OPEN8.Location = new System.Drawing.Point(388, 415);
-            this.btn_A6_OPEN8.Name = "btn_A6_OPEN8";
-            this.btn_A6_OPEN8.Size = new System.Drawing.Size(75, 30);
-            this.btn_A6_OPEN8.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_A6_OPEN8.TabIndex = 37;
-            this.btn_A6_OPEN8.Tag = "HMI.A6_OPEN8;BOOL";
-            this.btn_A6_OPEN8.Text = "A6打开";
-            this.btn_A6_OPEN8.Click += new System.EventHandler(this.btn_A6_OPEN8_Click);
+            this.btm_A6_OPEN8.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A6_OPEN8.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_A6_OPEN8.Location = new System.Drawing.Point(388, 415);
+            this.btm_A6_OPEN8.Name = "btm_A6_OPEN8";
+            this.btm_A6_OPEN8.Size = new System.Drawing.Size(75, 30);
+            this.btm_A6_OPEN8.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A6_OPEN8.TabIndex = 37;
+            this.btm_A6_OPEN8.Tag = "HMI.A6_OPEN8;BOOL";
+            this.btm_A6_OPEN8.Text = "A6打开";
+            this.btm_A6_OPEN8.Click += new System.EventHandler(this.btm_A6_OPEN8_Click);
             // 
-            // btn_A3_CLOSE8
+            // btm_A3_CLOSE8
             // 
-            this.btn_A3_CLOSE8.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_A3_CLOSE8.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_A3_CLOSE8.Location = new System.Drawing.Point(284, 468);
-            this.btn_A3_CLOSE8.Name = "btn_A3_CLOSE8";
-            this.btn_A3_CLOSE8.Size = new System.Drawing.Size(75, 30);
-            this.btn_A3_CLOSE8.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_A3_CLOSE8.TabIndex = 36;
-            this.btn_A3_CLOSE8.Tag = "HMI.A3_CLOSE8;BOOL";
-            this.btn_A3_CLOSE8.Text = "A3关闭";
-            this.btn_A3_CLOSE8.Click += new System.EventHandler(this.btn_A3_CLOSE8_Click);
+            this.btm_A3_CLOSE8.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A3_CLOSE8.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_A3_CLOSE8.Location = new System.Drawing.Point(284, 468);
+            this.btm_A3_CLOSE8.Name = "btm_A3_CLOSE8";
+            this.btm_A3_CLOSE8.Size = new System.Drawing.Size(75, 30);
+            this.btm_A3_CLOSE8.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A3_CLOSE8.TabIndex = 36;
+            this.btm_A3_CLOSE8.Tag = "HMI.A3_CLOSE8;BOOL";
+            this.btm_A3_CLOSE8.Text = "A3关闭";
+            this.btm_A3_CLOSE8.Click += new System.EventHandler(this.btm_A3_CLOSE8_Click);
             // 
-            // btn_A3_OPEN8
+            // btm_A3_OPEN8
             // 
-            this.btn_A3_OPEN8.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_A3_OPEN8.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_A3_OPEN8.Location = new System.Drawing.Point(284, 415);
-            this.btn_A3_OPEN8.Name = "btn_A3_OPEN8";
-            this.btn_A3_OPEN8.Size = new System.Drawing.Size(75, 30);
-            this.btn_A3_OPEN8.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_A3_OPEN8.TabIndex = 35;
-            this.btn_A3_OPEN8.Tag = "HMI.A3_OPEN8;BOOL";
-            this.btn_A3_OPEN8.Text = "A3打开";
-            this.btn_A3_OPEN8.Click += new System.EventHandler(this.btn_A3_OPEN8_Click);
+            this.btm_A3_OPEN8.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A3_OPEN8.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_A3_OPEN8.Location = new System.Drawing.Point(284, 415);
+            this.btm_A3_OPEN8.Name = "btm_A3_OPEN8";
+            this.btm_A3_OPEN8.Size = new System.Drawing.Size(75, 30);
+            this.btm_A3_OPEN8.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A3_OPEN8.TabIndex = 35;
+            this.btm_A3_OPEN8.Tag = "HMI.A3_OPEN8;BOOL";
+            this.btm_A3_OPEN8.Text = "A3打开";
+            this.btm_A3_OPEN8.Click += new System.EventHandler(this.btm_A3_OPEN8_Click);
             // 
             // labelX40
             // 
@@ -2954,57 +1970,57 @@
             this.labelX40.TabIndex = 34;
             this.labelX40.Text = "7号位阀门";
             // 
-            // btn_A6_CLOSE7
+            // btm_A6_CLOSE7
             // 
-            this.btn_A6_CLOSE7.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_A6_CLOSE7.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_A6_CLOSE7.Location = new System.Drawing.Point(156, 468);
-            this.btn_A6_CLOSE7.Name = "btn_A6_CLOSE7";
-            this.btn_A6_CLOSE7.Size = new System.Drawing.Size(75, 30);
-            this.btn_A6_CLOSE7.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_A6_CLOSE7.TabIndex = 33;
-            this.btn_A6_CLOSE7.Tag = "HMI.A6_CLOSE7;BOOL";
-            this.btn_A6_CLOSE7.Text = "A6关闭";
-            this.btn_A6_CLOSE7.Click += new System.EventHandler(this.btn_A6_CLOSE7_Click);
+            this.btm_A6_CLOSE7.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A6_CLOSE7.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_A6_CLOSE7.Location = new System.Drawing.Point(156, 468);
+            this.btm_A6_CLOSE7.Name = "btm_A6_CLOSE7";
+            this.btm_A6_CLOSE7.Size = new System.Drawing.Size(75, 30);
+            this.btm_A6_CLOSE7.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A6_CLOSE7.TabIndex = 33;
+            this.btm_A6_CLOSE7.Tag = "HMI.A6_CLOSE7;BOOL";
+            this.btm_A6_CLOSE7.Text = "A6关闭";
+            this.btm_A6_CLOSE7.Click += new System.EventHandler(this.btm_A6_CLOSE7_Click);
             // 
-            // btn_A6_OPEN7
+            // btm_A6_OPEN7
             // 
-            this.btn_A6_OPEN7.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_A6_OPEN7.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_A6_OPEN7.Location = new System.Drawing.Point(156, 415);
-            this.btn_A6_OPEN7.Name = "btn_A6_OPEN7";
-            this.btn_A6_OPEN7.Size = new System.Drawing.Size(75, 30);
-            this.btn_A6_OPEN7.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_A6_OPEN7.TabIndex = 32;
-            this.btn_A6_OPEN7.Tag = "HMI.A6_OPEN7;BOOL";
-            this.btn_A6_OPEN7.Text = "A6打开";
-            this.btn_A6_OPEN7.Click += new System.EventHandler(this.btn_A6_OPEN7_Click);
+            this.btm_A6_OPEN7.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A6_OPEN7.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_A6_OPEN7.Location = new System.Drawing.Point(156, 415);
+            this.btm_A6_OPEN7.Name = "btm_A6_OPEN7";
+            this.btm_A6_OPEN7.Size = new System.Drawing.Size(75, 30);
+            this.btm_A6_OPEN7.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A6_OPEN7.TabIndex = 32;
+            this.btm_A6_OPEN7.Tag = "HMI.A6_OPEN7;BOOL";
+            this.btm_A6_OPEN7.Text = "A6打开";
+            this.btm_A6_OPEN7.Click += new System.EventHandler(this.btm_A6_OPEN7_Click);
             // 
-            // btn_A3_CLOSE7
+            // btm_A3_CLOSE7
             // 
-            this.btn_A3_CLOSE7.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_A3_CLOSE7.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_A3_CLOSE7.Location = new System.Drawing.Point(52, 468);
-            this.btn_A3_CLOSE7.Name = "btn_A3_CLOSE7";
-            this.btn_A3_CLOSE7.Size = new System.Drawing.Size(75, 30);
-            this.btn_A3_CLOSE7.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_A3_CLOSE7.TabIndex = 31;
-            this.btn_A3_CLOSE7.Tag = "HMI.A3_CLOSE7;BOOL";
-            this.btn_A3_CLOSE7.Text = "A3关闭";
-            this.btn_A3_CLOSE7.Click += new System.EventHandler(this.btn_A3_CLOSE7_Click);
+            this.btm_A3_CLOSE7.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A3_CLOSE7.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_A3_CLOSE7.Location = new System.Drawing.Point(52, 468);
+            this.btm_A3_CLOSE7.Name = "btm_A3_CLOSE7";
+            this.btm_A3_CLOSE7.Size = new System.Drawing.Size(75, 30);
+            this.btm_A3_CLOSE7.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A3_CLOSE7.TabIndex = 31;
+            this.btm_A3_CLOSE7.Tag = "HMI.A3_CLOSE7;BOOL";
+            this.btm_A3_CLOSE7.Text = "A3关闭";
+            this.btm_A3_CLOSE7.Click += new System.EventHandler(this.btm_A3_CLOSE7_Click);
             // 
-            // btn_A3_OPEN7
+            // btm_A3_OPEN7
             // 
-            this.btn_A3_OPEN7.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_A3_OPEN7.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_A3_OPEN7.Location = new System.Drawing.Point(52, 415);
-            this.btn_A3_OPEN7.Name = "btn_A3_OPEN7";
-            this.btn_A3_OPEN7.Size = new System.Drawing.Size(75, 30);
-            this.btn_A3_OPEN7.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_A3_OPEN7.TabIndex = 30;
-            this.btn_A3_OPEN7.Tag = "HMI.A3_OPEN7;BOOL";
-            this.btn_A3_OPEN7.Text = "A3打开";
-            this.btn_A3_OPEN7.Click += new System.EventHandler(this.btn_A3_OPEN7_Click);
+            this.btm_A3_OPEN7.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A3_OPEN7.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_A3_OPEN7.Location = new System.Drawing.Point(52, 415);
+            this.btm_A3_OPEN7.Name = "btm_A3_OPEN7";
+            this.btm_A3_OPEN7.Size = new System.Drawing.Size(75, 30);
+            this.btm_A3_OPEN7.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A3_OPEN7.TabIndex = 30;
+            this.btm_A3_OPEN7.Tag = "HMI.A3_OPEN7;BOOL";
+            this.btm_A3_OPEN7.Text = "A3打开";
+            this.btm_A3_OPEN7.Click += new System.EventHandler(this.btm_A3_OPEN7_Click);
             // 
             // labelX35
             // 
@@ -3020,57 +2036,57 @@
             this.labelX35.TabIndex = 29;
             this.labelX35.Text = "6号位阀门";
             // 
-            // btn_A6_CLOSE6
+            // btm_A6_CLOSE6
             // 
-            this.btn_A6_CLOSE6.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_A6_CLOSE6.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_A6_CLOSE6.Location = new System.Drawing.Point(615, 302);
-            this.btn_A6_CLOSE6.Name = "btn_A6_CLOSE6";
-            this.btn_A6_CLOSE6.Size = new System.Drawing.Size(75, 30);
-            this.btn_A6_CLOSE6.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_A6_CLOSE6.TabIndex = 28;
-            this.btn_A6_CLOSE6.Tag = "HMI.A6_CLOSE6;BOOL";
-            this.btn_A6_CLOSE6.Text = "A6关闭";
-            this.btn_A6_CLOSE6.Click += new System.EventHandler(this.btn_A6_CLOSE6_Click);
+            this.btm_A6_CLOSE6.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A6_CLOSE6.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_A6_CLOSE6.Location = new System.Drawing.Point(615, 302);
+            this.btm_A6_CLOSE6.Name = "btm_A6_CLOSE6";
+            this.btm_A6_CLOSE6.Size = new System.Drawing.Size(75, 30);
+            this.btm_A6_CLOSE6.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A6_CLOSE6.TabIndex = 28;
+            this.btm_A6_CLOSE6.Tag = "HMI.A6_CLOSE6;BOOL";
+            this.btm_A6_CLOSE6.Text = "A6关闭";
+            this.btm_A6_CLOSE6.Click += new System.EventHandler(this.btm_A6_CLOSE6_Click);
             // 
-            // btn_A6_OPEN6
+            // btm_A6_OPEN6
             // 
-            this.btn_A6_OPEN6.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_A6_OPEN6.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_A6_OPEN6.Location = new System.Drawing.Point(615, 248);
-            this.btn_A6_OPEN6.Name = "btn_A6_OPEN6";
-            this.btn_A6_OPEN6.Size = new System.Drawing.Size(75, 30);
-            this.btn_A6_OPEN6.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_A6_OPEN6.TabIndex = 27;
-            this.btn_A6_OPEN6.Tag = "HMI.A6_OPEN6;BOOL";
-            this.btn_A6_OPEN6.Text = "A6打开";
-            this.btn_A6_OPEN6.Click += new System.EventHandler(this.btn_A6_OPEN6_Click);
+            this.btm_A6_OPEN6.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A6_OPEN6.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_A6_OPEN6.Location = new System.Drawing.Point(615, 248);
+            this.btm_A6_OPEN6.Name = "btm_A6_OPEN6";
+            this.btm_A6_OPEN6.Size = new System.Drawing.Size(75, 30);
+            this.btm_A6_OPEN6.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A6_OPEN6.TabIndex = 27;
+            this.btm_A6_OPEN6.Tag = "HMI.A6_OPEN6;BOOL";
+            this.btm_A6_OPEN6.Text = "A6打开";
+            this.btm_A6_OPEN6.Click += new System.EventHandler(this.btm_A6_OPEN6_Click);
             // 
-            // btn_A3_CLOSE6
+            // btm_A3_CLOSE6
             // 
-            this.btn_A3_CLOSE6.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_A3_CLOSE6.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_A3_CLOSE6.Location = new System.Drawing.Point(511, 302);
-            this.btn_A3_CLOSE6.Name = "btn_A3_CLOSE6";
-            this.btn_A3_CLOSE6.Size = new System.Drawing.Size(75, 30);
-            this.btn_A3_CLOSE6.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_A3_CLOSE6.TabIndex = 26;
-            this.btn_A3_CLOSE6.Tag = "HMI.A3_CLOSE6;BOOL";
-            this.btn_A3_CLOSE6.Text = "A3关闭";
-            this.btn_A3_CLOSE6.Click += new System.EventHandler(this.btn_A3_CLOSE6_Click);
+            this.btm_A3_CLOSE6.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A3_CLOSE6.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_A3_CLOSE6.Location = new System.Drawing.Point(511, 302);
+            this.btm_A3_CLOSE6.Name = "btm_A3_CLOSE6";
+            this.btm_A3_CLOSE6.Size = new System.Drawing.Size(75, 30);
+            this.btm_A3_CLOSE6.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A3_CLOSE6.TabIndex = 26;
+            this.btm_A3_CLOSE6.Tag = "HMI.A3_CLOSE6;BOOL";
+            this.btm_A3_CLOSE6.Text = "A3关闭";
+            this.btm_A3_CLOSE6.Click += new System.EventHandler(this.btm_A3_CLOSE6_Click);
             // 
-            // btn_A3_OPEN6
+            // btm_A3_OPEN6
             // 
-            this.btn_A3_OPEN6.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_A3_OPEN6.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_A3_OPEN6.Location = new System.Drawing.Point(511, 248);
-            this.btn_A3_OPEN6.Name = "btn_A3_OPEN6";
-            this.btn_A3_OPEN6.Size = new System.Drawing.Size(75, 30);
-            this.btn_A3_OPEN6.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_A3_OPEN6.TabIndex = 25;
-            this.btn_A3_OPEN6.Tag = "HMI.A3_OPEN6;BOOL";
-            this.btn_A3_OPEN6.Text = "A3打开";
-            this.btn_A3_OPEN6.Click += new System.EventHandler(this.btn_A3_OPEN6_Click);
+            this.btm_A3_OPEN6.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A3_OPEN6.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_A3_OPEN6.Location = new System.Drawing.Point(511, 248);
+            this.btm_A3_OPEN6.Name = "btm_A3_OPEN6";
+            this.btm_A3_OPEN6.Size = new System.Drawing.Size(75, 30);
+            this.btm_A3_OPEN6.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A3_OPEN6.TabIndex = 25;
+            this.btm_A3_OPEN6.Tag = "HMI.A3_OPEN6;BOOL";
+            this.btm_A3_OPEN6.Text = "A3打开";
+            this.btm_A3_OPEN6.Click += new System.EventHandler(this.btm_A3_OPEN6_Click);
             // 
             // labelX36
             // 
@@ -3086,57 +2102,57 @@
             this.labelX36.TabIndex = 24;
             this.labelX36.Text = "5号位阀门";
             // 
-            // btn_A6_CLOSE5
+            // btm_A6_CLOSE5
             // 
-            this.btn_A6_CLOSE5.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_A6_CLOSE5.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_A6_CLOSE5.Location = new System.Drawing.Point(388, 302);
-            this.btn_A6_CLOSE5.Name = "btn_A6_CLOSE5";
-            this.btn_A6_CLOSE5.Size = new System.Drawing.Size(75, 30);
-            this.btn_A6_CLOSE5.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_A6_CLOSE5.TabIndex = 23;
-            this.btn_A6_CLOSE5.Tag = "HMI.A6_CLOSE5;BOOL";
-            this.btn_A6_CLOSE5.Text = "A6关闭";
-            this.btn_A6_CLOSE5.Click += new System.EventHandler(this.btn_A6_CLOSE5_Click);
+            this.btm_A6_CLOSE5.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A6_CLOSE5.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_A6_CLOSE5.Location = new System.Drawing.Point(388, 302);
+            this.btm_A6_CLOSE5.Name = "btm_A6_CLOSE5";
+            this.btm_A6_CLOSE5.Size = new System.Drawing.Size(75, 30);
+            this.btm_A6_CLOSE5.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A6_CLOSE5.TabIndex = 23;
+            this.btm_A6_CLOSE5.Tag = "HMI.A6_CLOSE5;BOOL";
+            this.btm_A6_CLOSE5.Text = "A6关闭";
+            this.btm_A6_CLOSE5.Click += new System.EventHandler(this.btm_A6_CLOSE5_Click);
             // 
-            // btn_A6_OPEN5
+            // btm_A6_OPEN5
             // 
-            this.btn_A6_OPEN5.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_A6_OPEN5.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_A6_OPEN5.Location = new System.Drawing.Point(388, 248);
-            this.btn_A6_OPEN5.Name = "btn_A6_OPEN5";
-            this.btn_A6_OPEN5.Size = new System.Drawing.Size(75, 30);
-            this.btn_A6_OPEN5.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_A6_OPEN5.TabIndex = 22;
-            this.btn_A6_OPEN5.Tag = "HMI.A6_OPEN5;BOOL";
-            this.btn_A6_OPEN5.Text = "A6打开";
-            this.btn_A6_OPEN5.Click += new System.EventHandler(this.btn_A6_OPEN5_Click);
+            this.btm_A6_OPEN5.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A6_OPEN5.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_A6_OPEN5.Location = new System.Drawing.Point(388, 248);
+            this.btm_A6_OPEN5.Name = "btm_A6_OPEN5";
+            this.btm_A6_OPEN5.Size = new System.Drawing.Size(75, 30);
+            this.btm_A6_OPEN5.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A6_OPEN5.TabIndex = 22;
+            this.btm_A6_OPEN5.Tag = "HMI.A6_OPEN5;BOOL";
+            this.btm_A6_OPEN5.Text = "A6打开";
+            this.btm_A6_OPEN5.Click += new System.EventHandler(this.btm_A6_OPEN5_Click);
             // 
-            // btn_A3_CLOSE5
+            // btm_A3_CLOSE5
             // 
-            this.btn_A3_CLOSE5.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_A3_CLOSE5.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_A3_CLOSE5.Location = new System.Drawing.Point(284, 302);
-            this.btn_A3_CLOSE5.Name = "btn_A3_CLOSE5";
-            this.btn_A3_CLOSE5.Size = new System.Drawing.Size(75, 30);
-            this.btn_A3_CLOSE5.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_A3_CLOSE5.TabIndex = 21;
-            this.btn_A3_CLOSE5.Tag = "HMI.A3_CLOSE5;BOOL";
-            this.btn_A3_CLOSE5.Text = "A3关闭";
-            this.btn_A3_CLOSE5.Click += new System.EventHandler(this.btn_A3_CLOSE5_Click);
+            this.btm_A3_CLOSE5.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A3_CLOSE5.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_A3_CLOSE5.Location = new System.Drawing.Point(284, 302);
+            this.btm_A3_CLOSE5.Name = "btm_A3_CLOSE5";
+            this.btm_A3_CLOSE5.Size = new System.Drawing.Size(75, 30);
+            this.btm_A3_CLOSE5.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A3_CLOSE5.TabIndex = 21;
+            this.btm_A3_CLOSE5.Tag = "HMI.A3_CLOSE5;BOOL";
+            this.btm_A3_CLOSE5.Text = "A3关闭";
+            this.btm_A3_CLOSE5.Click += new System.EventHandler(this.btm_A3_CLOSE5_Click);
             // 
-            // btn_A3_OPEN5
+            // btm_A3_OPEN5
             // 
-            this.btn_A3_OPEN5.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_A3_OPEN5.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_A3_OPEN5.Location = new System.Drawing.Point(284, 248);
-            this.btn_A3_OPEN5.Name = "btn_A3_OPEN5";
-            this.btn_A3_OPEN5.Size = new System.Drawing.Size(75, 30);
-            this.btn_A3_OPEN5.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_A3_OPEN5.TabIndex = 20;
-            this.btn_A3_OPEN5.Tag = "HMI.A3_OPEN5;BOOL";
-            this.btn_A3_OPEN5.Text = "A3打开";
-            this.btn_A3_OPEN5.Click += new System.EventHandler(this.btn_A3_OPEN5_Click);
+            this.btm_A3_OPEN5.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A3_OPEN5.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_A3_OPEN5.Location = new System.Drawing.Point(284, 248);
+            this.btm_A3_OPEN5.Name = "btm_A3_OPEN5";
+            this.btm_A3_OPEN5.Size = new System.Drawing.Size(75, 30);
+            this.btm_A3_OPEN5.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A3_OPEN5.TabIndex = 20;
+            this.btm_A3_OPEN5.Tag = "HMI.A3_OPEN5;BOOL";
+            this.btm_A3_OPEN5.Text = "A3打开";
+            this.btm_A3_OPEN5.Click += new System.EventHandler(this.btm_A3_OPEN5_Click);
             // 
             // labelX37
             // 
@@ -3152,57 +2168,57 @@
             this.labelX37.TabIndex = 19;
             this.labelX37.Text = "4号位阀门";
             // 
-            // btn_A6_CLOSE4
+            // btm_A6_CLOSE4
             // 
-            this.btn_A6_CLOSE4.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_A6_CLOSE4.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_A6_CLOSE4.Location = new System.Drawing.Point(156, 302);
-            this.btn_A6_CLOSE4.Name = "btn_A6_CLOSE4";
-            this.btn_A6_CLOSE4.Size = new System.Drawing.Size(75, 30);
-            this.btn_A6_CLOSE4.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_A6_CLOSE4.TabIndex = 18;
-            this.btn_A6_CLOSE4.Tag = "HMI.A6_CLOSE4;BOOL";
-            this.btn_A6_CLOSE4.Text = "A6关闭";
-            this.btn_A6_CLOSE4.Click += new System.EventHandler(this.btn_A6_CLOSE4_Click);
+            this.btm_A6_CLOSE4.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A6_CLOSE4.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_A6_CLOSE4.Location = new System.Drawing.Point(156, 302);
+            this.btm_A6_CLOSE4.Name = "btm_A6_CLOSE4";
+            this.btm_A6_CLOSE4.Size = new System.Drawing.Size(75, 30);
+            this.btm_A6_CLOSE4.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A6_CLOSE4.TabIndex = 18;
+            this.btm_A6_CLOSE4.Tag = "HMI.A6_CLOSE4;BOOL";
+            this.btm_A6_CLOSE4.Text = "A6关闭";
+            this.btm_A6_CLOSE4.Click += new System.EventHandler(this.btm_A6_CLOSE4_Click);
             // 
-            // btn_A6_OPEN4
+            // btm_A6_OPEN4
             // 
-            this.btn_A6_OPEN4.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_A6_OPEN4.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_A6_OPEN4.Location = new System.Drawing.Point(156, 248);
-            this.btn_A6_OPEN4.Name = "btn_A6_OPEN4";
-            this.btn_A6_OPEN4.Size = new System.Drawing.Size(75, 30);
-            this.btn_A6_OPEN4.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_A6_OPEN4.TabIndex = 17;
-            this.btn_A6_OPEN4.Tag = "HMI.A6_OPEN4;BOOL";
-            this.btn_A6_OPEN4.Text = "A6打开";
-            this.btn_A6_OPEN4.Click += new System.EventHandler(this.btn_A6_OPEN4_Click);
+            this.btm_A6_OPEN4.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A6_OPEN4.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_A6_OPEN4.Location = new System.Drawing.Point(156, 248);
+            this.btm_A6_OPEN4.Name = "btm_A6_OPEN4";
+            this.btm_A6_OPEN4.Size = new System.Drawing.Size(75, 30);
+            this.btm_A6_OPEN4.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A6_OPEN4.TabIndex = 17;
+            this.btm_A6_OPEN4.Tag = "HMI.A6_OPEN4;BOOL";
+            this.btm_A6_OPEN4.Text = "A6打开";
+            this.btm_A6_OPEN4.Click += new System.EventHandler(this.btm_A6_OPEN4_Click);
             // 
-            // btn_A3_CLOSE4
+            // btm_A3_CLOSE4
             // 
-            this.btn_A3_CLOSE4.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_A3_CLOSE4.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_A3_CLOSE4.Location = new System.Drawing.Point(52, 302);
-            this.btn_A3_CLOSE4.Name = "btn_A3_CLOSE4";
-            this.btn_A3_CLOSE4.Size = new System.Drawing.Size(75, 30);
-            this.btn_A3_CLOSE4.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_A3_CLOSE4.TabIndex = 16;
-            this.btn_A3_CLOSE4.Tag = "HMI.A3_CLOSE4;BOOL";
-            this.btn_A3_CLOSE4.Text = "A3关闭";
-            this.btn_A3_CLOSE4.Click += new System.EventHandler(this.btn_A3_CLOSE4_Click);
+            this.btm_A3_CLOSE4.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A3_CLOSE4.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_A3_CLOSE4.Location = new System.Drawing.Point(52, 302);
+            this.btm_A3_CLOSE4.Name = "btm_A3_CLOSE4";
+            this.btm_A3_CLOSE4.Size = new System.Drawing.Size(75, 30);
+            this.btm_A3_CLOSE4.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A3_CLOSE4.TabIndex = 16;
+            this.btm_A3_CLOSE4.Tag = "HMI.A3_CLOSE4;BOOL";
+            this.btm_A3_CLOSE4.Text = "A3关闭";
+            this.btm_A3_CLOSE4.Click += new System.EventHandler(this.btm_A3_CLOSE4_Click);
             // 
-            // btn_A3_OPEN4
+            // btm_A3_OPEN4
             // 
-            this.btn_A3_OPEN4.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_A3_OPEN4.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_A3_OPEN4.Location = new System.Drawing.Point(52, 248);
-            this.btn_A3_OPEN4.Name = "btn_A3_OPEN4";
-            this.btn_A3_OPEN4.Size = new System.Drawing.Size(75, 30);
-            this.btn_A3_OPEN4.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_A3_OPEN4.TabIndex = 15;
-            this.btn_A3_OPEN4.Tag = "HMI.A3_OPEN4;BOOL";
-            this.btn_A3_OPEN4.Text = "A3打开";
-            this.btn_A3_OPEN4.Click += new System.EventHandler(this.btn_A3_OPEN4_Click);
+            this.btm_A3_OPEN4.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A3_OPEN4.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_A3_OPEN4.Location = new System.Drawing.Point(52, 248);
+            this.btm_A3_OPEN4.Name = "btm_A3_OPEN4";
+            this.btm_A3_OPEN4.Size = new System.Drawing.Size(75, 30);
+            this.btm_A3_OPEN4.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A3_OPEN4.TabIndex = 15;
+            this.btm_A3_OPEN4.Tag = "HMI.A3_OPEN4;BOOL";
+            this.btm_A3_OPEN4.Text = "A3打开";
+            this.btm_A3_OPEN4.Click += new System.EventHandler(this.btm_A3_OPEN4_Click);
             // 
             // labelX34
             // 
@@ -3218,57 +2234,57 @@
             this.labelX34.TabIndex = 14;
             this.labelX34.Text = "3号位阀门";
             // 
-            // btn_A6_CLOSE3
+            // btm_A6_CLOSE3
             // 
-            this.btn_A6_CLOSE3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_A6_CLOSE3.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_A6_CLOSE3.Location = new System.Drawing.Point(615, 137);
-            this.btn_A6_CLOSE3.Name = "btn_A6_CLOSE3";
-            this.btn_A6_CLOSE3.Size = new System.Drawing.Size(75, 30);
-            this.btn_A6_CLOSE3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_A6_CLOSE3.TabIndex = 13;
-            this.btn_A6_CLOSE3.Tag = "HMI.A6_CLOSE3;BOOL";
-            this.btn_A6_CLOSE3.Text = "A6关闭";
-            this.btn_A6_CLOSE3.Click += new System.EventHandler(this.btn_A6_CLOSE3_Click);
+            this.btm_A6_CLOSE3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A6_CLOSE3.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_A6_CLOSE3.Location = new System.Drawing.Point(615, 137);
+            this.btm_A6_CLOSE3.Name = "btm_A6_CLOSE3";
+            this.btm_A6_CLOSE3.Size = new System.Drawing.Size(75, 30);
+            this.btm_A6_CLOSE3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A6_CLOSE3.TabIndex = 13;
+            this.btm_A6_CLOSE3.Tag = "HMI.A6_CLOSE3;BOOL";
+            this.btm_A6_CLOSE3.Text = "A6关闭";
+            this.btm_A6_CLOSE3.Click += new System.EventHandler(this.btm_A6_CLOSE3_Click);
             // 
-            // btn_A6_OPEN3
+            // btm_A6_OPEN3
             // 
-            this.btn_A6_OPEN3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_A6_OPEN3.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_A6_OPEN3.Location = new System.Drawing.Point(615, 83);
-            this.btn_A6_OPEN3.Name = "btn_A6_OPEN3";
-            this.btn_A6_OPEN3.Size = new System.Drawing.Size(75, 30);
-            this.btn_A6_OPEN3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_A6_OPEN3.TabIndex = 12;
-            this.btn_A6_OPEN3.Tag = "HMI.A6_OPEN3;BOOL";
-            this.btn_A6_OPEN3.Text = "A6打开";
-            this.btn_A6_OPEN3.Click += new System.EventHandler(this.btn_A6_OPEN3_Click);
+            this.btm_A6_OPEN3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A6_OPEN3.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_A6_OPEN3.Location = new System.Drawing.Point(615, 83);
+            this.btm_A6_OPEN3.Name = "btm_A6_OPEN3";
+            this.btm_A6_OPEN3.Size = new System.Drawing.Size(75, 30);
+            this.btm_A6_OPEN3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A6_OPEN3.TabIndex = 12;
+            this.btm_A6_OPEN3.Tag = "HMI.A6_OPEN3;BOOL";
+            this.btm_A6_OPEN3.Text = "A6打开";
+            this.btm_A6_OPEN3.Click += new System.EventHandler(this.btm_A6_OPEN3_Click);
             // 
-            // btn_A3_CLOSE3
+            // btm_A3_CLOSE3
             // 
-            this.btn_A3_CLOSE3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_A3_CLOSE3.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_A3_CLOSE3.Location = new System.Drawing.Point(511, 137);
-            this.btn_A3_CLOSE3.Name = "btn_A3_CLOSE3";
-            this.btn_A3_CLOSE3.Size = new System.Drawing.Size(75, 30);
-            this.btn_A3_CLOSE3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_A3_CLOSE3.TabIndex = 11;
-            this.btn_A3_CLOSE3.Tag = "HMI.A3_CLOSE3;BOOL";
-            this.btn_A3_CLOSE3.Text = "A3关闭";
-            this.btn_A3_CLOSE3.Click += new System.EventHandler(this.btn_A3_CLOSE3_Click);
+            this.btm_A3_CLOSE3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A3_CLOSE3.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_A3_CLOSE3.Location = new System.Drawing.Point(511, 137);
+            this.btm_A3_CLOSE3.Name = "btm_A3_CLOSE3";
+            this.btm_A3_CLOSE3.Size = new System.Drawing.Size(75, 30);
+            this.btm_A3_CLOSE3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A3_CLOSE3.TabIndex = 11;
+            this.btm_A3_CLOSE3.Tag = "HMI.A3_CLOSE3;BOOL";
+            this.btm_A3_CLOSE3.Text = "A3关闭";
+            this.btm_A3_CLOSE3.Click += new System.EventHandler(this.btm_A3_CLOSE3_Click);
             // 
-            // btn_A3_OPEN3
+            // btm_A3_OPEN3
             // 
-            this.btn_A3_OPEN3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_A3_OPEN3.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_A3_OPEN3.Location = new System.Drawing.Point(511, 83);
-            this.btn_A3_OPEN3.Name = "btn_A3_OPEN3";
-            this.btn_A3_OPEN3.Size = new System.Drawing.Size(75, 30);
-            this.btn_A3_OPEN3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_A3_OPEN3.TabIndex = 10;
-            this.btn_A3_OPEN3.Tag = "HMI.A3_OPEN3;BOOL";
-            this.btn_A3_OPEN3.Text = "A3打开";
-            this.btn_A3_OPEN3.Click += new System.EventHandler(this.btn_A3_OPEN3_Click);
+            this.btm_A3_OPEN3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A3_OPEN3.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_A3_OPEN3.Location = new System.Drawing.Point(511, 83);
+            this.btm_A3_OPEN3.Name = "btm_A3_OPEN3";
+            this.btm_A3_OPEN3.Size = new System.Drawing.Size(75, 30);
+            this.btm_A3_OPEN3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A3_OPEN3.TabIndex = 10;
+            this.btm_A3_OPEN3.Tag = "HMI.A3_OPEN3;BOOL";
+            this.btm_A3_OPEN3.Text = "A3打开";
+            this.btm_A3_OPEN3.Click += new System.EventHandler(this.btm_A3_OPEN3_Click);
             // 
             // labelX33
             // 
@@ -3284,57 +2300,57 @@
             this.labelX33.TabIndex = 9;
             this.labelX33.Text = "2号位阀门";
             // 
-            // btn_A6_CLOSE2
+            // btm_A6_CLOSE2
             // 
-            this.btn_A6_CLOSE2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_A6_CLOSE2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_A6_CLOSE2.Location = new System.Drawing.Point(388, 137);
-            this.btn_A6_CLOSE2.Name = "btn_A6_CLOSE2";
-            this.btn_A6_CLOSE2.Size = new System.Drawing.Size(75, 30);
-            this.btn_A6_CLOSE2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_A6_CLOSE2.TabIndex = 8;
-            this.btn_A6_CLOSE2.Tag = "HMI.A6_CLOSE2;BOOL";
-            this.btn_A6_CLOSE2.Text = "A6关闭";
-            this.btn_A6_CLOSE2.Click += new System.EventHandler(this.btn_A6_CLOSE2_Click);
+            this.btm_A6_CLOSE2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A6_CLOSE2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_A6_CLOSE2.Location = new System.Drawing.Point(388, 137);
+            this.btm_A6_CLOSE2.Name = "btm_A6_CLOSE2";
+            this.btm_A6_CLOSE2.Size = new System.Drawing.Size(75, 30);
+            this.btm_A6_CLOSE2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A6_CLOSE2.TabIndex = 8;
+            this.btm_A6_CLOSE2.Tag = "HMI.A6_CLOSE2;BOOL";
+            this.btm_A6_CLOSE2.Text = "A6关闭";
+            this.btm_A6_CLOSE2.Click += new System.EventHandler(this.btm_A6_CLOSE2_Click);
             // 
-            // btn_A6_OPEN2
+            // btm_A6_OPEN2
             // 
-            this.btn_A6_OPEN2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_A6_OPEN2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_A6_OPEN2.Location = new System.Drawing.Point(388, 83);
-            this.btn_A6_OPEN2.Name = "btn_A6_OPEN2";
-            this.btn_A6_OPEN2.Size = new System.Drawing.Size(75, 30);
-            this.btn_A6_OPEN2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_A6_OPEN2.TabIndex = 7;
-            this.btn_A6_OPEN2.Tag = "HMI.A6_OPEN2;BOOL";
-            this.btn_A6_OPEN2.Text = "A6打开";
-            this.btn_A6_OPEN2.Click += new System.EventHandler(this.btn_A6_OPEN2_Click);
+            this.btm_A6_OPEN2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A6_OPEN2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_A6_OPEN2.Location = new System.Drawing.Point(388, 83);
+            this.btm_A6_OPEN2.Name = "btm_A6_OPEN2";
+            this.btm_A6_OPEN2.Size = new System.Drawing.Size(75, 30);
+            this.btm_A6_OPEN2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A6_OPEN2.TabIndex = 7;
+            this.btm_A6_OPEN2.Tag = "HMI.A6_OPEN2;BOOL";
+            this.btm_A6_OPEN2.Text = "A6打开";
+            this.btm_A6_OPEN2.Click += new System.EventHandler(this.btm_A6_OPEN2_Click);
             // 
-            // btn_A3_CLOSE2
+            // btm_A3_CLOSE2
             // 
-            this.btn_A3_CLOSE2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_A3_CLOSE2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_A3_CLOSE2.Location = new System.Drawing.Point(284, 137);
-            this.btn_A3_CLOSE2.Name = "btn_A3_CLOSE2";
-            this.btn_A3_CLOSE2.Size = new System.Drawing.Size(75, 30);
-            this.btn_A3_CLOSE2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_A3_CLOSE2.TabIndex = 6;
-            this.btn_A3_CLOSE2.Tag = "HMI.A3_CLOSE2;BOOL";
-            this.btn_A3_CLOSE2.Text = "A3关闭";
-            this.btn_A3_CLOSE2.Click += new System.EventHandler(this.btn_A3_CLOSE2_Click);
+            this.btm_A3_CLOSE2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A3_CLOSE2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_A3_CLOSE2.Location = new System.Drawing.Point(284, 137);
+            this.btm_A3_CLOSE2.Name = "btm_A3_CLOSE2";
+            this.btm_A3_CLOSE2.Size = new System.Drawing.Size(75, 30);
+            this.btm_A3_CLOSE2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A3_CLOSE2.TabIndex = 6;
+            this.btm_A3_CLOSE2.Tag = "HMI.A3_CLOSE2;BOOL";
+            this.btm_A3_CLOSE2.Text = "A3关闭";
+            this.btm_A3_CLOSE2.Click += new System.EventHandler(this.btm_A3_CLOSE2_Click);
             // 
-            // btn_A3_OPEN2
+            // btm_A3_OPEN2
             // 
-            this.btn_A3_OPEN2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_A3_OPEN2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_A3_OPEN2.Location = new System.Drawing.Point(284, 83);
-            this.btn_A3_OPEN2.Name = "btn_A3_OPEN2";
-            this.btn_A3_OPEN2.Size = new System.Drawing.Size(75, 30);
-            this.btn_A3_OPEN2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_A3_OPEN2.TabIndex = 5;
-            this.btn_A3_OPEN2.Tag = "HMI.A3_OPEN2;BOOL";
-            this.btn_A3_OPEN2.Text = "A3打开";
-            this.btn_A3_OPEN2.Click += new System.EventHandler(this.btn_A3_OPEN2_Click);
+            this.btm_A3_OPEN2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A3_OPEN2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_A3_OPEN2.Location = new System.Drawing.Point(284, 83);
+            this.btm_A3_OPEN2.Name = "btm_A3_OPEN2";
+            this.btm_A3_OPEN2.Size = new System.Drawing.Size(75, 30);
+            this.btm_A3_OPEN2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A3_OPEN2.TabIndex = 5;
+            this.btm_A3_OPEN2.Tag = "HMI.A3_OPEN2;BOOL";
+            this.btm_A3_OPEN2.Text = "A3打开";
+            this.btm_A3_OPEN2.Click += new System.EventHandler(this.btm_A3_OPEN2_Click);
             // 
             // labelX32
             // 
@@ -3350,58 +2366,58 @@
             this.labelX32.TabIndex = 4;
             this.labelX32.Text = "1号位阀门";
             // 
-            // btn_A6_CLOSE1
+            // btm_A6_CLOSE1
             // 
-            this.btn_A6_CLOSE1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_A6_CLOSE1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_A6_CLOSE1.Location = new System.Drawing.Point(156, 137);
-            this.btn_A6_CLOSE1.Name = "btn_A6_CLOSE1";
-            this.btn_A6_CLOSE1.Size = new System.Drawing.Size(75, 30);
-            this.btn_A6_CLOSE1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_A6_CLOSE1.TabIndex = 3;
-            this.btn_A6_CLOSE1.Tag = "HMI.A6_CLOSE1;BOOL";
-            this.btn_A6_CLOSE1.Text = "A6关闭";
-            this.btn_A6_CLOSE1.Click += new System.EventHandler(this.btn_A6_CLOSE1_Click);
+            this.btm_A6_CLOSE1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A6_CLOSE1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_A6_CLOSE1.Location = new System.Drawing.Point(156, 137);
+            this.btm_A6_CLOSE1.Name = "btm_A6_CLOSE1";
+            this.btm_A6_CLOSE1.Size = new System.Drawing.Size(75, 30);
+            this.btm_A6_CLOSE1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A6_CLOSE1.TabIndex = 3;
+            this.btm_A6_CLOSE1.Tag = "HMI.A6_CLOSE1;BOOL";
+            this.btm_A6_CLOSE1.Text = "A6关闭";
+            this.btm_A6_CLOSE1.Click += new System.EventHandler(this.btm_A6_CLOSE1_Click);
             // 
-            // btn_A6_OPEN1
+            // btm_A6_OPEN1
             // 
-            this.btn_A6_OPEN1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_A6_OPEN1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_A6_OPEN1.Location = new System.Drawing.Point(156, 83);
-            this.btn_A6_OPEN1.Name = "btn_A6_OPEN1";
-            this.btn_A6_OPEN1.Size = new System.Drawing.Size(75, 30);
-            this.btn_A6_OPEN1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_A6_OPEN1.TabIndex = 2;
-            this.btn_A6_OPEN1.Tag = "HMI.A6_OPEN1;BOOL";
-            this.btn_A6_OPEN1.Text = "A6打开";
-            this.btn_A6_OPEN1.Click += new System.EventHandler(this.btn_A6_OPEN1_Click);
+            this.btm_A6_OPEN1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A6_OPEN1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_A6_OPEN1.Location = new System.Drawing.Point(156, 83);
+            this.btm_A6_OPEN1.Name = "btm_A6_OPEN1";
+            this.btm_A6_OPEN1.Size = new System.Drawing.Size(75, 30);
+            this.btm_A6_OPEN1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A6_OPEN1.TabIndex = 2;
+            this.btm_A6_OPEN1.Tag = "HMI.A6_OPEN1;BOOL";
+            this.btm_A6_OPEN1.Text = "A6打开";
+            this.btm_A6_OPEN1.Click += new System.EventHandler(this.btm_A6_OPEN1_Click);
             // 
-            // btn_A3_CLOSE1
+            // btm_A3_CLOSE1
             // 
-            this.btn_A3_CLOSE1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_A3_CLOSE1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_A3_CLOSE1.Location = new System.Drawing.Point(52, 137);
-            this.btn_A3_CLOSE1.Name = "btn_A3_CLOSE1";
-            this.btn_A3_CLOSE1.Size = new System.Drawing.Size(75, 30);
-            this.btn_A3_CLOSE1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_A3_CLOSE1.TabIndex = 1;
-            this.btn_A3_CLOSE1.Tag = "HMI.A3_CLOSE1;BOOL";
-            this.btn_A3_CLOSE1.Text = "A3关闭";
-            this.btn_A3_CLOSE1.Click += new System.EventHandler(this.btn_A3_CLOSE1_Click);
+            this.btm_A3_CLOSE1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A3_CLOSE1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_A3_CLOSE1.Location = new System.Drawing.Point(52, 137);
+            this.btm_A3_CLOSE1.Name = "btm_A3_CLOSE1";
+            this.btm_A3_CLOSE1.Size = new System.Drawing.Size(75, 30);
+            this.btm_A3_CLOSE1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A3_CLOSE1.TabIndex = 1;
+            this.btm_A3_CLOSE1.Tag = "HMI.A3_CLOSE1;BOOL";
+            this.btm_A3_CLOSE1.Text = "A3关闭";
+            this.btm_A3_CLOSE1.Click += new System.EventHandler(this.btm_A3_CLOSE1_Click);
             // 
-            // btn_A3_OPEN1
+            // btm_A3_OPEN1
             // 
-            this.btn_A3_OPEN1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_A3_OPEN1.BackColor = System.Drawing.Color.Transparent;
-            this.btn_A3_OPEN1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_A3_OPEN1.Location = new System.Drawing.Point(52, 83);
-            this.btn_A3_OPEN1.Name = "btn_A3_OPEN1";
-            this.btn_A3_OPEN1.Size = new System.Drawing.Size(75, 30);
-            this.btn_A3_OPEN1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_A3_OPEN1.TabIndex = 0;
-            this.btn_A3_OPEN1.Tag = "HMI.A3_OPEN1;BOOL";
-            this.btn_A3_OPEN1.Text = "A3打开";
-            this.btn_A3_OPEN1.Click += new System.EventHandler(this.btn_A3_OPEN1_Click);
+            this.btm_A3_OPEN1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A3_OPEN1.BackColor = System.Drawing.Color.Transparent;
+            this.btm_A3_OPEN1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_A3_OPEN1.Location = new System.Drawing.Point(52, 83);
+            this.btm_A3_OPEN1.Name = "btm_A3_OPEN1";
+            this.btm_A3_OPEN1.Size = new System.Drawing.Size(75, 30);
+            this.btm_A3_OPEN1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A3_OPEN1.TabIndex = 0;
+            this.btm_A3_OPEN1.Tag = "HMI.A3_OPEN1;BOOL";
+            this.btm_A3_OPEN1.Text = "A3打开";
+            this.btm_A3_OPEN1.Click += new System.EventHandler(this.btm_A3_OPEN1_Click);
             // 
             // superTabItem3
             // 
@@ -3411,13 +2427,996 @@
             this.superTabItem3.Name = "superTabItem3";
             this.superTabItem3.Text = "阀门操作";
             // 
+            // superTabControlPanel2
+            // 
+            this.superTabControlPanel2.Controls.Add(this.panelEx15);
+            this.superTabControlPanel2.Controls.Add(this.panelEx14);
+            this.superTabControlPanel2.Controls.Add(this.panelEx13);
+            this.superTabControlPanel2.Controls.Add(this.panelEx12);
+            this.superTabControlPanel2.Controls.Add(this.panelEx11);
+            this.superTabControlPanel2.Controls.Add(this.panelEx10);
+            this.superTabControlPanel2.Controls.Add(this.panelEx9);
+            this.superTabControlPanel2.Controls.Add(this.panelEx8);
+            this.superTabControlPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.superTabControlPanel2.Location = new System.Drawing.Point(0, 46);
+            this.superTabControlPanel2.Name = "superTabControlPanel2";
+            this.superTabControlPanel2.Size = new System.Drawing.Size(832, 517);
+            this.superTabControlPanel2.TabIndex = 2;
+            this.superTabControlPanel2.TabItem = this.superTabItem2;
+            // 
+            // panelEx15
+            // 
+            this.panelEx15.CanvasColor = System.Drawing.SystemColors.Control;
+            this.panelEx15.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.panelEx15.Controls.Add(this.txt_AXIS3_JOG_VEL);
+            this.panelEx15.Controls.Add(this.btm_MOTOR_JOG3FOR);
+            this.panelEx15.Controls.Add(this.btm_MOTOR_JOG3BACK);
+            this.panelEx15.Controls.Add(this.labelX7);
+            this.panelEx15.DisabledBackColor = System.Drawing.Color.Empty;
+            this.panelEx15.Location = new System.Drawing.Point(550, 350);
+            this.panelEx15.Name = "panelEx15";
+            this.panelEx15.Size = new System.Drawing.Size(275, 120);
+            this.panelEx15.Style.Alignment = System.Drawing.StringAlignment.Center;
+            this.panelEx15.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.panelEx15.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.panelEx15.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.panelEx15.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.panelEx15.Style.GradientAngle = 90;
+            this.panelEx15.TabIndex = 72;
+            this.panelEx15.TextDockConstrained = false;
+            // 
+            // txt_AXIS3_JOG_VEL
+            // 
+            this.txt_AXIS3_JOG_VEL.BackColor = System.Drawing.Color.Black;
+            // 
+            // 
+            // 
+            this.txt_AXIS3_JOG_VEL.Border.Class = "TextBoxBorder";
+            this.txt_AXIS3_JOG_VEL.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txt_AXIS3_JOG_VEL.DisabledBackColor = System.Drawing.Color.White;
+            this.txt_AXIS3_JOG_VEL.ForeColor = System.Drawing.Color.White;
+            this.txt_AXIS3_JOG_VEL.Location = new System.Drawing.Point(137, 22);
+            this.txt_AXIS3_JOG_VEL.Name = "txt_AXIS3_JOG_VEL";
+            this.txt_AXIS3_JOG_VEL.PreventEnterBeep = true;
+            this.txt_AXIS3_JOG_VEL.Size = new System.Drawing.Size(85, 31);
+            this.txt_AXIS3_JOG_VEL.TabIndex = 45;
+            this.txt_AXIS3_JOG_VEL.Tag = "SAVE.AXIS3_JOG_VEL;REAL";
+            this.txt_AXIS3_JOG_VEL.Text = "0";
+            this.txt_AXIS3_JOG_VEL.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_AXIS3_JOG_VEL_KeyPress);
+            // 
+            // btm_MOTOR_JOG3FOR
+            // 
+            this.btm_MOTOR_JOG3FOR.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_MOTOR_JOG3FOR.BackColor = System.Drawing.Color.Transparent;
+            this.btm_MOTOR_JOG3FOR.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_MOTOR_JOG3FOR.Location = new System.Drawing.Point(14, 68);
+            this.btm_MOTOR_JOG3FOR.Name = "btm_MOTOR_JOG3FOR";
+            this.btm_MOTOR_JOG3FOR.Size = new System.Drawing.Size(75, 30);
+            this.btm_MOTOR_JOG3FOR.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_MOTOR_JOG3FOR.TabIndex = 38;
+            this.btm_MOTOR_JOG3FOR.Tag = "HMI.MOTOR_JOG3FOR;BOOL";
+            this.btm_MOTOR_JOG3FOR.Text = "正向";
+            this.btm_MOTOR_JOG3FOR.Click += new System.EventHandler(this.btm_MOTOR_JOG3FOR_Click);
+            // 
+            // btm_MOTOR_JOG3BACK
+            // 
+            this.btm_MOTOR_JOG3BACK.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_MOTOR_JOG3BACK.BackColor = System.Drawing.Color.Transparent;
+            this.btm_MOTOR_JOG3BACK.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_MOTOR_JOG3BACK.Location = new System.Drawing.Point(147, 68);
+            this.btm_MOTOR_JOG3BACK.Name = "btm_MOTOR_JOG3BACK";
+            this.btm_MOTOR_JOG3BACK.Size = new System.Drawing.Size(75, 30);
+            this.btm_MOTOR_JOG3BACK.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_MOTOR_JOG3BACK.TabIndex = 37;
+            this.btm_MOTOR_JOG3BACK.Tag = "HMI.MOTOR_JOG3BACK;BOOL";
+            this.btm_MOTOR_JOG3BACK.Text = "反向";
+            this.btm_MOTOR_JOG3BACK.Click += new System.EventHandler(this.btm_MOTOR_JOG3BACK_Click);
+            // 
+            // labelX7
+            // 
+            this.labelX7.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX7.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX7.ForeColor = System.Drawing.Color.White;
+            this.labelX7.Location = new System.Drawing.Point(15, 18);
+            this.labelX7.Name = "labelX7";
+            this.labelX7.Size = new System.Drawing.Size(84, 30);
+            this.labelX7.TabIndex = 35;
+            this.labelX7.Text = "收发点动";
+            // 
+            // panelEx14
+            // 
+            this.panelEx14.CanvasColor = System.Drawing.SystemColors.Control;
+            this.panelEx14.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.panelEx14.Controls.Add(this.txt_AXIS2_JOG_VEL);
+            this.panelEx14.Controls.Add(this.btm_MOTOR_JOG2FOR);
+            this.panelEx14.Controls.Add(this.btm_MOTOR_JOG2BACK);
+            this.panelEx14.Controls.Add(this.labelX6);
+            this.panelEx14.DisabledBackColor = System.Drawing.Color.Empty;
+            this.panelEx14.Location = new System.Drawing.Point(275, 350);
+            this.panelEx14.Name = "panelEx14";
+            this.panelEx14.Size = new System.Drawing.Size(275, 120);
+            this.panelEx14.Style.Alignment = System.Drawing.StringAlignment.Center;
+            this.panelEx14.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.panelEx14.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.panelEx14.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.panelEx14.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.panelEx14.Style.GradientAngle = 90;
+            this.panelEx14.TabIndex = 68;
+            this.panelEx14.TextDockConstrained = false;
+            // 
+            // txt_AXIS2_JOG_VEL
+            // 
+            this.txt_AXIS2_JOG_VEL.BackColor = System.Drawing.Color.Black;
+            // 
+            // 
+            // 
+            this.txt_AXIS2_JOG_VEL.Border.Class = "TextBoxBorder";
+            this.txt_AXIS2_JOG_VEL.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txt_AXIS2_JOG_VEL.DisabledBackColor = System.Drawing.Color.White;
+            this.txt_AXIS2_JOG_VEL.ForeColor = System.Drawing.Color.White;
+            this.txt_AXIS2_JOG_VEL.Location = new System.Drawing.Point(137, 22);
+            this.txt_AXIS2_JOG_VEL.Name = "txt_AXIS2_JOG_VEL";
+            this.txt_AXIS2_JOG_VEL.PreventEnterBeep = true;
+            this.txt_AXIS2_JOG_VEL.Size = new System.Drawing.Size(85, 31);
+            this.txt_AXIS2_JOG_VEL.TabIndex = 45;
+            this.txt_AXIS2_JOG_VEL.Tag = "SAVE.AXIS2_JOG_VEL;REAL";
+            this.txt_AXIS2_JOG_VEL.Text = "0";
+            this.txt_AXIS2_JOG_VEL.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_AXIS2_JOG_VEL_KeyPress);
+            // 
+            // btm_MOTOR_JOG2FOR
+            // 
+            this.btm_MOTOR_JOG2FOR.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_MOTOR_JOG2FOR.BackColor = System.Drawing.Color.Transparent;
+            this.btm_MOTOR_JOG2FOR.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_MOTOR_JOG2FOR.Location = new System.Drawing.Point(14, 68);
+            this.btm_MOTOR_JOG2FOR.Name = "btm_MOTOR_JOG2FOR";
+            this.btm_MOTOR_JOG2FOR.Size = new System.Drawing.Size(75, 30);
+            this.btm_MOTOR_JOG2FOR.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_MOTOR_JOG2FOR.TabIndex = 38;
+            this.btm_MOTOR_JOG2FOR.Tag = "HMI.MOTOR_JOG2FOR;BOOL";
+            this.btm_MOTOR_JOG2FOR.Text = "正向";
+            this.btm_MOTOR_JOG2FOR.Click += new System.EventHandler(this.btm_MOTOR_JOG2FOR_Click);
+            // 
+            // btm_MOTOR_JOG2BACK
+            // 
+            this.btm_MOTOR_JOG2BACK.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_MOTOR_JOG2BACK.BackColor = System.Drawing.Color.Transparent;
+            this.btm_MOTOR_JOG2BACK.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_MOTOR_JOG2BACK.Location = new System.Drawing.Point(147, 68);
+            this.btm_MOTOR_JOG2BACK.Name = "btm_MOTOR_JOG2BACK";
+            this.btm_MOTOR_JOG2BACK.Size = new System.Drawing.Size(75, 30);
+            this.btm_MOTOR_JOG2BACK.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_MOTOR_JOG2BACK.TabIndex = 37;
+            this.btm_MOTOR_JOG2BACK.Tag = "HMI.MOTOR_JOG2BACK;BOOL";
+            this.btm_MOTOR_JOG2BACK.Text = "反向";
+            this.btm_MOTOR_JOG2BACK.Click += new System.EventHandler(this.btm_MOTOR_JOG2BACK_Click);
+            // 
+            // labelX6
+            // 
+            this.labelX6.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX6.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX6.ForeColor = System.Drawing.Color.White;
+            this.labelX6.Location = new System.Drawing.Point(15, 18);
+            this.labelX6.Name = "labelX6";
+            this.labelX6.Size = new System.Drawing.Size(84, 30);
+            this.labelX6.TabIndex = 35;
+            this.labelX6.Text = "旋转点动";
+            // 
+            // panelEx13
+            // 
+            this.panelEx13.CanvasColor = System.Drawing.SystemColors.Control;
+            this.panelEx13.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.panelEx13.Controls.Add(this.txt_AXIS1_JOG_VEL);
+            this.panelEx13.Controls.Add(this.btm_MOTOR_JOG1FOR);
+            this.panelEx13.Controls.Add(this.btm_MOTOR_JOG1BACK);
+            this.panelEx13.Controls.Add(this.labelX5);
+            this.panelEx13.DisabledBackColor = System.Drawing.Color.Empty;
+            this.panelEx13.Location = new System.Drawing.Point(0, 350);
+            this.panelEx13.Name = "panelEx13";
+            this.panelEx13.Size = new System.Drawing.Size(275, 120);
+            this.panelEx13.Style.Alignment = System.Drawing.StringAlignment.Center;
+            this.panelEx13.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.panelEx13.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.panelEx13.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.panelEx13.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.panelEx13.Style.GradientAngle = 90;
+            this.panelEx13.TabIndex = 64;
+            this.panelEx13.TextDockConstrained = false;
+            // 
+            // txt_AXIS1_JOG_VEL
+            // 
+            this.txt_AXIS1_JOG_VEL.BackColor = System.Drawing.Color.Black;
+            // 
+            // 
+            // 
+            this.txt_AXIS1_JOG_VEL.Border.Class = "TextBoxBorder";
+            this.txt_AXIS1_JOG_VEL.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txt_AXIS1_JOG_VEL.DisabledBackColor = System.Drawing.Color.White;
+            this.txt_AXIS1_JOG_VEL.ForeColor = System.Drawing.Color.White;
+            this.txt_AXIS1_JOG_VEL.Location = new System.Drawing.Point(137, 22);
+            this.txt_AXIS1_JOG_VEL.Name = "txt_AXIS1_JOG_VEL";
+            this.txt_AXIS1_JOG_VEL.PreventEnterBeep = true;
+            this.txt_AXIS1_JOG_VEL.Size = new System.Drawing.Size(85, 31);
+            this.txt_AXIS1_JOG_VEL.TabIndex = 45;
+            this.txt_AXIS1_JOG_VEL.Tag = "SAVE.AXIS1_JOG_VEL;REAL";
+            this.txt_AXIS1_JOG_VEL.Text = "0";
+            this.txt_AXIS1_JOG_VEL.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_AXIS1_JOG_VEL_KeyPress);
+            // 
+            // btm_MOTOR_JOG1FOR
+            // 
+            this.btm_MOTOR_JOG1FOR.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_MOTOR_JOG1FOR.BackColor = System.Drawing.Color.Transparent;
+            this.btm_MOTOR_JOG1FOR.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_MOTOR_JOG1FOR.Location = new System.Drawing.Point(14, 68);
+            this.btm_MOTOR_JOG1FOR.Name = "btm_MOTOR_JOG1FOR";
+            this.btm_MOTOR_JOG1FOR.Size = new System.Drawing.Size(75, 30);
+            this.btm_MOTOR_JOG1FOR.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_MOTOR_JOG1FOR.TabIndex = 38;
+            this.btm_MOTOR_JOG1FOR.Tag = "HMI.MOTOR_JOG1FOR;BOOL";
+            this.btm_MOTOR_JOG1FOR.Text = "正向";
+            this.btm_MOTOR_JOG1FOR.Click += new System.EventHandler(this.btm_MOTOR_JOG1FOR_Click);
+            // 
+            // btm_MOTOR_JOG1BACK
+            // 
+            this.btm_MOTOR_JOG1BACK.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_MOTOR_JOG1BACK.BackColor = System.Drawing.Color.Transparent;
+            this.btm_MOTOR_JOG1BACK.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_MOTOR_JOG1BACK.Location = new System.Drawing.Point(147, 68);
+            this.btm_MOTOR_JOG1BACK.Name = "btm_MOTOR_JOG1BACK";
+            this.btm_MOTOR_JOG1BACK.Size = new System.Drawing.Size(75, 30);
+            this.btm_MOTOR_JOG1BACK.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_MOTOR_JOG1BACK.TabIndex = 37;
+            this.btm_MOTOR_JOG1BACK.Tag = "HMI.MOTOR_JOG1BACK;BOOL";
+            this.btm_MOTOR_JOG1BACK.Text = "反向";
+            this.btm_MOTOR_JOG1BACK.Click += new System.EventHandler(this.btm_MOTOR_JOG1BACK_Click);
+            // 
+            // labelX5
+            // 
+            this.labelX5.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX5.ForeColor = System.Drawing.Color.White;
+            this.labelX5.Location = new System.Drawing.Point(15, 18);
+            this.labelX5.Name = "labelX5";
+            this.labelX5.Size = new System.Drawing.Size(84, 30);
+            this.labelX5.TabIndex = 35;
+            this.labelX5.Text = "升降点动";
+            // 
+            // panelEx12
+            // 
+            this.panelEx12.CanvasColor = System.Drawing.SystemColors.Control;
+            this.panelEx12.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.panelEx12.Controls.Add(this.btm_AXIS_CLOSE);
+            this.panelEx12.Controls.Add(this.btm_AXIS_OPEN);
+            this.panelEx12.Controls.Add(this.labelX4);
+            this.panelEx12.DisabledBackColor = System.Drawing.Color.Empty;
+            this.panelEx12.Location = new System.Drawing.Point(213, 230);
+            this.panelEx12.Name = "panelEx12";
+            this.panelEx12.Size = new System.Drawing.Size(213, 120);
+            this.panelEx12.Style.Alignment = System.Drawing.StringAlignment.Center;
+            this.panelEx12.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.panelEx12.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.panelEx12.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.panelEx12.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.panelEx12.Style.GradientAngle = 90;
+            this.panelEx12.TabIndex = 45;
+            this.panelEx12.TextDockConstrained = false;
+            // 
+            // btm_AXIS_CLOSE
+            // 
+            this.btm_AXIS_CLOSE.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_AXIS_CLOSE.BackColor = System.Drawing.Color.Transparent;
+            this.btm_AXIS_CLOSE.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_AXIS_CLOSE.Location = new System.Drawing.Point(112, 70);
+            this.btm_AXIS_CLOSE.Name = "btm_AXIS_CLOSE";
+            this.btm_AXIS_CLOSE.Size = new System.Drawing.Size(75, 30);
+            this.btm_AXIS_CLOSE.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_AXIS_CLOSE.TabIndex = 37;
+            this.btm_AXIS_CLOSE.Tag = "HMI.AXIS_CLOSE;BOOL";
+            this.btm_AXIS_CLOSE.Text = "关闭";
+            this.btm_AXIS_CLOSE.Click += new System.EventHandler(this.btm_AXIS_CLOSE_Click);
+            // 
+            // btm_AXIS_OPEN
+            // 
+            this.btm_AXIS_OPEN.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_AXIS_OPEN.BackColor = System.Drawing.Color.Transparent;
+            this.btm_AXIS_OPEN.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_AXIS_OPEN.Location = new System.Drawing.Point(20, 70);
+            this.btm_AXIS_OPEN.Name = "btm_AXIS_OPEN";
+            this.btm_AXIS_OPEN.Size = new System.Drawing.Size(75, 30);
+            this.btm_AXIS_OPEN.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_AXIS_OPEN.TabIndex = 36;
+            this.btm_AXIS_OPEN.Tag = "HMI.AXIS_OPEN;BOOL";
+            this.btm_AXIS_OPEN.Text = "打开";
+            this.btm_AXIS_OPEN.Click += new System.EventHandler(this.btm_AXIS_OPEN_Click);
+            // 
+            // labelX4
+            // 
+            this.labelX4.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX4.ForeColor = System.Drawing.Color.White;
+            this.labelX4.Location = new System.Drawing.Point(63, 24);
+            this.labelX4.Name = "labelX4";
+            this.labelX4.Size = new System.Drawing.Size(84, 30);
+            this.labelX4.TabIndex = 35;
+            this.labelX4.Text = "收发电机";
+            // 
+            // panelEx11
+            // 
+            this.panelEx11.CanvasColor = System.Drawing.SystemColors.Control;
+            this.panelEx11.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.panelEx11.Controls.Add(this.btm_AXIS_DOWN2);
+            this.panelEx11.Controls.Add(this.btm_AXIS_DOWN);
+            this.panelEx11.Controls.Add(this.btm_AXIS_UP);
+            this.panelEx11.Controls.Add(this.labelX3);
+            this.panelEx11.DisabledBackColor = System.Drawing.Color.Empty;
+            this.panelEx11.Location = new System.Drawing.Point(426, 0);
+            this.panelEx11.Name = "panelEx11";
+            this.panelEx11.Size = new System.Drawing.Size(399, 140);
+            this.panelEx11.Style.Alignment = System.Drawing.StringAlignment.Center;
+            this.panelEx11.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.panelEx11.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.panelEx11.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.panelEx11.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.panelEx11.Style.GradientAngle = 90;
+            this.panelEx11.TabIndex = 41;
+            this.panelEx11.TextDockConstrained = false;
+            // 
+            // btm_AXIS_DOWN2
+            // 
+            this.btm_AXIS_DOWN2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_AXIS_DOWN2.BackColor = System.Drawing.Color.Transparent;
+            this.btm_AXIS_DOWN2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_AXIS_DOWN2.Location = new System.Drawing.Point(261, 68);
+            this.btm_AXIS_DOWN2.Name = "btm_AXIS_DOWN2";
+            this.btm_AXIS_DOWN2.Size = new System.Drawing.Size(84, 30);
+            this.btm_AXIS_DOWN2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_AXIS_DOWN2.TabIndex = 38;
+            this.btm_AXIS_DOWN2.Tag = "HMI.AXIS_DOWN2;BOOL";
+            this.btm_AXIS_DOWN2.Text = "下降2位";
+            this.btm_AXIS_DOWN2.Click += new System.EventHandler(this.btm_AXIS_DOWN2_Click);
+            // 
+            // btm_AXIS_DOWN
+            // 
+            this.btm_AXIS_DOWN.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_AXIS_DOWN.BackColor = System.Drawing.Color.Transparent;
+            this.btm_AXIS_DOWN.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_AXIS_DOWN.Location = new System.Drawing.Point(144, 68);
+            this.btm_AXIS_DOWN.Name = "btm_AXIS_DOWN";
+            this.btm_AXIS_DOWN.Size = new System.Drawing.Size(84, 30);
+            this.btm_AXIS_DOWN.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_AXIS_DOWN.TabIndex = 37;
+            this.btm_AXIS_DOWN.Tag = "HMI.AXIS_DOWN;BOOL";
+            this.btm_AXIS_DOWN.Text = "下降1位";
+            this.btm_AXIS_DOWN.Click += new System.EventHandler(this.btm_AXIS_DOWN_Click);
+            // 
+            // btm_AXIS_UP
+            // 
+            this.btm_AXIS_UP.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_AXIS_UP.BackColor = System.Drawing.Color.Transparent;
+            this.btm_AXIS_UP.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_AXIS_UP.Location = new System.Drawing.Point(34, 67);
+            this.btm_AXIS_UP.Name = "btm_AXIS_UP";
+            this.btm_AXIS_UP.Size = new System.Drawing.Size(84, 30);
+            this.btm_AXIS_UP.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_AXIS_UP.TabIndex = 36;
+            this.btm_AXIS_UP.Tag = "HMI.AXIS_UP;BOOL";
+            this.btm_AXIS_UP.Text = "上升到位";
+            this.btm_AXIS_UP.Click += new System.EventHandler(this.btm_AXIS_UP_Click);
+            // 
+            // labelX3
+            // 
+            this.labelX3.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX3.ForeColor = System.Drawing.Color.White;
+            this.labelX3.Location = new System.Drawing.Point(144, 17);
+            this.labelX3.Name = "labelX3";
+            this.labelX3.Size = new System.Drawing.Size(84, 30);
+            this.labelX3.TabIndex = 35;
+            this.labelX3.Text = "升降电机";
+            // 
+            // panelEx10
+            // 
+            this.panelEx10.CanvasColor = System.Drawing.SystemColors.Control;
+            this.panelEx10.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.panelEx10.Controls.Add(this.btm_AXIS_POS9);
+            this.panelEx10.Controls.Add(this.btm_AXIS_POS8);
+            this.panelEx10.Controls.Add(this.btm_AXIS_POS7);
+            this.panelEx10.Controls.Add(this.btm_AXIS_POS6);
+            this.panelEx10.Controls.Add(this.btm_AXIS_POS5);
+            this.panelEx10.Controls.Add(this.btm_AXIS_POS4);
+            this.panelEx10.Controls.Add(this.btm_AXIS_POS3);
+            this.panelEx10.Controls.Add(this.btm_AXIS_POS2);
+            this.panelEx10.Controls.Add(this.btm_AXIS_POS1);
+            this.panelEx10.Controls.Add(this.btm_AXIS_POS0);
+            this.panelEx10.Controls.Add(this.labelX2);
+            this.panelEx10.DisabledBackColor = System.Drawing.Color.Empty;
+            this.panelEx10.Location = new System.Drawing.Point(426, 140);
+            this.panelEx10.Name = "panelEx10";
+            this.panelEx10.Size = new System.Drawing.Size(399, 210);
+            this.panelEx10.Style.Alignment = System.Drawing.StringAlignment.Center;
+            this.panelEx10.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.panelEx10.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.panelEx10.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.panelEx10.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.panelEx10.Style.GradientAngle = 90;
+            this.panelEx10.TabIndex = 13;
+            this.panelEx10.TextDockConstrained = false;
+            // 
+            // btm_AXIS_POS9
+            // 
+            this.btm_AXIS_POS9.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_AXIS_POS9.BackColor = System.Drawing.Color.Transparent;
+            this.btm_AXIS_POS9.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_AXIS_POS9.Location = new System.Drawing.Point(270, 161);
+            this.btm_AXIS_POS9.Name = "btm_AXIS_POS9";
+            this.btm_AXIS_POS9.Size = new System.Drawing.Size(75, 30);
+            this.btm_AXIS_POS9.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_AXIS_POS9.TabIndex = 45;
+            this.btm_AXIS_POS9.Tag = "HMI.AXIS_POS9;BOOL";
+            this.btm_AXIS_POS9.Text = "9号位";
+            this.btm_AXIS_POS9.Click += new System.EventHandler(this.btm_AXIS_POS9_Click);
+            // 
+            // btm_AXIS_POS8
+            // 
+            this.btm_AXIS_POS8.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_AXIS_POS8.BackColor = System.Drawing.Color.Transparent;
+            this.btm_AXIS_POS8.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_AXIS_POS8.Location = new System.Drawing.Point(153, 161);
+            this.btm_AXIS_POS8.Name = "btm_AXIS_POS8";
+            this.btm_AXIS_POS8.Size = new System.Drawing.Size(75, 30);
+            this.btm_AXIS_POS8.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_AXIS_POS8.TabIndex = 44;
+            this.btm_AXIS_POS8.Tag = "HMI.AXIS_POS8;BOOL";
+            this.btm_AXIS_POS8.Text = "8号位";
+            this.btm_AXIS_POS8.Click += new System.EventHandler(this.btm_AXIS_POS8_Click);
+            // 
+            // btm_AXIS_POS7
+            // 
+            this.btm_AXIS_POS7.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_AXIS_POS7.BackColor = System.Drawing.Color.Transparent;
+            this.btm_AXIS_POS7.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_AXIS_POS7.Location = new System.Drawing.Point(34, 161);
+            this.btm_AXIS_POS7.Name = "btm_AXIS_POS7";
+            this.btm_AXIS_POS7.Size = new System.Drawing.Size(75, 30);
+            this.btm_AXIS_POS7.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_AXIS_POS7.TabIndex = 43;
+            this.btm_AXIS_POS7.Tag = "HMI.AXIS_POS7;BOOL";
+            this.btm_AXIS_POS7.Text = "7号位";
+            this.btm_AXIS_POS7.Click += new System.EventHandler(this.btm_AXIS_POS7_Click);
+            // 
+            // btm_AXIS_POS6
+            // 
+            this.btm_AXIS_POS6.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_AXIS_POS6.BackColor = System.Drawing.Color.Transparent;
+            this.btm_AXIS_POS6.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_AXIS_POS6.Location = new System.Drawing.Point(270, 114);
+            this.btm_AXIS_POS6.Name = "btm_AXIS_POS6";
+            this.btm_AXIS_POS6.Size = new System.Drawing.Size(75, 30);
+            this.btm_AXIS_POS6.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_AXIS_POS6.TabIndex = 42;
+            this.btm_AXIS_POS6.Tag = "HMI.AXIS_POS6;BOOL";
+            this.btm_AXIS_POS6.Text = "6号位";
+            this.btm_AXIS_POS6.Click += new System.EventHandler(this.btm_AXIS_POS6_Click);
+            // 
+            // btm_AXIS_POS5
+            // 
+            this.btm_AXIS_POS5.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_AXIS_POS5.BackColor = System.Drawing.Color.Transparent;
+            this.btm_AXIS_POS5.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_AXIS_POS5.Location = new System.Drawing.Point(153, 114);
+            this.btm_AXIS_POS5.Name = "btm_AXIS_POS5";
+            this.btm_AXIS_POS5.Size = new System.Drawing.Size(75, 30);
+            this.btm_AXIS_POS5.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_AXIS_POS5.TabIndex = 41;
+            this.btm_AXIS_POS5.Tag = "HMI.AXIS_POS5;BOOL";
+            this.btm_AXIS_POS5.Text = "5号位";
+            this.btm_AXIS_POS5.Click += new System.EventHandler(this.btm_AXIS_POS5_Click);
+            // 
+            // btm_AXIS_POS4
+            // 
+            this.btm_AXIS_POS4.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_AXIS_POS4.BackColor = System.Drawing.Color.Transparent;
+            this.btm_AXIS_POS4.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_AXIS_POS4.Location = new System.Drawing.Point(34, 114);
+            this.btm_AXIS_POS4.Name = "btm_AXIS_POS4";
+            this.btm_AXIS_POS4.Size = new System.Drawing.Size(75, 30);
+            this.btm_AXIS_POS4.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_AXIS_POS4.TabIndex = 40;
+            this.btm_AXIS_POS4.Tag = "HMI.AXIS_POS4;BOOL";
+            this.btm_AXIS_POS4.Text = "4号位";
+            this.btm_AXIS_POS4.Click += new System.EventHandler(this.btm_AXIS_POS4_Click);
+            // 
+            // btm_AXIS_POS3
+            // 
+            this.btm_AXIS_POS3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_AXIS_POS3.BackColor = System.Drawing.Color.Transparent;
+            this.btm_AXIS_POS3.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_AXIS_POS3.Location = new System.Drawing.Point(270, 68);
+            this.btm_AXIS_POS3.Name = "btm_AXIS_POS3";
+            this.btm_AXIS_POS3.Size = new System.Drawing.Size(75, 30);
+            this.btm_AXIS_POS3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_AXIS_POS3.TabIndex = 39;
+            this.btm_AXIS_POS3.Tag = "HMI.AXIS_POS3;BOOL";
+            this.btm_AXIS_POS3.Text = "3号位";
+            this.btm_AXIS_POS3.Click += new System.EventHandler(this.btm_AXIS_POS3_Click);
+            // 
+            // btm_AXIS_POS2
+            // 
+            this.btm_AXIS_POS2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_AXIS_POS2.BackColor = System.Drawing.Color.Transparent;
+            this.btm_AXIS_POS2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_AXIS_POS2.Location = new System.Drawing.Point(153, 68);
+            this.btm_AXIS_POS2.Name = "btm_AXIS_POS2";
+            this.btm_AXIS_POS2.Size = new System.Drawing.Size(75, 30);
+            this.btm_AXIS_POS2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_AXIS_POS2.TabIndex = 38;
+            this.btm_AXIS_POS2.Tag = "HMI.AXIS_POS2;BOOL";
+            this.btm_AXIS_POS2.Text = "2号位";
+            this.btm_AXIS_POS2.Click += new System.EventHandler(this.btm_AXIS_POS2_Click);
+            // 
+            // btm_AXIS_POS1
+            // 
+            this.btm_AXIS_POS1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_AXIS_POS1.BackColor = System.Drawing.Color.Transparent;
+            this.btm_AXIS_POS1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_AXIS_POS1.Location = new System.Drawing.Point(34, 68);
+            this.btm_AXIS_POS1.Name = "btm_AXIS_POS1";
+            this.btm_AXIS_POS1.Size = new System.Drawing.Size(75, 30);
+            this.btm_AXIS_POS1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_AXIS_POS1.TabIndex = 37;
+            this.btm_AXIS_POS1.Tag = "HMI.AXIS_POS1;BOOL";
+            this.btm_AXIS_POS1.Text = "1号位";
+            this.btm_AXIS_POS1.Click += new System.EventHandler(this.btm_AXIS_POS1_Click);
+            // 
+            // btm_AXIS_POS0
+            // 
+            this.btm_AXIS_POS0.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_AXIS_POS0.BackColor = System.Drawing.Color.Transparent;
+            this.btm_AXIS_POS0.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_AXIS_POS0.Location = new System.Drawing.Point(34, 18);
+            this.btm_AXIS_POS0.Name = "btm_AXIS_POS0";
+            this.btm_AXIS_POS0.Size = new System.Drawing.Size(75, 30);
+            this.btm_AXIS_POS0.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_AXIS_POS0.TabIndex = 36;
+            this.btm_AXIS_POS0.Tag = "HMI.AXIS_POS0;BOOL";
+            this.btm_AXIS_POS0.Text = "起始位";
+            this.btm_AXIS_POS0.Click += new System.EventHandler(this.btm_AXIS_POS0_Click);
+            // 
+            // labelX2
+            // 
+            this.labelX2.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX2.ForeColor = System.Drawing.Color.White;
+            this.labelX2.Location = new System.Drawing.Point(198, 18);
+            this.labelX2.Name = "labelX2";
+            this.labelX2.Size = new System.Drawing.Size(84, 30);
+            this.labelX2.TabIndex = 35;
+            this.labelX2.Text = "旋转电机";
+            // 
+            // panelEx9
+            // 
+            this.panelEx9.CanvasColor = System.Drawing.SystemColors.Control;
+            this.panelEx9.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.panelEx9.Controls.Add(this.btm_VAL_OPEN);
+            this.panelEx9.Controls.Add(this.btm_VAL_CLOSE);
+            this.panelEx9.Controls.Add(this.labelX1);
+            this.panelEx9.DisabledBackColor = System.Drawing.Color.Empty;
+            this.panelEx9.Location = new System.Drawing.Point(0, 230);
+            this.panelEx9.Name = "panelEx9";
+            this.panelEx9.Size = new System.Drawing.Size(213, 120);
+            this.panelEx9.Style.Alignment = System.Drawing.StringAlignment.Center;
+            this.panelEx9.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.panelEx9.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.panelEx9.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.panelEx9.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.panelEx9.Style.GradientAngle = 90;
+            this.panelEx9.TabIndex = 9;
+            this.panelEx9.TextDockConstrained = false;
+            // 
+            // btm_VAL_OPEN
+            // 
+            this.btm_VAL_OPEN.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_VAL_OPEN.BackColor = System.Drawing.Color.Transparent;
+            this.btm_VAL_OPEN.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_VAL_OPEN.Location = new System.Drawing.Point(14, 68);
+            this.btm_VAL_OPEN.Name = "btm_VAL_OPEN";
+            this.btm_VAL_OPEN.Size = new System.Drawing.Size(75, 30);
+            this.btm_VAL_OPEN.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_VAL_OPEN.TabIndex = 38;
+            this.btm_VAL_OPEN.Tag = "HMI.VAL_OPEN;BOOL";
+            this.btm_VAL_OPEN.Text = "松开";
+            this.btm_VAL_OPEN.Click += new System.EventHandler(this.btm_VAL_OPEN_Click);
+            // 
+            // btm_VAL_CLOSE
+            // 
+            this.btm_VAL_CLOSE.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_VAL_CLOSE.BackColor = System.Drawing.Color.Transparent;
+            this.btm_VAL_CLOSE.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_VAL_CLOSE.Location = new System.Drawing.Point(101, 68);
+            this.btm_VAL_CLOSE.Name = "btm_VAL_CLOSE";
+            this.btm_VAL_CLOSE.Size = new System.Drawing.Size(75, 30);
+            this.btm_VAL_CLOSE.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_VAL_CLOSE.TabIndex = 37;
+            this.btm_VAL_CLOSE.Tag = "HMI.VAL_CLOSE;BOOL";
+            this.btm_VAL_CLOSE.Text = "夹紧";
+            this.btm_VAL_CLOSE.Click += new System.EventHandler(this.btm_VAL_CLOSE_Click);
+            // 
+            // labelX1
+            // 
+            this.labelX1.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX1.ForeColor = System.Drawing.Color.White;
+            this.labelX1.Location = new System.Drawing.Point(58, 27);
+            this.labelX1.Name = "labelX1";
+            this.labelX1.Size = new System.Drawing.Size(84, 30);
+            this.labelX1.TabIndex = 35;
+            this.labelX1.Text = "夹爪控制";
+            // 
+            // panelEx8
+            // 
+            this.panelEx8.CanvasColor = System.Drawing.SystemColors.Control;
+            this.panelEx8.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.panelEx8.Controls.Add(this.txt_AXIS3_REAL_TOR);
+            this.panelEx8.Controls.Add(this.txt_AXIS3_REAL_VEL);
+            this.panelEx8.Controls.Add(this.txt_AXIS3_REAL_POS);
+            this.panelEx8.Controls.Add(this.txt_AXIS2_REAL_TOR);
+            this.panelEx8.Controls.Add(this.txt_AXIS2_REAL_VEL);
+            this.panelEx8.Controls.Add(this.txt_AXIS2_REAL_POS);
+            this.panelEx8.Controls.Add(this.txt_AXIS1_REAL_TOR);
+            this.panelEx8.Controls.Add(this.txt_AXIS1_REAL_VEL);
+            this.panelEx8.Controls.Add(this.txt_AXIS1_REAL_POS);
+            this.panelEx8.Controls.Add(this.btm_MOTOR3_BUTT);
+            this.panelEx8.Controls.Add(this.btm_MOTOR2_BUTT);
+            this.panelEx8.Controls.Add(this.btm_MOTOR1_BUTT);
+            this.panelEx8.Controls.Add(this.reflectionLabel19);
+            this.panelEx8.Controls.Add(this.reflectionLabel18);
+            this.panelEx8.Controls.Add(this.reflectionLabel17);
+            this.panelEx8.Controls.Add(this.reflectionLabel16);
+            this.panelEx8.DisabledBackColor = System.Drawing.Color.Empty;
+            this.panelEx8.Location = new System.Drawing.Point(0, 0);
+            this.panelEx8.Name = "panelEx8";
+            this.panelEx8.Size = new System.Drawing.Size(426, 230);
+            this.panelEx8.Style.Alignment = System.Drawing.StringAlignment.Center;
+            this.panelEx8.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.panelEx8.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.panelEx8.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.panelEx8.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.panelEx8.Style.GradientAngle = 90;
+            this.panelEx8.TabIndex = 5;
+            this.panelEx8.TextDockConstrained = false;
+            // 
+            // txt_AXIS3_REAL_TOR
+            // 
+            this.txt_AXIS3_REAL_TOR.BackColor = System.Drawing.Color.Black;
+            // 
+            // 
+            // 
+            this.txt_AXIS3_REAL_TOR.Border.Class = "TextBoxBorder";
+            this.txt_AXIS3_REAL_TOR.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txt_AXIS3_REAL_TOR.DisabledBackColor = System.Drawing.Color.White;
+            this.txt_AXIS3_REAL_TOR.ForeColor = System.Drawing.Color.White;
+            this.txt_AXIS3_REAL_TOR.Location = new System.Drawing.Point(322, 162);
+            this.txt_AXIS3_REAL_TOR.Name = "txt_AXIS3_REAL_TOR";
+            this.txt_AXIS3_REAL_TOR.PreventEnterBeep = true;
+            this.txt_AXIS3_REAL_TOR.Size = new System.Drawing.Size(85, 31);
+            this.txt_AXIS3_REAL_TOR.TabIndex = 46;
+            this.txt_AXIS3_REAL_TOR.Tag = "HMI.AXIS3_REAL_TOR;REAL";
+            this.txt_AXIS3_REAL_TOR.Text = "0";
+            // 
+            // txt_AXIS3_REAL_VEL
+            // 
+            this.txt_AXIS3_REAL_VEL.BackColor = System.Drawing.Color.Black;
+            // 
+            // 
+            // 
+            this.txt_AXIS3_REAL_VEL.Border.Class = "TextBoxBorder";
+            this.txt_AXIS3_REAL_VEL.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txt_AXIS3_REAL_VEL.DisabledBackColor = System.Drawing.Color.White;
+            this.txt_AXIS3_REAL_VEL.ForeColor = System.Drawing.Color.White;
+            this.txt_AXIS3_REAL_VEL.Location = new System.Drawing.Point(217, 161);
+            this.txt_AXIS3_REAL_VEL.Name = "txt_AXIS3_REAL_VEL";
+            this.txt_AXIS3_REAL_VEL.PreventEnterBeep = true;
+            this.txt_AXIS3_REAL_VEL.Size = new System.Drawing.Size(85, 31);
+            this.txt_AXIS3_REAL_VEL.TabIndex = 45;
+            this.txt_AXIS3_REAL_VEL.Tag = "HMI.AXIS3_REAL_VEL;REAL";
+            this.txt_AXIS3_REAL_VEL.Text = "0";
+            // 
+            // txt_AXIS3_REAL_POS
+            // 
+            this.txt_AXIS3_REAL_POS.BackColor = System.Drawing.Color.Black;
+            // 
+            // 
+            // 
+            this.txt_AXIS3_REAL_POS.Border.Class = "TextBoxBorder";
+            this.txt_AXIS3_REAL_POS.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txt_AXIS3_REAL_POS.DisabledBackColor = System.Drawing.Color.White;
+            this.txt_AXIS3_REAL_POS.ForeColor = System.Drawing.Color.White;
+            this.txt_AXIS3_REAL_POS.Location = new System.Drawing.Point(115, 162);
+            this.txt_AXIS3_REAL_POS.Name = "txt_AXIS3_REAL_POS";
+            this.txt_AXIS3_REAL_POS.PreventEnterBeep = true;
+            this.txt_AXIS3_REAL_POS.Size = new System.Drawing.Size(85, 31);
+            this.txt_AXIS3_REAL_POS.TabIndex = 44;
+            this.txt_AXIS3_REAL_POS.Tag = "HMI.AXIS3_REAL_POS;REAL";
+            this.txt_AXIS3_REAL_POS.Text = "0";
+            // 
+            // txt_AXIS2_REAL_TOR
+            // 
+            this.txt_AXIS2_REAL_TOR.BackColor = System.Drawing.Color.Black;
+            // 
+            // 
+            // 
+            this.txt_AXIS2_REAL_TOR.Border.Class = "TextBoxBorder";
+            this.txt_AXIS2_REAL_TOR.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txt_AXIS2_REAL_TOR.DisabledBackColor = System.Drawing.Color.White;
+            this.txt_AXIS2_REAL_TOR.ForeColor = System.Drawing.Color.White;
+            this.txt_AXIS2_REAL_TOR.Location = new System.Drawing.Point(322, 114);
+            this.txt_AXIS2_REAL_TOR.Name = "txt_AXIS2_REAL_TOR";
+            this.txt_AXIS2_REAL_TOR.PreventEnterBeep = true;
+            this.txt_AXIS2_REAL_TOR.Size = new System.Drawing.Size(85, 31);
+            this.txt_AXIS2_REAL_TOR.TabIndex = 43;
+            this.txt_AXIS2_REAL_TOR.Tag = "HMI.AXIS2_REAL_TOR;REAL";
+            this.txt_AXIS2_REAL_TOR.Text = "0";
+            // 
+            // txt_AXIS2_REAL_VEL
+            // 
+            this.txt_AXIS2_REAL_VEL.BackColor = System.Drawing.Color.Black;
+            // 
+            // 
+            // 
+            this.txt_AXIS2_REAL_VEL.Border.Class = "TextBoxBorder";
+            this.txt_AXIS2_REAL_VEL.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txt_AXIS2_REAL_VEL.DisabledBackColor = System.Drawing.Color.White;
+            this.txt_AXIS2_REAL_VEL.ForeColor = System.Drawing.Color.White;
+            this.txt_AXIS2_REAL_VEL.Location = new System.Drawing.Point(217, 113);
+            this.txt_AXIS2_REAL_VEL.Name = "txt_AXIS2_REAL_VEL";
+            this.txt_AXIS2_REAL_VEL.PreventEnterBeep = true;
+            this.txt_AXIS2_REAL_VEL.Size = new System.Drawing.Size(85, 31);
+            this.txt_AXIS2_REAL_VEL.TabIndex = 42;
+            this.txt_AXIS2_REAL_VEL.Tag = "HMI.AXIS2_REAL_VEL;REAL";
+            this.txt_AXIS2_REAL_VEL.Text = "0";
+            // 
+            // txt_AXIS2_REAL_POS
+            // 
+            this.txt_AXIS2_REAL_POS.BackColor = System.Drawing.Color.Black;
+            // 
+            // 
+            // 
+            this.txt_AXIS2_REAL_POS.Border.Class = "TextBoxBorder";
+            this.txt_AXIS2_REAL_POS.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txt_AXIS2_REAL_POS.DisabledBackColor = System.Drawing.Color.White;
+            this.txt_AXIS2_REAL_POS.ForeColor = System.Drawing.Color.White;
+            this.txt_AXIS2_REAL_POS.Location = new System.Drawing.Point(115, 114);
+            this.txt_AXIS2_REAL_POS.Name = "txt_AXIS2_REAL_POS";
+            this.txt_AXIS2_REAL_POS.PreventEnterBeep = true;
+            this.txt_AXIS2_REAL_POS.Size = new System.Drawing.Size(85, 31);
+            this.txt_AXIS2_REAL_POS.TabIndex = 41;
+            this.txt_AXIS2_REAL_POS.Tag = "HMI.AXIS2_REAL_POS;REAL";
+            this.txt_AXIS2_REAL_POS.Text = "0";
+            // 
+            // txt_AXIS1_REAL_TOR
+            // 
+            this.txt_AXIS1_REAL_TOR.BackColor = System.Drawing.Color.Black;
+            // 
+            // 
+            // 
+            this.txt_AXIS1_REAL_TOR.Border.Class = "TextBoxBorder";
+            this.txt_AXIS1_REAL_TOR.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txt_AXIS1_REAL_TOR.DisabledBackColor = System.Drawing.Color.White;
+            this.txt_AXIS1_REAL_TOR.ForeColor = System.Drawing.Color.White;
+            this.txt_AXIS1_REAL_TOR.Location = new System.Drawing.Point(322, 68);
+            this.txt_AXIS1_REAL_TOR.Name = "txt_AXIS1_REAL_TOR";
+            this.txt_AXIS1_REAL_TOR.PreventEnterBeep = true;
+            this.txt_AXIS1_REAL_TOR.Size = new System.Drawing.Size(85, 31);
+            this.txt_AXIS1_REAL_TOR.TabIndex = 40;
+            this.txt_AXIS1_REAL_TOR.Tag = "HMI.AXIS1_REAL_TOR;REAL";
+            this.txt_AXIS1_REAL_TOR.Text = "0";
+            // 
+            // txt_AXIS1_REAL_VEL
+            // 
+            this.txt_AXIS1_REAL_VEL.BackColor = System.Drawing.Color.Black;
+            // 
+            // 
+            // 
+            this.txt_AXIS1_REAL_VEL.Border.Class = "TextBoxBorder";
+            this.txt_AXIS1_REAL_VEL.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txt_AXIS1_REAL_VEL.DisabledBackColor = System.Drawing.Color.White;
+            this.txt_AXIS1_REAL_VEL.ForeColor = System.Drawing.Color.White;
+            this.txt_AXIS1_REAL_VEL.Location = new System.Drawing.Point(217, 67);
+            this.txt_AXIS1_REAL_VEL.Name = "txt_AXIS1_REAL_VEL";
+            this.txt_AXIS1_REAL_VEL.PreventEnterBeep = true;
+            this.txt_AXIS1_REAL_VEL.Size = new System.Drawing.Size(85, 31);
+            this.txt_AXIS1_REAL_VEL.TabIndex = 39;
+            this.txt_AXIS1_REAL_VEL.Tag = "HMI.AXIS1_REAL_VEL;REAL";
+            this.txt_AXIS1_REAL_VEL.Text = "0";
+            // 
+            // txt_AXIS1_REAL_POS
+            // 
+            this.txt_AXIS1_REAL_POS.BackColor = System.Drawing.Color.Black;
+            // 
+            // 
+            // 
+            this.txt_AXIS1_REAL_POS.Border.Class = "TextBoxBorder";
+            this.txt_AXIS1_REAL_POS.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txt_AXIS1_REAL_POS.DisabledBackColor = System.Drawing.Color.White;
+            this.txt_AXIS1_REAL_POS.ForeColor = System.Drawing.Color.White;
+            this.txt_AXIS1_REAL_POS.Location = new System.Drawing.Point(115, 68);
+            this.txt_AXIS1_REAL_POS.Name = "txt_AXIS1_REAL_POS";
+            this.txt_AXIS1_REAL_POS.PreventEnterBeep = true;
+            this.txt_AXIS1_REAL_POS.Size = new System.Drawing.Size(85, 31);
+            this.txt_AXIS1_REAL_POS.TabIndex = 38;
+            this.txt_AXIS1_REAL_POS.Tag = "HMI.AXIS1_REAL_POS;REAL";
+            this.txt_AXIS1_REAL_POS.Text = "0";
+            // 
+            // btm_MOTOR3_BUTT
+            // 
+            this.btm_MOTOR3_BUTT.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_MOTOR3_BUTT.BackColor = System.Drawing.Color.Transparent;
+            this.btm_MOTOR3_BUTT.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_MOTOR3_BUTT.Location = new System.Drawing.Point(14, 162);
+            this.btm_MOTOR3_BUTT.Name = "btm_MOTOR3_BUTT";
+            this.btm_MOTOR3_BUTT.Size = new System.Drawing.Size(85, 30);
+            this.btm_MOTOR3_BUTT.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_MOTOR3_BUTT.TabIndex = 37;
+            this.btm_MOTOR3_BUTT.Tag = "HMI.MOTOR3_BUTT;BOOL";
+            this.btm_MOTOR3_BUTT.Text = "收发电机";
+            this.btm_MOTOR3_BUTT.Click += new System.EventHandler(this.btm_MOTOR3_BUTT_Click);
+            // 
+            // btm_MOTOR2_BUTT
+            // 
+            this.btm_MOTOR2_BUTT.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_MOTOR2_BUTT.BackColor = System.Drawing.Color.Transparent;
+            this.btm_MOTOR2_BUTT.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_MOTOR2_BUTT.Location = new System.Drawing.Point(14, 115);
+            this.btm_MOTOR2_BUTT.Name = "btm_MOTOR2_BUTT";
+            this.btm_MOTOR2_BUTT.Size = new System.Drawing.Size(85, 30);
+            this.btm_MOTOR2_BUTT.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_MOTOR2_BUTT.TabIndex = 36;
+            this.btm_MOTOR2_BUTT.Tag = "HMI.MOTOR2_BUTT;BOOL";
+            this.btm_MOTOR2_BUTT.Text = "旋转电机";
+            this.btm_MOTOR2_BUTT.Click += new System.EventHandler(this.btm_MOTOR2_BUTT_Click);
+            // 
+            // btm_MOTOR1_BUTT
+            // 
+            this.btm_MOTOR1_BUTT.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_MOTOR1_BUTT.BackColor = System.Drawing.Color.Transparent;
+            this.btm_MOTOR1_BUTT.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btm_MOTOR1_BUTT.Location = new System.Drawing.Point(14, 68);
+            this.btm_MOTOR1_BUTT.Name = "btm_MOTOR1_BUTT";
+            this.btm_MOTOR1_BUTT.Size = new System.Drawing.Size(85, 30);
+            this.btm_MOTOR1_BUTT.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_MOTOR1_BUTT.TabIndex = 35;
+            this.btm_MOTOR1_BUTT.Tag = "HMI.MOTOR1_BUTT;BOOL";
+            this.btm_MOTOR1_BUTT.Text = "升降电机";
+            this.btm_MOTOR1_BUTT.Click += new System.EventHandler(this.btm_MOTOR1_BUTT_Click);
+            // 
+            // reflectionLabel19
+            // 
+            this.reflectionLabel19.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.reflectionLabel19.BackgroundStyle.BackColor = System.Drawing.SystemColors.Control;
+            this.reflectionLabel19.BackgroundStyle.BackColor2 = System.Drawing.Color.DeepSkyBlue;
+            this.reflectionLabel19.BackgroundStyle.BackColorGradientAngle = 90;
+            this.reflectionLabel19.BackgroundStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.reflectionLabel19.BackgroundStyle.BorderColor = System.Drawing.Color.Maroon;
+            this.reflectionLabel19.BackgroundStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.reflectionLabel19.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.reflectionLabel19.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.reflectionLabel19.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.reflectionLabel19.ForeColor = System.Drawing.Color.Black;
+            this.reflectionLabel19.Location = new System.Drawing.Point(322, 14);
+            this.reflectionLabel19.Name = "reflectionLabel19";
+            this.reflectionLabel19.ReflectionEnabled = false;
+            this.reflectionLabel19.Size = new System.Drawing.Size(85, 34);
+            this.reflectionLabel19.TabIndex = 34;
+            this.reflectionLabel19.Text = "<b><font size=\"+5\"><i>转矩</i></font></b>";
+            // 
+            // reflectionLabel18
+            // 
+            this.reflectionLabel18.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.reflectionLabel18.BackgroundStyle.BackColor = System.Drawing.SystemColors.Control;
+            this.reflectionLabel18.BackgroundStyle.BackColor2 = System.Drawing.Color.DeepSkyBlue;
+            this.reflectionLabel18.BackgroundStyle.BackColorGradientAngle = 90;
+            this.reflectionLabel18.BackgroundStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.reflectionLabel18.BackgroundStyle.BorderColor = System.Drawing.Color.Maroon;
+            this.reflectionLabel18.BackgroundStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.reflectionLabel18.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.reflectionLabel18.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.reflectionLabel18.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.reflectionLabel18.ForeColor = System.Drawing.Color.Black;
+            this.reflectionLabel18.Location = new System.Drawing.Point(217, 14);
+            this.reflectionLabel18.Name = "reflectionLabel18";
+            this.reflectionLabel18.ReflectionEnabled = false;
+            this.reflectionLabel18.Size = new System.Drawing.Size(85, 34);
+            this.reflectionLabel18.TabIndex = 33;
+            this.reflectionLabel18.Text = "<b><font size=\"+5\"><i>速度</i></font></b>";
+            // 
+            // reflectionLabel17
+            // 
+            this.reflectionLabel17.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.reflectionLabel17.BackgroundStyle.BackColor = System.Drawing.SystemColors.Control;
+            this.reflectionLabel17.BackgroundStyle.BackColor2 = System.Drawing.Color.DeepSkyBlue;
+            this.reflectionLabel17.BackgroundStyle.BackColorGradientAngle = 90;
+            this.reflectionLabel17.BackgroundStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.reflectionLabel17.BackgroundStyle.BorderColor = System.Drawing.Color.Maroon;
+            this.reflectionLabel17.BackgroundStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.reflectionLabel17.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.reflectionLabel17.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.reflectionLabel17.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.reflectionLabel17.ForeColor = System.Drawing.Color.Black;
+            this.reflectionLabel17.Location = new System.Drawing.Point(115, 14);
+            this.reflectionLabel17.Name = "reflectionLabel17";
+            this.reflectionLabel17.ReflectionEnabled = false;
+            this.reflectionLabel17.Size = new System.Drawing.Size(85, 34);
+            this.reflectionLabel17.TabIndex = 32;
+            this.reflectionLabel17.Text = "<b><font size=\"+5\"><i>位置</i></font></b>";
+            // 
+            // reflectionLabel16
+            // 
+            this.reflectionLabel16.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.reflectionLabel16.BackgroundStyle.BackColor = System.Drawing.SystemColors.Control;
+            this.reflectionLabel16.BackgroundStyle.BackColor2 = System.Drawing.Color.DeepSkyBlue;
+            this.reflectionLabel16.BackgroundStyle.BackColorGradientAngle = 90;
+            this.reflectionLabel16.BackgroundStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.reflectionLabel16.BackgroundStyle.BorderColor = System.Drawing.Color.Maroon;
+            this.reflectionLabel16.BackgroundStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.reflectionLabel16.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.reflectionLabel16.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.reflectionLabel16.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.reflectionLabel16.ForeColor = System.Drawing.Color.Black;
+            this.reflectionLabel16.Location = new System.Drawing.Point(14, 14);
+            this.reflectionLabel16.Name = "reflectionLabel16";
+            this.reflectionLabel16.ReflectionEnabled = false;
+            this.reflectionLabel16.Size = new System.Drawing.Size(85, 34);
+            this.reflectionLabel16.TabIndex = 31;
+            this.reflectionLabel16.Text = "<b><font size=\"+5\"><i>使能</i></font></b>";
+            // 
+            // superTabItem2
+            // 
+            this.superTabItem2.AttachedControl = this.superTabControlPanel2;
+            this.superTabItem2.GlobalItem = false;
+            this.superTabItem2.Image = global::触摸屏界面.Properties.Resources.computer_key;
+            this.superTabItem2.Name = "superTabItem2";
+            this.superTabItem2.Text = "手动操作";
+            // 
             // superTabControlPanel7
             // 
             this.superTabControlPanel7.Controls.Add(this.sgc2);
             this.superTabControlPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.superTabControlPanel7.Location = new System.Drawing.Point(0, 46);
             this.superTabControlPanel7.Name = "superTabControlPanel7";
-            this.superTabControlPanel7.Size = new System.Drawing.Size(904, 517);
+            this.superTabControlPanel7.Size = new System.Drawing.Size(832, 517);
             this.superTabControlPanel7.TabIndex = 7;
             this.superTabControlPanel7.TabItem = this.superTabItem7;
             // 
@@ -3439,8 +3438,9 @@
             this.sgc2.PrimaryGrid.ShowRowGridIndex = true;
             this.sgc2.PrimaryGrid.UseAlternateColumnStyle = true;
             this.sgc2.PrimaryGrid.UseAlternateRowStyle = true;
-            this.sgc2.Size = new System.Drawing.Size(904, 517);
+            this.sgc2.Size = new System.Drawing.Size(832, 517);
             this.sgc2.TabIndex = 1;
+            this.sgc2.Tag = "HMI.DATA_ALARM;Error_data";
             this.sgc2.Text = "superGridControl2";
             // 
             // gridColumn12
@@ -3459,6 +3459,7 @@
             this.superTabItem7.GlobalItem = false;
             this.superTabItem7.Image = global::触摸屏界面.Properties.Resources.controller_error;
             this.superTabItem7.Name = "superTabItem7";
+            this.superTabItem7.Tag = "HMI.DATA_ALARM;ERROR_DATA";
             this.superTabItem7.Text = "报警列表";
             // 
             // superTabControlPanel5
@@ -3467,7 +3468,7 @@
             this.superTabControlPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.superTabControlPanel5.Location = new System.Drawing.Point(0, 46);
             this.superTabControlPanel5.Name = "superTabControlPanel5";
-            this.superTabControlPanel5.Size = new System.Drawing.Size(904, 517);
+            this.superTabControlPanel5.Size = new System.Drawing.Size(832, 517);
             this.superTabControlPanel5.TabIndex = 5;
             this.superTabControlPanel5.TabItem = this.superTabItem5;
             // 
@@ -3512,9 +3513,9 @@
             this.sgc1.PrimaryGrid.ShowRowGridIndex = true;
             this.sgc1.PrimaryGrid.UseAlternateColumnStyle = true;
             this.sgc1.PrimaryGrid.UseAlternateRowStyle = true;
-            this.sgc1.Size = new System.Drawing.Size(904, 517);
+            this.sgc1.Size = new System.Drawing.Size(832, 517);
             this.sgc1.TabIndex = 0;
-            this.sgc1.Tag = "";
+            this.sgc1.Tag = "HMI.DATA_TEAM;TEAM_DATE";
             this.sgc1.Text = "superGridControl1";
             // 
             // gridColumn2
@@ -3554,6 +3555,7 @@
             this.superTabItem5.GlobalItem = false;
             this.superTabItem5.Image = global::触摸屏界面.Properties.Resources.control_equalizer_blue;
             this.superTabItem5.Name = "superTabItem5";
+            this.superTabItem5.Tag = "HMI.DATA_TEAM;TEAM_DATE";
             this.superTabItem5.Text = "队列信息";
             // 
             // superTabControlPanel6
@@ -3563,7 +3565,7 @@
             this.superTabControlPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.superTabControlPanel6.Location = new System.Drawing.Point(0, 46);
             this.superTabControlPanel6.Name = "superTabControlPanel6";
-            this.superTabControlPanel6.Size = new System.Drawing.Size(904, 517);
+            this.superTabControlPanel6.Size = new System.Drawing.Size(832, 517);
             this.superTabControlPanel6.TabIndex = 6;
             this.superTabControlPanel6.TabItem = this.superTabItem6;
             // 
@@ -3576,7 +3578,7 @@
             this.panelEx7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelEx7.Location = new System.Drawing.Point(0, 0);
             this.panelEx7.Name = "panelEx7";
-            this.panelEx7.Size = new System.Drawing.Size(904, 517);
+            this.panelEx7.Size = new System.Drawing.Size(832, 517);
             this.panelEx7.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx7.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.panelEx7.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
@@ -3589,32 +3591,32 @@
             // chart1
             // 
             this.chart1.BackColor = System.Drawing.Color.Black;
-            chartArea2.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea2.AxisX.LineColor = System.Drawing.Color.White;
-            chartArea2.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea2.AxisX.MajorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea2.AxisX.MinorGrid.LineColor = System.Drawing.Color.White;
-            chartArea2.AxisX.MinorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea2.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea2.AxisY.LineColor = System.Drawing.Color.White;
-            chartArea2.AxisY.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea2.AxisY.MajorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea2.AxisY.MinorGrid.LineColor = System.Drawing.Color.White;
-            chartArea2.AxisY.MinorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea2.AxisY.TitleForeColor = System.Drawing.Color.White;
-            chartArea2.BackColor = System.Drawing.Color.Black;
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
+            chartArea1.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea1.AxisX.LineColor = System.Drawing.Color.White;
+            chartArea1.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea1.AxisX.MajorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea1.AxisX.MinorGrid.LineColor = System.Drawing.Color.White;
+            chartArea1.AxisX.MinorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea1.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea1.AxisY.LineColor = System.Drawing.Color.White;
+            chartArea1.AxisY.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea1.AxisY.MajorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea1.AxisY.MinorGrid.LineColor = System.Drawing.Color.White;
+            chartArea1.AxisY.MinorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea1.AxisY.TitleForeColor = System.Drawing.Color.White;
+            chartArea1.BackColor = System.Drawing.Color.Black;
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
             this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(0, 0);
             this.chart1.Name = "chart1";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chart1.Series.Add(series2);
-            this.chart1.Size = new System.Drawing.Size(904, 517);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(832, 517);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
             // 
@@ -3626,7 +3628,7 @@
             this.superGridControl3.ForeColor = System.Drawing.Color.Black;
             this.superGridControl3.Location = new System.Drawing.Point(0, 0);
             this.superGridControl3.Name = "superGridControl3";
-            this.superGridControl3.Size = new System.Drawing.Size(904, 517);
+            this.superGridControl3.Size = new System.Drawing.Size(832, 517);
             this.superGridControl3.TabIndex = 0;
             this.superGridControl3.Text = "superGridControl3";
             // 
@@ -3674,7 +3676,7 @@
             this.bubbleBar1.Name = "bubbleBar1";
             this.bubbleBar1.SelectedTab = this.bubbleBarTab1;
             this.bubbleBar1.SelectedTabColors.BorderColor = System.Drawing.Color.Black;
-            this.bubbleBar1.Size = new System.Drawing.Size(904, 71);
+            this.bubbleBar1.Size = new System.Drawing.Size(832, 71);
             this.bubbleBar1.TabIndex = 0;
             this.bubbleBar1.Tabs.Add(this.bubbleBarTab1);
             this.bubbleBar1.TabsVisible = false;
@@ -3766,15 +3768,15 @@
             // 
             this.panelEx2.CanvasColor = System.Drawing.SystemColors.Control;
             this.panelEx2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.panelEx2.Controls.Add(this.labelX9);
-            this.panelEx2.Controls.Add(this.labelX8);
+            this.panelEx2.Controls.Add(this.lb_PA_PC_switch);
+            this.panelEx2.Controls.Add(this.lb_RUN_SET);
             this.panelEx2.Controls.Add(this.lb_data);
             this.panelEx2.Controls.Add(this.reflectionLabel1);
             this.panelEx2.DisabledBackColor = System.Drawing.Color.Empty;
             this.panelEx2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelEx2.Location = new System.Drawing.Point(0, 0);
             this.panelEx2.Name = "panelEx2";
-            this.panelEx2.Size = new System.Drawing.Size(904, 57);
+            this.panelEx2.Size = new System.Drawing.Size(832, 57);
             this.panelEx2.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx2.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.panelEx2.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
@@ -3784,38 +3786,38 @@
             this.panelEx2.TabIndex = 1;
             this.panelEx2.TextDockConstrained = false;
             // 
-            // labelX9
+            // lb_PA_PC_switch
             // 
             // 
             // 
             // 
-            this.labelX9.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelX9.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelX9.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.labelX9.Location = new System.Drawing.Point(376, 0);
-            this.labelX9.Name = "labelX9";
-            this.labelX9.Size = new System.Drawing.Size(345, 57);
-            this.labelX9.TabIndex = 4;
-            this.labelX9.Tag = "HMI.PA_PC_switch;BOOL";
-            this.labelX9.Text = "PA";
-            this.labelX9.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.lb_PA_PC_switch.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.lb_PA_PC_switch.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lb_PA_PC_switch.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lb_PA_PC_switch.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lb_PA_PC_switch.Location = new System.Drawing.Point(376, 0);
+            this.lb_PA_PC_switch.Name = "lb_PA_PC_switch";
+            this.lb_PA_PC_switch.Size = new System.Drawing.Size(273, 57);
+            this.lb_PA_PC_switch.TabIndex = 4;
+            this.lb_PA_PC_switch.Tag = "HMI.PA_PC_switch;BOOL";
+            this.lb_PA_PC_switch.Text = "PA";
+            this.lb_PA_PC_switch.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
-            // labelX8
-            // 
-            // 
+            // lb_RUN_SET
             // 
             // 
-            this.labelX8.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX8.Dock = System.Windows.Forms.DockStyle.Left;
-            this.labelX8.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelX8.Location = new System.Drawing.Point(167, 0);
-            this.labelX8.Name = "labelX8";
-            this.labelX8.Size = new System.Drawing.Size(209, 57);
-            this.labelX8.TabIndex = 3;
-            this.labelX8.Tag = "HMI.RUN_SET;BYTE";
-            this.labelX8.Text = "xxx";
-            this.labelX8.TextAlignment = System.Drawing.StringAlignment.Center;
+            // 
+            // 
+            this.lb_RUN_SET.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.lb_RUN_SET.Dock = System.Windows.Forms.DockStyle.Left;
+            this.lb_RUN_SET.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lb_RUN_SET.Location = new System.Drawing.Point(167, 0);
+            this.lb_RUN_SET.Name = "lb_RUN_SET";
+            this.lb_RUN_SET.Size = new System.Drawing.Size(209, 57);
+            this.lb_RUN_SET.TabIndex = 3;
+            this.lb_RUN_SET.Tag = "HMI.RUN_SET;BYTE";
+            this.lb_RUN_SET.Text = "xxx";
+            this.lb_RUN_SET.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
             // lb_data
             // 
@@ -3824,7 +3826,7 @@
             // 
             this.lb_data.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.lb_data.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lb_data.Location = new System.Drawing.Point(721, 0);
+            this.lb_data.Location = new System.Drawing.Point(649, 0);
             this.lb_data.Name = "lb_data";
             this.lb_data.Size = new System.Drawing.Size(183, 57);
             this.lb_data.TabIndex = 2;
@@ -3852,51 +3854,11 @@
             // 
             this.chart_timer.Tick += new System.EventHandler(this.chart_timer_Tick);
             // 
-            // reflectionLabel3
-            // 
-            this.reflectionLabel3.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.reflectionLabel3.BackgroundStyle.BackColor = System.Drawing.SystemColors.Control;
-            this.reflectionLabel3.BackgroundStyle.BackColor2 = System.Drawing.Color.DeepSkyBlue;
-            this.reflectionLabel3.BackgroundStyle.BackColorGradientAngle = 90;
-            this.reflectionLabel3.BackgroundStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.reflectionLabel3.BackgroundStyle.BorderColor = System.Drawing.Color.Maroon;
-            this.reflectionLabel3.BackgroundStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.reflectionLabel3.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.reflectionLabel3.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.reflectionLabel3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
-            this.reflectionLabel3.ForeColor = System.Drawing.Color.Black;
-            this.reflectionLabel3.Location = new System.Drawing.Point(280, 48);
-            this.reflectionLabel3.Name = "reflectionLabel3";
-            this.reflectionLabel3.ReflectionEnabled = false;
-            this.reflectionLabel3.Size = new System.Drawing.Size(96, 34);
-            this.reflectionLabel3.TabIndex = 56;
-            this.reflectionLabel3.Text = "<b><font size=\"+5\"><i>无空压</i></font></b>";
-            // 
-            // symbolBox2
-            // 
-            this.symbolBox2.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.symbolBox2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.symbolBox2.ForeColor = System.Drawing.Color.DimGray;
-            this.symbolBox2.Location = new System.Drawing.Point(408, 48);
-            this.symbolBox2.Name = "symbolBox2";
-            this.symbolBox2.Size = new System.Drawing.Size(40, 38);
-            this.symbolBox2.Symbol = "";
-            this.symbolBox2.SymbolColor = System.Drawing.Color.Gray;
-            this.symbolBox2.TabIndex = 57;
-            this.symbolBox2.Tag = "HMI.NOT_AIR;BOOL";
-            this.symbolBox2.Text = "symbolBox2";
-            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(904, 691);
+            this.ClientSize = new System.Drawing.Size(832, 691);
             this.Controls.Add(this.panelEx1);
             this.DoubleBuffered = true;
             this.EnableGlass = false;
@@ -3917,6 +3879,9 @@
             this.panelEx6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.superTabControl1)).EndInit();
             this.superTabControl1.ResumeLayout(false);
+            this.superTabControlPanel1.ResumeLayout(false);
+            this.superTabControlPanel4.ResumeLayout(false);
+            this.superTabControlPanel3.ResumeLayout(false);
             this.superTabControlPanel2.ResumeLayout(false);
             this.panelEx15.ResumeLayout(false);
             this.panelEx14.ResumeLayout(false);
@@ -3926,9 +3891,6 @@
             this.panelEx10.ResumeLayout(false);
             this.panelEx9.ResumeLayout(false);
             this.panelEx8.ResumeLayout(false);
-            this.superTabControlPanel1.ResumeLayout(false);
-            this.superTabControlPanel4.ResumeLayout(false);
-            this.superTabControlPanel3.ResumeLayout(false);
             this.superTabControlPanel7.ResumeLayout(false);
             this.superTabControlPanel5.ResumeLayout(false);
             this.superTabControlPanel6.ResumeLayout(false);
@@ -3941,6 +3903,7 @@
         }
 
         #endregion
+
 
         private DevComponents.DotNetBar.PanelEx panelEx1;
         private DevComponents.DotNetBar.PanelEx panelEx2;
@@ -4014,62 +3977,62 @@
         private DevComponents.DotNetBar.PanelEx panelEx6;
         private DevComponents.DotNetBar.SuperTabControl superTabControl1;
         private DevComponents.DotNetBar.SuperTabControlPanel superTabControlPanel1;
-        private DevComponents.DotNetBar.Controls.TextBoxX tbx_COUNT_ALL;
-        private DevComponents.DotNetBar.Controls.TextBoxX tbx_SAMPLING2;
-        private DevComponents.DotNetBar.Controls.TextBoxX tbx_SAMPLING;
-        private DevComponents.DotNetBar.Controls.TextBoxX tbx_FIRST_VAL;
-        private DevComponents.DotNetBar.Controls.TextBoxX tbx_SCE_VAL;
+        private DevComponents.DotNetBar.Controls.TextBoxX txt_COUNT_ALL;
+        private DevComponents.DotNetBar.Controls.TextBoxX txt_SAMPLING2;
+        private DevComponents.DotNetBar.Controls.TextBoxX txt_SAMPLING;
+        private DevComponents.DotNetBar.Controls.TextBoxX txt_FIRST_VAL;
+        private DevComponents.DotNetBar.Controls.TextBoxX txt_SCE_VAL;
         private DevComponents.DotNetBar.Controls.TextBoxX textBoxX2;
-        private DevComponents.DotNetBar.Controls.TextBoxX tbx_SETP_P;
+        private DevComponents.DotNetBar.Controls.TextBoxX txt_SETP_P;
         private DevComponents.DotNetBar.SuperTabItem superTabItem1;
         private DevComponents.DotNetBar.SuperTabControlPanel superTabControlPanel2;
         private DevComponents.DotNetBar.SuperTabItem superTabItem2;
         private DevComponents.DotNetBar.SuperTabControlPanel superTabControlPanel3;
         private DevComponents.DotNetBar.LabelX labelX38;
-        private DevComponents.DotNetBar.ButtonX btn_A6_CLOSE9;
-        private DevComponents.DotNetBar.ButtonX btn_A6_OPEN9;
-        private DevComponents.DotNetBar.ButtonX btn_A3_CLOSE9;
-        private DevComponents.DotNetBar.ButtonX btn_A3_OPEN9;
+        private DevComponents.DotNetBar.ButtonX btm_A6_CLOSE9;
+        private DevComponents.DotNetBar.ButtonX btm_A6_OPEN9;
+        private DevComponents.DotNetBar.ButtonX btm_A3_CLOSE9;
+        private DevComponents.DotNetBar.ButtonX btm_A3_OPEN9;
         private DevComponents.DotNetBar.LabelX labelX39;
-        private DevComponents.DotNetBar.ButtonX btn_A6_CLOSE8;
-        private DevComponents.DotNetBar.ButtonX btn_A6_OPEN8;
-        private DevComponents.DotNetBar.ButtonX btn_A3_CLOSE8;
-        private DevComponents.DotNetBar.ButtonX btn_A3_OPEN8;
+        private DevComponents.DotNetBar.ButtonX btm_A6_CLOSE8;
+        private DevComponents.DotNetBar.ButtonX btm_A6_OPEN8;
+        private DevComponents.DotNetBar.ButtonX btm_A3_CLOSE8;
+        private DevComponents.DotNetBar.ButtonX btm_A3_OPEN8;
         private DevComponents.DotNetBar.LabelX labelX40;
-        private DevComponents.DotNetBar.ButtonX btn_A6_CLOSE7;
-        private DevComponents.DotNetBar.ButtonX btn_A6_OPEN7;
-        private DevComponents.DotNetBar.ButtonX btn_A3_CLOSE7;
-        private DevComponents.DotNetBar.ButtonX btn_A3_OPEN7;
+        private DevComponents.DotNetBar.ButtonX btm_A6_CLOSE7;
+        private DevComponents.DotNetBar.ButtonX btm_A6_OPEN7;
+        private DevComponents.DotNetBar.ButtonX btm_A3_CLOSE7;
+        private DevComponents.DotNetBar.ButtonX btm_A3_OPEN7;
         private DevComponents.DotNetBar.LabelX labelX35;
-        private DevComponents.DotNetBar.ButtonX btn_A6_CLOSE6;
-        private DevComponents.DotNetBar.ButtonX btn_A6_OPEN6;
-        private DevComponents.DotNetBar.ButtonX btn_A3_CLOSE6;
-        private DevComponents.DotNetBar.ButtonX btn_A3_OPEN6;
+        private DevComponents.DotNetBar.ButtonX btm_A6_CLOSE6;
+        private DevComponents.DotNetBar.ButtonX btm_A6_OPEN6;
+        private DevComponents.DotNetBar.ButtonX btm_A3_CLOSE6;
+        private DevComponents.DotNetBar.ButtonX btm_A3_OPEN6;
         private DevComponents.DotNetBar.LabelX labelX36;
-        private DevComponents.DotNetBar.ButtonX btn_A6_CLOSE5;
-        private DevComponents.DotNetBar.ButtonX btn_A6_OPEN5;
-        private DevComponents.DotNetBar.ButtonX btn_A3_CLOSE5;
-        private DevComponents.DotNetBar.ButtonX btn_A3_OPEN5;
+        private DevComponents.DotNetBar.ButtonX btm_A6_CLOSE5;
+        private DevComponents.DotNetBar.ButtonX btm_A6_OPEN5;
+        private DevComponents.DotNetBar.ButtonX btm_A3_CLOSE5;
+        private DevComponents.DotNetBar.ButtonX btm_A3_OPEN5;
         private DevComponents.DotNetBar.LabelX labelX37;
-        private DevComponents.DotNetBar.ButtonX btn_A6_CLOSE4;
-        private DevComponents.DotNetBar.ButtonX btn_A6_OPEN4;
-        private DevComponents.DotNetBar.ButtonX btn_A3_CLOSE4;
-        private DevComponents.DotNetBar.ButtonX btn_A3_OPEN4;
+        private DevComponents.DotNetBar.ButtonX btm_A6_CLOSE4;
+        private DevComponents.DotNetBar.ButtonX btm_A6_OPEN4;
+        private DevComponents.DotNetBar.ButtonX btm_A3_CLOSE4;
+        private DevComponents.DotNetBar.ButtonX btm_A3_OPEN4;
         private DevComponents.DotNetBar.LabelX labelX34;
-        private DevComponents.DotNetBar.ButtonX btn_A6_CLOSE3;
-        private DevComponents.DotNetBar.ButtonX btn_A6_OPEN3;
-        private DevComponents.DotNetBar.ButtonX btn_A3_CLOSE3;
-        private DevComponents.DotNetBar.ButtonX btn_A3_OPEN3;
+        private DevComponents.DotNetBar.ButtonX btm_A6_CLOSE3;
+        private DevComponents.DotNetBar.ButtonX btm_A6_OPEN3;
+        private DevComponents.DotNetBar.ButtonX btm_A3_CLOSE3;
+        private DevComponents.DotNetBar.ButtonX btm_A3_OPEN3;
         private DevComponents.DotNetBar.LabelX labelX33;
-        private DevComponents.DotNetBar.ButtonX btn_A6_CLOSE2;
-        private DevComponents.DotNetBar.ButtonX btn_A6_OPEN2;
-        private DevComponents.DotNetBar.ButtonX btn_A3_CLOSE2;
-        private DevComponents.DotNetBar.ButtonX btn_A3_OPEN2;
+        private DevComponents.DotNetBar.ButtonX btm_A6_CLOSE2;
+        private DevComponents.DotNetBar.ButtonX btm_A6_OPEN2;
+        private DevComponents.DotNetBar.ButtonX btm_A3_CLOSE2;
+        private DevComponents.DotNetBar.ButtonX btm_A3_OPEN2;
         private DevComponents.DotNetBar.LabelX labelX32;
-        private DevComponents.DotNetBar.ButtonX btn_A6_CLOSE1;
-        private DevComponents.DotNetBar.ButtonX btn_A6_OPEN1;
-        private DevComponents.DotNetBar.ButtonX btn_A3_CLOSE1;
-        private DevComponents.DotNetBar.ButtonX btn_A3_OPEN1;
+        private DevComponents.DotNetBar.ButtonX btm_A6_CLOSE1;
+        private DevComponents.DotNetBar.ButtonX btm_A6_OPEN1;
+        private DevComponents.DotNetBar.ButtonX btm_A3_CLOSE1;
+        private DevComponents.DotNetBar.ButtonX btm_A3_OPEN1;
         private DevComponents.DotNetBar.SuperTabItem superTabItem3;
         private DevComponents.DotNetBar.SuperTabControlPanel superTabControlPanel5;
         private DevComponents.DotNetBar.SuperGrid.SuperGridControl sgc1;
@@ -4089,49 +4052,49 @@
         private DevComponents.DotNetBar.SuperTabControlPanel superTabControlPanel4;
         private DevComponents.DotNetBar.LabelX labelX67;
         private DevComponents.DotNetBar.LabelX labelX66;
-        private DevComponents.DotNetBar.Controls.TextBoxX tbx_AXIS3_ABS_VEL;
+        private DevComponents.DotNetBar.Controls.TextBoxX txt_AXIS3_ABS_VEL;
         private DevComponents.DotNetBar.LabelX labelX65;
-        private DevComponents.DotNetBar.Controls.TextBoxX tbx_AXIS2_ABS_VEL;
+        private DevComponents.DotNetBar.Controls.TextBoxX txt_AXIS2_ABS_VEL;
         private DevComponents.DotNetBar.LabelX labelX64;
-        private DevComponents.DotNetBar.Controls.TextBoxX tbx_AXIS1_ABS_VEL2;
+        private DevComponents.DotNetBar.Controls.TextBoxX txt_AXIS1_ABS_VEL2;
         private DevComponents.DotNetBar.LabelX labelX63;
-        private DevComponents.DotNetBar.Controls.TextBoxX tbx_AXIS1_ABS_VEL;
+        private DevComponents.DotNetBar.Controls.TextBoxX txt_AXIS1_ABS_VEL;
         private DevComponents.DotNetBar.LabelX labelX62;
-        private DevComponents.DotNetBar.Controls.TextBoxX tbx_AXIS1_ABS_VEL1;
+        private DevComponents.DotNetBar.Controls.TextBoxX txt_AXIS1_ABS_VEL1;
         private DevComponents.DotNetBar.LabelX labelX61;
-        private DevComponents.DotNetBar.Controls.TextBoxX tbx_AXIS3_CLOSE_POS;
+        private DevComponents.DotNetBar.Controls.TextBoxX txt_AXIS3_CLOSE_POS;
         private DevComponents.DotNetBar.LabelX labelX57;
-        private DevComponents.DotNetBar.Controls.TextBoxX tbx_AXIS3_OPEN_POS;
+        private DevComponents.DotNetBar.Controls.TextBoxX txt_AXIS3_OPEN_POS;
         private DevComponents.DotNetBar.LabelX labelX56;
-        private DevComponents.DotNetBar.Controls.TextBoxX tbx_AXIS1_SAFE2_POS;
+        private DevComponents.DotNetBar.Controls.TextBoxX txt_AXIS1_SAFE2_POS;
         private DevComponents.DotNetBar.LabelX labelX55;
-        private DevComponents.DotNetBar.Controls.TextBoxX tbx_AXIS2_0_POS;
+        private DevComponents.DotNetBar.Controls.TextBoxX txt_AXIS2_0_POS;
         private DevComponents.DotNetBar.LabelX labelX54;
-        private DevComponents.DotNetBar.Controls.TextBoxX tbx_AXIS2_9_POS;
+        private DevComponents.DotNetBar.Controls.TextBoxX txt_AXIS2_9_POS;
         private DevComponents.DotNetBar.LabelX labelX53;
-        private DevComponents.DotNetBar.Controls.TextBoxX tbx_AXIS2_8_POS;
+        private DevComponents.DotNetBar.Controls.TextBoxX txt_AXIS2_8_POS;
         private DevComponents.DotNetBar.LabelX labelX52;
-        private DevComponents.DotNetBar.Controls.TextBoxX tbx_AXIS2_7_POS;
+        private DevComponents.DotNetBar.Controls.TextBoxX txt_AXIS2_7_POS;
         private DevComponents.DotNetBar.LabelX labelX51;
-        private DevComponents.DotNetBar.Controls.TextBoxX tbx_AXIS2_6_POS;
+        private DevComponents.DotNetBar.Controls.TextBoxX txt_AXIS2_6_POS;
         private DevComponents.DotNetBar.LabelX labelX50;
-        private DevComponents.DotNetBar.Controls.TextBoxX tbx_AXIS1_SAFE1_POS;
+        private DevComponents.DotNetBar.Controls.TextBoxX txt_AXIS1_SAFE1_POS;
         private DevComponents.DotNetBar.LabelX labelX49;
-        private DevComponents.DotNetBar.Controls.TextBoxX tbx_AXIS2_5_POS;
+        private DevComponents.DotNetBar.Controls.TextBoxX txt_AXIS2_5_POS;
         private DevComponents.DotNetBar.LabelX labelX48;
-        private DevComponents.DotNetBar.Controls.TextBoxX tbx_AXIS2_4_POS;
+        private DevComponents.DotNetBar.Controls.TextBoxX txt_AXIS2_4_POS;
         private DevComponents.DotNetBar.LabelX labelX47;
-        private DevComponents.DotNetBar.Controls.TextBoxX tbx_AXIS2_3_POS;
+        private DevComponents.DotNetBar.Controls.TextBoxX txt_AXIS2_3_POS;
         private DevComponents.DotNetBar.LabelX labelX46;
-        private DevComponents.DotNetBar.Controls.TextBoxX tbx_AXIS2_2_POS;
+        private DevComponents.DotNetBar.Controls.TextBoxX txt_AXIS2_2_POS;
         private DevComponents.DotNetBar.LabelX labelX45;
-        private DevComponents.DotNetBar.Controls.TextBoxX tbx_AXIS2_1_POS;
+        private DevComponents.DotNetBar.Controls.TextBoxX txt_AXIS2_1_POS;
         private DevComponents.DotNetBar.LabelX labelX44;
-        private DevComponents.DotNetBar.Controls.TextBoxX tbx_AXIS1_UP_POS;
+        private DevComponents.DotNetBar.Controls.TextBoxX txt_AXIS1_UP_POS;
         private DevComponents.DotNetBar.LabelX labelX43;
-        private DevComponents.DotNetBar.Controls.TextBoxX tbx_AXIS1_DOWN_POS2;
+        private DevComponents.DotNetBar.Controls.TextBoxX txt_AXIS1_DOWN_POS2;
         private DevComponents.DotNetBar.LabelX labelX42;
-        private DevComponents.DotNetBar.Controls.TextBoxX tbx_AXIS1_DOWN_POS;
+        private DevComponents.DotNetBar.Controls.TextBoxX txt_AXIS1_DOWN_POS;
         private DevComponents.DotNetBar.LabelX labelX41;
         private DevComponents.DotNetBar.SuperTabItem superTabItem4;
         private DevComponents.DotNetBar.Controls.ReflectionLabel reflectionLabel2;
@@ -4145,77 +4108,73 @@
         private DevComponents.DotNetBar.LabelX reflectionLabel10;
         private DevComponents.DotNetBar.LabelX reflectionLabel9;
         private DevComponents.DotNetBar.LabelX reflectionLabel8;
-        private DevComponents.DotNetBar.ButtonX buttonX1;
+        private DevComponents.DotNetBar.ButtonX open_plc;
         private DevComponents.DotNetBar.PanelEx panelEx7;
-        private DevComponents.DotNetBar.ButtonX buttonX2;
+        private DevComponents.DotNetBar.ButtonX close_plc;
         private DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn6;
         private DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn7;
         private DevComponents.DotNetBar.LabelX lb_connectflag;
-        private DevComponents.DotNetBar.ButtonX buttonX39;
         private System.Windows.Forms.Timer chart_timer;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private DevComponents.DotNetBar.PanelEx panelEx8;
-        private DevComponents.DotNetBar.Controls.TextBoxX tbx_AXIS3_REAL_TOR;
-        private DevComponents.DotNetBar.Controls.TextBoxX tbx_AXIS3_REAL_VEL;
-        private DevComponents.DotNetBar.Controls.TextBoxX tbx_AXIS3_REAL_POS;
-        private DevComponents.DotNetBar.Controls.TextBoxX tbx_AXIS2_REAL_TOR;
-        private DevComponents.DotNetBar.Controls.TextBoxX tbx_AXIS2_REAL_VEL;
-        private DevComponents.DotNetBar.Controls.TextBoxX tbx_AXIS2_REAL_POS;
-        private DevComponents.DotNetBar.Controls.TextBoxX tbx_AXIS1_REAL_TOR;
-        private DevComponents.DotNetBar.Controls.TextBoxX tbx_AXIS1_REAL_VEL;
-        private DevComponents.DotNetBar.Controls.TextBoxX tbx_AXIS1_REAL_POS;
-        private DevComponents.DotNetBar.ButtonX buttonX42;
-        private DevComponents.DotNetBar.ButtonX buttonX41;
-        private DevComponents.DotNetBar.ButtonX buttonX40;
+        private DevComponents.DotNetBar.Controls.TextBoxX txt_AXIS3_REAL_TOR;
+        private DevComponents.DotNetBar.Controls.TextBoxX txt_AXIS3_REAL_VEL;
+        private DevComponents.DotNetBar.Controls.TextBoxX txt_AXIS3_REAL_POS;
+        private DevComponents.DotNetBar.Controls.TextBoxX txt_AXIS2_REAL_TOR;
+        private DevComponents.DotNetBar.Controls.TextBoxX txt_AXIS2_REAL_VEL;
+        private DevComponents.DotNetBar.Controls.TextBoxX txt_AXIS2_REAL_POS;
+        private DevComponents.DotNetBar.Controls.TextBoxX txt_AXIS1_REAL_TOR;
+        private DevComponents.DotNetBar.Controls.TextBoxX txt_AXIS1_REAL_VEL;
+        private DevComponents.DotNetBar.Controls.TextBoxX txt_AXIS1_REAL_POS;
+        private DevComponents.DotNetBar.ButtonX btm_MOTOR3_BUTT;
+        private DevComponents.DotNetBar.ButtonX btm_MOTOR2_BUTT;
+        private DevComponents.DotNetBar.ButtonX btm_MOTOR1_BUTT;
         private DevComponents.DotNetBar.Controls.ReflectionLabel reflectionLabel19;
         private DevComponents.DotNetBar.Controls.ReflectionLabel reflectionLabel18;
         private DevComponents.DotNetBar.Controls.ReflectionLabel reflectionLabel17;
         private DevComponents.DotNetBar.Controls.ReflectionLabel reflectionLabel16;
         private DevComponents.DotNetBar.PanelEx panelEx10;
-        private DevComponents.DotNetBar.ButtonX buttonX46;
+        private DevComponents.DotNetBar.ButtonX btm_AXIS_POS0;
         private DevComponents.DotNetBar.LabelX labelX2;
         private DevComponents.DotNetBar.PanelEx panelEx9;
-        private DevComponents.DotNetBar.ButtonX buttonX44;
+        private DevComponents.DotNetBar.ButtonX btm_VAL_CLOSE;
         private DevComponents.DotNetBar.LabelX labelX1;
-        private DevComponents.DotNetBar.ButtonX buttonX49;
-        private DevComponents.DotNetBar.ButtonX buttonX48;
-        private DevComponents.DotNetBar.ButtonX buttonX47;
-        private DevComponents.DotNetBar.ButtonX buttonX45;
+        private DevComponents.DotNetBar.ButtonX btm_AXIS_POS4;
+        private DevComponents.DotNetBar.ButtonX btm_AXIS_POS3;
+        private DevComponents.DotNetBar.ButtonX btm_AXIS_POS2;
+        private DevComponents.DotNetBar.ButtonX btm_AXIS_POS1;
         private DevComponents.DotNetBar.PanelEx panelEx12;
-        private DevComponents.DotNetBar.ButtonX buttonX58;
-        private DevComponents.DotNetBar.ButtonX buttonX59;
+        private DevComponents.DotNetBar.ButtonX btm_AXIS_CLOSE;
+        private DevComponents.DotNetBar.ButtonX btm_AXIS_OPEN;
         private DevComponents.DotNetBar.LabelX labelX4;
         private DevComponents.DotNetBar.PanelEx panelEx11;
-        private DevComponents.DotNetBar.ButtonX buttonX57;
-        private DevComponents.DotNetBar.ButtonX buttonX55;
-        private DevComponents.DotNetBar.ButtonX buttonX56;
+        private DevComponents.DotNetBar.ButtonX btm_AXIS_DOWN2;
+        private DevComponents.DotNetBar.ButtonX btm_AXIS_DOWN;
+        private DevComponents.DotNetBar.ButtonX btm_AXIS_UP;
         private DevComponents.DotNetBar.LabelX labelX3;
-        private DevComponents.DotNetBar.ButtonX buttonX54;
-        private DevComponents.DotNetBar.ButtonX buttonX53;
-        private DevComponents.DotNetBar.ButtonX buttonX52;
-        private DevComponents.DotNetBar.ButtonX buttonX51;
-        private DevComponents.DotNetBar.ButtonX buttonX50;
-        private DevComponents.DotNetBar.ButtonX buttonX43;
+        private DevComponents.DotNetBar.ButtonX btm_AXIS_POS9;
+        private DevComponents.DotNetBar.ButtonX btm_AXIS_POS8;
+        private DevComponents.DotNetBar.ButtonX btm_AXIS_POS7;
+        private DevComponents.DotNetBar.ButtonX btm_AXIS_POS6;
+        private DevComponents.DotNetBar.ButtonX btm_AXIS_POS5;
+        private DevComponents.DotNetBar.ButtonX btm_VAL_OPEN;
         private DevComponents.DotNetBar.PanelEx panelEx15;
-        private DevComponents.DotNetBar.Controls.TextBoxX tbx_AXIS3_JOG_VEL;
-        private DevComponents.DotNetBar.ButtonX buttonX64;
-        private DevComponents.DotNetBar.ButtonX buttonX65;
+        private DevComponents.DotNetBar.Controls.TextBoxX txt_AXIS3_JOG_VEL;
+        private DevComponents.DotNetBar.ButtonX btm_MOTOR_JOG3FOR;
+        private DevComponents.DotNetBar.ButtonX btm_MOTOR_JOG3BACK;
         private DevComponents.DotNetBar.LabelX labelX7;
         private DevComponents.DotNetBar.PanelEx panelEx14;
-        private DevComponents.DotNetBar.Controls.TextBoxX tbx_AXIS2_JOG_VEL;
-        private DevComponents.DotNetBar.ButtonX buttonX62;
-        private DevComponents.DotNetBar.ButtonX buttonX63;
+        private DevComponents.DotNetBar.Controls.TextBoxX txt_AXIS2_JOG_VEL;
+        private DevComponents.DotNetBar.ButtonX btm_MOTOR_JOG2FOR;
+        private DevComponents.DotNetBar.ButtonX btm_MOTOR_JOG2BACK;
         private DevComponents.DotNetBar.LabelX labelX6;
         private DevComponents.DotNetBar.PanelEx panelEx13;
-        private DevComponents.DotNetBar.Controls.TextBoxX tbx_AXIS1_JOG_VEL;
-        private DevComponents.DotNetBar.ButtonX buttonX60;
-        private DevComponents.DotNetBar.ButtonX buttonX61;
+        private DevComponents.DotNetBar.Controls.TextBoxX txt_AXIS1_JOG_VEL;
+        private DevComponents.DotNetBar.ButtonX btm_MOTOR_JOG1FOR;
+        private DevComponents.DotNetBar.ButtonX btm_MOTOR_JOG1BACK;
         private DevComponents.DotNetBar.LabelX labelX5;
-        private DevComponents.DotNetBar.LabelX labelX8;
-        private DevComponents.DotNetBar.ButtonX buttonX67;
-        private DevComponents.DotNetBar.ButtonX buttonX66;
-        private DevComponents.DotNetBar.ButtonX buttonX68;
-        private DevComponents.DotNetBar.LabelX labelX9;
+        private DevComponents.DotNetBar.LabelX lb_RUN_SET;
+        private DevComponents.DotNetBar.LabelX lb_PA_PC_switch;
         private DevComponents.DotNetBar.Controls.SymbolBox symbolBox2;
         private DevComponents.DotNetBar.Controls.ReflectionLabel reflectionLabel3;
     }

@@ -13,6 +13,7 @@ using TwAdsClass;
 using DevComponents.DotNetBar.Controls;
 using System.Windows.Forms.DataVisualization.Charting;
 using System.Xml;
+using System.IO;
 
 namespace 触摸屏界面
 {
@@ -22,13 +23,19 @@ namespace 触摸屏界面
         PlcVariableClass pvc = new PlcVariableClass();
         Size _beforeDialogSize;
         private string[][] error_hash = new string[6][];
-
         private double t = 0.00001;
         private double speed = 0;
         private double torque = 0;
+
+        MouseHook mh;
+        Point downPos, upPos;
         public Main()
         {
             InitializeComponent();
+            mh = new MouseHook();
+            mh.SetHook();
+            mh.MouseDownEvent += mh_MouseDownEvent;
+            mh.MouseUpEvent += mh_MouseUpEvent;
             try
             {
                 XmlDocument doc = new XmlDocument();
@@ -51,7 +58,45 @@ namespace 触摸屏界面
                 MessageBox.Show(ex.Message,"配置文件错误");
             }
         }
-        
+        //按下鼠标键触发的事件
+        private void mh_MouseDownEvent(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                downPos = e.Location;
+            }
+            if (e.Button == MouseButtons.Right)
+            {
+
+            }
+        }
+        //松开鼠标键触发的事件
+        private void mh_MouseUpEvent(object sender, MouseEventArgs e)
+        {
+            upPos = e.Location;
+            if (e.Button == MouseButtons.Left)
+            {
+                int detaY = upPos.Y - downPos.Y;
+                int detaX = upPos.X - downPos.X;
+                if (Math.Abs(detaX) > 200)
+                {
+                    if (detaX > 0 && Math.Abs(detaY)/Math.Abs(detaX)<0.5)
+                    {
+                        superTabControl1.SelectedTabIndex += superTabControl1.SelectedTabIndex < 6 ? 1 : 0;
+                    }
+                    if (detaX < 0 && Math.Abs(detaY) / Math.Abs(detaX) < 0.5)
+                    {
+                        superTabControl1.SelectedTabIndex -= superTabControl1.SelectedTabIndex > 0 ? 1 : 0;
+                    }
+                }
+            }
+            if (e.Button == MouseButtons.Right)
+            {
+              
+            }
+         
+        }
+
         #region 界面，缩放
         private void superTabItem1_Click(object sender, EventArgs e)
         {
@@ -258,7 +303,7 @@ namespace 触摸屏界面
             }
 
         }
-        private void buttonX1_Click(object sender, EventArgs e)
+        private void open_plc_Click(object sender, EventArgs e)
         {
             XmlDocument doc = new XmlDocument();
             doc.Load("PLC.config");
@@ -267,19 +312,19 @@ namespace 触摸屏界面
             string ip = ipNode.Attributes["address"].Value;
 
             tas = new TwcAds(ip, 851, pvc, true);
-            this.buttonX1.Enabled = false;
-            this.buttonX2.Enabled = true;
+            this.open_plc.Enabled = false;
+            this.close_plc.Enabled = true;
         }
 
-        private void buttonX2_Click(object sender, EventArgs e)
+        private void close_plc_Click(object sender, EventArgs e)
         {
             if (!tas.ConnectClose())
             {
                 MessageBoxEx.Show("关闭PLC连接失败！", "通讯失败");
                 return;
             }
-            this.buttonX1.Enabled = true;
-            this.buttonX2.Enabled = false;
+            this.open_plc.Enabled = true;
+            this.close_plc.Enabled = false;
         }
 
         /// <summary>
@@ -294,12 +339,51 @@ namespace 触摸屏界面
 
         #endregion
 
-        
+        private void pvcValueInit(int i)
+        {
+            if (pvc.Type[i].ToUpper() == "BOOL")
+                pvc.value[i] = false;
+            if (pvc.Type[i].ToUpper() == "BYTE")
+                pvc.value[i] = 0;
+            if (pvc.Type[i].ToUpper() == "INT")
+                pvc.value[i] = 0;
+            if (pvc.Type[i].ToUpper() == "ARRAY")
+                pvc.value[i] = new int[] { 4 };
+            if (pvc.Type[i].ToUpper() == "REAL")
+                pvc.value[i] = 0;
+
+            if (pvc.Type[i].ToUpper() == "WORD")
+                pvc.value[i] = 0;
+            if (pvc.Type[i].ToUpper() == "ERROR_DATA")
+            {
+                Error_data tmp = new Error_data();
+                tmp.alarm = new ushort[6] { 0,0,0,0,0,0};
+                pvc.value[i] = tmp;
+            }
+            if (pvc.Type[i].ToUpper() == "TEAM_DATE")
+            {
+                team_date tmp = new team_date();
+                tmp.DATA_BATCH = new short[20];
+                tmp.DATA_NUMBER = new short[20];
+                tmp.DATA_STATION = new short[20];
+                tmp.DATA_TEAM = new short[20];
+                for(int j = 0; j < 20; j++)
+                {
+                    tmp.DATA_BATCH[j] = 0;
+                    tmp.DATA_NUMBER[j] = 0;
+                    tmp.DATA_STATION[j] = 0;
+                    tmp.DATA_TEAM[j] = 0;
+                }
+                pvc.value[i] = tmp;
+            }
+
+        }
         /// <summary>
         /// 地址初始化
         /// </summary>
         private void Init()
         {
+            
             try
             {
                 int i=0;
@@ -317,8 +401,8 @@ namespace 触摸屏界面
                     {
                         pvc.ControlsName[i] = control.Name;
                         pvc.Address[i] = control.Tag.ToString().Split(';')[0];
-                        if (!pvc.Address[i].Contains(".")) pvc.Address[i] = "MAIN." + pvc.Address[i];
-                        pvc.Type[i] = control.Tag.ToString().Split(';')[1];
+                        
+                        pvc.Type[i] = control.Tag.ToString().Split(';')[1];pvcValueInit(i);
                         i++;
                     }
                 }
@@ -332,8 +416,8 @@ namespace 触摸屏界面
 
                             pvc.ControlsName[i] = control.Name;
                             pvc.Address[i] = control.Tag.ToString().Split(';')[0];
-                            if (!pvc.Address[i].Contains(".")) pvc.Address[i] = "MAIN." + pvc.Address[i];
-                            pvc.Type[i] = control.Tag.ToString().Split(';')[1];
+                            
+                            pvc.Type[i] = control.Tag.ToString().Split(';')[1];pvcValueInit(i);
                             i++;
                         }
                     }
@@ -344,8 +428,8 @@ namespace 触摸屏界面
                     {
                         pvc.ControlsName[i] = control.Name;
                         pvc.Address[i] = control.Tag.ToString().Split(';')[0];
-                        if (!pvc.Address[i].Contains(".")) pvc.Address[i] = "MAIN." + pvc.Address[i];
-                        pvc.Type[i] = control.Tag.ToString().Split(';')[1];
+                        
+                        pvc.Type[i] = control.Tag.ToString().Split(';')[1];pvcValueInit(i);
                         i++;
                     }
                 }
@@ -355,8 +439,8 @@ namespace 触摸屏界面
                     {
                         pvc.ControlsName[i] = control.Name;
                         pvc.Address[i] = control.Tag.ToString().Split(';')[0];
-                        if (!pvc.Address[i].Contains(".")) pvc.Address[i] = "MAIN." + pvc.Address[i];
-                        pvc.Type[i] = control.Tag.ToString().Split(';')[1];
+                        
+                        pvc.Type[i] = control.Tag.ToString().Split(';')[1];pvcValueInit(i);
                         i++;
                     }
                 }
@@ -366,8 +450,8 @@ namespace 触摸屏界面
                     {
                         pvc.ControlsName[i] = control.Name;
                         pvc.Address[i] = control.Tag.ToString().Split(';')[0];
-                        if (!pvc.Address[i].Contains(".")) pvc.Address[i] = "MAIN." + pvc.Address[i];
-                        pvc.Type[i] = control.Tag.ToString().Split(';')[1];
+                        
+                        pvc.Type[i] = control.Tag.ToString().Split(';')[1];pvcValueInit(i);
                         i++;
                     }
                 }
@@ -377,8 +461,8 @@ namespace 触摸屏界面
                     {
                         pvc.ControlsName[i] = control.Name;
                         pvc.Address[i] = control.Tag.ToString().Split(';')[0];
-                        if (!pvc.Address[i].Contains(".")) pvc.Address[i] = "MAIN." + pvc.Address[i];
-                        pvc.Type[i] = control.Tag.ToString().Split(';')[1];
+                        
+                        pvc.Type[i] = control.Tag.ToString().Split(';')[1];pvcValueInit(i);
                         i++;
                     }
                 }
@@ -388,8 +472,8 @@ namespace 触摸屏界面
                     {
                         pvc.ControlsName[i] = control.Name;
                         pvc.Address[i] = control.Tag.ToString().Split(';')[0];
-                        if (!pvc.Address[i].Contains(".")) pvc.Address[i] = "MAIN." + pvc.Address[i];
-                        pvc.Type[i] = control.Tag.ToString().Split(';')[1];
+                        
+                        pvc.Type[i] = control.Tag.ToString().Split(';')[1];pvcValueInit(i);
                         i++;
                     }
                 }
@@ -399,8 +483,8 @@ namespace 触摸屏界面
                     {
                         pvc.ControlsName[i] = control.Name;
                         pvc.Address[i] = control.Tag.ToString().Split(';')[0];
-                        if (!pvc.Address[i].Contains(".")) pvc.Address[i] = "MAIN." + pvc.Address[i];
-                        pvc.Type[i] = control.Tag.ToString().Split(';')[1];
+                        
+                        pvc.Type[i] = control.Tag.ToString().Split(';')[1];pvcValueInit(i);
                         i++;
                     }
                 }
@@ -423,48 +507,142 @@ namespace 触摸屏界面
                 {
                     foreach (Control control in this.superTabControlPanel1.Controls)
                     {
-                        if(control is SymbolBox)
-                        SetValue(control);
+                        if(control.Name != this.txt_SETP_P.Name)
+                        SetValue(control,0);
                     }
+
                     foreach (Control panelex in this.superTabControlPanel2.Controls)
                     {
                         if (!panelex.Name.StartsWith("panelEx")) continue;
                         foreach (Control control in panelex.Controls)
                         {
-                            if(control.Tag!=null && !control.Tag.ToString().Contains("JOG_VEL"))
-                            SetValue(control);
+                            
+                            SetValue(control,0);
                         }
                     }
+
                     foreach (Control control in this.superTabControlPanel3.Controls)
                     {
-                        SetValue(control);
+                        SetValue(control,0);
+                    }
+                    foreach (Control control in this.superTabControlPanel4.Controls)
+                    {
+                        SetValue(control,0);
                     }
                     foreach (Control control in this.superTabControlPanel5.Controls)
                     {
-                        SetValue(control);
+                        SetValue(control,0);
                     }
                     foreach (Control control in this.superTabControlPanel6.Controls)
                     {
-                        SetValue(control);
+                        SetValue(control,0);
                     }
                     foreach (Control control in this.superTabControlPanel7.Controls)
                     {
-                        SetValue(control);
+                        SetValue(control,0);
                     }
-                    string[] tmp = { "运行", "复位", "","停止", "急停" };
-                    int index = Array.IndexOf(pvc.ControlsName, this.labelX8.Name);
-                    this.labelX8.Text = tmp[Convert.ToInt16(pvc.value[index])/2];
-                    this.labelX9.Text =  (bool) pvc.value[Array.IndexOf(pvc.ControlsName, this.labelX9.Name)]?"PA":"PC";
-                    
+
+                    string[] state = {
+                    "准备",
+                    "开A6阀",
+                    "开A3阀",
+                    "空瓶进入",
+                    "取出空瓶","闲置空瓶","取样","样瓶抓起","放置样品","送出样品","取样完成","结束","准备"
+                    };
+                    int index = Array.IndexOf(pvc.ControlsName, this.txt_SETP_P.Name);
+                    this.txt_SETP_P.Text = state[Convert.ToInt16(pvc.value[index])];
+                    this.textBoxX2.Text = state[Convert.ToInt16(pvc.value[index]) + 1];
+
+                    string[] step = { "运行", "复位", "","停止", "急停","","","","" };
+                    index = Array.IndexOf(pvc.ControlsName, this.lb_RUN_SET.Name);
+                    this.lb_RUN_SET.Text = step[Convert.ToInt16(pvc.value[index])];
+                    this.lb_PA_PC_switch.Text =  (bool) pvc.value[Array.IndexOf(pvc.ControlsName, this.lb_PA_PC_switch.Name)]?"PA":"PC";
+                    if (this.lb_PA_PC_switch.Text == "PA")
+                    {
+                        foreach (Control control in this.superTabControlPanel1.Controls)
+                        {
+                            if(control is TextBoxX)
+                            {
+                                (control as TextBoxX).ReadOnly = true;
+                            }
+                        }
+                        foreach (Control panelex in this.superTabControlPanel2.Controls)
+                        {
+                            if (!panelex.Name.StartsWith("panelEx")) continue;
+                            foreach (Control control in panelex.Controls)
+                            {
+                                if (control is TextBoxX)
+                                {
+                                    (control as TextBoxX).ReadOnly = true;
+                                }
+                                if(control is ButtonX)
+                                {
+                                    (control as ButtonX).Enabled = false;
+                                }
+                            }
+                        }
+                        foreach (Control control in this.superTabControlPanel3.Controls)
+                        {
+                            if (control is ButtonX)
+                            {
+                                (control as ButtonX).Enabled = false;
+                            }
+                        }
+                        foreach (Control control in this.superTabControlPanel4.Controls)
+                        {
+                            if (control is TextBoxX)
+                            {
+                                (control as TextBoxX).ReadOnly = true;
+                            }
+                        }
+                    }else
+                    {
+                        foreach (Control control in this.superTabControlPanel1.Controls)
+                        {
+                            if (control is TextBoxX)
+                            {
+                                (control as TextBoxX).ReadOnly = false;
+                            }
+                        }
+                        foreach (Control panelex in this.superTabControlPanel2.Controls)
+                        {
+                            if (!panelex.Name.StartsWith("panelEx")) continue;
+                            foreach (Control control in panelex.Controls)
+                            {
+                                if (control is TextBoxX)
+                                {
+                                    (control as TextBoxX).ReadOnly = false;
+                                }
+                                if (control is ButtonX)
+                                {
+                                    (control as ButtonX).Enabled = true;
+                                }
+                            }
+                        }
+                        foreach (Control control in this.superTabControlPanel3.Controls)
+                        {
+                            if (control is ButtonX)
+                            {
+                                (control as ButtonX).Enabled = true;
+                            }
+                        }
+                        foreach (Control control in this.superTabControlPanel4.Controls)
+                        {
+                            if (control is TextBoxX)
+                            {
+                                (control as TextBoxX).ReadOnly = false;
+                            }
+                        }
+                    }
                 }
             }
             catch(Exception ex)
             {
-                MessageBox.Show(ex.Message,"读取错误");
+                //MessageBox.Show(ex.Message,"读取错误");
             }
         }
 
-        private void SetValue(Control control)
+        private void SetValue(Control control,int deep)
         {
             try
             {
@@ -473,7 +651,7 @@ namespace 触摸屏界面
                     int index = Array.IndexOf(pvc.ControlsName, control.Name);
 
                     //文本框
-                    if (control is DevComponents.DotNetBar.Controls.TextBoxX)
+                    if (control is DevComponents.DotNetBar.Controls.TextBoxX && !control.Focused)
                     {
                         control.Text = pvc.value[index].ToString();
                     }
@@ -523,9 +701,8 @@ namespace 触摸屏界面
                     }
                 }
             }
-            catch(Exception r)
+            catch
             {
-                MessageBox.Show(r.Message,control.Name);
             }
         }
         /// <summary>
@@ -562,7 +739,7 @@ namespace 触摸屏界面
             }
             catch(Exception r)
             {
-                MessageBox.Show(r.Message,"队列读取错误");
+                //MessageBox.Show(r.Message,"队列读取错误");
             }
         }
 
@@ -573,8 +750,6 @@ namespace 触摸屏界面
         {
             try
             {
-
-
                 string errorMsg = "";
                 this.sgc2.PrimaryGrid.Rows.Clear();
                 for (int i = 0; i < 6; i++)
@@ -597,27 +772,27 @@ namespace 触摸屏界面
             }
             catch (Exception r)
             {
-                MessageBox.Show(r.Message, "警报读取错误");
+                //MessageBox.Show(r.Message, "警报读取错误");
             }
         }
 
-        private void WriteText(Control control)
+        private void WriteText(Control control,string aim)
         {
-            if (control is TextBoxX && control.Tag != null && !string.IsNullOrEmpty(control.Tag.ToString()))
+            if (tas.ConnectFlag && control is TextBoxX && control.Tag != null && !string.IsNullOrEmpty(control.Tag.ToString()))
             {
                 try
                 {
                     int index = Array.IndexOf(pvc.ControlsName, control.Name);
                     if (pvc.Type[index] == "INT")
-                        tas.WriterData(pvc.Address[index], (short)Convert.ToInt16(control.Text));
+                        tas.WriterData(pvc.Address[index], (short)Convert.ToInt16(aim));
                     if (pvc.Type[index] == "REAL")
                     {
-                        tas.WriterData(pvc.Address[index], (double)Convert.ToDouble(control.Text));
+                        tas.WriterData(pvc.Address[index], (Single)Convert.ToSingle(aim));
                     }
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message,"文本内容写入变量错误");
+                    MessageBox.Show(ex.Message, "文本内容写入变量错误");
                 }
             }
         }
@@ -734,193 +909,191 @@ namespace 触摸屏界面
         {
             int index = Array.IndexOf(pvc.ControlsName, T.Name);
             tas.WriterData(pvc.Address[index], true);
+            
             index = Array.IndexOf(pvc.ControlsName, F.Name);
             tas.WriterData(pvc.Address[index], false);
+            
         }
         
 
-        private void btn_A3_OPEN1_Click(object sender, EventArgs e)
+        private void btm_A3_OPEN1_Click(object sender, EventArgs e)
         {
-            boolChange(btn_A3_OPEN1, btn_A3_CLOSE1);
-            int index = Array.IndexOf(pvc.ControlsName, btn_A3_OPEN1.Name);
-            MessageBox.Show(pvc.value[index].ToString());
+            boolChange(btm_A3_OPEN1, btm_A3_CLOSE1);
         }
 
-        private void btn_A3_CLOSE1_Click(object sender, EventArgs e)
+        private void btm_A3_CLOSE1_Click(object sender, EventArgs e)
         {
-            boolChange(btn_A3_CLOSE1, btn_A3_OPEN1);
-            int index = Array.IndexOf(pvc.ControlsName, btn_A3_OPEN1.Name);
-            MessageBox.Show(pvc.value[index].ToString());
+            boolChange(btm_A3_CLOSE1, btm_A3_OPEN1);
         }
 
-        private void btn_A6_OPEN1_Click(object sender, EventArgs e)
+        private void btm_A6_OPEN1_Click(object sender, EventArgs e)
         {
-            boolChange(btn_A6_OPEN1, btn_A6_CLOSE1);
+            boolChange(btm_A6_OPEN1, btm_A6_CLOSE1);
         }
 
-        private void btn_A6_CLOSE1_Click(object sender, EventArgs e)
+        private void btm_A6_CLOSE1_Click(object sender, EventArgs e)
         {
-            boolChange(btn_A6_CLOSE1, btn_A6_OPEN1);
+            boolChange(btm_A6_CLOSE1, btm_A6_OPEN1);
         }
 
-        private void btn_A3_OPEN2_Click(object sender, EventArgs e)
+        private void btm_A3_OPEN2_Click(object sender, EventArgs e)
         {
-            boolChange(btn_A3_OPEN2, btn_A3_CLOSE2);
+            boolChange(btm_A3_OPEN2, btm_A3_CLOSE2);
         }
 
-        private void btn_A3_CLOSE2_Click(object sender, EventArgs e)
+        private void btm_A3_CLOSE2_Click(object sender, EventArgs e)
         {
-            boolChange(btn_A3_CLOSE2, btn_A3_OPEN2);
+            boolChange(btm_A3_CLOSE2, btm_A3_OPEN2);
         }
 
-        private void btn_A6_OPEN2_Click(object sender, EventArgs e)
+        private void btm_A6_OPEN2_Click(object sender, EventArgs e)
         {
-            boolChange(btn_A6_OPEN2, btn_A6_CLOSE2);
+            boolChange(btm_A6_OPEN2, btm_A6_CLOSE2);
         }
 
-        private void btn_A6_CLOSE2_Click(object sender, EventArgs e)
+        private void btm_A6_CLOSE2_Click(object sender, EventArgs e)
         {
-            boolChange(btn_A6_CLOSE2, btn_A6_OPEN2);
+            boolChange(btm_A6_CLOSE2, btm_A6_OPEN2);
         }
 
-        private void btn_A3_OPEN3_Click(object sender, EventArgs e)
+        private void btm_A3_OPEN3_Click(object sender, EventArgs e)
         {
-            boolChange(btn_A3_OPEN3, btn_A3_CLOSE3);
+            boolChange(btm_A3_OPEN3, btm_A3_CLOSE3);
         }
 
-        private void btn_A3_CLOSE3_Click(object sender, EventArgs e)
+        private void btm_A3_CLOSE3_Click(object sender, EventArgs e)
         {
-            boolChange(btn_A3_CLOSE3, btn_A3_OPEN3);
+            boolChange(btm_A3_CLOSE3, btm_A3_OPEN3);
         }
 
-        private void btn_A6_OPEN3_Click(object sender, EventArgs e)
+        private void btm_A6_OPEN3_Click(object sender, EventArgs e)
         {
-            boolChange(btn_A6_OPEN3, btn_A6_CLOSE3);
+            boolChange(btm_A6_OPEN3, btm_A6_CLOSE3);
         }
 
-        private void btn_A6_CLOSE3_Click(object sender, EventArgs e)
+        private void btm_A6_CLOSE3_Click(object sender, EventArgs e)
         {
-            boolChange(btn_A6_CLOSE3, btn_A6_OPEN3);
+            boolChange(btm_A6_CLOSE3, btm_A6_OPEN3);
         }
 
-        private void btn_A3_OPEN4_Click(object sender, EventArgs e)
+        private void btm_A3_OPEN4_Click(object sender, EventArgs e)
         {
-            boolChange(btn_A3_OPEN4, btn_A3_CLOSE4);
+            boolChange(btm_A3_OPEN4, btm_A3_CLOSE4);
         }
 
-        private void btn_A3_CLOSE4_Click(object sender, EventArgs e)
+        private void btm_A3_CLOSE4_Click(object sender, EventArgs e)
         {
-            boolChange(btn_A3_CLOSE4, btn_A3_OPEN4);
+            boolChange(btm_A3_CLOSE4, btm_A3_OPEN4);
         }
 
-        private void btn_A6_OPEN4_Click(object sender, EventArgs e)
+        private void btm_A6_OPEN4_Click(object sender, EventArgs e)
         {
-            boolChange(btn_A6_OPEN4, btn_A6_CLOSE4);
+            boolChange(btm_A6_OPEN4, btm_A6_CLOSE4);
         }
 
-        private void btn_A6_CLOSE4_Click(object sender, EventArgs e)
+        private void btm_A6_CLOSE4_Click(object sender, EventArgs e)
         {
-            boolChange(btn_A6_CLOSE4, btn_A6_OPEN4);
+            boolChange(btm_A6_CLOSE4, btm_A6_OPEN4);
         }
 
-        private void btn_A3_OPEN5_Click(object sender, EventArgs e)
+        private void btm_A3_OPEN5_Click(object sender, EventArgs e)
         {
-            boolChange(btn_A3_OPEN5, btn_A3_CLOSE5);
+            boolChange(btm_A3_OPEN5, btm_A3_CLOSE5);
         }
 
-        private void btn_A3_CLOSE5_Click(object sender, EventArgs e)
+        private void btm_A3_CLOSE5_Click(object sender, EventArgs e)
         {
-            boolChange(btn_A3_CLOSE5, btn_A3_OPEN5);
+            boolChange(btm_A3_CLOSE5, btm_A3_OPEN5);
         }
 
-        private void btn_A6_OPEN5_Click(object sender, EventArgs e)
+        private void btm_A6_OPEN5_Click(object sender, EventArgs e)
         {
-            boolChange(btn_A6_OPEN5, btn_A6_CLOSE5);
+            boolChange(btm_A6_OPEN5, btm_A6_CLOSE5);
         }
 
-        private void btn_A6_CLOSE5_Click(object sender, EventArgs e)
+        private void btm_A6_CLOSE5_Click(object sender, EventArgs e)
         {
-            boolChange(btn_A6_CLOSE5, btn_A6_OPEN5);
+            boolChange(btm_A6_CLOSE5, btm_A6_OPEN5);
         }
 
-        private void btn_A3_OPEN6_Click(object sender, EventArgs e)
+        private void btm_A3_OPEN6_Click(object sender, EventArgs e)
         {
-            boolChange(btn_A3_OPEN6, btn_A3_CLOSE6);
+            boolChange(btm_A3_OPEN6, btm_A3_CLOSE6);
         }
 
-        private void btn_A3_CLOSE6_Click(object sender, EventArgs e)
+        private void btm_A3_CLOSE6_Click(object sender, EventArgs e)
         {
-            boolChange(btn_A3_CLOSE6, btn_A3_OPEN6);
+            boolChange(btm_A3_CLOSE6, btm_A3_OPEN6);
         }
 
-        private void btn_A6_OPEN6_Click(object sender, EventArgs e)
+        private void btm_A6_OPEN6_Click(object sender, EventArgs e)
         {
-            boolChange(btn_A6_OPEN6, btn_A6_CLOSE6);
+            boolChange(btm_A6_OPEN6, btm_A6_CLOSE6);
         }
 
-        private void btn_A6_CLOSE6_Click(object sender, EventArgs e)
+        private void btm_A6_CLOSE6_Click(object sender, EventArgs e)
         {
-            boolChange(btn_A6_CLOSE6, btn_A6_OPEN6);
+            boolChange(btm_A6_CLOSE6, btm_A6_OPEN6);
         }
 
-        private void btn_A3_OPEN7_Click(object sender, EventArgs e)
+        private void btm_A3_OPEN7_Click(object sender, EventArgs e)
         {
-            boolChange(btn_A3_OPEN7, btn_A3_CLOSE7);
+            boolChange(btm_A3_OPEN7, btm_A3_CLOSE7);
         }
 
-        private void btn_A3_CLOSE7_Click(object sender, EventArgs e)
+        private void btm_A3_CLOSE7_Click(object sender, EventArgs e)
         {
-            boolChange(btn_A3_CLOSE7, btn_A3_OPEN7);
+            boolChange(btm_A3_CLOSE7, btm_A3_OPEN7);
         }
 
-        private void btn_A6_OPEN7_Click(object sender, EventArgs e)
+        private void btm_A6_OPEN7_Click(object sender, EventArgs e)
         {
-            boolChange(btn_A6_OPEN7, btn_A6_CLOSE7);
+            boolChange(btm_A6_OPEN7, btm_A6_CLOSE7);
         }
 
-        private void btn_A6_CLOSE7_Click(object sender, EventArgs e)
+        private void btm_A6_CLOSE7_Click(object sender, EventArgs e)
         {
-            boolChange(btn_A6_CLOSE7, btn_A6_OPEN7);
+            boolChange(btm_A6_CLOSE7, btm_A6_OPEN7);
         }
 
-        private void btn_A3_OPEN8_Click(object sender, EventArgs e)
+        private void btm_A3_OPEN8_Click(object sender, EventArgs e)
         {
-            boolChange(btn_A3_OPEN8, btn_A3_CLOSE8);
+            boolChange(btm_A3_OPEN8, btm_A3_CLOSE8);
         }
 
-        private void btn_A3_CLOSE8_Click(object sender, EventArgs e)
+        private void btm_A3_CLOSE8_Click(object sender, EventArgs e)
         {
-            boolChange(btn_A3_CLOSE8, btn_A3_OPEN8);
+            boolChange(btm_A3_CLOSE8, btm_A3_OPEN8);
         }
 
-        private void btn_A6_OPEN8_Click(object sender, EventArgs e)
+        private void btm_A6_OPEN8_Click(object sender, EventArgs e)
         {
-            boolChange(btn_A6_OPEN8, btn_A6_CLOSE8);
+            boolChange(btm_A6_OPEN8, btm_A6_CLOSE8);
         }
 
-        private void btn_A6_CLOSE8_Click(object sender, EventArgs e)
+        private void btm_A6_CLOSE8_Click(object sender, EventArgs e)
         {
-            boolChange(btn_A6_CLOSE8, btn_A6_OPEN8);
+            boolChange(btm_A6_CLOSE8, btm_A6_OPEN8);
         }
 
-        private void btn_A6_OPEN9_Click(object sender, EventArgs e)
+        private void btm_A6_OPEN9_Click(object sender, EventArgs e)
         {
-            boolChange(btn_A6_OPEN9, btn_A6_CLOSE9);
+            boolChange(btm_A6_OPEN9, btm_A6_CLOSE9);
         }
 
-        private void btn_A6_CLOSE9_Click(object sender, EventArgs e)
+        private void btm_A6_CLOSE9_Click(object sender, EventArgs e)
         {
-            boolChange(btn_A6_CLOSE9, btn_A6_OPEN9);
+            boolChange(btm_A6_CLOSE9, btm_A6_OPEN9);
         }
 
-        private void btn_A3_OPEN9_Click(object sender, EventArgs e)
+        private void btm_A3_OPEN9_Click(object sender, EventArgs e)
         {
-            boolChange(btn_A3_OPEN9, btn_A3_CLOSE9);
+            boolChange(btm_A3_OPEN9, btm_A3_CLOSE9);
         }
 
-        private void btn_A3_CLOSE9_Click(object sender, EventArgs e)
+        private void btm_A3_CLOSE9_Click(object sender, EventArgs e)
         {
-            boolChange(btn_A3_CLOSE9, btn_A3_OPEN9);
+            boolChange(btm_A3_CLOSE9, btm_A3_OPEN9);
         }
         #endregion
 
@@ -929,254 +1102,295 @@ namespace 触摸屏界面
         /// <summary>
         /// 手动操作
         /// </summary>
-        private void buttonX40_Click(object sender, EventArgs e)
+        private void btm_MOTOR1_BUTT_Click(object sender, EventArgs e)
         {
-            int index = Array.IndexOf(pvc.ControlsName, buttonX40.Name);
+            int index = Array.IndexOf(pvc.ControlsName, btm_MOTOR1_BUTT.Name);
             tas.WriterData(pvc.Address[index], !(bool)(pvc.value[index]));
         }
 
-        private void buttonX41_Click(object sender, EventArgs e)
+        private void btm_MOTOR2_BUTT_Click(object sender, EventArgs e)
         {
-            int index = Array.IndexOf(pvc.ControlsName, buttonX41.Name);
+            int index = Array.IndexOf(pvc.ControlsName, btm_MOTOR2_BUTT.Name);
             tas.WriterData(pvc.Address[index], !(bool)(pvc.value[index]));
         }
 
-        private void buttonX42_Click(object sender, EventArgs e)
+        private void btm_MOTOR3_BUTT_Click(object sender, EventArgs e)
         {
-            int index = Array.IndexOf(pvc.ControlsName, buttonX42.Name);
+            int index = Array.IndexOf(pvc.ControlsName, btm_MOTOR3_BUTT.Name);
             tas.WriterData(pvc.Address[index], !(bool)(pvc.value[index]));
         }
 
-        private void buttonX56_Click(object sender, EventArgs e)
+        private void btm_AXIS_UP_Click(object sender, EventArgs e)
         {
-            int index = Array.IndexOf(pvc.ControlsName, buttonX56.Name);
+            int index = Array.IndexOf(pvc.ControlsName, btm_AXIS_UP.Name);
             tas.WriterData(pvc.Address[index], !(bool)(pvc.value[index]));
         }
-        private void buttonX55_Click(object sender, EventArgs e)
+        private void btm_AXIS_DOWN_Click(object sender, EventArgs e)
         {
-            int index = Array.IndexOf(pvc.ControlsName, buttonX55.Name);
+            int index = Array.IndexOf(pvc.ControlsName, btm_AXIS_DOWN.Name);
             tas.WriterData(pvc.Address[index], !(bool)(pvc.value[index]));
         }
-        private void buttonX57_Click(object sender, EventArgs e)
+        private void btm_AXIS_DOWN2_Click(object sender, EventArgs e)
         {
-            int index = Array.IndexOf(pvc.ControlsName, buttonX57.Name);
+            int index = Array.IndexOf(pvc.ControlsName, btm_AXIS_DOWN2.Name);
             tas.WriterData(pvc.Address[index], !(bool)(pvc.value[index]));
         }
-        private void buttonX43_Click(object sender, EventArgs e)
+        private void btm_VAL_OPEN_Click(object sender, EventArgs e)
         {
-            int index = Array.IndexOf(pvc.ControlsName, buttonX43.Name);
+            int index = Array.IndexOf(pvc.ControlsName, btm_VAL_OPEN.Name);
             tas.WriterData(pvc.Address[index], !(bool)(pvc.value[index]));
         }
-        private void buttonX44_Click(object sender, EventArgs e)
+        private void btm_VAL_CLOSE_Click(object sender, EventArgs e)
         {
-            int index = Array.IndexOf(pvc.ControlsName, buttonX44.Name);
+            int index = Array.IndexOf(pvc.ControlsName, btm_VAL_CLOSE.Name);
             tas.WriterData(pvc.Address[index], !(bool)(pvc.value[index]));
         }
-        private void buttonX59_Click(object sender, EventArgs e)
+        private void btm_AXIS_OPEN_Click(object sender, EventArgs e)
         {
-            int index = Array.IndexOf(pvc.ControlsName, buttonX59.Name);
+            int index = Array.IndexOf(pvc.ControlsName, btm_AXIS_OPEN.Name);
             tas.WriterData(pvc.Address[index], !(bool)(pvc.value[index]));
         }
-        private void buttonX58_Click(object sender, EventArgs e)
+        private void btm_AXIS_CLOSE_Click(object sender, EventArgs e)
         {
-            int index = Array.IndexOf(pvc.ControlsName, buttonX58.Name);
+            int index = Array.IndexOf(pvc.ControlsName, btm_AXIS_CLOSE.Name);
             tas.WriterData(pvc.Address[index], !(bool)(pvc.value[index]));
         }
-        private void buttonX46_Click(object sender, EventArgs e)
+        private void btm_AXIS_POS0_Click(object sender, EventArgs e)
         {
-            int index = Array.IndexOf(pvc.ControlsName, buttonX46.Name);
+            int index = Array.IndexOf(pvc.ControlsName, btm_AXIS_POS0.Name);
             tas.WriterData(pvc.Address[index], !(bool)(pvc.value[index]));
         }
-        private void buttonX45_Click(object sender, EventArgs e)
+        private void btm_AXIS_POS1_Click(object sender, EventArgs e)
         {
-            int index = Array.IndexOf(pvc.ControlsName, buttonX45.Name);
+            int index = Array.IndexOf(pvc.ControlsName, btm_AXIS_POS1.Name);
             tas.WriterData(pvc.Address[index], !(bool)(pvc.value[index]));
         }
-        private void buttonX47_Click(object sender, EventArgs e)
+        private void btm_AXIS_POS2_Click(object sender, EventArgs e)
         {
-            int index = Array.IndexOf(pvc.ControlsName, buttonX47.Name);
+            int index = Array.IndexOf(pvc.ControlsName, btm_AXIS_POS2.Name);
             tas.WriterData(pvc.Address[index], !(bool)(pvc.value[index]));
         }
-        private void buttonX48_Click(object sender, EventArgs e)
+        private void btm_AXIS_POS3_Click(object sender, EventArgs e)
         {
-            int index = Array.IndexOf(pvc.ControlsName, buttonX48.Name);
+            int index = Array.IndexOf(pvc.ControlsName, btm_AXIS_POS3.Name);
             tas.WriterData(pvc.Address[index], !(bool)(pvc.value[index]));
         }
-        private void buttonX49_Click(object sender, EventArgs e)
+        private void btm_AXIS_POS4_Click(object sender, EventArgs e)
         {
-            int index = Array.IndexOf(pvc.ControlsName, buttonX49.Name);
+            int index = Array.IndexOf(pvc.ControlsName, btm_AXIS_POS4.Name);
             tas.WriterData(pvc.Address[index], !(bool)(pvc.value[index]));
         }
-        private void buttonX50_Click(object sender, EventArgs e)
+        private void btm_AXIS_POS5_Click(object sender, EventArgs e)
         {
-            int index = Array.IndexOf(pvc.ControlsName, buttonX50.Name);
+            int index = Array.IndexOf(pvc.ControlsName, btm_AXIS_POS5.Name);
             tas.WriterData(pvc.Address[index], !(bool)(pvc.value[index]));
         }
-        private void buttonX51_Click(object sender, EventArgs e)
+        private void btm_AXIS_POS6_Click(object sender, EventArgs e)
         {
-            int index = Array.IndexOf(pvc.ControlsName, buttonX51.Name);
+            int index = Array.IndexOf(pvc.ControlsName, btm_AXIS_POS6.Name);
             tas.WriterData(pvc.Address[index], !(bool)(pvc.value[index]));
         }
-        private void buttonX52_Click(object sender, EventArgs e)
+        private void btm_AXIS_POS7_Click(object sender, EventArgs e)
         {
-            int index = Array.IndexOf(pvc.ControlsName, buttonX52.Name);
+            int index = Array.IndexOf(pvc.ControlsName, btm_AXIS_POS7.Name);
             tas.WriterData(pvc.Address[index], !(bool)(pvc.value[index]));
         }
-        private void buttonX53_Click(object sender, EventArgs e)
+        private void btm_AXIS_POS8_Click(object sender, EventArgs e)
         {
-            int index = Array.IndexOf(pvc.ControlsName, buttonX53.Name);
+            int index = Array.IndexOf(pvc.ControlsName, btm_AXIS_POS8.Name);
             tas.WriterData(pvc.Address[index], !(bool)(pvc.value[index]));
         }
-        private void buttonX54_Click(object sender, EventArgs e)
+        private void btm_AXIS_POS9_Click(object sender, EventArgs e)
         {
-            int index = Array.IndexOf(pvc.ControlsName, buttonX54.Name);
+            int index = Array.IndexOf(pvc.ControlsName, btm_AXIS_POS9.Name);
             tas.WriterData(pvc.Address[index], !(bool)(pvc.value[index]));
         }
 
-        private void buttonX60_MouseDown(object sender, MouseEventArgs e)
+        private void btm_MOTOR_JOG1FOR_Click(object sender, EventArgs e)
         {
-            int index = Array.IndexOf(pvc.ControlsName, tbx_AXIS1_JOG_VEL.Name);
-            tas.WriterData(pvc.Address[index], (double)Convert.ToDouble(tbx_AXIS1_JOG_VEL.Text));
-            index = Array.IndexOf(pvc.ControlsName, buttonX60.Name);
-            tas.WriterData(pvc.Address[index], true);
+            int index = Array.IndexOf(pvc.ControlsName, txt_AXIS1_JOG_VEL.Name);
+            tas.WriterData(pvc.Address[index], (Single)Convert.ToSingle(txt_AXIS1_JOG_VEL.Text));
+            index = Array.IndexOf(pvc.ControlsName, btm_MOTOR_JOG1FOR.Name);
+            tas.WriterData(pvc.Address[index], !(bool)pvc.value[index]);
+        }
+        
+        private void btm_MOTOR_JOG1BACK_Click(object sender, EventArgs e)
+        {
+            int index = Array.IndexOf(pvc.ControlsName, txt_AXIS1_JOG_VEL.Name);
+            tas.WriterData(pvc.Address[index], -(Single)Convert.ToSingle(txt_AXIS1_JOG_VEL.Text));
+            index = Array.IndexOf(pvc.ControlsName, btm_MOTOR_JOG1BACK.Name);
+            tas.WriterData(pvc.Address[index], !(bool)pvc.value[index]);
+        }
+        
+        private void btm_MOTOR_JOG2FOR_Click(object sender, EventArgs e)
+        {
+            int index = Array.IndexOf(pvc.ControlsName, txt_AXIS2_JOG_VEL.Name);
+            tas.WriterData(pvc.Address[index], (Single)Convert.ToSingle(txt_AXIS2_JOG_VEL.Text));
+            index = Array.IndexOf(pvc.ControlsName, btm_MOTOR_JOG2FOR.Name);
+            tas.WriterData(pvc.Address[index], !(bool)pvc.value[index]);
+        }
+        
+        private void btm_MOTOR_JOG2BACK_Click(object sender, EventArgs e)
+        {
+            int index = Array.IndexOf(pvc.ControlsName, txt_AXIS2_JOG_VEL.Name);
+            tas.WriterData(pvc.Address[index], -(Single)Convert.ToSingle(txt_AXIS2_JOG_VEL.Text));
+            index = Array.IndexOf(pvc.ControlsName, btm_MOTOR_JOG2BACK.Name);
+            tas.WriterData(pvc.Address[index], !(bool)pvc.value[index]);
+        }
+        
+
+        private void btm_MOTOR_JOG3FOR_Click(object sender, EventArgs e)
+        {
+            int index = Array.IndexOf(pvc.ControlsName, txt_AXIS3_JOG_VEL.Name);
+            tas.WriterData(pvc.Address[index], (Single)Convert.ToSingle(txt_AXIS3_JOG_VEL.Text));
+            index = Array.IndexOf(pvc.ControlsName, btm_MOTOR_JOG3FOR.Name);
+            tas.WriterData(pvc.Address[index], !(bool)pvc.value[index]);
+        }
+        
+        private void btm_MOTOR_JOG3BACK_Click(object sender, EventArgs e)
+        {
+            int index = Array.IndexOf(pvc.ControlsName, txt_AXIS3_JOG_VEL.Name);
+            tas.WriterData(pvc.Address[index], -(Single)Convert.ToSingle(txt_AXIS3_JOG_VEL.Text));
+            index = Array.IndexOf(pvc.ControlsName, btm_MOTOR_JOG3BACK.Name);
+            tas.WriterData(pvc.Address[index], !(bool)pvc.value[index]);
         }
 
-        private void buttonX60_MouseUp(object sender, MouseEventArgs e)
-        {
-            int index = Array.IndexOf(pvc.ControlsName, tbx_AXIS1_JOG_VEL.Name);
-            tas.WriterData(pvc.Address[index], 0);
-            index = Array.IndexOf(pvc.ControlsName, buttonX60.Name);
-            tas.WriterData(pvc.Address[index], false);
-        }
-        private void buttonX61_MouseDown(object sender, MouseEventArgs e)
-        {
-            int index = Array.IndexOf(pvc.ControlsName, tbx_AXIS1_JOG_VEL.Name);
-            tas.WriterData(pvc.Address[index], -(double)Convert.ToDouble(tbx_AXIS1_JOG_VEL.Text));
-            index = Array.IndexOf(pvc.ControlsName, buttonX61.Name);
-            tas.WriterData(pvc.Address[index], true);
-        }
-
-        private void buttonX61_MouseUp(object sender, MouseEventArgs e)
-        {
-            int index = Array.IndexOf(pvc.ControlsName, tbx_AXIS1_JOG_VEL.Name);
-            tas.WriterData(pvc.Address[index], 0);
-            index = Array.IndexOf(pvc.ControlsName, buttonX61.Name);
-            tas.WriterData(pvc.Address[index], false);
-        }
-        private void buttonX62_MouseDown(object sender, MouseEventArgs e)
-        {
-            int index = Array.IndexOf(pvc.ControlsName, tbx_AXIS2_JOG_VEL.Name);
-            tas.WriterData(pvc.Address[index], (double)Convert.ToDouble(tbx_AXIS2_JOG_VEL.Text));
-            index = Array.IndexOf(pvc.ControlsName, buttonX62.Name);
-            tas.WriterData(pvc.Address[index], true);
-        }
-
-        private void buttonX62_MouseUp(object sender, MouseEventArgs e)
-        {
-            int index = Array.IndexOf(pvc.ControlsName, tbx_AXIS2_JOG_VEL.Name);
-            tas.WriterData(pvc.Address[index], 0);
-            index = Array.IndexOf(pvc.ControlsName, buttonX62.Name);
-            tas.WriterData(pvc.Address[index], false);
-        }
-        private void buttonX63_MouseDown(object sender, MouseEventArgs e)
-        {
-            int index = Array.IndexOf(pvc.ControlsName, tbx_AXIS2_JOG_VEL.Name);
-            tas.WriterData(pvc.Address[index], -(double)Convert.ToDouble(tbx_AXIS1_JOG_VEL.Text));
-            index = Array.IndexOf(pvc.ControlsName, buttonX63.Name);
-            tas.WriterData(pvc.Address[index], true);
-        }
-
-        private void buttonX63_MouseUp(object sender, MouseEventArgs e)
-        {
-            int index = Array.IndexOf(pvc.ControlsName, tbx_AXIS2_JOG_VEL.Name);
-            tas.WriterData(pvc.Address[index], 0);
-            index = Array.IndexOf(pvc.ControlsName, buttonX63.Name);
-            tas.WriterData(pvc.Address[index], false);
-        }
-
-        private void buttonX64_MouseDown(object sender, MouseEventArgs e)
-        {
-            int index = Array.IndexOf(pvc.ControlsName, tbx_AXIS3_JOG_VEL.Name);
-            tas.WriterData(pvc.Address[index], (double)Convert.ToDouble(tbx_AXIS2_JOG_VEL.Text));
-            index = Array.IndexOf(pvc.ControlsName, buttonX64.Name);
-            tas.WriterData(pvc.Address[index], true);
-        }
-
-        private void buttonX64_MouseUp(object sender, MouseEventArgs e)
-        {
-            int index = Array.IndexOf(pvc.ControlsName, tbx_AXIS3_JOG_VEL.Name);
-            tas.WriterData(pvc.Address[index], 0);
-            index = Array.IndexOf(pvc.ControlsName, buttonX64.Name);
-            tas.WriterData(pvc.Address[index], false);
-        }
-        private void buttonX65_MouseDown(object sender, MouseEventArgs e)
-        {
-            int index = Array.IndexOf(pvc.ControlsName, tbx_AXIS3_JOG_VEL.Name);
-            tas.WriterData(pvc.Address[index], -(double)Convert.ToDouble(tbx_AXIS1_JOG_VEL.Text));
-            index = Array.IndexOf(pvc.ControlsName, buttonX65.Name);
-            tas.WriterData(pvc.Address[index], true);
-        }
-
-        private void buttonX65_MouseUp(object sender, MouseEventArgs e)
-        {
-            int index = Array.IndexOf(pvc.ControlsName, tbx_AXIS3_JOG_VEL.Name);
-            tas.WriterData(pvc.Address[index], 0);
-            index = Array.IndexOf(pvc.ControlsName, buttonX65.Name);
-            tas.WriterData(pvc.Address[index], false);
-        }
         #endregion
 
-        #region  自动操作
+
+        #region 文本框变量写入
         /// <summary>
-        /// 自动操作，点击读取，点击写入
+        /// 文本框变量写入
         /// </summary>
-        private void buttonX67_Click(object sender, EventArgs e)
+        private void txt_enter_write(Control control, KeyPressEventArgs e)
         {
-            foreach (Control control in this.superTabControlPanel1.Controls)
+            if (e.KeyChar == (char)Keys.Enter)
             {
-                if (control.Tag != null && !control.Tag.ToString().Contains("WORD"))
-                    SetValue(control);
-            }
-            string[] tmp = {
-                "准备",
-                "开A6阀",
-                "开A3阀",
-                "空瓶进入",
-                "取出空瓶","闲置空瓶","取样","样瓶抓起","放置样品","送出样品","取样完成","结束",""
-            };
-            int index = Array.IndexOf(pvc.ControlsName, this.tbx_SETP_P.Name);
-            this.tbx_SETP_P.Text = tmp[Convert.ToInt16(pvc.value[index])];
-            this.textBoxX2.Text = tmp[Convert.ToInt16(pvc.value[index])+1];
-            
-        }
-
-        private void buttonX68_Click(object sender, EventArgs e)
-        {
-            foreach (Control control in this.superTabControlPanel1.Controls)
-            {
-                WriteText(control);
-            }
-        }
-        #endregion
-
-        #region  参数设置
-        /// <summary>
-        /// 参数设置，点击读取，点击写入
-        /// </summary>
-        private void buttonX39_Click(object sender, EventArgs e)
-        {
-            foreach (Control control in this.superTabControlPanel4.Controls)
-            {
-                SetValue(control);
+                string aim = control.Text;
+                DialogResult dr = MessageBox.Show(aim, "是否写入?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                if (dr == DialogResult.OK)
+                {
+                    WriteText(control, aim);
+                    control.Text = aim;
+                }
             }
         }
 
-        private void buttonX66_Click(object sender, EventArgs e)
+        private void txt_AXIS3_ABS_VEL_KeyPress(object sender, KeyPressEventArgs e)
         {
-            foreach (Control control in this.superTabControlPanel4.Controls)
-            {
-                WriteText(control);
-            }
+            txt_enter_write(txt_AXIS3_ABS_VEL, e);
+        }
+        private void txt_AXIS2_ABS_VEL_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            txt_enter_write(txt_AXIS2_ABS_VEL, e);
+        }
+        private void txt_AXIS1_ABS_VEL2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            txt_enter_write(txt_AXIS1_ABS_VEL2, e);
+        }
+        private void txt_AXIS1_ABS_VEL_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            txt_enter_write(txt_AXIS1_ABS_VEL, e);
+        }
+        private void txt_AXIS1_ABS_VEL1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            txt_enter_write(txt_AXIS1_ABS_VEL1, e);
+        }
+        private void txt_AXIS3_CLOSE_POS_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            txt_enter_write(txt_AXIS3_CLOSE_POS, e);
+        }
+        private void txt_AXIS3_OPEN_POS_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            txt_enter_write(txt_AXIS3_OPEN_POS, e);
+        }
+        private void txt_AXIS1_SAFE2_POS_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            txt_enter_write(txt_AXIS1_SAFE2_POS, e);
+        }
+        private void txt_AXIS2_0_POS_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            txt_enter_write(txt_AXIS2_0_POS, e);
+        }
+        private void txt_AXIS2_9_POS_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            txt_enter_write(txt_AXIS2_9_POS, e);
+        }
+        private void txt_AXIS2_8_POS_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            txt_enter_write(txt_AXIS2_8_POS, e);
+        }
+        private void txt_AXIS2_7_POS_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            txt_enter_write(txt_AXIS2_7_POS, e);
+        }
+        private void txt_AXIS2_6_POS_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            txt_enter_write(txt_AXIS2_6_POS, e);
+        }
+        private void txt_AXIS1_SAFE1_POS_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            txt_enter_write(txt_AXIS1_SAFE1_POS, e);
+        }
+        private void txt_AXIS2_5_POS_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            txt_enter_write(txt_AXIS2_5_POS, e);
+        }
+        private void txt_AXIS2_4_POS_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            txt_enter_write(txt_AXIS2_4_POS, e);
+        }
+        private void txt_AXIS2_3_POS_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            txt_enter_write(txt_AXIS2_3_POS, e);
+        }
+        private void txt_AXIS2_2_POS_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            txt_enter_write(txt_AXIS2_2_POS, e);
+        }
+        private void txt_AXIS2_1_POS_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            txt_enter_write(txt_AXIS2_1_POS, e);
+        }
+        private void txt_AXIS1_UP_POS_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            txt_enter_write(txt_AXIS1_UP_POS, e);
+        }
+        private void txt_AXIS1_DOWN_POS2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            txt_enter_write(txt_AXIS1_DOWN_POS2, e);
+        }
+        private void txt_AXIS1_DOWN_POS_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            txt_enter_write(txt_AXIS1_DOWN_POS, e);
+        }
+        private void txt_AXIS1_JOG_VEL_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            txt_enter_write(txt_AXIS1_JOG_VEL, e);
+        }
+        private void txt_AXIS2_JOG_VEL_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            txt_enter_write(txt_AXIS2_JOG_VEL, e);
+        }
+        private void txt_AXIS3_JOG_VEL_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            txt_enter_write(txt_AXIS3_JOG_VEL, e);
+        }
+        private void txt_SCE_VAL_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            txt_enter_write(txt_SCE_VAL, e);
+        }
+        private void txt_FIRST_VAL_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            txt_enter_write(txt_FIRST_VAL, e);
+        }
+        private void txt_SAMPLING_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            txt_enter_write(txt_SAMPLING, e);
+        }
+        private void txt_SAMPLING2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            txt_enter_write(txt_SAMPLING2, e);
         }
         #endregion
     }
