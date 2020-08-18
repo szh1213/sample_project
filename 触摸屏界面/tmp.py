@@ -1,4 +1,7 @@
-import re
+import re,os
+class Find:
+    def __init__(self):
+        files = os.listdir()
 
 class Auto:
     def common(self,control,name):
@@ -21,15 +24,16 @@ class Auto:
                 code = code.replace(t+s,name+'_'+tag[t]+s)
         with open('Main.cs','w',encoding='utf8')as f:
             f.write(code)  
+        return tag
             
-    def txt(self):
-        self.common('textBox','tbx')
+    def txt(self,old='textBox',new='tbx'):
+        return self.common(old,new)
             
-    def btm(self):
-        self.common('button','btm')
+    def btm(self,old='button',new='btm'):
+        return self.common(old,new)
         
-    def lb(self):
-        self.common('label','lb')
+    def lb(self,old='label',new='lb'):
+        return self.common(old,new)
         
     def A3A6(self):
         with open('Main.Designer.cs','r',encoding='utf8')as f:
@@ -52,7 +56,4 @@ class Auto:
             f.write(code)
             
 auto = Auto()
-auto.txt()
-auto.btm()
-auto.lb()
-
+ct = auto.btm(old='btm',new='btm')

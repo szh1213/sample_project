@@ -24,5 +24,5 @@ namespace 触摸屏界面
             f.Show();
             this.Hide();
         }
-   }
+    }
 }

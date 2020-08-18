@@ -19,6 +19,7 @@ namespace 触摸屏界面
 {
     public partial class Main : Office2007Form
     {
+        private static DateTime START_TIME;
         private TwcAds tas;
         PlcVariableClass pvc = new PlcVariableClass();
         Size _beforeDialogSize;
@@ -29,9 +30,29 @@ namespace 触摸屏界面
 
         MouseHook mh;
         Point downPos, upPos;
+        
+        private socket2unity mes_socket;
+        private byte[] buffer = new byte[1024 * 1024 * 2];
+        private showEXE unityEXE;
         public Main()
         {
             InitializeComponent();
+            closePc(true);
+            try
+            {
+                XmlDocument doc = new XmlDocument();
+                doc.Load("PLC.config");
+                XmlElement root = doc.DocumentElement;
+                XmlNode exeNode = root.SelectSingleNode("/PLC/exe");
+                string exe = exeNode.Attributes["address"].Value;
+
+                //unityEXE = new showEXE(exe, superTabControlPanel8, 3000);
+                mes_socket = new socket2unity(8888);
+
+            } catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
             mh = new MouseHook();
             mh.SetHook();
             mh.MouseDownEvent += mh_MouseDownEvent;
@@ -57,6 +78,7 @@ namespace 触摸屏界面
             {
                 MessageBox.Show(ex.Message,"配置文件错误");
             }
+            START_TIME = DateTime.Now;
         }
         //按下鼠标键触发的事件
         private void mh_MouseDownEvent(object sender, MouseEventArgs e)
@@ -82,11 +104,11 @@ namespace 触摸屏界面
                 {
                     if (detaX > 0 && Math.Abs(detaY)/Math.Abs(detaX)<0.5)
                     {
-                        superTabControl1.SelectedTabIndex += superTabControl1.SelectedTabIndex < 6 ? 1 : 0;
+                        superTabControl1.SelectedTabIndex -= superTabControl1.SelectedTabIndex > 0 ? 1 : 0;
                     }
                     if (detaX < 0 && Math.Abs(detaY) / Math.Abs(detaX) < 0.5)
                     {
-                        superTabControl1.SelectedTabIndex -= superTabControl1.SelectedTabIndex > 0 ? 1 : 0;
+                        superTabControl1.SelectedTabIndex += superTabControl1.SelectedTabIndex < 7 ? 1 : 0;
                     }
                 }
             }
@@ -165,8 +187,12 @@ namespace 触摸屏界面
         {
             superTabControl1.SelectedTabIndex = 6;
         }
+        private void bubbleButton8_Click(object sender, ClickEventArgs e)
+        {
+            superTabControl1.SelectedTabIndex = 7;
+        }
 
-        
+
         protected override void OnResizeEnd(EventArgs e)
         {
 
@@ -174,7 +200,7 @@ namespace 触摸屏界面
             Size endSize = this.Size;
             float percentWidth = (float)endSize.Width / _beforeDialogSize.Width;
             float percentHeight = (float)endSize.Height / _beforeDialogSize.Height;
-
+            //unityEXE.ResizeControl(unityEXE.p);
             foreach (Control control in this.superTabControlPanel1.Controls)
             {
                 if (control is DataGridView)
@@ -191,12 +217,12 @@ namespace 触摸屏界面
             foreach (Control panelex in this.superTabControlPanel2.Controls)
             {
                 if (!panelex.Name.StartsWith("panelEx")) continue;
-                panelex.Width = (int)(panelex.Width * percentWidth);
-                panelex.Height = (int)(panelex.Height * percentHeight);
+                //panelex.Width = (int)(panelex.Width * percentWidth);
+                //panelex.Height = (int)(panelex.Height * percentHeight);
 
-                //为了不使控件之间覆盖 位置也要按比例变化
-                panelex.Left = (int)(panelex.Left * percentWidth);
-                panelex.Top = (int)(panelex.Top * percentHeight);
+                ////为了不使控件之间覆盖 位置也要按比例变化
+                //panelex.Left = (int)(panelex.Left * percentWidth);
+                //panelex.Top = (int)(panelex.Top * percentHeight);
                 foreach (Control control in panelex.Controls)
                 {
                     //按比例改变控件大小
@@ -236,8 +262,8 @@ namespace 触摸屏界面
                 control.Left = (int)(control.Left * percentWidth);
                 control.Top = (int)(control.Top * percentHeight);
             }
-            
-               _beforeDialogSize = this.Size;
+
+            _beforeDialogSize = this.Size;
         }
 
         #endregion
@@ -312,6 +338,7 @@ namespace 触摸屏界面
             string ip = ipNode.Attributes["address"].Value;
 
             tas = new TwcAds(ip, 851, pvc, true);
+            tas.ConnectFlag = false;
             this.open_plc.Enabled = false;
             this.close_plc.Enabled = true;
         }
@@ -334,6 +361,68 @@ namespace 触摸屏界面
         /// <param name="e"></param>
         private void Main_FormClosing(object sender, FormClosingEventArgs e)
         {
+            mes_socket.destory();
+            XmlDocument doc = new XmlDocument();
+//            < svg width = "100%" height = "100%" version = "1.1"
+//xmlns = "http://www.w3.org/2000/svg" >
+
+//< polyline points = "0,0 0,20 20,20 20,40 40,40 40,60"
+//style = "fill:white;stroke:red;" />
+
+//</ svg >
+            XmlElement svg = doc.CreateElement("svg");
+            svg.SetAttribute("width", "100%");
+            svg.SetAttribute("height", "100%");
+            svg.SetAttribute("version", "1.1");
+            long span = (DateTime.Now.Ticks - START_TIME.Ticks)/10000;
+            svg.SetAttribute("time",span.ToString());
+            XmlElement polyline = doc.CreateElement("polyline");
+            string style = "fill:white;stroke:red;";
+            List<string> p = new List<string>();
+            foreach(DataPoint dp in chart1.Series[0].Points)
+            {
+                p.Add(dp.XValue.ToString()+","+dp.YValues[0].ToString());
+            }
+            polyline.SetAttribute("points", string.Join(" ",p));
+            polyline.SetAttribute("style", style);
+            svg.AppendChild(polyline);
+
+            style = "fill:white;stroke:green;";
+            p = new List<string>();
+            foreach (DataPoint dp in chart1.Series[1].Points)
+            {
+                p.Add(dp.XValue.ToString() + "," + dp.YValues[0].ToString());
+            }
+            polyline = doc.CreateElement("polyline");
+            polyline.SetAttribute("points", string.Join(" ", p));
+            polyline.SetAttribute("style", style);
+            svg.AppendChild(polyline);
+
+            style = "fill:white;stroke:blue;";
+            p = new List<string>();
+            foreach (DataPoint dp in chart1.Series[2].Points)
+            {
+                p.Add(dp.XValue.ToString() + "," + dp.YValues[0].ToString());
+            }
+            polyline = doc.CreateElement("polyline");
+            polyline.SetAttribute("points", string.Join(" ", p));
+            polyline.SetAttribute("style", style);
+            svg.AppendChild(polyline);
+            doc.AppendChild(svg);
+            if (!Directory.Exists("D:/svgdata"))
+            {
+                Directory.CreateDirectory("D:/svgdata");
+            }
+            string name = START_TIME.ToString("s") + "__" + DateTime.Now.ToString("s");
+            name = name.Replace("-", string.Empty);
+            name = name.Replace(":", string.Empty);
+            try
+            {
+                doc.Save("D:/svgdata/"+name + ".svg");
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message,name);
+            }
             Application.Exit();
         }
 
@@ -516,7 +605,6 @@ namespace 触摸屏界面
                         if (!panelex.Name.StartsWith("panelEx")) continue;
                         foreach (Control control in panelex.Controls)
                         {
-                            
                             SetValue(control,0);
                         }
                     }
@@ -559,86 +647,101 @@ namespace 触摸屏界面
                     this.lb_PA_PC_switch.Text =  (bool) pvc.value[Array.IndexOf(pvc.ControlsName, this.lb_PA_PC_switch.Name)]?"PA":"PC";
                     if (this.lb_PA_PC_switch.Text == "PA")
                     {
-                        foreach (Control control in this.superTabControlPanel1.Controls)
-                        {
-                            if(control is TextBoxX)
-                            {
-                                (control as TextBoxX).ReadOnly = true;
-                            }
-                        }
-                        foreach (Control panelex in this.superTabControlPanel2.Controls)
-                        {
-                            if (!panelex.Name.StartsWith("panelEx")) continue;
-                            foreach (Control control in panelex.Controls)
-                            {
-                                if (control is TextBoxX)
-                                {
-                                    (control as TextBoxX).ReadOnly = true;
-                                }
-                                if(control is ButtonX)
-                                {
-                                    (control as ButtonX).Enabled = false;
-                                }
-                            }
-                        }
-                        foreach (Control control in this.superTabControlPanel3.Controls)
-                        {
-                            if (control is ButtonX)
-                            {
-                                (control as ButtonX).Enabled = false;
-                            }
-                        }
-                        foreach (Control control in this.superTabControlPanel4.Controls)
-                        {
-                            if (control is TextBoxX)
-                            {
-                                (control as TextBoxX).ReadOnly = true;
-                            }
-                        }
+                        closePc(true);
                     }else
                     {
-                        foreach (Control control in this.superTabControlPanel1.Controls)
-                        {
-                            if (control is TextBoxX)
-                            {
-                                (control as TextBoxX).ReadOnly = false;
-                            }
-                        }
-                        foreach (Control panelex in this.superTabControlPanel2.Controls)
-                        {
-                            if (!panelex.Name.StartsWith("panelEx")) continue;
-                            foreach (Control control in panelex.Controls)
-                            {
-                                if (control is TextBoxX)
-                                {
-                                    (control as TextBoxX).ReadOnly = false;
-                                }
-                                if (control is ButtonX)
-                                {
-                                    (control as ButtonX).Enabled = true;
-                                }
-                            }
-                        }
-                        foreach (Control control in this.superTabControlPanel3.Controls)
-                        {
-                            if (control is ButtonX)
-                            {
-                                (control as ButtonX).Enabled = true;
-                            }
-                        }
-                        foreach (Control control in this.superTabControlPanel4.Controls)
-                        {
-                            if (control is TextBoxX)
-                            {
-                                (control as TextBoxX).ReadOnly = false;
-                            }
-                        }
+                        closePc(false);
                     }
                 }
             }
             catch(Exception ex)
             {
                 //MessageBox.Show(ex.Message,"读取错误");
+            }
+        }
+
+        /// <summary>
+        /// 是否关闭上位机权限
+        /// </summary>
+        private void closePc(bool state)
+        {
+            if(state)
+            {
+                foreach (Control control in this.superTabControlPanel1.Controls)
+                {
+                    if (control is TextBoxX)
+                    {
+                        (control as TextBoxX).ReadOnly = true;
+                    }
+                }
+                foreach (Control panelex in this.superTabControlPanel2.Controls)
+                {
+                    if (!panelex.Name.StartsWith("panelEx")) continue;
+                    foreach (Control control in panelex.Controls)
+                    {
+                        if (control is TextBoxX)
+                        {
+                            (control as TextBoxX).ReadOnly = true;
+                        }
+                        if (control is ButtonX)
+                        {
+                            (control as ButtonX).Enabled = false;
+                        }
+                    }
+                }
+                foreach (Control control in this.superTabControlPanel3.Controls)
+                {
+                    if (control is ButtonX)
+                    {
+                        (control as ButtonX).Enabled = false;
+                    }
+                }
+                foreach (Control control in this.superTabControlPanel4.Controls)
+                {
+                    if (control is TextBoxX)
+                    {
+                        (control as TextBoxX).ReadOnly = true;
+                    }
+                }
+            }
+            else
+            {
+                foreach (Control control in this.superTabControlPanel1.Controls)
+                {
+                    if (control is TextBoxX)
+                    {
+                        (control as TextBoxX).ReadOnly = false;
+                    }
+                }
+                foreach (Control panelex in this.superTabControlPanel2.Controls)
+                {
+                    if (!panelex.Name.StartsWith("panelEx")) continue;
+                    foreach (Control control in panelex.Controls)
+                    {
+                        if (control is TextBoxX)
+                        {
+                            (control as TextBoxX).ReadOnly = false;
+                        }
+                        if (control is ButtonX)
+                        {
+                            (control as ButtonX).Enabled = true;
+                        }
+                    }
+                }
+                foreach (Control control in this.superTabControlPanel3.Controls)
+                {
+                    if (control is ButtonX)
+                    {
+                        (control as ButtonX).Enabled = true;
+                    }
+                }
+                foreach (Control control in this.superTabControlPanel4.Controls)
+                {
+                    if (control is TextBoxX)
+                    {
+                        (control as TextBoxX).ReadOnly = false;
+                    }
+                }
             }
         }
 
@@ -812,17 +915,23 @@ namespace 触摸屏界面
             //定义存储和显示点的容器
             this.chart1.Series.Clear();
 
-            Series series1 = new Series("转速(转/分钟)");
+            Series series1 = new Series("升降");
             series1.ChartArea = "C1";
             this.chart1.Series.Add(series1);
-            this.chart1.Series[0].Color = Color.Green;
+            this.chart1.Series[0].Color = Color.Red;
             this.chart1.Series[0].ChartType = SeriesChartType.StepLine;
 
-            series1 = new Series("扭矩(‰)");
+            series1 = new Series("旋转");
             series1.ChartArea = "C1";
             this.chart1.Series.Add(series1);
-            this.chart1.Series[1].Color = Color.Red;
+            this.chart1.Series[1].Color = Color.Green;
             this.chart1.Series[1].ChartType = SeriesChartType.StepLine;
+
+            series1 = new Series("收发");
+            series1.ChartArea = "C1";
+            this.chart1.Series.Add(series1);
+            this.chart1.Series[2].Color = Color.Blue;
+            this.chart1.Series[2].ChartType = SeriesChartType.StepLine;
 
 
 
@@ -852,16 +961,17 @@ namespace 触摸屏界面
             //设置标题
             this.chart1.Titles.Clear();
             this.chart1.Titles.Add("S01");
-            this.chart1.Titles[0].Text = "数据显示";
+            this.chart1.Titles[0].Text = "力矩显示";
             this.chart1.Titles[0].ForeColor = Color.RoyalBlue;
             this.chart1.Titles[0].Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
 
 
-            for (int i = 0; i < 3; i++)
-            {
-                this.chart1.Series[0].Points.AddXY((i + 1), 0);
-                this.chart1.Series[1].Points.AddXY((i + 1), 0);
-            }
+            //for (int i = 0; i < 3; i++)
+            //{
+            //    this.chart1.Series[0].Points.AddXY((i + 1), 0);
+            //    this.chart1.Series[1].Points.AddXY((i + 1), 0);
+            //    this.chart1.Series[2].Points.AddXY((i + 1), 0);
+            //}
 
         }
         /// <summary>
@@ -869,23 +979,24 @@ namespace 触摸屏界面
         /// </summary>
         private void updateChart()
         {
-            DataPoint endp = this.chart1.Series[0].Points.Last();
-            DataPoint startp = this.chart1.Series[0].Points.First();
-            if (this.chart1.Series[0].Points.Count > 500)
+            //DataPoint endp = this.chart1.Series[0].Points.Last();
+            //DataPoint startp = this.chart1.Series[0].Points.First();
+            if (this.chart1.Series[0].Points.Count <0)
             {
                 this.chart1.Series[0].Points.RemoveAt(0);
                 this.chart1.Series[1].Points.RemoveAt(0);
+                this.chart1.Series[2].Points.RemoveAt(0);
             }
 
-            t += 0.01;
+            t = (double)(DateTime.Now.Ticks - START_TIME.Ticks) / 10000/1000;
             speed = 3000 * Math.Sin(t);
             torque = (100 - Math.Max(0, (Math.Abs(speed) - 1440) * 0.02)) * Math.Sign(speed);
-            this.chart1.Series[0].Points.AddXY(endp.XValue + 1, speed);
-            this.chart1.Series[1].Points.AddXY(endp.XValue + 1, torque * 10);
-            this.chart1.ChartAreas[0].AxisX.Maximum = endp.XValue + 50;
-            this.chart1.ChartAreas[0].AxisX.Minimum = startp.XValue - 50;
-
-
+            this.chart1.Series[0].Points.AddXY(t, speed);
+            this.chart1.Series[1].Points.AddXY(t, torque * 10);
+            this.chart1.Series[2].Points.AddXY(t, t*100%3000);
+            //this.chart1.ChartAreas[0].AxisX.Maximum = endp.XValue + 50;
+            //this.chart1.ChartAreas[0].AxisX.Minimum = startp.XValue - 50;
+            
         }
 
         private void chart_timer_Tick(object sender, EventArgs e)
@@ -893,7 +1004,7 @@ namespace 触摸屏界面
             updateChart();
         }
         #endregion
-
+        
         private void Main_SizeChanged(object sender, EventArgs e)
         {
             if (this.WindowState == FormWindowState.Maximized|| this.WindowState == FormWindowState.Normal)
@@ -1388,6 +1499,70 @@ namespace 触摸屏界面
         {
             txt_enter_write(txt_SAMPLING, e);
         }
+
+        private void socket_timer_Tick(object sender, EventArgs e)
+        {
+            if (superTabControl1.SelectedTabIndex == 7)
+            {
+                if (tas.ConnectFlag)
+                {
+                    int index;
+                    byte[] mes = new byte[24],tmp;
+                    index = Array.IndexOf(pvc.ControlsName, txt_AXIS3_REAL_POS.Name);
+                    tmp = BitConverter.GetBytes((Single)pvc.value[index]);
+                    for (int i = 0; i < tmp.Length; i++) mes[i] = tmp[i];
+                    index = Array.IndexOf(pvc.ControlsName, txt_AXIS2_REAL_POS.Name);
+                    tmp = BitConverter.GetBytes((Single)pvc.value[index]);
+                    for (int i = 0; i < tmp.Length; i++) mes[tmp.Length * 1 + i] = tmp[i];
+                    index = Array.IndexOf(pvc.ControlsName, txt_AXIS1_REAL_POS.Name);
+                    tmp = BitConverter.GetBytes((Single)pvc.value[index]);
+                    for (int i = 0; i < tmp.Length; i++) mes[tmp.Length * 2 + i] = tmp[i];
+
+
+
+                    index = Array.IndexOf(pvc.ControlsName, btm_VAL_CLOSE.Name);
+                    tmp = BitConverter.GetBytes(Convert.ToSingle(Convert.ToBoolean(pvc.value[index])));
+                    for (int i = 0; i < tmp.Length; i++) mes[tmp.Length * 5 + i] = tmp[i];
+                    //mes_socket.send
+                }
+            }
+        }
+
+        private void superTabControlPanel2_SizeChanged(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Maximized || this.WindowState == FormWindowState.Normal)
+            {
+
+                panelEx8.Width = superTabControlPanel2.Width / 2;
+                panelEx8.Height = superTabControlPanel2.Height / 2;
+                panelEx10.Width = superTabControlPanel2.Width / 2;
+                panelEx10.Height = superTabControlPanel2.Height / 2;
+                panelEx11.Width = superTabControlPanel2.Width / 2;
+                panelEx11.Height = superTabControlPanel2.Height / 4;
+                panelEx10.Left = superTabControlPanel2.Width / 2;
+                panelEx11.Left = superTabControlPanel2.Width / 2;
+                panelEx10.Top = superTabControlPanel2.Height / 4;
+                panelEx9.Width = superTabControlPanel2.Width / 4;
+                panelEx12.Width = superTabControlPanel2.Width / 4;
+                panelEx9.Height = superTabControlPanel2.Height / 4;
+                panelEx12.Height = superTabControlPanel2.Height / 4;
+                panelEx12.Left = superTabControlPanel2.Width / 4;
+                panelEx9.Top = superTabControlPanel2.Height / 2;
+                panelEx12.Top = superTabControlPanel2.Height / 2;
+                panelEx13.Width = superTabControlPanel2.Width / 3;
+                panelEx14.Width = superTabControlPanel2.Width / 3;
+                panelEx15.Width = superTabControlPanel2.Width / 3;
+                panelEx14.Left = superTabControlPanel2.Width / 3;
+                panelEx15.Left = superTabControlPanel2.Width / 3 * 2;
+                panelEx13.Top = superTabControlPanel2.Height / 4 * 3;
+                panelEx14.Top = superTabControlPanel2.Height / 4 * 3;
+                panelEx15.Top = superTabControlPanel2.Height / 4 * 3;
+                panelEx13.Height = superTabControlPanel2.Height / 4;
+                panelEx14.Height = superTabControlPanel2.Height / 4;
+                panelEx15.Height = superTabControlPanel2.Height / 4;
+            }
+        }
+
         private void txt_SAMPLING2_KeyPress(object sender, KeyPressEventArgs e)
         {
             txt_enter_write(txt_SAMPLING2, e);
