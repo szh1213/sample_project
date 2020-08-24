@@ -10,7 +10,7 @@
 + 安装TwinCat后随便新建一个项目, 扫描到倍福PLC然后登录一次
      
 #### 文件结构介绍
-winform触摸屏上位机控制
+winform触摸屏上位机控制(也就是‘Debug’文件夹)
 + DevComponents\.DotNetBar\.Charts\.dll   
 + DevComponents\.DotNetBar\.Keyboard\.dll
 + DevComponents\.DotNetBar\.Keyboard\.xml
@@ -35,7 +35,7 @@ winform触摸屏上位机控制
 + 触摸屏界面\.vshost\.exe\.config
 + 触摸屏界面\.vshost\.exe\.manifest
 
-unity动画
+unity动画(也就是‘输出’文件夹）
 + ConsoleTest\.exe
 + gc\.log
 + ModelShow\.exe
