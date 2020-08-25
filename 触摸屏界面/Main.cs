@@ -17,6 +17,7 @@ using System.IO;
 
 namespace 触摸屏界面
 {
+    
     public partial class Main : Office2007Form
     {
         private static DateTime START_TIME;
@@ -27,16 +28,25 @@ namespace 触摸屏界面
         private double t = 0.00001;
         private double speed = 0;
         private double torque = 0;
-
+        string[] titles = { "位置显示", "速度显示", "力矩显示" };
         MouseHook mh;
         Point downPos, upPos;
         
         private socket2unity mes_socket;
         private byte[] buffer = new byte[1024 * 1024 * 2];
         private showEXE unityEXE;
+        private bool unityInited=false;
+
+        private string[] zeroName = new string[3];
+        private Single[] motorZero = new Single[] { 0, 0, 0 };
+        
+        private motorValue motor_value = new motorValue();
         public Main()
         {
             InitializeComponent();
+            zeroName[0] = textBox1.Name;
+            zeroName[1] = textBox2.Name;
+            zeroName[2] = textBox3.Name;
             closePc(true);
             try
             {
@@ -46,8 +56,18 @@ namespace 触摸屏界面
                 XmlNode exeNode = root.SelectSingleNode("/PLC/exe");
                 string exe = exeNode.Attributes["address"].Value;
 
-                //unityEXE = new showEXE(exe, superTabControlPanel8, 3000);
-                mes_socket = new socket2unity(8888);
+                unityEXE = new showEXE(exe, superTabControlPanel8, 3000);
+                //mes_socket = new socket2unity(8888);
+
+                XmlNode tmp = root.SelectSingleNode("/PLC/motor1zero");
+                textBox1.Text = tmp.Attributes["value"].Value;
+                motorZero[0] = Convert.ToSingle(tmp.Attributes["value"].Value);
+                tmp = root.SelectSingleNode("/PLC/motor2zero");
+                textBox2.Text = tmp.Attributes["value"].Value;
+                motorZero[1] = Convert.ToSingle(tmp.Attributes["value"].Value);
+                tmp = root.SelectSingleNode("/PLC/motor3zero");
+                textBox3.Text = tmp.Attributes["value"].Value;
+                motorZero[2] = Convert.ToSingle(tmp.Attributes["value"].Value);
 
             } catch(Exception ex)
             {
@@ -104,11 +124,11 @@ namespace 触摸屏界面
                 {
                     if (detaX > 0 && Math.Abs(detaY)/Math.Abs(detaX)<0.5)
                     {
-                        superTabControl1.SelectedTabIndex -= superTabControl1.SelectedTabIndex > 0 ? 1 : 0;
+                        //superTabControl1.SelectedTabIndex -= superTabControl1.SelectedTabIndex > 0 ? 1 : 0;
                     }
                     if (detaX < 0 && Math.Abs(detaY) / Math.Abs(detaX) < 0.5)
                     {
-                        superTabControl1.SelectedTabIndex += superTabControl1.SelectedTabIndex < 7 ? 1 : 0;
+                        //superTabControl1.SelectedTabIndex += superTabControl1.SelectedTabIndex < 7 ? 1 : 0;
                     }
                 }
             }
@@ -200,7 +220,7 @@ namespace 触摸屏界面
             Size endSize = this.Size;
             float percentWidth = (float)endSize.Width / _beforeDialogSize.Width;
             float percentHeight = (float)endSize.Height / _beforeDialogSize.Height;
-            //unityEXE.ResizeControl(unityEXE.p);
+            unityEXE.ResizeControl(unityEXE.p);
             foreach (Control control in this.superTabControlPanel1.Controls)
             {
                 if (control is DataGridView)
@@ -361,64 +381,19 @@ namespace 触摸屏界面
         /// <param name="e"></param>
         private void Main_FormClosing(object sender, FormClosingEventArgs e)
         {
-            mes_socket.destory();
-            XmlDocument doc = new XmlDocument();
-//            < svg width = "100%" height = "100%" version = "1.1"
-//xmlns = "http://www.w3.org/2000/svg" >
-
-//< polyline points = "0,0 0,20 20,20 20,40 40,40 40,60"
-//style = "fill:white;stroke:red;" />
-
-//</ svg >
-            XmlElement svg = doc.CreateElement("svg");
-            svg.SetAttribute("width", "100%");
-            svg.SetAttribute("height", "100%");
-            svg.SetAttribute("version", "1.1");
-            long span = (DateTime.Now.Ticks - START_TIME.Ticks)/10000;
-            svg.SetAttribute("time",span.ToString());
-            XmlElement polyline = doc.CreateElement("polyline");
-            string style = "fill:white;stroke:red;";
-            List<string> p = new List<string>();
-            foreach(DataPoint dp in chart1.Series[0].Points)
+            try { mes_socket.destory(); }
+            catch {  }
+            
+            if (!Directory.Exists("D:/QY43DATA"))
             {
-                p.Add(dp.XValue.ToString()+","+dp.YValues[0].ToString());
-            }
-            polyline.SetAttribute("points", string.Join(" ",p));
-            polyline.SetAttribute("style", style);
-            svg.AppendChild(polyline);
-
-            style = "fill:white;stroke:green;";
-            p = new List<string>();
-            foreach (DataPoint dp in chart1.Series[1].Points)
-            {
-                p.Add(dp.XValue.ToString() + "," + dp.YValues[0].ToString());
-            }
-            polyline = doc.CreateElement("polyline");
-            polyline.SetAttribute("points", string.Join(" ", p));
-            polyline.SetAttribute("style", style);
-            svg.AppendChild(polyline);
-
-            style = "fill:white;stroke:blue;";
-            p = new List<string>();
-            foreach (DataPoint dp in chart1.Series[2].Points)
-            {
-                p.Add(dp.XValue.ToString() + "," + dp.YValues[0].ToString());
-            }
-            polyline = doc.CreateElement("polyline");
-            polyline.SetAttribute("points", string.Join(" ", p));
-            polyline.SetAttribute("style", style);
-            svg.AppendChild(polyline);
-            doc.AppendChild(svg);
-            if (!Directory.Exists("D:/svgdata"))
-            {
-                Directory.CreateDirectory("D:/svgdata");
+                Directory.CreateDirectory("D:/QY43DATA");
             }
             string name = START_TIME.ToString("s") + "__" + DateTime.Now.ToString("s");
             name = name.Replace("-", string.Empty);
             name = name.Replace(":", string.Empty);
             try
             {
-                doc.Save("D:/svgdata/"+name + ".svg");
+                motor_value.save("D:/svgdata/"+name + ".csv");
             }catch(Exception ex)
             {
                 MessageBox.Show(ex.Message,name);
@@ -615,6 +590,7 @@ namespace 触摸屏界面
                     }
                     foreach (Control control in this.superTabControlPanel4.Controls)
                     {
+                        if(Array.IndexOf(zeroName,control.Name)<0)
                         SetValue(control,0);
                     }
                     foreach (Control control in this.superTabControlPanel5.Controls)
@@ -665,84 +641,43 @@ namespace 触摸屏界面
         /// </summary>
         private void closePc(bool state)
         {
-            if(state)
+            foreach (Control control in this.superTabControlPanel1.Controls)
             {
-                foreach (Control control in this.superTabControlPanel1.Controls)
+                if (control is TextBoxX)
+                {
+                    (control as TextBoxX).ReadOnly = state;
+                }
+            }
+            foreach (Control panelex in this.superTabControlPanel2.Controls)
+            {
+                if (!panelex.Name.StartsWith("panelEx")) continue;
+                foreach (Control control in panelex.Controls)
                 {
                     if (control is TextBoxX)
                     {
-                        (control as TextBoxX).ReadOnly = true;
+                        (control as TextBoxX).ReadOnly = state;
                     }
-                }
-                foreach (Control panelex in this.superTabControlPanel2.Controls)
-                {
-                    if (!panelex.Name.StartsWith("panelEx")) continue;
-                    foreach (Control control in panelex.Controls)
-                    {
-                        if (control is TextBoxX)
-                        {
-                            (control as TextBoxX).ReadOnly = true;
-                        }
-                        if (control is ButtonX)
-                        {
-                            (control as ButtonX).Enabled = false;
-                        }
-                    }
-                }
-                foreach (Control control in this.superTabControlPanel3.Controls)
-                {
                     if (control is ButtonX)
                     {
-                        (control as ButtonX).Enabled = false;
-                    }
-                }
-                foreach (Control control in this.superTabControlPanel4.Controls)
-                {
-                    if (control is TextBoxX)
-                    {
-                        (control as TextBoxX).ReadOnly = true;
+                        (control as ButtonX).Enabled = !state;
                     }
                 }
             }
-            else
+            foreach (Control control in this.superTabControlPanel3.Controls)
             {
-                foreach (Control control in this.superTabControlPanel1.Controls)
+                if (control is ButtonX)
                 {
-                    if (control is TextBoxX)
-                    {
-                        (control as TextBoxX).ReadOnly = false;
-                    }
-                }
-                foreach (Control panelex in this.superTabControlPanel2.Controls)
-                {
-                    if (!panelex.Name.StartsWith("panelEx")) continue;
-                    foreach (Control control in panelex.Controls)
-                    {
-                        if (control is TextBoxX)
-                        {
-                            (control as TextBoxX).ReadOnly = false;
-                        }
-                        if (control is ButtonX)
-                        {
-                            (control as ButtonX).Enabled = true;
-                        }
-                    }
-                }
-                foreach (Control control in this.superTabControlPanel3.Controls)
-                {
-                    if (control is ButtonX)
-                    {
-                        (control as ButtonX).Enabled = true;
-                    }
-                }
-                foreach (Control control in this.superTabControlPanel4.Controls)
-                {
-                    if (control is TextBoxX)
-                    {
-                        (control as TextBoxX).ReadOnly = false;
-                    }
+                    (control as ButtonX).Enabled = !state;
                 }
             }
+            foreach (Control control in this.superTabControlPanel4.Controls)
+            {
+                if (control is TextBoxX)
+                {
+                    (control as TextBoxX).ReadOnly = state;
+                }
+            }
+            
         }
 
         private void SetValue(Control control,int deep)
@@ -865,7 +800,7 @@ namespace 触摸屏界面
 
                             this.sgc2.PrimaryGrid.InsertRow((int)(this.sgc2.PrimaryGrid.Rows.LongCount()));
                             GridRow gr = this.sgc2.PrimaryGrid.Rows.Last() as GridRow;
-                            gr[0].Value = DateTime.Now;
+                            if(gr[1].Value.ToString()==string.Empty)gr[0].Value = DateTime.Now;
                             gr[1].Value = error_hash[i][j];
                         }
                     }
@@ -878,7 +813,7 @@ namespace 触摸屏界面
                 //MessageBox.Show(r.Message, "警报读取错误");
             }
         }
-
+        
         private void WriteText(Control control,string aim)
         {
             if (tas.ConnectFlag && control is TextBoxX && control.Tag != null && !string.IsNullOrEmpty(control.Tag.ToString()))
@@ -897,6 +832,10 @@ namespace 触摸屏界面
                 {
                     MessageBox.Show(ex.Message, "文本内容写入变量错误");
                 }
+            }else
+            {
+                int index = Array.IndexOf(zeroName, control.Name);
+                motorZero[index] = Convert.ToSingle(aim);
             }
         }
         #region 显示曲线
@@ -981,21 +920,55 @@ namespace 触摸屏界面
         {
             //DataPoint endp = this.chart1.Series[0].Points.Last();
             //DataPoint startp = this.chart1.Series[0].Points.First();
-            if (this.chart1.Series[0].Points.Count <0)
+            if (this.chart1.Series[0].Points.Count >1000)
             {
                 this.chart1.Series[0].Points.RemoveAt(0);
                 this.chart1.Series[1].Points.RemoveAt(0);
                 this.chart1.Series[2].Points.RemoveAt(0);
             }
-
+            
             t = (double)(DateTime.Now.Ticks - START_TIME.Ticks) / 10000/1000;
             speed = 3000 * Math.Sin(t);
             torque = (100 - Math.Max(0, (Math.Abs(speed) - 1440) * 0.02)) * Math.Sign(speed);
-            this.chart1.Series[0].Points.AddXY(t, speed);
-            this.chart1.Series[1].Points.AddXY(t, torque * 10);
-            this.chart1.Series[2].Points.AddXY(t, t*100%3000);
+            //this.chart1.Series[0].Points.AddXY(t, speed);
+            //this.chart1.Series[1].Points.AddXY(t, torque * 10);
+            //this.chart1.Series[2].Points.AddXY(t, t*100%3000);
             //this.chart1.ChartAreas[0].AxisX.Maximum = endp.XValue + 50;
             //this.chart1.ChartAreas[0].AxisX.Minimum = startp.XValue - 50;
+            TimeSpan ts = DateTime.Now - new DateTime(1970, 1, 1, 0, 0, 0, 0);
+            try
+            {
+                motor_value.time.Add(Convert.ToSingle(ts.TotalMilliseconds));
+                motor_value.pos[0].Add(Convert.ToSingle(pvc.value[Array.IndexOf(pvc.ControlsName, "txt_AXIS1_REAL_POS")]));
+                motor_value.pos[1].Add(Convert.ToSingle(pvc.value[Array.IndexOf(pvc.ControlsName, "txt_AXIS2_REAL_POS")]));
+                motor_value.pos[2].Add(Convert.ToSingle(pvc.value[Array.IndexOf(pvc.ControlsName, "txt_AXIS3_REAL_POS")]));
+                motor_value.vel[0].Add(Convert.ToSingle(pvc.value[Array.IndexOf(pvc.ControlsName, "txt_AXIS1_REAL_VEL")]));
+                motor_value.vel[1].Add(Convert.ToSingle(pvc.value[Array.IndexOf(pvc.ControlsName, "txt_AXIS2_REAL_VEL")]));
+                motor_value.vel[2].Add(Convert.ToSingle(pvc.value[Array.IndexOf(pvc.ControlsName, "txt_AXIS3_REAL_VEL")]));
+                motor_value.tor[0].Add(Convert.ToSingle(pvc.value[Array.IndexOf(pvc.ControlsName, "txt_AXIS1_REAL_TOR")]));
+                motor_value.tor[1].Add(Convert.ToSingle(pvc.value[Array.IndexOf(pvc.ControlsName, "txt_AXIS2_REAL_TOR")]));
+                motor_value.tor[2].Add(Convert.ToSingle(pvc.value[Array.IndexOf(pvc.ControlsName, "txt_AXIS3_REAL_TOR")]));
+
+                if (chart1.Titles[0].Text == titles[0])
+                {
+                    this.chart1.Series[0].Points.AddXY(t, motor_value.pos[0].Last());
+                    this.chart1.Series[1].Points.AddXY(t, motor_value.pos[1].Last());
+                    this.chart1.Series[2].Points.AddXY(t, motor_value.pos[2].Last());
+                }
+                if (chart1.Titles[0].Text == titles[1])
+                {
+                    this.chart1.Series[0].Points.AddXY(t, motor_value.vel[0].Last());
+                    this.chart1.Series[1].Points.AddXY(t, motor_value.vel[1].Last());
+                    this.chart1.Series[2].Points.AddXY(t, motor_value.vel[2].Last());
+                }
+                if (chart1.Titles[0].Text == titles[2])
+                {
+                    this.chart1.Series[0].Points.AddXY(t, motor_value.tor[0].Last());
+                    this.chart1.Series[1].Points.AddXY(t, motor_value.tor[1].Last());
+                    this.chart1.Series[2].Points.AddXY(t, motor_value.tor[2].Last());
+                }
+            }
+            catch { }
             
         }
 
@@ -1499,32 +1472,64 @@ namespace 触摸屏界面
         {
             txt_enter_write(txt_SAMPLING, e);
         }
+        #endregion
 
         private void socket_timer_Tick(object sender, EventArgs e)
         {
-            if (superTabControl1.SelectedTabIndex == 7)
+            if (unityInited)
             {
-                if (tas.ConnectFlag)
+                bool tasState=false;
+                try
                 {
+                    tasState = tas.ConnectFlag;
+                }
+                catch { }
+                if (tasState)
+                {
+                    button2.Text = "PLC";
                     int index;
-                    byte[] mes = new byte[24],tmp;
+                    byte[] mes = new byte[24], tmp;
                     index = Array.IndexOf(pvc.ControlsName, txt_AXIS3_REAL_POS.Name);
-                    tmp = BitConverter.GetBytes((Single)pvc.value[index]);
+                    tmp = BitConverter.GetBytes((Single)(pvc.value[index])/1000f-motorZero[2]/1000f);
                     for (int i = 0; i < tmp.Length; i++) mes[i] = tmp[i];
                     index = Array.IndexOf(pvc.ControlsName, txt_AXIS2_REAL_POS.Name);
-                    tmp = BitConverter.GetBytes((Single)pvc.value[index]);
+                    tmp = BitConverter.GetBytes((Single)pvc.value[index] - motorZero[1] / 1000f);
                     for (int i = 0; i < tmp.Length; i++) mes[tmp.Length * 1 + i] = tmp[i];
                     index = Array.IndexOf(pvc.ControlsName, txt_AXIS1_REAL_POS.Name);
-                    tmp = BitConverter.GetBytes((Single)pvc.value[index]);
+                    tmp = BitConverter.GetBytes((Single)pvc.value[index]/1000f - motorZero[0] / 1000f);
                     for (int i = 0; i < tmp.Length; i++) mes[tmp.Length * 2 + i] = tmp[i];
 
-
-
                     index = Array.IndexOf(pvc.ControlsName, btm_VAL_CLOSE.Name);
-                    tmp = BitConverter.GetBytes(Convert.ToSingle(Convert.ToBoolean(pvc.value[index])));
+                    if ((bool)pvc.value[index])
+                    {
+                        tmp = BitConverter.GetBytes(0.0f);
+                        for (int i = 0; i < tmp.Length; i++) mes[tmp.Length * 3 + i] = tmp[i];
+                        tmp = BitConverter.GetBytes(0.0f);
+                        for (int i = 0; i < tmp.Length; i++) mes[tmp.Length * 4 + i] = tmp[i];
+                    }
+                    else
+                    {
+                        tmp = BitConverter.GetBytes(-0.01f);
+                        for (int i = 0; i < tmp.Length; i++) mes[tmp.Length * 3 + i] = tmp[i];
+                        tmp = BitConverter.GetBytes(0.01f);
+                        for (int i = 0; i < tmp.Length; i++) mes[tmp.Length * 4 + i] = tmp[i];
+                    }
+                    
+                    tmp = BitConverter.GetBytes(0);
                     for (int i = 0; i < tmp.Length; i++) mes[tmp.Length * 5 + i] = tmp[i];
-                    //mes_socket.send
+                    mes_socket.send(mes);
                 }
+                else
+                {
+                    button2.Text = "test";
+                    byte[] mes = new byte[24];
+                    for (int i = 0; i < 24; i++) mes[i] = mes_socket.testMes[mes_socket.test_index, i];
+                    mes_socket.send(mes);
+                    mes_socket.test_index += mes_socket.test_d;
+                    if (mes_socket.test_index == 599) mes_socket.test_d = -1;
+                    if (mes_socket.test_index == 0) mes_socket.test_d = 1;
+                }
+                button1.Text = mes_socket.alive.ToString() + mes_socket.restart.ToString();
             }
         }
 
@@ -1532,7 +1537,6 @@ namespace 触摸屏界面
         {
             if (this.WindowState == FormWindowState.Maximized || this.WindowState == FormWindowState.Normal)
             {
-
                 panelEx8.Width = superTabControlPanel2.Width / 2;
                 panelEx8.Height = superTabControlPanel2.Height / 2;
                 panelEx10.Width = superTabControlPanel2.Width / 2;
@@ -1562,11 +1566,70 @@ namespace 触摸屏界面
                 panelEx15.Height = superTabControlPanel2.Height / 4;
             }
         }
+        
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if(unityInited  == false)mes_socket = new socket2unity(8888);
+            unityInited = true;
+        }
+
+        private void keep_timer_Tick(object sender, EventArgs e)
+        {
+            if (unityInited)
+            {
+                if (!mes_socket.alive)
+                {
+                    mes_socket.init();
+                }
+            }
+        }
+        
+
+        private void btm_change_pos_Click(object sender, EventArgs e)
+        {
+            chart1.Titles[0].Text = titles[0];
+            chart1.Series[0].Points.Clear();
+            chart1.Series[1].Points.Clear();
+            chart1.Series[2].Points.Clear();
+        }
+
+        private void btm_change_vel_Click(object sender, EventArgs e)
+        {
+            chart1.Titles[0].Text = titles[1];
+            chart1.Series[0].Points.Clear();
+            chart1.Series[1].Points.Clear();
+            chart1.Series[2].Points.Clear();
+
+        }
+
+        private void btm_change_tor_Click(object sender, EventArgs e)
+        {
+            chart1.Titles[0].Text = titles[2];
+            chart1.Series[0].Points.Clear();
+            chart1.Series[1].Points.Clear();
+            chart1.Series[2].Points.Clear();
+
+        }
+
+        private void textBox1_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            txt_enter_write(textBox1,e);
+        }
+
+        private void textBox2_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            txt_enter_write(textBox2, e);
+        }
+
+        private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            txt_enter_write(textBox3, e);
+        }
 
         private void txt_SAMPLING2_KeyPress(object sender, KeyPressEventArgs e)
         {
             txt_enter_write(txt_SAMPLING2, e);
         }
-        #endregion
     }
 }

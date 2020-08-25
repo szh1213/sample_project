@@ -29,53 +29,23 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
             this.panelEx3 = new DevComponents.DotNetBar.PanelEx();
             this.panelEx5 = new DevComponents.DotNetBar.PanelEx();
             this.panelEx4 = new DevComponents.DotNetBar.PanelEx();
             this.panelEx6 = new DevComponents.DotNetBar.PanelEx();
             this.superTabControl1 = new DevComponents.DotNetBar.SuperTabControl();
-            this.superTabControlPanel7 = new DevComponents.DotNetBar.SuperTabControlPanel();
-            this.sgc2 = new DevComponents.DotNetBar.SuperGrid.SuperGridControl();
-            this.gridColumn12 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
-            this.gridColumn15 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
-            this.gridRow57 = new DevComponents.DotNetBar.SuperGrid.GridRow();
-            this.gridCell16 = new DevComponents.DotNetBar.SuperGrid.GridCell();
-            this.gridCell17 = new DevComponents.DotNetBar.SuperGrid.GridCell();
-            this.superTabItem7 = new DevComponents.DotNetBar.SuperTabItem();
-            this.superTabControlPanel6 = new DevComponents.DotNetBar.SuperTabControlPanel();
-            this.panelEx7 = new DevComponents.DotNetBar.PanelEx();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.superGridControl3 = new DevComponents.DotNetBar.SuperGrid.SuperGridControl();
-            this.superTabItem6 = new DevComponents.DotNetBar.SuperTabItem();
-            this.superTabControlPanel5 = new DevComponents.DotNetBar.SuperTabControlPanel();
-            this.sgc1 = new DevComponents.DotNetBar.SuperGrid.SuperGridControl();
-            this.gridColumn2 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
-            this.gridColumn3 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
-            this.gridColumn4 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
-            this.gridColumn5 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
-            this.gridColumn6 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
-            this.gridColumn7 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
-            this.gridRow55 = new DevComponents.DotNetBar.SuperGrid.GridRow();
-            this.gridCell3 = new DevComponents.DotNetBar.SuperGrid.GridCell();
-            this.gridCell4 = new DevComponents.DotNetBar.SuperGrid.GridCell();
-            this.gridCell5 = new DevComponents.DotNetBar.SuperGrid.GridCell();
-            this.gridCell6 = new DevComponents.DotNetBar.SuperGrid.GridCell();
-            this.gridCell7 = new DevComponents.DotNetBar.SuperGrid.GridCell();
-            this.gridCell8 = new DevComponents.DotNetBar.SuperGrid.GridCell();
-            this.gridRow56 = new DevComponents.DotNetBar.SuperGrid.GridRow();
-            this.gridCell10 = new DevComponents.DotNetBar.SuperGrid.GridCell();
-            this.gridCell11 = new DevComponents.DotNetBar.SuperGrid.GridCell();
-            this.gridCell12 = new DevComponents.DotNetBar.SuperGrid.GridCell();
-            this.gridCell13 = new DevComponents.DotNetBar.SuperGrid.GridCell();
-            this.gridCell14 = new DevComponents.DotNetBar.SuperGrid.GridCell();
-            this.gridCell15 = new DevComponents.DotNetBar.SuperGrid.GridCell();
-            this.superTabItem5 = new DevComponents.DotNetBar.SuperTabItem();
             this.superTabControlPanel4 = new DevComponents.DotNetBar.SuperTabControlPanel();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.labelX10 = new DevComponents.DotNetBar.LabelX();
+            this.labelX9 = new DevComponents.DotNetBar.LabelX();
+            this.labelX8 = new DevComponents.DotNetBar.LabelX();
             this.labelX67 = new DevComponents.DotNetBar.LabelX();
             this.labelX66 = new DevComponents.DotNetBar.LabelX();
             this.txt_AXIS3_ABS_VEL = new DevComponents.DotNetBar.Controls.TextBoxX();
@@ -123,54 +93,9 @@
             this.txt_AXIS1_DOWN_POS = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX41 = new DevComponents.DotNetBar.LabelX();
             this.superTabItem4 = new DevComponents.DotNetBar.SuperTabItem();
-            this.superTabControlPanel3 = new DevComponents.DotNetBar.SuperTabControlPanel();
-            this.labelX38 = new DevComponents.DotNetBar.LabelX();
-            this.btm_A6_CLOSE9 = new DevComponents.DotNetBar.ButtonX();
-            this.btm_A6_OPEN9 = new DevComponents.DotNetBar.ButtonX();
-            this.btm_A3_CLOSE9 = new DevComponents.DotNetBar.ButtonX();
-            this.btm_A3_OPEN9 = new DevComponents.DotNetBar.ButtonX();
-            this.labelX39 = new DevComponents.DotNetBar.LabelX();
-            this.btm_A6_CLOSE8 = new DevComponents.DotNetBar.ButtonX();
-            this.btm_A6_OPEN8 = new DevComponents.DotNetBar.ButtonX();
-            this.btm_A3_CLOSE8 = new DevComponents.DotNetBar.ButtonX();
-            this.btm_A3_OPEN8 = new DevComponents.DotNetBar.ButtonX();
-            this.labelX40 = new DevComponents.DotNetBar.LabelX();
-            this.btm_A6_CLOSE7 = new DevComponents.DotNetBar.ButtonX();
-            this.btm_A6_OPEN7 = new DevComponents.DotNetBar.ButtonX();
-            this.btm_A3_CLOSE7 = new DevComponents.DotNetBar.ButtonX();
-            this.btm_A3_OPEN7 = new DevComponents.DotNetBar.ButtonX();
-            this.labelX35 = new DevComponents.DotNetBar.LabelX();
-            this.btm_A6_CLOSE6 = new DevComponents.DotNetBar.ButtonX();
-            this.btm_A6_OPEN6 = new DevComponents.DotNetBar.ButtonX();
-            this.btm_A3_CLOSE6 = new DevComponents.DotNetBar.ButtonX();
-            this.btm_A3_OPEN6 = new DevComponents.DotNetBar.ButtonX();
-            this.labelX36 = new DevComponents.DotNetBar.LabelX();
-            this.btm_A6_CLOSE5 = new DevComponents.DotNetBar.ButtonX();
-            this.btm_A6_OPEN5 = new DevComponents.DotNetBar.ButtonX();
-            this.btm_A3_CLOSE5 = new DevComponents.DotNetBar.ButtonX();
-            this.btm_A3_OPEN5 = new DevComponents.DotNetBar.ButtonX();
-            this.labelX37 = new DevComponents.DotNetBar.LabelX();
-            this.btm_A6_CLOSE4 = new DevComponents.DotNetBar.ButtonX();
-            this.btm_A6_OPEN4 = new DevComponents.DotNetBar.ButtonX();
-            this.btm_A3_CLOSE4 = new DevComponents.DotNetBar.ButtonX();
-            this.btm_A3_OPEN4 = new DevComponents.DotNetBar.ButtonX();
-            this.labelX34 = new DevComponents.DotNetBar.LabelX();
-            this.btm_A6_CLOSE3 = new DevComponents.DotNetBar.ButtonX();
-            this.btm_A6_OPEN3 = new DevComponents.DotNetBar.ButtonX();
-            this.btm_A3_CLOSE3 = new DevComponents.DotNetBar.ButtonX();
-            this.btm_A3_OPEN3 = new DevComponents.DotNetBar.ButtonX();
-            this.labelX33 = new DevComponents.DotNetBar.LabelX();
-            this.btm_A6_CLOSE2 = new DevComponents.DotNetBar.ButtonX();
-            this.btm_A6_OPEN2 = new DevComponents.DotNetBar.ButtonX();
-            this.btm_A3_CLOSE2 = new DevComponents.DotNetBar.ButtonX();
-            this.btm_A3_OPEN2 = new DevComponents.DotNetBar.ButtonX();
-            this.labelX32 = new DevComponents.DotNetBar.LabelX();
-            this.btm_A6_CLOSE1 = new DevComponents.DotNetBar.ButtonX();
-            this.btm_A6_OPEN1 = new DevComponents.DotNetBar.ButtonX();
-            this.btm_A3_CLOSE1 = new DevComponents.DotNetBar.ButtonX();
-            this.btm_A3_OPEN1 = new DevComponents.DotNetBar.ButtonX();
-            this.superTabItem3 = new DevComponents.DotNetBar.SuperTabItem();
             this.superTabControlPanel1 = new DevComponents.DotNetBar.SuperTabControlPanel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.symbolBox2 = new DevComponents.DotNetBar.Controls.SymbolBox();
             this.reflectionLabel3 = new DevComponents.DotNetBar.Controls.ReflectionLabel();
             this.lb_connectflag = new DevComponents.DotNetBar.LabelX();
@@ -193,6 +118,14 @@
             this.textBoxX2 = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txt_SETP_P = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.superTabItem1 = new DevComponents.DotNetBar.SuperTabItem();
+            this.superTabControlPanel6 = new DevComponents.DotNetBar.SuperTabControlPanel();
+            this.panelEx7 = new DevComponents.DotNetBar.PanelEx();
+            this.btm_change_tor = new DevComponents.DotNetBar.ButtonX();
+            this.btm_change_vel = new DevComponents.DotNetBar.ButtonX();
+            this.btm_change_pos = new DevComponents.DotNetBar.ButtonX();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.superGridControl3 = new DevComponents.DotNetBar.SuperGrid.SuperGridControl();
+            this.superTabItem6 = new DevComponents.DotNetBar.SuperTabItem();
             this.superTabControlPanel2 = new DevComponents.DotNetBar.SuperTabControlPanel();
             this.panelEx15 = new DevComponents.DotNetBar.PanelEx();
             this.txt_AXIS3_JOG_VEL = new DevComponents.DotNetBar.Controls.TextBoxX();
@@ -252,6 +185,84 @@
             this.reflectionLabel17 = new DevComponents.DotNetBar.Controls.ReflectionLabel();
             this.reflectionLabel16 = new DevComponents.DotNetBar.Controls.ReflectionLabel();
             this.superTabItem2 = new DevComponents.DotNetBar.SuperTabItem();
+            this.superTabControlPanel3 = new DevComponents.DotNetBar.SuperTabControlPanel();
+            this.labelX38 = new DevComponents.DotNetBar.LabelX();
+            this.btm_A6_CLOSE9 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A6_OPEN9 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A3_CLOSE9 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A3_OPEN9 = new DevComponents.DotNetBar.ButtonX();
+            this.labelX39 = new DevComponents.DotNetBar.LabelX();
+            this.btm_A6_CLOSE8 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A6_OPEN8 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A3_CLOSE8 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A3_OPEN8 = new DevComponents.DotNetBar.ButtonX();
+            this.labelX40 = new DevComponents.DotNetBar.LabelX();
+            this.btm_A6_CLOSE7 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A6_OPEN7 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A3_CLOSE7 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A3_OPEN7 = new DevComponents.DotNetBar.ButtonX();
+            this.labelX35 = new DevComponents.DotNetBar.LabelX();
+            this.btm_A6_CLOSE6 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A6_OPEN6 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A3_CLOSE6 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A3_OPEN6 = new DevComponents.DotNetBar.ButtonX();
+            this.labelX36 = new DevComponents.DotNetBar.LabelX();
+            this.btm_A6_CLOSE5 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A6_OPEN5 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A3_CLOSE5 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A3_OPEN5 = new DevComponents.DotNetBar.ButtonX();
+            this.labelX37 = new DevComponents.DotNetBar.LabelX();
+            this.btm_A6_CLOSE4 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A6_OPEN4 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A3_CLOSE4 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A3_OPEN4 = new DevComponents.DotNetBar.ButtonX();
+            this.labelX34 = new DevComponents.DotNetBar.LabelX();
+            this.btm_A6_CLOSE3 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A6_OPEN3 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A3_CLOSE3 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A3_OPEN3 = new DevComponents.DotNetBar.ButtonX();
+            this.labelX33 = new DevComponents.DotNetBar.LabelX();
+            this.btm_A6_CLOSE2 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A6_OPEN2 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A3_CLOSE2 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A3_OPEN2 = new DevComponents.DotNetBar.ButtonX();
+            this.labelX32 = new DevComponents.DotNetBar.LabelX();
+            this.btm_A6_CLOSE1 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A6_OPEN1 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A3_CLOSE1 = new DevComponents.DotNetBar.ButtonX();
+            this.btm_A3_OPEN1 = new DevComponents.DotNetBar.ButtonX();
+            this.superTabItem3 = new DevComponents.DotNetBar.SuperTabItem();
+            this.superTabControlPanel5 = new DevComponents.DotNetBar.SuperTabControlPanel();
+            this.sgc1 = new DevComponents.DotNetBar.SuperGrid.SuperGridControl();
+            this.gridColumn2 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
+            this.gridColumn3 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
+            this.gridColumn4 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
+            this.gridColumn5 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
+            this.gridColumn6 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
+            this.gridColumn7 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
+            this.gridRow55 = new DevComponents.DotNetBar.SuperGrid.GridRow();
+            this.gridCell3 = new DevComponents.DotNetBar.SuperGrid.GridCell();
+            this.gridCell4 = new DevComponents.DotNetBar.SuperGrid.GridCell();
+            this.gridCell5 = new DevComponents.DotNetBar.SuperGrid.GridCell();
+            this.gridCell6 = new DevComponents.DotNetBar.SuperGrid.GridCell();
+            this.gridCell7 = new DevComponents.DotNetBar.SuperGrid.GridCell();
+            this.gridCell8 = new DevComponents.DotNetBar.SuperGrid.GridCell();
+            this.gridRow56 = new DevComponents.DotNetBar.SuperGrid.GridRow();
+            this.gridCell10 = new DevComponents.DotNetBar.SuperGrid.GridCell();
+            this.gridCell11 = new DevComponents.DotNetBar.SuperGrid.GridCell();
+            this.gridCell12 = new DevComponents.DotNetBar.SuperGrid.GridCell();
+            this.gridCell13 = new DevComponents.DotNetBar.SuperGrid.GridCell();
+            this.gridCell14 = new DevComponents.DotNetBar.SuperGrid.GridCell();
+            this.gridCell15 = new DevComponents.DotNetBar.SuperGrid.GridCell();
+            this.superTabItem5 = new DevComponents.DotNetBar.SuperTabItem();
+            this.superTabControlPanel7 = new DevComponents.DotNetBar.SuperTabControlPanel();
+            this.sgc2 = new DevComponents.DotNetBar.SuperGrid.SuperGridControl();
+            this.gridColumn12 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
+            this.gridColumn15 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
+            this.gridRow57 = new DevComponents.DotNetBar.SuperGrid.GridRow();
+            this.gridCell16 = new DevComponents.DotNetBar.SuperGrid.GridCell();
+            this.gridCell17 = new DevComponents.DotNetBar.SuperGrid.GridCell();
+            this.superTabItem7 = new DevComponents.DotNetBar.SuperTabItem();
             this.superTabControlPanel8 = new DevComponents.DotNetBar.SuperTabControlPanel();
             this.superTabItem8 = new DevComponents.DotNetBar.SuperTabItem();
             this.bubbleBar1 = new DevComponents.DotNetBar.BubbleBar();
@@ -329,6 +340,7 @@
             this.gridCell2 = new DevComponents.DotNetBar.SuperGrid.GridCell();
             this.gridCell9 = new DevComponents.DotNetBar.SuperGrid.GridCell();
             this.socket_timer = new System.Windows.Forms.Timer(this.components);
+            this.keep_timer = new System.Windows.Forms.Timer(this.components);
             this.panelEx1.SuspendLayout();
             this.panelEx3.SuspendLayout();
             this.panelEx5.SuspendLayout();
@@ -336,14 +348,11 @@
             this.panelEx6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.superTabControl1)).BeginInit();
             this.superTabControl1.SuspendLayout();
-            this.superTabControlPanel7.SuspendLayout();
+            this.superTabControlPanel4.SuspendLayout();
+            this.superTabControlPanel1.SuspendLayout();
             this.superTabControlPanel6.SuspendLayout();
             this.panelEx7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
-            this.superTabControlPanel5.SuspendLayout();
-            this.superTabControlPanel4.SuspendLayout();
-            this.superTabControlPanel3.SuspendLayout();
-            this.superTabControlPanel1.SuspendLayout();
             this.superTabControlPanel2.SuspendLayout();
             this.panelEx15.SuspendLayout();
             this.panelEx14.SuspendLayout();
@@ -353,6 +362,9 @@
             this.panelEx10.SuspendLayout();
             this.panelEx9.SuspendLayout();
             this.panelEx8.SuspendLayout();
+            this.superTabControlPanel3.SuspendLayout();
+            this.superTabControlPanel5.SuspendLayout();
+            this.superTabControlPanel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bubbleBar1)).BeginInit();
             this.panelEx2.SuspendLayout();
             this.SuspendLayout();
@@ -467,13 +479,13 @@
             this.superTabControl1.ControlBox.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.superTabControl1.ControlBox.MenuBox,
             this.superTabControl1.ControlBox.CloseBox});
+            this.superTabControl1.Controls.Add(this.superTabControlPanel4);
+            this.superTabControl1.Controls.Add(this.superTabControlPanel1);
             this.superTabControl1.Controls.Add(this.superTabControlPanel6);
+            this.superTabControl1.Controls.Add(this.superTabControlPanel2);
+            this.superTabControl1.Controls.Add(this.superTabControlPanel3);
             this.superTabControl1.Controls.Add(this.superTabControlPanel5);
             this.superTabControl1.Controls.Add(this.superTabControlPanel7);
-            this.superTabControl1.Controls.Add(this.superTabControlPanel1);
-            this.superTabControl1.Controls.Add(this.superTabControlPanel4);
-            this.superTabControl1.Controls.Add(this.superTabControlPanel3);
-            this.superTabControl1.Controls.Add(this.superTabControlPanel2);
             this.superTabControl1.Controls.Add(this.superTabControlPanel8);
             this.superTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.superTabControl1.ForeColor = System.Drawing.Color.Black;
@@ -499,338 +511,14 @@
             this.superTabControl1.TabsVisible = false;
             this.superTabControl1.Text = "superTabControl1";
             // 
-            // superTabControlPanel7
-            // 
-            this.superTabControlPanel7.Controls.Add(this.sgc2);
-            this.superTabControlPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel7.Location = new System.Drawing.Point(0, 46);
-            this.superTabControlPanel7.Name = "superTabControlPanel7";
-            this.superTabControlPanel7.Size = new System.Drawing.Size(825, 517);
-            this.superTabControlPanel7.TabIndex = 7;
-            this.superTabControlPanel7.TabItem = this.superTabItem7;
-            // 
-            // sgc2
-            // 
-            this.sgc2.BackColor = System.Drawing.Color.White;
-            this.sgc2.DefaultVisualStyles.CellStyles.Default.Font = new System.Drawing.Font("宋体", 10.5F);
-            this.sgc2.DefaultVisualStyles.ColumnHeaderStyles.Default.Font = new System.Drawing.Font("宋体", 15F);
-            this.sgc2.DefaultVisualStyles.FooterStyles.Default.Font = new System.Drawing.Font("宋体", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.sgc2.DefaultVisualStyles.RowStyles.Default.RowHeaderStyle.AllowWrap = DevComponents.DotNetBar.SuperGrid.Style.Tbool.True;
-            this.sgc2.DefaultVisualStyles.RowStyles.Default.RowHeaderStyle.Font = new System.Drawing.Font("宋体", 15F);
-            this.sgc2.DefaultVisualStyles.RowStyles.NotSelectable.RowHeaderStyle.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.sgc2.DefaultVisualStyles.RowStyles.NotSelectable.RowHeaderStyle.TextColor = System.Drawing.Color.Red;
-            this.sgc2.DefaultVisualStyles.RowStyles.Selected.RowHeaderStyle.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.sgc2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sgc2.Enabled = false;
-            this.sgc2.EnableFastScrolling = false;
-            this.sgc2.FilterExprColors.SysFunction = System.Drawing.Color.DarkRed;
-            this.sgc2.Font = new System.Drawing.Font("华文新魏", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.sgc2.ForeColor = System.Drawing.Color.Black;
-            this.sgc2.Location = new System.Drawing.Point(0, 0);
-            this.sgc2.Name = "sgc2";
-            // 
-            // 
-            // 
-            this.sgc2.PrimaryGrid.Columns.Add(this.gridColumn12);
-            this.sgc2.PrimaryGrid.Columns.Add(this.gridColumn15);
-            this.sgc2.PrimaryGrid.ReadOnly = true;
-            this.sgc2.PrimaryGrid.RowHeaderIndexOffset = 1;
-            this.sgc2.PrimaryGrid.Rows.Add(this.gridRow57);
-            this.sgc2.PrimaryGrid.ShowRowGridIndex = true;
-            this.sgc2.PrimaryGrid.UseAlternateColumnStyle = true;
-            this.sgc2.PrimaryGrid.UseAlternateRowStyle = true;
-            this.sgc2.Size = new System.Drawing.Size(825, 517);
-            this.sgc2.TabIndex = 1;
-            this.sgc2.Tag = "HMI.DATA_ALARM;Error_data";
-            this.sgc2.Text = "superGridControl2";
-            // 
-            // gridColumn12
-            // 
-            this.gridColumn12.AutoSizeMode = DevComponents.DotNetBar.SuperGrid.ColumnAutoSizeMode.DisplayedCells;
-            this.gridColumn12.Name = "时间";
-            // 
-            // gridColumn15
-            // 
-            this.gridColumn15.AutoSizeMode = DevComponents.DotNetBar.SuperGrid.ColumnAutoSizeMode.Fill;
-            this.gridColumn15.Name = "文本";
-            // 
-            // gridRow57
-            // 
-            this.gridRow57.Cells.Add(this.gridCell16);
-            this.gridRow57.Cells.Add(this.gridCell17);
-            this.gridRow57.CellStyles.Default.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.gridRow57.RowStyles.Default.RowHeaderStyle.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            // 
-            // gridCell16
-            // 
-            this.gridCell16.Value = "20200810";
-            // 
-            // gridCell17
-            // 
-            this.gridCell17.Value = "示例信息";
-            // 
-            // superTabItem7
-            // 
-            this.superTabItem7.AttachedControl = this.superTabControlPanel7;
-            this.superTabItem7.GlobalItem = false;
-            this.superTabItem7.Image = global::触摸屏界面.Properties.Resources.controller_error;
-            this.superTabItem7.Name = "superTabItem7";
-            this.superTabItem7.Tag = "HMI.DATA_ALARM;ERROR_DATA";
-            this.superTabItem7.Text = "报警列表";
-            // 
-            // superTabControlPanel6
-            // 
-            this.superTabControlPanel6.Controls.Add(this.panelEx7);
-            this.superTabControlPanel6.Controls.Add(this.superGridControl3);
-            this.superTabControlPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel6.Location = new System.Drawing.Point(0, 46);
-            this.superTabControlPanel6.Name = "superTabControlPanel6";
-            this.superTabControlPanel6.Size = new System.Drawing.Size(825, 517);
-            this.superTabControlPanel6.TabIndex = 6;
-            this.superTabControlPanel6.TabItem = this.superTabItem6;
-            // 
-            // panelEx7
-            // 
-            this.panelEx7.CanvasColor = System.Drawing.SystemColors.Control;
-            this.panelEx7.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.panelEx7.Controls.Add(this.chart1);
-            this.panelEx7.DisabledBackColor = System.Drawing.Color.Empty;
-            this.panelEx7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelEx7.Location = new System.Drawing.Point(0, 0);
-            this.panelEx7.Name = "panelEx7";
-            this.panelEx7.Size = new System.Drawing.Size(825, 517);
-            this.panelEx7.Style.Alignment = System.Drawing.StringAlignment.Center;
-            this.panelEx7.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.panelEx7.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
-            this.panelEx7.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.panelEx7.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
-            this.panelEx7.Style.GradientAngle = 90;
-            this.panelEx7.TabIndex = 2;
-            this.panelEx7.Text = "panelEx7";
-            // 
-            // chart1
-            // 
-            this.chart1.BackColor = System.Drawing.Color.Black;
-            chartArea1.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea1.AxisX.LineColor = System.Drawing.Color.White;
-            chartArea1.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea1.AxisX.MajorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea1.AxisX.MinorGrid.LineColor = System.Drawing.Color.White;
-            chartArea1.AxisX.MinorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea1.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea1.AxisY.LineColor = System.Drawing.Color.White;
-            chartArea1.AxisY.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea1.AxisY.MajorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea1.AxisY.MinorGrid.LineColor = System.Drawing.Color.White;
-            chartArea1.AxisY.MinorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea1.AxisY.TitleForeColor = System.Drawing.Color.White;
-            chartArea1.BackColor = System.Drawing.Color.Black;
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chart1.Enabled = false;
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(0, 0);
-            this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(825, 517);
-            this.chart1.TabIndex = 0;
-            this.chart1.Text = "chart1";
-            // 
-            // superGridControl3
-            // 
-            this.superGridControl3.BackColor = System.Drawing.Color.White;
-            this.superGridControl3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superGridControl3.FilterExprColors.SysFunction = System.Drawing.Color.DarkRed;
-            this.superGridControl3.ForeColor = System.Drawing.Color.Black;
-            this.superGridControl3.Location = new System.Drawing.Point(0, 0);
-            this.superGridControl3.Name = "superGridControl3";
-            this.superGridControl3.Size = new System.Drawing.Size(825, 517);
-            this.superGridControl3.TabIndex = 0;
-            this.superGridControl3.Text = "superGridControl3";
-            // 
-            // superTabItem6
-            // 
-            this.superTabItem6.AttachedControl = this.superTabControlPanel6;
-            this.superTabItem6.GlobalItem = false;
-            this.superTabItem6.Image = global::触摸屏界面.Properties.Resources.controller;
-            this.superTabItem6.Name = "superTabItem6";
-            this.superTabItem6.Text = "电机检测";
-            // 
-            // superTabControlPanel5
-            // 
-            this.superTabControlPanel5.Controls.Add(this.sgc1);
-            this.superTabControlPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel5.Location = new System.Drawing.Point(0, 46);
-            this.superTabControlPanel5.Name = "superTabControlPanel5";
-            this.superTabControlPanel5.Size = new System.Drawing.Size(825, 517);
-            this.superTabControlPanel5.TabIndex = 5;
-            this.superTabControlPanel5.TabItem = this.superTabItem5;
-            // 
-            // sgc1
-            // 
-            this.sgc1.BackColor = System.Drawing.Color.White;
-            this.sgc1.DefaultVisualStyles.CellStyles.Default.Font = new System.Drawing.Font("宋体", 10.5F);
-            this.sgc1.DefaultVisualStyles.ColumnHeaderStyles.Default.Font = new System.Drawing.Font("宋体", 15F);
-            this.sgc1.DefaultVisualStyles.FooterStyles.Default.Font = new System.Drawing.Font("宋体", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.sgc1.DefaultVisualStyles.RowStyles.Default.RowHeaderStyle.AllowWrap = DevComponents.DotNetBar.SuperGrid.Style.Tbool.True;
-            this.sgc1.DefaultVisualStyles.RowStyles.Default.RowHeaderStyle.Font = new System.Drawing.Font("宋体", 15F);
-            this.sgc1.DefaultVisualStyles.RowStyles.NotSelectable.RowHeaderStyle.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.sgc1.DefaultVisualStyles.RowStyles.NotSelectable.RowHeaderStyle.TextColor = System.Drawing.Color.Red;
-            this.sgc1.DefaultVisualStyles.RowStyles.Selected.RowHeaderStyle.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.sgc1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sgc1.Enabled = false;
-            this.sgc1.EnableFastScrolling = false;
-            this.sgc1.FilterExprColors.SysFunction = System.Drawing.Color.DarkRed;
-            this.sgc1.Font = new System.Drawing.Font("华文新魏", 10.5F);
-            this.sgc1.ForeColor = System.Drawing.Color.Black;
-            this.sgc1.Location = new System.Drawing.Point(0, 0);
-            this.sgc1.Name = "sgc1";
-            // 
-            // 
-            // 
-            this.sgc1.PrimaryGrid.AllowEdit = false;
-            this.sgc1.PrimaryGrid.AllowRowHeaderResize = true;
-            this.sgc1.PrimaryGrid.AllowRowResize = true;
-            this.sgc1.PrimaryGrid.ColumnAutoSizeMode = DevComponents.DotNetBar.SuperGrid.ColumnAutoSizeMode.Fill;
-            // 
-            // 
-            // 
-            this.sgc1.PrimaryGrid.ColumnHeader.RowHeaderText = "";
-            this.sgc1.PrimaryGrid.Columns.Add(this.gridColumn2);
-            this.sgc1.PrimaryGrid.Columns.Add(this.gridColumn3);
-            this.sgc1.PrimaryGrid.Columns.Add(this.gridColumn4);
-            this.sgc1.PrimaryGrid.Columns.Add(this.gridColumn5);
-            this.sgc1.PrimaryGrid.Columns.Add(this.gridColumn6);
-            this.sgc1.PrimaryGrid.Columns.Add(this.gridColumn7);
-            this.sgc1.PrimaryGrid.EnableColumnFiltering = true;
-            this.sgc1.PrimaryGrid.EnableFiltering = true;
-            this.sgc1.PrimaryGrid.EnableRowFiltering = true;
-            this.sgc1.PrimaryGrid.RowHeaderIndexOffset = 1;
-            this.sgc1.PrimaryGrid.Rows.Add(this.gridRow55);
-            this.sgc1.PrimaryGrid.Rows.Add(this.gridRow56);
-            this.sgc1.PrimaryGrid.ShowRowGridIndex = true;
-            this.sgc1.PrimaryGrid.UseAlternateColumnStyle = true;
-            this.sgc1.PrimaryGrid.UseAlternateRowStyle = true;
-            this.sgc1.Size = new System.Drawing.Size(825, 517);
-            this.sgc1.TabIndex = 0;
-            this.sgc1.Tag = "HMI.DATA_TEAM;TEAM_DATE";
-            this.sgc1.Text = "superGridControl1";
-            // 
-            // gridColumn2
-            // 
-            this.gridColumn2.CellStyles.Default.Font = new System.Drawing.Font("宋体", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.gridColumn2.Name = "日期";
-            this.gridColumn2.Width = 200;
-            // 
-            // gridColumn3
-            // 
-            this.gridColumn3.CellStyles.Default.Font = new System.Drawing.Font("宋体", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.gridColumn3.Name = "批次";
-            // 
-            // gridColumn4
-            // 
-            this.gridColumn4.CellStyles.Default.Font = new System.Drawing.Font("宋体", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.gridColumn4.Name = "工位";
-            // 
-            // gridColumn5
-            // 
-            this.gridColumn5.CellStyles.Default.Font = new System.Drawing.Font("宋体", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.gridColumn5.Name = "次数";
-            // 
-            // gridColumn6
-            // 
-            this.gridColumn6.CellStyles.Default.Font = new System.Drawing.Font("宋体", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.gridColumn6.Name = "优先级";
-            // 
-            // gridColumn7
-            // 
-            this.gridColumn7.CellStyles.Default.Font = new System.Drawing.Font("宋体", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.gridColumn7.Name = "插队标识";
-            // 
-            // gridRow55
-            // 
-            this.gridRow55.Cells.Add(this.gridCell3);
-            this.gridRow55.Cells.Add(this.gridCell4);
-            this.gridRow55.Cells.Add(this.gridCell5);
-            this.gridRow55.Cells.Add(this.gridCell6);
-            this.gridRow55.Cells.Add(this.gridCell7);
-            this.gridRow55.Cells.Add(this.gridCell8);
-            this.gridRow55.Expanded = true;
-            // 
-            // gridCell3
-            // 
-            this.gridCell3.Value = "20200810";
-            // 
-            // gridCell4
-            // 
-            this.gridCell4.Value = "0";
-            // 
-            // gridCell5
-            // 
-            this.gridCell5.Value = "0";
-            // 
-            // gridCell6
-            // 
-            this.gridCell6.Value = "1";
-            // 
-            // gridCell7
-            // 
-            this.gridCell7.Value = "1";
-            // 
-            // gridCell8
-            // 
-            this.gridCell8.Value = "0";
-            // 
-            // gridRow56
-            // 
-            this.gridRow56.Cells.Add(this.gridCell10);
-            this.gridRow56.Cells.Add(this.gridCell11);
-            this.gridRow56.Cells.Add(this.gridCell12);
-            this.gridRow56.Cells.Add(this.gridCell13);
-            this.gridRow56.Cells.Add(this.gridCell14);
-            this.gridRow56.Cells.Add(this.gridCell15);
-            this.gridRow56.Expanded = true;
-            // 
-            // gridCell10
-            // 
-            this.gridCell10.Value = "20200810";
-            // 
-            // gridCell11
-            // 
-            this.gridCell11.Value = "1";
-            // 
-            // gridCell12
-            // 
-            this.gridCell12.Value = "1";
-            // 
-            // gridCell13
-            // 
-            this.gridCell13.Value = "2";
-            // 
-            // gridCell14
-            // 
-            this.gridCell14.Value = "1";
-            // 
-            // gridCell15
-            // 
-            this.gridCell15.Value = "1";
-            // 
-            // superTabItem5
-            // 
-            this.superTabItem5.AttachedControl = this.superTabControlPanel5;
-            this.superTabItem5.GlobalItem = false;
-            this.superTabItem5.Image = global::触摸屏界面.Properties.Resources.control_equalizer_blue;
-            this.superTabItem5.Name = "superTabItem5";
-            this.superTabItem5.Tag = "HMI.DATA_TEAM;TEAM_DATE";
-            this.superTabItem5.Text = "队列信息";
-            // 
             // superTabControlPanel4
             // 
+            this.superTabControlPanel4.Controls.Add(this.textBox3);
+            this.superTabControlPanel4.Controls.Add(this.textBox2);
+            this.superTabControlPanel4.Controls.Add(this.textBox1);
+            this.superTabControlPanel4.Controls.Add(this.labelX10);
+            this.superTabControlPanel4.Controls.Add(this.labelX9);
+            this.superTabControlPanel4.Controls.Add(this.labelX8);
             this.superTabControlPanel4.Controls.Add(this.labelX67);
             this.superTabControlPanel4.Controls.Add(this.labelX66);
             this.superTabControlPanel4.Controls.Add(this.txt_AXIS3_ABS_VEL);
@@ -884,6 +572,78 @@
             this.superTabControlPanel4.TabIndex = 4;
             this.superTabControlPanel4.TabItem = this.superTabItem4;
             // 
+            // textBox3
+            // 
+            this.textBox3.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBox3.Location = new System.Drawing.Point(677, 82);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 26);
+            this.textBox3.TabIndex = 60;
+            this.textBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox3_KeyPress);
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBox2.Location = new System.Drawing.Point(561, 81);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 26);
+            this.textBox2.TabIndex = 59;
+            this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress_1);
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBox1.Location = new System.Drawing.Point(455, 81);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 26);
+            this.textBox1.TabIndex = 58;
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress_1);
+            // 
+            // labelX10
+            // 
+            this.labelX10.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX10.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX10.ForeColor = System.Drawing.Color.White;
+            this.labelX10.Location = new System.Drawing.Point(672, 46);
+            this.labelX10.Name = "labelX10";
+            this.labelX10.Size = new System.Drawing.Size(105, 30);
+            this.labelX10.TabIndex = 57;
+            this.labelX10.Text = "收发零点";
+            this.labelX10.TextAlignment = System.Drawing.StringAlignment.Center;
+            // 
+            // labelX9
+            // 
+            this.labelX9.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX9.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX9.ForeColor = System.Drawing.Color.White;
+            this.labelX9.Location = new System.Drawing.Point(561, 44);
+            this.labelX9.Name = "labelX9";
+            this.labelX9.Size = new System.Drawing.Size(105, 30);
+            this.labelX9.TabIndex = 56;
+            this.labelX9.Text = "旋转零点";
+            this.labelX9.TextAlignment = System.Drawing.StringAlignment.Center;
+            // 
+            // labelX8
+            // 
+            this.labelX8.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX8.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX8.ForeColor = System.Drawing.Color.White;
+            this.labelX8.Location = new System.Drawing.Point(450, 44);
+            this.labelX8.Name = "labelX8";
+            this.labelX8.Size = new System.Drawing.Size(105, 30);
+            this.labelX8.TabIndex = 55;
+            this.labelX8.Text = "升降零点";
+            this.labelX8.TextAlignment = System.Drawing.StringAlignment.Center;
+            // 
             // labelX67
             // 
             this.labelX67.BackColor = System.Drawing.Color.Transparent;
@@ -896,7 +656,7 @@
             this.labelX67.Name = "labelX67";
             this.labelX67.Size = new System.Drawing.Size(23, 147);
             this.labelX67.TabIndex = 51;
-            this.labelX67.Text = "速\r\n度\r\n设\r\n置";
+            this.labelX67.Text = "速\r\n度\r\n";
             // 
             // labelX66
             // 
@@ -1087,7 +847,7 @@
             this.txt_AXIS3_CLOSE_POS.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txt_AXIS3_CLOSE_POS.DisabledBackColor = System.Drawing.Color.White;
             this.txt_AXIS3_CLOSE_POS.ForeColor = System.Drawing.Color.White;
-            this.txt_AXIS3_CLOSE_POS.Location = new System.Drawing.Point(363, 82);
+            this.txt_AXIS3_CLOSE_POS.Location = new System.Drawing.Point(339, 82);
             this.txt_AXIS3_CLOSE_POS.Name = "txt_AXIS3_CLOSE_POS";
             this.txt_AXIS3_CLOSE_POS.PreventEnterBeep = true;
             this.txt_AXIS3_CLOSE_POS.Size = new System.Drawing.Size(105, 26);
@@ -1104,11 +864,12 @@
             // 
             this.labelX57.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX57.ForeColor = System.Drawing.Color.White;
-            this.labelX57.Location = new System.Drawing.Point(363, 44);
+            this.labelX57.Location = new System.Drawing.Point(339, 44);
             this.labelX57.Name = "labelX57";
             this.labelX57.Size = new System.Drawing.Size(105, 30);
             this.labelX57.TabIndex = 32;
             this.labelX57.Text = "密封舱关位置";
+            this.labelX57.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
             // txt_AXIS3_OPEN_POS
             // 
@@ -1142,6 +903,7 @@
             this.labelX56.Size = new System.Drawing.Size(105, 30);
             this.labelX56.TabIndex = 30;
             this.labelX56.Text = "密封舱开位置";
+            this.labelX56.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
             // txt_AXIS1_SAFE2_POS
             // 
@@ -1648,705 +1410,10 @@
             this.superTabItem4.TabFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.superTabItem4.Text = "参数设置";
             // 
-            // superTabControlPanel3
-            // 
-            this.superTabControlPanel3.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2013;
-            this.superTabControlPanel3.Controls.Add(this.labelX38);
-            this.superTabControlPanel3.Controls.Add(this.btm_A6_CLOSE9);
-            this.superTabControlPanel3.Controls.Add(this.btm_A6_OPEN9);
-            this.superTabControlPanel3.Controls.Add(this.btm_A3_CLOSE9);
-            this.superTabControlPanel3.Controls.Add(this.btm_A3_OPEN9);
-            this.superTabControlPanel3.Controls.Add(this.labelX39);
-            this.superTabControlPanel3.Controls.Add(this.btm_A6_CLOSE8);
-            this.superTabControlPanel3.Controls.Add(this.btm_A6_OPEN8);
-            this.superTabControlPanel3.Controls.Add(this.btm_A3_CLOSE8);
-            this.superTabControlPanel3.Controls.Add(this.btm_A3_OPEN8);
-            this.superTabControlPanel3.Controls.Add(this.labelX40);
-            this.superTabControlPanel3.Controls.Add(this.btm_A6_CLOSE7);
-            this.superTabControlPanel3.Controls.Add(this.btm_A6_OPEN7);
-            this.superTabControlPanel3.Controls.Add(this.btm_A3_CLOSE7);
-            this.superTabControlPanel3.Controls.Add(this.btm_A3_OPEN7);
-            this.superTabControlPanel3.Controls.Add(this.labelX35);
-            this.superTabControlPanel3.Controls.Add(this.btm_A6_CLOSE6);
-            this.superTabControlPanel3.Controls.Add(this.btm_A6_OPEN6);
-            this.superTabControlPanel3.Controls.Add(this.btm_A3_CLOSE6);
-            this.superTabControlPanel3.Controls.Add(this.btm_A3_OPEN6);
-            this.superTabControlPanel3.Controls.Add(this.labelX36);
-            this.superTabControlPanel3.Controls.Add(this.btm_A6_CLOSE5);
-            this.superTabControlPanel3.Controls.Add(this.btm_A6_OPEN5);
-            this.superTabControlPanel3.Controls.Add(this.btm_A3_CLOSE5);
-            this.superTabControlPanel3.Controls.Add(this.btm_A3_OPEN5);
-            this.superTabControlPanel3.Controls.Add(this.labelX37);
-            this.superTabControlPanel3.Controls.Add(this.btm_A6_CLOSE4);
-            this.superTabControlPanel3.Controls.Add(this.btm_A6_OPEN4);
-            this.superTabControlPanel3.Controls.Add(this.btm_A3_CLOSE4);
-            this.superTabControlPanel3.Controls.Add(this.btm_A3_OPEN4);
-            this.superTabControlPanel3.Controls.Add(this.labelX34);
-            this.superTabControlPanel3.Controls.Add(this.btm_A6_CLOSE3);
-            this.superTabControlPanel3.Controls.Add(this.btm_A6_OPEN3);
-            this.superTabControlPanel3.Controls.Add(this.btm_A3_CLOSE3);
-            this.superTabControlPanel3.Controls.Add(this.btm_A3_OPEN3);
-            this.superTabControlPanel3.Controls.Add(this.labelX33);
-            this.superTabControlPanel3.Controls.Add(this.btm_A6_CLOSE2);
-            this.superTabControlPanel3.Controls.Add(this.btm_A6_OPEN2);
-            this.superTabControlPanel3.Controls.Add(this.btm_A3_CLOSE2);
-            this.superTabControlPanel3.Controls.Add(this.btm_A3_OPEN2);
-            this.superTabControlPanel3.Controls.Add(this.labelX32);
-            this.superTabControlPanel3.Controls.Add(this.btm_A6_CLOSE1);
-            this.superTabControlPanel3.Controls.Add(this.btm_A6_OPEN1);
-            this.superTabControlPanel3.Controls.Add(this.btm_A3_CLOSE1);
-            this.superTabControlPanel3.Controls.Add(this.btm_A3_OPEN1);
-            this.superTabControlPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel3.Location = new System.Drawing.Point(0, 46);
-            this.superTabControlPanel3.Name = "superTabControlPanel3";
-            this.superTabControlPanel3.Size = new System.Drawing.Size(825, 517);
-            this.superTabControlPanel3.TabIndex = 3;
-            this.superTabControlPanel3.TabItem = this.superTabItem3;
-            // 
-            // labelX38
-            // 
-            this.labelX38.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX38.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX38.ForeColor = System.Drawing.Color.White;
-            this.labelX38.Location = new System.Drawing.Point(565, 357);
-            this.labelX38.Name = "labelX38";
-            this.labelX38.Size = new System.Drawing.Size(96, 30);
-            this.labelX38.TabIndex = 44;
-            this.labelX38.Text = "9号位阀门";
-            // 
-            // btm_A6_CLOSE9
-            // 
-            this.btm_A6_CLOSE9.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btm_A6_CLOSE9.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.btm_A6_CLOSE9.Location = new System.Drawing.Point(615, 468);
-            this.btm_A6_CLOSE9.Name = "btm_A6_CLOSE9";
-            this.btm_A6_CLOSE9.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
-            this.btm_A6_CLOSE9.Size = new System.Drawing.Size(75, 30);
-            this.btm_A6_CLOSE9.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btm_A6_CLOSE9.TabIndex = 43;
-            this.btm_A6_CLOSE9.Tag = "HMI.A6_CLOSE9;BOOL";
-            this.btm_A6_CLOSE9.Text = "A6关闭";
-            this.btm_A6_CLOSE9.Click += new System.EventHandler(this.btm_A6_CLOSE9_Click);
-            // 
-            // btm_A6_OPEN9
-            // 
-            this.btm_A6_OPEN9.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btm_A6_OPEN9.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btm_A6_OPEN9.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.btm_A6_OPEN9.Location = new System.Drawing.Point(615, 415);
-            this.btm_A6_OPEN9.Name = "btm_A6_OPEN9";
-            this.btm_A6_OPEN9.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
-            this.btm_A6_OPEN9.Size = new System.Drawing.Size(75, 30);
-            this.btm_A6_OPEN9.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btm_A6_OPEN9.TabIndex = 42;
-            this.btm_A6_OPEN9.Tag = "HMI.A6_OPEN9;BOOL";
-            this.btm_A6_OPEN9.Text = "A6打开";
-            this.btm_A6_OPEN9.Click += new System.EventHandler(this.btm_A6_OPEN9_Click);
-            // 
-            // btm_A3_CLOSE9
-            // 
-            this.btm_A3_CLOSE9.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btm_A3_CLOSE9.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.btm_A3_CLOSE9.Location = new System.Drawing.Point(511, 468);
-            this.btm_A3_CLOSE9.Name = "btm_A3_CLOSE9";
-            this.btm_A3_CLOSE9.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
-            this.btm_A3_CLOSE9.Size = new System.Drawing.Size(75, 30);
-            this.btm_A3_CLOSE9.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btm_A3_CLOSE9.TabIndex = 41;
-            this.btm_A3_CLOSE9.Tag = "HMI.A3_CLOSE9;BOOL";
-            this.btm_A3_CLOSE9.Text = "A3关闭";
-            this.btm_A3_CLOSE9.Click += new System.EventHandler(this.btm_A3_CLOSE9_Click);
-            // 
-            // btm_A3_OPEN9
-            // 
-            this.btm_A3_OPEN9.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btm_A3_OPEN9.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.btm_A3_OPEN9.Location = new System.Drawing.Point(511, 415);
-            this.btm_A3_OPEN9.Name = "btm_A3_OPEN9";
-            this.btm_A3_OPEN9.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
-            this.btm_A3_OPEN9.Size = new System.Drawing.Size(75, 30);
-            this.btm_A3_OPEN9.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btm_A3_OPEN9.TabIndex = 40;
-            this.btm_A3_OPEN9.Tag = "HMI.A3_OPEN9;BOOL";
-            this.btm_A3_OPEN9.Text = "A3打开";
-            this.btm_A3_OPEN9.Click += new System.EventHandler(this.btm_A3_OPEN9_Click);
-            // 
-            // labelX39
-            // 
-            this.labelX39.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX39.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX39.ForeColor = System.Drawing.Color.White;
-            this.labelX39.Location = new System.Drawing.Point(339, 357);
-            this.labelX39.Name = "labelX39";
-            this.labelX39.Size = new System.Drawing.Size(89, 30);
-            this.labelX39.TabIndex = 39;
-            this.labelX39.Text = "8号位阀门";
-            // 
-            // btm_A6_CLOSE8
-            // 
-            this.btm_A6_CLOSE8.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btm_A6_CLOSE8.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.btm_A6_CLOSE8.Location = new System.Drawing.Point(388, 468);
-            this.btm_A6_CLOSE8.Name = "btm_A6_CLOSE8";
-            this.btm_A6_CLOSE8.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
-            this.btm_A6_CLOSE8.Size = new System.Drawing.Size(75, 30);
-            this.btm_A6_CLOSE8.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btm_A6_CLOSE8.TabIndex = 38;
-            this.btm_A6_CLOSE8.Tag = "HMI.A6_CLOSE8;BOOL";
-            this.btm_A6_CLOSE8.Text = "A6关闭";
-            this.btm_A6_CLOSE8.Click += new System.EventHandler(this.btm_A6_CLOSE8_Click);
-            // 
-            // btm_A6_OPEN8
-            // 
-            this.btm_A6_OPEN8.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btm_A6_OPEN8.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.btm_A6_OPEN8.Location = new System.Drawing.Point(388, 415);
-            this.btm_A6_OPEN8.Name = "btm_A6_OPEN8";
-            this.btm_A6_OPEN8.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
-            this.btm_A6_OPEN8.Size = new System.Drawing.Size(75, 30);
-            this.btm_A6_OPEN8.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btm_A6_OPEN8.TabIndex = 37;
-            this.btm_A6_OPEN8.Tag = "HMI.A6_OPEN8;BOOL";
-            this.btm_A6_OPEN8.Text = "A6打开";
-            this.btm_A6_OPEN8.Click += new System.EventHandler(this.btm_A6_OPEN8_Click);
-            // 
-            // btm_A3_CLOSE8
-            // 
-            this.btm_A3_CLOSE8.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btm_A3_CLOSE8.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.btm_A3_CLOSE8.Location = new System.Drawing.Point(284, 468);
-            this.btm_A3_CLOSE8.Name = "btm_A3_CLOSE8";
-            this.btm_A3_CLOSE8.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
-            this.btm_A3_CLOSE8.Size = new System.Drawing.Size(75, 30);
-            this.btm_A3_CLOSE8.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btm_A3_CLOSE8.TabIndex = 36;
-            this.btm_A3_CLOSE8.Tag = "HMI.A3_CLOSE8;BOOL";
-            this.btm_A3_CLOSE8.Text = "A3关闭";
-            this.btm_A3_CLOSE8.Click += new System.EventHandler(this.btm_A3_CLOSE8_Click);
-            // 
-            // btm_A3_OPEN8
-            // 
-            this.btm_A3_OPEN8.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btm_A3_OPEN8.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.btm_A3_OPEN8.Location = new System.Drawing.Point(284, 415);
-            this.btm_A3_OPEN8.Name = "btm_A3_OPEN8";
-            this.btm_A3_OPEN8.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
-            this.btm_A3_OPEN8.Size = new System.Drawing.Size(75, 30);
-            this.btm_A3_OPEN8.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btm_A3_OPEN8.TabIndex = 35;
-            this.btm_A3_OPEN8.Tag = "HMI.A3_OPEN8;BOOL";
-            this.btm_A3_OPEN8.Text = "A3打开";
-            this.btm_A3_OPEN8.Click += new System.EventHandler(this.btm_A3_OPEN8_Click);
-            // 
-            // labelX40
-            // 
-            this.labelX40.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX40.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX40.ForeColor = System.Drawing.Color.White;
-            this.labelX40.Location = new System.Drawing.Point(107, 357);
-            this.labelX40.Name = "labelX40";
-            this.labelX40.Size = new System.Drawing.Size(89, 30);
-            this.labelX40.TabIndex = 34;
-            this.labelX40.Text = "7号位阀门";
-            // 
-            // btm_A6_CLOSE7
-            // 
-            this.btm_A6_CLOSE7.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btm_A6_CLOSE7.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.btm_A6_CLOSE7.Location = new System.Drawing.Point(156, 468);
-            this.btm_A6_CLOSE7.Name = "btm_A6_CLOSE7";
-            this.btm_A6_CLOSE7.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
-            this.btm_A6_CLOSE7.Size = new System.Drawing.Size(75, 30);
-            this.btm_A6_CLOSE7.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btm_A6_CLOSE7.TabIndex = 33;
-            this.btm_A6_CLOSE7.Tag = "HMI.A6_CLOSE7;BOOL";
-            this.btm_A6_CLOSE7.Text = "A6关闭";
-            this.btm_A6_CLOSE7.Click += new System.EventHandler(this.btm_A6_CLOSE7_Click);
-            // 
-            // btm_A6_OPEN7
-            // 
-            this.btm_A6_OPEN7.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btm_A6_OPEN7.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.btm_A6_OPEN7.Location = new System.Drawing.Point(156, 415);
-            this.btm_A6_OPEN7.Name = "btm_A6_OPEN7";
-            this.btm_A6_OPEN7.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
-            this.btm_A6_OPEN7.Size = new System.Drawing.Size(75, 30);
-            this.btm_A6_OPEN7.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btm_A6_OPEN7.TabIndex = 32;
-            this.btm_A6_OPEN7.Tag = "HMI.A6_OPEN7;BOOL";
-            this.btm_A6_OPEN7.Text = "A6打开";
-            this.btm_A6_OPEN7.Click += new System.EventHandler(this.btm_A6_OPEN7_Click);
-            // 
-            // btm_A3_CLOSE7
-            // 
-            this.btm_A3_CLOSE7.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btm_A3_CLOSE7.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.btm_A3_CLOSE7.Location = new System.Drawing.Point(52, 468);
-            this.btm_A3_CLOSE7.Name = "btm_A3_CLOSE7";
-            this.btm_A3_CLOSE7.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
-            this.btm_A3_CLOSE7.Size = new System.Drawing.Size(75, 30);
-            this.btm_A3_CLOSE7.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btm_A3_CLOSE7.TabIndex = 31;
-            this.btm_A3_CLOSE7.Tag = "HMI.A3_CLOSE7;BOOL";
-            this.btm_A3_CLOSE7.Text = "A3关闭";
-            this.btm_A3_CLOSE7.Click += new System.EventHandler(this.btm_A3_CLOSE7_Click);
-            // 
-            // btm_A3_OPEN7
-            // 
-            this.btm_A3_OPEN7.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btm_A3_OPEN7.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.btm_A3_OPEN7.Location = new System.Drawing.Point(52, 415);
-            this.btm_A3_OPEN7.Name = "btm_A3_OPEN7";
-            this.btm_A3_OPEN7.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
-            this.btm_A3_OPEN7.Size = new System.Drawing.Size(75, 30);
-            this.btm_A3_OPEN7.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btm_A3_OPEN7.TabIndex = 30;
-            this.btm_A3_OPEN7.Tag = "HMI.A3_OPEN7;BOOL";
-            this.btm_A3_OPEN7.Text = "A3打开";
-            this.btm_A3_OPEN7.Click += new System.EventHandler(this.btm_A3_OPEN7_Click);
-            // 
-            // labelX35
-            // 
-            this.labelX35.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX35.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX35.ForeColor = System.Drawing.Color.White;
-            this.labelX35.Location = new System.Drawing.Point(565, 190);
-            this.labelX35.Name = "labelX35";
-            this.labelX35.Size = new System.Drawing.Size(96, 30);
-            this.labelX35.TabIndex = 29;
-            this.labelX35.Text = "6号位阀门";
-            // 
-            // btm_A6_CLOSE6
-            // 
-            this.btm_A6_CLOSE6.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btm_A6_CLOSE6.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.btm_A6_CLOSE6.Location = new System.Drawing.Point(615, 302);
-            this.btm_A6_CLOSE6.Name = "btm_A6_CLOSE6";
-            this.btm_A6_CLOSE6.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
-            this.btm_A6_CLOSE6.Size = new System.Drawing.Size(75, 30);
-            this.btm_A6_CLOSE6.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btm_A6_CLOSE6.TabIndex = 28;
-            this.btm_A6_CLOSE6.Tag = "HMI.A6_CLOSE6;BOOL";
-            this.btm_A6_CLOSE6.Text = "A6关闭";
-            this.btm_A6_CLOSE6.Click += new System.EventHandler(this.btm_A6_CLOSE6_Click);
-            // 
-            // btm_A6_OPEN6
-            // 
-            this.btm_A6_OPEN6.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btm_A6_OPEN6.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.btm_A6_OPEN6.Location = new System.Drawing.Point(615, 248);
-            this.btm_A6_OPEN6.Name = "btm_A6_OPEN6";
-            this.btm_A6_OPEN6.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
-            this.btm_A6_OPEN6.Size = new System.Drawing.Size(75, 30);
-            this.btm_A6_OPEN6.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btm_A6_OPEN6.TabIndex = 27;
-            this.btm_A6_OPEN6.Tag = "HMI.A6_OPEN6;BOOL";
-            this.btm_A6_OPEN6.Text = "A6打开";
-            this.btm_A6_OPEN6.Click += new System.EventHandler(this.btm_A6_OPEN6_Click);
-            // 
-            // btm_A3_CLOSE6
-            // 
-            this.btm_A3_CLOSE6.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btm_A3_CLOSE6.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.btm_A3_CLOSE6.Location = new System.Drawing.Point(511, 302);
-            this.btm_A3_CLOSE6.Name = "btm_A3_CLOSE6";
-            this.btm_A3_CLOSE6.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
-            this.btm_A3_CLOSE6.Size = new System.Drawing.Size(75, 30);
-            this.btm_A3_CLOSE6.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btm_A3_CLOSE6.TabIndex = 26;
-            this.btm_A3_CLOSE6.Tag = "HMI.A3_CLOSE6;BOOL";
-            this.btm_A3_CLOSE6.Text = "A3关闭";
-            this.btm_A3_CLOSE6.Click += new System.EventHandler(this.btm_A3_CLOSE6_Click);
-            // 
-            // btm_A3_OPEN6
-            // 
-            this.btm_A3_OPEN6.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btm_A3_OPEN6.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.btm_A3_OPEN6.Location = new System.Drawing.Point(511, 248);
-            this.btm_A3_OPEN6.Name = "btm_A3_OPEN6";
-            this.btm_A3_OPEN6.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
-            this.btm_A3_OPEN6.Size = new System.Drawing.Size(75, 30);
-            this.btm_A3_OPEN6.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btm_A3_OPEN6.TabIndex = 25;
-            this.btm_A3_OPEN6.Tag = "HMI.A3_OPEN6;BOOL";
-            this.btm_A3_OPEN6.Text = "A3打开";
-            this.btm_A3_OPEN6.Click += new System.EventHandler(this.btm_A3_OPEN6_Click);
-            // 
-            // labelX36
-            // 
-            this.labelX36.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX36.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX36.ForeColor = System.Drawing.Color.White;
-            this.labelX36.Location = new System.Drawing.Point(339, 190);
-            this.labelX36.Name = "labelX36";
-            this.labelX36.Size = new System.Drawing.Size(89, 30);
-            this.labelX36.TabIndex = 24;
-            this.labelX36.Text = "5号位阀门";
-            // 
-            // btm_A6_CLOSE5
-            // 
-            this.btm_A6_CLOSE5.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btm_A6_CLOSE5.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.btm_A6_CLOSE5.Location = new System.Drawing.Point(388, 302);
-            this.btm_A6_CLOSE5.Name = "btm_A6_CLOSE5";
-            this.btm_A6_CLOSE5.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
-            this.btm_A6_CLOSE5.Size = new System.Drawing.Size(75, 30);
-            this.btm_A6_CLOSE5.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btm_A6_CLOSE5.TabIndex = 23;
-            this.btm_A6_CLOSE5.Tag = "HMI.A6_CLOSE5;BOOL";
-            this.btm_A6_CLOSE5.Text = "A6关闭";
-            this.btm_A6_CLOSE5.Click += new System.EventHandler(this.btm_A6_CLOSE5_Click);
-            // 
-            // btm_A6_OPEN5
-            // 
-            this.btm_A6_OPEN5.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btm_A6_OPEN5.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.btm_A6_OPEN5.Location = new System.Drawing.Point(388, 248);
-            this.btm_A6_OPEN5.Name = "btm_A6_OPEN5";
-            this.btm_A6_OPEN5.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
-            this.btm_A6_OPEN5.Size = new System.Drawing.Size(75, 30);
-            this.btm_A6_OPEN5.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btm_A6_OPEN5.TabIndex = 22;
-            this.btm_A6_OPEN5.Tag = "HMI.A6_OPEN5;BOOL";
-            this.btm_A6_OPEN5.Text = "A6打开";
-            this.btm_A6_OPEN5.Click += new System.EventHandler(this.btm_A6_OPEN5_Click);
-            // 
-            // btm_A3_CLOSE5
-            // 
-            this.btm_A3_CLOSE5.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btm_A3_CLOSE5.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.btm_A3_CLOSE5.Location = new System.Drawing.Point(284, 302);
-            this.btm_A3_CLOSE5.Name = "btm_A3_CLOSE5";
-            this.btm_A3_CLOSE5.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
-            this.btm_A3_CLOSE5.Size = new System.Drawing.Size(75, 30);
-            this.btm_A3_CLOSE5.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btm_A3_CLOSE5.TabIndex = 21;
-            this.btm_A3_CLOSE5.Tag = "HMI.A3_CLOSE5;BOOL";
-            this.btm_A3_CLOSE5.Text = "A3关闭";
-            this.btm_A3_CLOSE5.Click += new System.EventHandler(this.btm_A3_CLOSE5_Click);
-            // 
-            // btm_A3_OPEN5
-            // 
-            this.btm_A3_OPEN5.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btm_A3_OPEN5.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.btm_A3_OPEN5.Location = new System.Drawing.Point(284, 248);
-            this.btm_A3_OPEN5.Name = "btm_A3_OPEN5";
-            this.btm_A3_OPEN5.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
-            this.btm_A3_OPEN5.Size = new System.Drawing.Size(75, 30);
-            this.btm_A3_OPEN5.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btm_A3_OPEN5.TabIndex = 20;
-            this.btm_A3_OPEN5.Tag = "HMI.A3_OPEN5;BOOL";
-            this.btm_A3_OPEN5.Text = "A3打开";
-            this.btm_A3_OPEN5.Click += new System.EventHandler(this.btm_A3_OPEN5_Click);
-            // 
-            // labelX37
-            // 
-            this.labelX37.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX37.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX37.ForeColor = System.Drawing.Color.White;
-            this.labelX37.Location = new System.Drawing.Point(107, 190);
-            this.labelX37.Name = "labelX37";
-            this.labelX37.Size = new System.Drawing.Size(89, 30);
-            this.labelX37.TabIndex = 19;
-            this.labelX37.Text = "4号位阀门";
-            // 
-            // btm_A6_CLOSE4
-            // 
-            this.btm_A6_CLOSE4.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btm_A6_CLOSE4.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.btm_A6_CLOSE4.Location = new System.Drawing.Point(156, 302);
-            this.btm_A6_CLOSE4.Name = "btm_A6_CLOSE4";
-            this.btm_A6_CLOSE4.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
-            this.btm_A6_CLOSE4.Size = new System.Drawing.Size(75, 30);
-            this.btm_A6_CLOSE4.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btm_A6_CLOSE4.TabIndex = 18;
-            this.btm_A6_CLOSE4.Tag = "HMI.A6_CLOSE4;BOOL";
-            this.btm_A6_CLOSE4.Text = "A6关闭";
-            this.btm_A6_CLOSE4.Click += new System.EventHandler(this.btm_A6_CLOSE4_Click);
-            // 
-            // btm_A6_OPEN4
-            // 
-            this.btm_A6_OPEN4.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btm_A6_OPEN4.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.btm_A6_OPEN4.Location = new System.Drawing.Point(156, 248);
-            this.btm_A6_OPEN4.Name = "btm_A6_OPEN4";
-            this.btm_A6_OPEN4.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
-            this.btm_A6_OPEN4.Size = new System.Drawing.Size(75, 30);
-            this.btm_A6_OPEN4.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btm_A6_OPEN4.TabIndex = 17;
-            this.btm_A6_OPEN4.Tag = "HMI.A6_OPEN4;BOOL";
-            this.btm_A6_OPEN4.Text = "A6打开";
-            this.btm_A6_OPEN4.Click += new System.EventHandler(this.btm_A6_OPEN4_Click);
-            // 
-            // btm_A3_CLOSE4
-            // 
-            this.btm_A3_CLOSE4.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btm_A3_CLOSE4.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.btm_A3_CLOSE4.Location = new System.Drawing.Point(52, 302);
-            this.btm_A3_CLOSE4.Name = "btm_A3_CLOSE4";
-            this.btm_A3_CLOSE4.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
-            this.btm_A3_CLOSE4.Size = new System.Drawing.Size(75, 30);
-            this.btm_A3_CLOSE4.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btm_A3_CLOSE4.TabIndex = 16;
-            this.btm_A3_CLOSE4.Tag = "HMI.A3_CLOSE4;BOOL";
-            this.btm_A3_CLOSE4.Text = "A3关闭";
-            this.btm_A3_CLOSE4.Click += new System.EventHandler(this.btm_A3_CLOSE4_Click);
-            // 
-            // btm_A3_OPEN4
-            // 
-            this.btm_A3_OPEN4.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btm_A3_OPEN4.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.btm_A3_OPEN4.Location = new System.Drawing.Point(52, 248);
-            this.btm_A3_OPEN4.Name = "btm_A3_OPEN4";
-            this.btm_A3_OPEN4.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
-            this.btm_A3_OPEN4.Size = new System.Drawing.Size(75, 30);
-            this.btm_A3_OPEN4.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btm_A3_OPEN4.TabIndex = 15;
-            this.btm_A3_OPEN4.Tag = "HMI.A3_OPEN4;BOOL";
-            this.btm_A3_OPEN4.Text = "A3打开";
-            this.btm_A3_OPEN4.Click += new System.EventHandler(this.btm_A3_OPEN4_Click);
-            // 
-            // labelX34
-            // 
-            this.labelX34.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX34.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX34.ForeColor = System.Drawing.Color.White;
-            this.labelX34.Location = new System.Drawing.Point(565, 25);
-            this.labelX34.Name = "labelX34";
-            this.labelX34.Size = new System.Drawing.Size(96, 30);
-            this.labelX34.TabIndex = 14;
-            this.labelX34.Text = "3号位阀门";
-            // 
-            // btm_A6_CLOSE3
-            // 
-            this.btm_A6_CLOSE3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btm_A6_CLOSE3.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.btm_A6_CLOSE3.Location = new System.Drawing.Point(615, 137);
-            this.btm_A6_CLOSE3.Name = "btm_A6_CLOSE3";
-            this.btm_A6_CLOSE3.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
-            this.btm_A6_CLOSE3.Size = new System.Drawing.Size(75, 30);
-            this.btm_A6_CLOSE3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btm_A6_CLOSE3.TabIndex = 13;
-            this.btm_A6_CLOSE3.Tag = "HMI.A6_CLOSE3;BOOL";
-            this.btm_A6_CLOSE3.Text = "A6关闭";
-            this.btm_A6_CLOSE3.Click += new System.EventHandler(this.btm_A6_CLOSE3_Click);
-            // 
-            // btm_A6_OPEN3
-            // 
-            this.btm_A6_OPEN3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btm_A6_OPEN3.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.btm_A6_OPEN3.Location = new System.Drawing.Point(615, 83);
-            this.btm_A6_OPEN3.Name = "btm_A6_OPEN3";
-            this.btm_A6_OPEN3.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
-            this.btm_A6_OPEN3.Size = new System.Drawing.Size(75, 30);
-            this.btm_A6_OPEN3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btm_A6_OPEN3.TabIndex = 12;
-            this.btm_A6_OPEN3.Tag = "HMI.A6_OPEN3;BOOL";
-            this.btm_A6_OPEN3.Text = "A6打开";
-            this.btm_A6_OPEN3.Click += new System.EventHandler(this.btm_A6_OPEN3_Click);
-            // 
-            // btm_A3_CLOSE3
-            // 
-            this.btm_A3_CLOSE3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btm_A3_CLOSE3.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.btm_A3_CLOSE3.Location = new System.Drawing.Point(511, 137);
-            this.btm_A3_CLOSE3.Name = "btm_A3_CLOSE3";
-            this.btm_A3_CLOSE3.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
-            this.btm_A3_CLOSE3.Size = new System.Drawing.Size(75, 30);
-            this.btm_A3_CLOSE3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btm_A3_CLOSE3.TabIndex = 11;
-            this.btm_A3_CLOSE3.Tag = "HMI.A3_CLOSE3;BOOL";
-            this.btm_A3_CLOSE3.Text = "A3关闭";
-            this.btm_A3_CLOSE3.Click += new System.EventHandler(this.btm_A3_CLOSE3_Click);
-            // 
-            // btm_A3_OPEN3
-            // 
-            this.btm_A3_OPEN3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btm_A3_OPEN3.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.btm_A3_OPEN3.Location = new System.Drawing.Point(511, 83);
-            this.btm_A3_OPEN3.Name = "btm_A3_OPEN3";
-            this.btm_A3_OPEN3.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
-            this.btm_A3_OPEN3.Size = new System.Drawing.Size(75, 30);
-            this.btm_A3_OPEN3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btm_A3_OPEN3.TabIndex = 10;
-            this.btm_A3_OPEN3.Tag = "HMI.A3_OPEN3;BOOL";
-            this.btm_A3_OPEN3.Text = "A3打开";
-            this.btm_A3_OPEN3.Click += new System.EventHandler(this.btm_A3_OPEN3_Click);
-            // 
-            // labelX33
-            // 
-            this.labelX33.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX33.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX33.ForeColor = System.Drawing.Color.White;
-            this.labelX33.Location = new System.Drawing.Point(339, 25);
-            this.labelX33.Name = "labelX33";
-            this.labelX33.Size = new System.Drawing.Size(89, 30);
-            this.labelX33.TabIndex = 9;
-            this.labelX33.Text = "2号位阀门";
-            // 
-            // btm_A6_CLOSE2
-            // 
-            this.btm_A6_CLOSE2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btm_A6_CLOSE2.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.btm_A6_CLOSE2.Location = new System.Drawing.Point(388, 137);
-            this.btm_A6_CLOSE2.Name = "btm_A6_CLOSE2";
-            this.btm_A6_CLOSE2.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
-            this.btm_A6_CLOSE2.Size = new System.Drawing.Size(75, 30);
-            this.btm_A6_CLOSE2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btm_A6_CLOSE2.TabIndex = 8;
-            this.btm_A6_CLOSE2.Tag = "HMI.A6_CLOSE2;BOOL";
-            this.btm_A6_CLOSE2.Text = "A6关闭";
-            this.btm_A6_CLOSE2.Click += new System.EventHandler(this.btm_A6_CLOSE2_Click);
-            // 
-            // btm_A6_OPEN2
-            // 
-            this.btm_A6_OPEN2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btm_A6_OPEN2.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.btm_A6_OPEN2.Location = new System.Drawing.Point(388, 83);
-            this.btm_A6_OPEN2.Name = "btm_A6_OPEN2";
-            this.btm_A6_OPEN2.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
-            this.btm_A6_OPEN2.Size = new System.Drawing.Size(75, 30);
-            this.btm_A6_OPEN2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btm_A6_OPEN2.TabIndex = 7;
-            this.btm_A6_OPEN2.Tag = "HMI.A6_OPEN2;BOOL";
-            this.btm_A6_OPEN2.Text = "A6打开";
-            this.btm_A6_OPEN2.Click += new System.EventHandler(this.btm_A6_OPEN2_Click);
-            // 
-            // btm_A3_CLOSE2
-            // 
-            this.btm_A3_CLOSE2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btm_A3_CLOSE2.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.btm_A3_CLOSE2.Location = new System.Drawing.Point(284, 137);
-            this.btm_A3_CLOSE2.Name = "btm_A3_CLOSE2";
-            this.btm_A3_CLOSE2.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
-            this.btm_A3_CLOSE2.Size = new System.Drawing.Size(75, 30);
-            this.btm_A3_CLOSE2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btm_A3_CLOSE2.TabIndex = 6;
-            this.btm_A3_CLOSE2.Tag = "HMI.A3_CLOSE2;BOOL";
-            this.btm_A3_CLOSE2.Text = "A3关闭";
-            this.btm_A3_CLOSE2.Click += new System.EventHandler(this.btm_A3_CLOSE2_Click);
-            // 
-            // btm_A3_OPEN2
-            // 
-            this.btm_A3_OPEN2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btm_A3_OPEN2.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.btm_A3_OPEN2.Location = new System.Drawing.Point(284, 83);
-            this.btm_A3_OPEN2.Name = "btm_A3_OPEN2";
-            this.btm_A3_OPEN2.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
-            this.btm_A3_OPEN2.Size = new System.Drawing.Size(75, 30);
-            this.btm_A3_OPEN2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btm_A3_OPEN2.TabIndex = 5;
-            this.btm_A3_OPEN2.Tag = "HMI.A3_OPEN2;BOOL";
-            this.btm_A3_OPEN2.Text = "A3打开";
-            this.btm_A3_OPEN2.Click += new System.EventHandler(this.btm_A3_OPEN2_Click);
-            // 
-            // labelX32
-            // 
-            this.labelX32.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX32.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX32.Font = new System.Drawing.Font("华文新魏", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelX32.ForeColor = System.Drawing.Color.White;
-            this.labelX32.Location = new System.Drawing.Point(107, 25);
-            this.labelX32.Name = "labelX32";
-            this.labelX32.Size = new System.Drawing.Size(89, 30);
-            this.labelX32.TabIndex = 4;
-            this.labelX32.Text = "1号位阀门";
-            // 
-            // btm_A6_CLOSE1
-            // 
-            this.btm_A6_CLOSE1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btm_A6_CLOSE1.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.btm_A6_CLOSE1.Location = new System.Drawing.Point(156, 137);
-            this.btm_A6_CLOSE1.Name = "btm_A6_CLOSE1";
-            this.btm_A6_CLOSE1.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
-            this.btm_A6_CLOSE1.Size = new System.Drawing.Size(75, 30);
-            this.btm_A6_CLOSE1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btm_A6_CLOSE1.TabIndex = 3;
-            this.btm_A6_CLOSE1.Tag = "HMI.A6_CLOSE1;BOOL";
-            this.btm_A6_CLOSE1.Text = "A6关闭";
-            this.btm_A6_CLOSE1.Click += new System.EventHandler(this.btm_A6_CLOSE1_Click);
-            // 
-            // btm_A6_OPEN1
-            // 
-            this.btm_A6_OPEN1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btm_A6_OPEN1.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.btm_A6_OPEN1.Location = new System.Drawing.Point(156, 83);
-            this.btm_A6_OPEN1.Name = "btm_A6_OPEN1";
-            this.btm_A6_OPEN1.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
-            this.btm_A6_OPEN1.Size = new System.Drawing.Size(75, 30);
-            this.btm_A6_OPEN1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btm_A6_OPEN1.TabIndex = 2;
-            this.btm_A6_OPEN1.Tag = "HMI.A6_OPEN1;BOOL";
-            this.btm_A6_OPEN1.Text = "A6打开";
-            this.btm_A6_OPEN1.Click += new System.EventHandler(this.btm_A6_OPEN1_Click);
-            // 
-            // btm_A3_CLOSE1
-            // 
-            this.btm_A3_CLOSE1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btm_A3_CLOSE1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(91)))));
-            this.btm_A3_CLOSE1.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.btm_A3_CLOSE1.Location = new System.Drawing.Point(52, 137);
-            this.btm_A3_CLOSE1.Name = "btm_A3_CLOSE1";
-            this.btm_A3_CLOSE1.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
-            this.btm_A3_CLOSE1.Size = new System.Drawing.Size(75, 30);
-            this.btm_A3_CLOSE1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btm_A3_CLOSE1.TabIndex = 1;
-            this.btm_A3_CLOSE1.Tag = "HMI.A3_CLOSE1;BOOL";
-            this.btm_A3_CLOSE1.Text = "A3关闭";
-            this.btm_A3_CLOSE1.Click += new System.EventHandler(this.btm_A3_CLOSE1_Click);
-            // 
-            // btm_A3_OPEN1
-            // 
-            this.btm_A3_OPEN1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btm_A3_OPEN1.BackColor = System.Drawing.Color.Transparent;
-            this.btm_A3_OPEN1.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.btm_A3_OPEN1.Location = new System.Drawing.Point(52, 83);
-            this.btm_A3_OPEN1.Name = "btm_A3_OPEN1";
-            this.btm_A3_OPEN1.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
-            this.btm_A3_OPEN1.Size = new System.Drawing.Size(75, 30);
-            this.btm_A3_OPEN1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btm_A3_OPEN1.TabIndex = 0;
-            this.btm_A3_OPEN1.Tag = "HMI.A3_OPEN1;BOOL";
-            this.btm_A3_OPEN1.Text = "A3打开";
-            this.btm_A3_OPEN1.Click += new System.EventHandler(this.btm_A3_OPEN1_Click);
-            // 
-            // superTabItem3
-            // 
-            this.superTabItem3.AttachedControl = this.superTabControlPanel3;
-            this.superTabItem3.GlobalItem = false;
-            this.superTabItem3.Image = global::触摸屏界面.Properties.Resources.computer_link;
-            this.superTabItem3.Name = "superTabItem3";
-            this.superTabItem3.Text = "阀门操作";
-            // 
             // superTabControlPanel1
             // 
+            this.superTabControlPanel1.Controls.Add(this.button2);
+            this.superTabControlPanel1.Controls.Add(this.button1);
             this.superTabControlPanel1.Controls.Add(this.symbolBox2);
             this.superTabControlPanel1.Controls.Add(this.reflectionLabel3);
             this.superTabControlPanel1.Controls.Add(this.lb_connectflag);
@@ -2374,6 +1441,27 @@
             this.superTabControlPanel1.Size = new System.Drawing.Size(825, 517);
             this.superTabControlPanel1.TabIndex = 1;
             this.superTabControlPanel1.TabItem = this.superTabItem1;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Gold;
+            this.button2.Location = new System.Drawing.Point(301, 139);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 33);
+            this.button2.TabIndex = 58;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Orange;
+            this.button1.Location = new System.Drawing.Point(104, 139);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(111, 33);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "socket开启";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // symbolBox2
             // 
@@ -2407,6 +1495,7 @@
             this.reflectionLabel3.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.reflectionLabel3.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.reflectionLabel3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.reflectionLabel3.BackgroundStyle.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
             this.reflectionLabel3.ForeColor = System.Drawing.Color.Black;
             this.reflectionLabel3.Location = new System.Drawing.Point(280, 48);
             this.reflectionLabel3.Name = "reflectionLabel3";
@@ -2680,6 +1769,7 @@
             this.reflectionLabel2.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.reflectionLabel2.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.reflectionLabel2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.reflectionLabel2.BackgroundStyle.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
             this.reflectionLabel2.ForeColor = System.Drawing.Color.Black;
             this.reflectionLabel2.Location = new System.Drawing.Point(63, 48);
             this.reflectionLabel2.Name = "reflectionLabel2";
@@ -2699,10 +1789,10 @@
             this.txt_COUNT_ALL.DisabledBackColor = System.Drawing.Color.White;
             this.txt_COUNT_ALL.Font = new System.Drawing.Font("华文新魏", 12F);
             this.txt_COUNT_ALL.ForeColor = System.Drawing.Color.White;
-            this.txt_COUNT_ALL.Location = new System.Drawing.Point(508, 456);
+            this.txt_COUNT_ALL.Location = new System.Drawing.Point(508, 447);
             this.txt_COUNT_ALL.Name = "txt_COUNT_ALL";
             this.txt_COUNT_ALL.PreventEnterBeep = true;
-            this.txt_COUNT_ALL.Size = new System.Drawing.Size(204, 28);
+            this.txt_COUNT_ALL.Size = new System.Drawing.Size(122, 28);
             this.txt_COUNT_ALL.TabIndex = 27;
             this.txt_COUNT_ALL.Tag = "SAVE.COUNT_ALL;REAL";
             this.txt_COUNT_ALL.Text = "+1543";
@@ -2718,7 +1808,7 @@
             this.txt_SAMPLING2.DisabledBackColor = System.Drawing.Color.White;
             this.txt_SAMPLING2.Font = new System.Drawing.Font("华文新魏", 12F);
             this.txt_SAMPLING2.ForeColor = System.Drawing.Color.White;
-            this.txt_SAMPLING2.Location = new System.Drawing.Point(197, 456);
+            this.txt_SAMPLING2.Location = new System.Drawing.Point(196, 447);
             this.txt_SAMPLING2.Name = "txt_SAMPLING2";
             this.txt_SAMPLING2.PreventEnterBeep = true;
             this.txt_SAMPLING2.Size = new System.Drawing.Size(143, 28);
@@ -2738,7 +1828,7 @@
             this.txt_SAMPLING.DisabledBackColor = System.Drawing.Color.White;
             this.txt_SAMPLING.Font = new System.Drawing.Font("华文新魏", 12F);
             this.txt_SAMPLING.ForeColor = System.Drawing.Color.White;
-            this.txt_SAMPLING.Location = new System.Drawing.Point(196, 394);
+            this.txt_SAMPLING.Location = new System.Drawing.Point(196, 385);
             this.txt_SAMPLING.Name = "txt_SAMPLING";
             this.txt_SAMPLING.PreventEnterBeep = true;
             this.txt_SAMPLING.Size = new System.Drawing.Size(143, 28);
@@ -2758,7 +1848,7 @@
             this.txt_FIRST_VAL.DisabledBackColor = System.Drawing.Color.White;
             this.txt_FIRST_VAL.Font = new System.Drawing.Font("华文新魏", 12F);
             this.txt_FIRST_VAL.ForeColor = System.Drawing.Color.White;
-            this.txt_FIRST_VAL.Location = new System.Drawing.Point(196, 335);
+            this.txt_FIRST_VAL.Location = new System.Drawing.Point(196, 326);
             this.txt_FIRST_VAL.Name = "txt_FIRST_VAL";
             this.txt_FIRST_VAL.PreventEnterBeep = true;
             this.txt_FIRST_VAL.Size = new System.Drawing.Size(143, 28);
@@ -2778,7 +1868,7 @@
             this.txt_SCE_VAL.DisabledBackColor = System.Drawing.Color.White;
             this.txt_SCE_VAL.Font = new System.Drawing.Font("华文新魏", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.txt_SCE_VAL.ForeColor = System.Drawing.Color.White;
-            this.txt_SCE_VAL.Location = new System.Drawing.Point(196, 277);
+            this.txt_SCE_VAL.Location = new System.Drawing.Point(196, 268);
             this.txt_SCE_VAL.Name = "txt_SCE_VAL";
             this.txt_SCE_VAL.PreventEnterBeep = true;
             this.txt_SCE_VAL.Size = new System.Drawing.Size(143, 28);
@@ -2798,7 +1888,7 @@
             this.textBoxX2.DisabledBackColor = System.Drawing.Color.White;
             this.textBoxX2.Font = new System.Drawing.Font("华文新魏", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.textBoxX2.ForeColor = System.Drawing.Color.White;
-            this.textBoxX2.Location = new System.Drawing.Point(503, 222);
+            this.textBoxX2.Location = new System.Drawing.Point(508, 213);
             this.textBoxX2.Name = "textBoxX2";
             this.textBoxX2.PreventEnterBeep = true;
             this.textBoxX2.Size = new System.Drawing.Size(122, 28);
@@ -2816,7 +1906,7 @@
             this.txt_SETP_P.DisabledBackColor = System.Drawing.Color.White;
             this.txt_SETP_P.Font = new System.Drawing.Font("华文新魏", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.txt_SETP_P.ForeColor = System.Drawing.Color.White;
-            this.txt_SETP_P.Location = new System.Drawing.Point(196, 222);
+            this.txt_SETP_P.Location = new System.Drawing.Point(196, 213);
             this.txt_SETP_P.Name = "txt_SETP_P";
             this.txt_SETP_P.PreventEnterBeep = true;
             this.txt_SETP_P.Size = new System.Drawing.Size(143, 28);
@@ -2831,6 +1921,140 @@
             this.superTabItem1.Image = global::触摸屏界面.Properties.Resources.computer_go;
             this.superTabItem1.Name = "superTabItem1";
             this.superTabItem1.Text = "自动操作";
+            // 
+            // superTabControlPanel6
+            // 
+            this.superTabControlPanel6.Controls.Add(this.panelEx7);
+            this.superTabControlPanel6.Controls.Add(this.superGridControl3);
+            this.superTabControlPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.superTabControlPanel6.Location = new System.Drawing.Point(0, 46);
+            this.superTabControlPanel6.Name = "superTabControlPanel6";
+            this.superTabControlPanel6.Size = new System.Drawing.Size(825, 517);
+            this.superTabControlPanel6.TabIndex = 6;
+            this.superTabControlPanel6.TabItem = this.superTabItem6;
+            // 
+            // panelEx7
+            // 
+            this.panelEx7.CanvasColor = System.Drawing.SystemColors.Control;
+            this.panelEx7.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.panelEx7.Controls.Add(this.btm_change_tor);
+            this.panelEx7.Controls.Add(this.btm_change_vel);
+            this.panelEx7.Controls.Add(this.btm_change_pos);
+            this.panelEx7.Controls.Add(this.chart1);
+            this.panelEx7.DisabledBackColor = System.Drawing.Color.Empty;
+            this.panelEx7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelEx7.Location = new System.Drawing.Point(0, 0);
+            this.panelEx7.Name = "panelEx7";
+            this.panelEx7.Size = new System.Drawing.Size(825, 517);
+            this.panelEx7.Style.Alignment = System.Drawing.StringAlignment.Center;
+            this.panelEx7.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.panelEx7.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.panelEx7.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.panelEx7.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.panelEx7.Style.GradientAngle = 90;
+            this.panelEx7.TabIndex = 2;
+            this.panelEx7.Text = "panelEx7";
+            // 
+            // btm_change_tor
+            // 
+            this.btm_change_tor.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_change_tor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btm_change_tor.BackColor = System.Drawing.Color.Transparent;
+            this.btm_change_tor.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.btm_change_tor.Location = new System.Drawing.Point(702, 405);
+            this.btm_change_tor.Name = "btm_change_tor";
+            this.btm_change_tor.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
+            this.btm_change_tor.Size = new System.Drawing.Size(102, 30);
+            this.btm_change_tor.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_change_tor.TabIndex = 39;
+            this.btm_change_tor.Tag = "";
+            this.btm_change_tor.Text = "切换到力矩";
+            this.btm_change_tor.Click += new System.EventHandler(this.btm_change_tor_Click);
+            // 
+            // btm_change_vel
+            // 
+            this.btm_change_vel.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_change_vel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btm_change_vel.BackColor = System.Drawing.Color.Transparent;
+            this.btm_change_vel.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.btm_change_vel.Location = new System.Drawing.Point(702, 314);
+            this.btm_change_vel.Name = "btm_change_vel";
+            this.btm_change_vel.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
+            this.btm_change_vel.Size = new System.Drawing.Size(102, 30);
+            this.btm_change_vel.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_change_vel.TabIndex = 38;
+            this.btm_change_vel.Tag = "";
+            this.btm_change_vel.Text = "切换到速度";
+            this.btm_change_vel.Click += new System.EventHandler(this.btm_change_vel_Click);
+            // 
+            // btm_change_pos
+            // 
+            this.btm_change_pos.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_change_pos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btm_change_pos.BackColor = System.Drawing.Color.Transparent;
+            this.btm_change_pos.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.btm_change_pos.Location = new System.Drawing.Point(702, 221);
+            this.btm_change_pos.Name = "btm_change_pos";
+            this.btm_change_pos.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
+            this.btm_change_pos.Size = new System.Drawing.Size(102, 30);
+            this.btm_change_pos.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_change_pos.TabIndex = 37;
+            this.btm_change_pos.Tag = "";
+            this.btm_change_pos.Text = "切换到位置";
+            this.btm_change_pos.Click += new System.EventHandler(this.btm_change_pos_Click);
+            // 
+            // chart1
+            // 
+            this.chart1.BackColor = System.Drawing.Color.Black;
+            chartArea2.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea2.AxisX.LineColor = System.Drawing.Color.White;
+            chartArea2.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea2.AxisX.MajorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea2.AxisX.MinorGrid.LineColor = System.Drawing.Color.White;
+            chartArea2.AxisX.MinorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea2.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea2.AxisY.LineColor = System.Drawing.Color.White;
+            chartArea2.AxisY.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea2.AxisY.MajorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea2.AxisY.MinorGrid.LineColor = System.Drawing.Color.White;
+            chartArea2.AxisY.MinorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea2.AxisY.TitleForeColor = System.Drawing.Color.White;
+            chartArea2.BackColor = System.Drawing.Color.Black;
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chart1.Enabled = false;
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
+            this.chart1.Location = new System.Drawing.Point(0, 0);
+            this.chart1.Name = "chart1";
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chart1.Series.Add(series2);
+            this.chart1.Size = new System.Drawing.Size(825, 517);
+            this.chart1.TabIndex = 0;
+            this.chart1.Text = "chart1";
+            // 
+            // superGridControl3
+            // 
+            this.superGridControl3.BackColor = System.Drawing.Color.White;
+            this.superGridControl3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.superGridControl3.FilterExprColors.SysFunction = System.Drawing.Color.DarkRed;
+            this.superGridControl3.ForeColor = System.Drawing.Color.Black;
+            this.superGridControl3.Location = new System.Drawing.Point(0, 0);
+            this.superGridControl3.Name = "superGridControl3";
+            this.superGridControl3.Size = new System.Drawing.Size(825, 517);
+            this.superGridControl3.TabIndex = 0;
+            this.superGridControl3.Text = "superGridControl3";
+            // 
+            // superTabItem6
+            // 
+            this.superTabItem6.AttachedControl = this.superTabControlPanel6;
+            this.superTabItem6.GlobalItem = false;
+            this.superTabItem6.Image = global::触摸屏界面.Properties.Resources.controller;
+            this.superTabItem6.Name = "superTabItem6";
+            this.superTabItem6.Text = "电机检测";
             // 
             // superTabControlPanel2
             // 
@@ -2881,10 +2105,10 @@
             this.txt_AXIS3_JOG_VEL.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txt_AXIS3_JOG_VEL.DisabledBackColor = System.Drawing.Color.White;
             this.txt_AXIS3_JOG_VEL.ForeColor = System.Drawing.Color.White;
-            this.txt_AXIS3_JOG_VEL.Location = new System.Drawing.Point(137, 22);
+            this.txt_AXIS3_JOG_VEL.Location = new System.Drawing.Point(146, 22);
             this.txt_AXIS3_JOG_VEL.Name = "txt_AXIS3_JOG_VEL";
             this.txt_AXIS3_JOG_VEL.PreventEnterBeep = true;
-            this.txt_AXIS3_JOG_VEL.Size = new System.Drawing.Size(85, 26);
+            this.txt_AXIS3_JOG_VEL.Size = new System.Drawing.Size(76, 26);
             this.txt_AXIS3_JOG_VEL.TabIndex = 45;
             this.txt_AXIS3_JOG_VEL.Tag = "SAVE.AXIS3_JOG_VEL;REAL";
             this.txt_AXIS3_JOG_VEL.Text = "0";
@@ -2966,10 +2190,10 @@
             this.txt_AXIS2_JOG_VEL.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txt_AXIS2_JOG_VEL.DisabledBackColor = System.Drawing.Color.White;
             this.txt_AXIS2_JOG_VEL.ForeColor = System.Drawing.Color.White;
-            this.txt_AXIS2_JOG_VEL.Location = new System.Drawing.Point(137, 22);
+            this.txt_AXIS2_JOG_VEL.Location = new System.Drawing.Point(147, 22);
             this.txt_AXIS2_JOG_VEL.Name = "txt_AXIS2_JOG_VEL";
             this.txt_AXIS2_JOG_VEL.PreventEnterBeep = true;
-            this.txt_AXIS2_JOG_VEL.Size = new System.Drawing.Size(85, 26);
+            this.txt_AXIS2_JOG_VEL.Size = new System.Drawing.Size(75, 26);
             this.txt_AXIS2_JOG_VEL.TabIndex = 45;
             this.txt_AXIS2_JOG_VEL.Tag = "SAVE.AXIS2_JOG_VEL;REAL";
             this.txt_AXIS2_JOG_VEL.Text = "0";
@@ -3050,10 +2274,10 @@
             this.txt_AXIS1_JOG_VEL.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txt_AXIS1_JOG_VEL.DisabledBackColor = System.Drawing.Color.White;
             this.txt_AXIS1_JOG_VEL.ForeColor = System.Drawing.Color.White;
-            this.txt_AXIS1_JOG_VEL.Location = new System.Drawing.Point(137, 22);
+            this.txt_AXIS1_JOG_VEL.Location = new System.Drawing.Point(147, 22);
             this.txt_AXIS1_JOG_VEL.Name = "txt_AXIS1_JOG_VEL";
             this.txt_AXIS1_JOG_VEL.PreventEnterBeep = true;
-            this.txt_AXIS1_JOG_VEL.Size = new System.Drawing.Size(85, 26);
+            this.txt_AXIS1_JOG_VEL.Size = new System.Drawing.Size(75, 26);
             this.txt_AXIS1_JOG_VEL.TabIndex = 45;
             this.txt_AXIS1_JOG_VEL.Tag = "SAVE.AXIS1_JOG_VEL;REAL";
             this.txt_AXIS1_JOG_VEL.Text = "0";
@@ -3759,10 +2983,12 @@
             this.reflectionLabel19.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.reflectionLabel19.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.reflectionLabel19.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.reflectionLabel19.BackgroundStyle.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
             this.reflectionLabel19.ForeColor = System.Drawing.Color.Black;
             this.reflectionLabel19.Location = new System.Drawing.Point(322, 14);
             this.reflectionLabel19.Name = "reflectionLabel19";
             this.reflectionLabel19.ReflectionEnabled = false;
+            this.reflectionLabel19.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.reflectionLabel19.Size = new System.Drawing.Size(85, 34);
             this.reflectionLabel19.TabIndex = 34;
             this.reflectionLabel19.Text = "<b><font size=\"+5\"><i>转矩</i></font></b>";
@@ -3782,6 +3008,7 @@
             this.reflectionLabel18.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.reflectionLabel18.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.reflectionLabel18.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.reflectionLabel18.BackgroundStyle.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
             this.reflectionLabel18.ForeColor = System.Drawing.Color.Black;
             this.reflectionLabel18.Location = new System.Drawing.Point(217, 14);
             this.reflectionLabel18.Name = "reflectionLabel18";
@@ -3805,6 +3032,7 @@
             this.reflectionLabel17.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.reflectionLabel17.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.reflectionLabel17.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.reflectionLabel17.BackgroundStyle.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
             this.reflectionLabel17.ForeColor = System.Drawing.Color.Black;
             this.reflectionLabel17.Location = new System.Drawing.Point(115, 14);
             this.reflectionLabel17.Name = "reflectionLabel17";
@@ -3828,6 +3056,7 @@
             this.reflectionLabel16.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.reflectionLabel16.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.reflectionLabel16.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.reflectionLabel16.BackgroundStyle.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
             this.reflectionLabel16.ForeColor = System.Drawing.Color.Black;
             this.reflectionLabel16.Location = new System.Drawing.Point(14, 14);
             this.reflectionLabel16.Name = "reflectionLabel16";
@@ -3843,6 +3072,950 @@
             this.superTabItem2.Image = global::触摸屏界面.Properties.Resources.computer_key;
             this.superTabItem2.Name = "superTabItem2";
             this.superTabItem2.Text = "手动操作";
+            // 
+            // superTabControlPanel3
+            // 
+            this.superTabControlPanel3.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2013;
+            this.superTabControlPanel3.Controls.Add(this.labelX38);
+            this.superTabControlPanel3.Controls.Add(this.btm_A6_CLOSE9);
+            this.superTabControlPanel3.Controls.Add(this.btm_A6_OPEN9);
+            this.superTabControlPanel3.Controls.Add(this.btm_A3_CLOSE9);
+            this.superTabControlPanel3.Controls.Add(this.btm_A3_OPEN9);
+            this.superTabControlPanel3.Controls.Add(this.labelX39);
+            this.superTabControlPanel3.Controls.Add(this.btm_A6_CLOSE8);
+            this.superTabControlPanel3.Controls.Add(this.btm_A6_OPEN8);
+            this.superTabControlPanel3.Controls.Add(this.btm_A3_CLOSE8);
+            this.superTabControlPanel3.Controls.Add(this.btm_A3_OPEN8);
+            this.superTabControlPanel3.Controls.Add(this.labelX40);
+            this.superTabControlPanel3.Controls.Add(this.btm_A6_CLOSE7);
+            this.superTabControlPanel3.Controls.Add(this.btm_A6_OPEN7);
+            this.superTabControlPanel3.Controls.Add(this.btm_A3_CLOSE7);
+            this.superTabControlPanel3.Controls.Add(this.btm_A3_OPEN7);
+            this.superTabControlPanel3.Controls.Add(this.labelX35);
+            this.superTabControlPanel3.Controls.Add(this.btm_A6_CLOSE6);
+            this.superTabControlPanel3.Controls.Add(this.btm_A6_OPEN6);
+            this.superTabControlPanel3.Controls.Add(this.btm_A3_CLOSE6);
+            this.superTabControlPanel3.Controls.Add(this.btm_A3_OPEN6);
+            this.superTabControlPanel3.Controls.Add(this.labelX36);
+            this.superTabControlPanel3.Controls.Add(this.btm_A6_CLOSE5);
+            this.superTabControlPanel3.Controls.Add(this.btm_A6_OPEN5);
+            this.superTabControlPanel3.Controls.Add(this.btm_A3_CLOSE5);
+            this.superTabControlPanel3.Controls.Add(this.btm_A3_OPEN5);
+            this.superTabControlPanel3.Controls.Add(this.labelX37);
+            this.superTabControlPanel3.Controls.Add(this.btm_A6_CLOSE4);
+            this.superTabControlPanel3.Controls.Add(this.btm_A6_OPEN4);
+            this.superTabControlPanel3.Controls.Add(this.btm_A3_CLOSE4);
+            this.superTabControlPanel3.Controls.Add(this.btm_A3_OPEN4);
+            this.superTabControlPanel3.Controls.Add(this.labelX34);
+            this.superTabControlPanel3.Controls.Add(this.btm_A6_CLOSE3);
+            this.superTabControlPanel3.Controls.Add(this.btm_A6_OPEN3);
+            this.superTabControlPanel3.Controls.Add(this.btm_A3_CLOSE3);
+            this.superTabControlPanel3.Controls.Add(this.btm_A3_OPEN3);
+            this.superTabControlPanel3.Controls.Add(this.labelX33);
+            this.superTabControlPanel3.Controls.Add(this.btm_A6_CLOSE2);
+            this.superTabControlPanel3.Controls.Add(this.btm_A6_OPEN2);
+            this.superTabControlPanel3.Controls.Add(this.btm_A3_CLOSE2);
+            this.superTabControlPanel3.Controls.Add(this.btm_A3_OPEN2);
+            this.superTabControlPanel3.Controls.Add(this.labelX32);
+            this.superTabControlPanel3.Controls.Add(this.btm_A6_CLOSE1);
+            this.superTabControlPanel3.Controls.Add(this.btm_A6_OPEN1);
+            this.superTabControlPanel3.Controls.Add(this.btm_A3_CLOSE1);
+            this.superTabControlPanel3.Controls.Add(this.btm_A3_OPEN1);
+            this.superTabControlPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.superTabControlPanel3.Location = new System.Drawing.Point(0, 46);
+            this.superTabControlPanel3.Name = "superTabControlPanel3";
+            this.superTabControlPanel3.Size = new System.Drawing.Size(825, 517);
+            this.superTabControlPanel3.TabIndex = 3;
+            this.superTabControlPanel3.TabItem = this.superTabItem3;
+            // 
+            // labelX38
+            // 
+            this.labelX38.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX38.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX38.ForeColor = System.Drawing.Color.White;
+            this.labelX38.Location = new System.Drawing.Point(565, 357);
+            this.labelX38.Name = "labelX38";
+            this.labelX38.Size = new System.Drawing.Size(96, 30);
+            this.labelX38.TabIndex = 44;
+            this.labelX38.Text = "9号位阀门";
+            // 
+            // btm_A6_CLOSE9
+            // 
+            this.btm_A6_CLOSE9.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A6_CLOSE9.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.btm_A6_CLOSE9.Location = new System.Drawing.Point(615, 468);
+            this.btm_A6_CLOSE9.Name = "btm_A6_CLOSE9";
+            this.btm_A6_CLOSE9.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
+            this.btm_A6_CLOSE9.Size = new System.Drawing.Size(75, 30);
+            this.btm_A6_CLOSE9.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A6_CLOSE9.TabIndex = 43;
+            this.btm_A6_CLOSE9.Tag = "HMI.A6_CLOSE9;BOOL";
+            this.btm_A6_CLOSE9.Text = "A6关闭";
+            this.btm_A6_CLOSE9.Click += new System.EventHandler(this.btm_A6_CLOSE9_Click);
+            // 
+            // btm_A6_OPEN9
+            // 
+            this.btm_A6_OPEN9.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A6_OPEN9.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btm_A6_OPEN9.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.btm_A6_OPEN9.Location = new System.Drawing.Point(615, 415);
+            this.btm_A6_OPEN9.Name = "btm_A6_OPEN9";
+            this.btm_A6_OPEN9.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
+            this.btm_A6_OPEN9.Size = new System.Drawing.Size(75, 30);
+            this.btm_A6_OPEN9.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A6_OPEN9.TabIndex = 42;
+            this.btm_A6_OPEN9.Tag = "HMI.A6_OPEN9;BOOL";
+            this.btm_A6_OPEN9.Text = "A6打开";
+            this.btm_A6_OPEN9.Click += new System.EventHandler(this.btm_A6_OPEN9_Click);
+            // 
+            // btm_A3_CLOSE9
+            // 
+            this.btm_A3_CLOSE9.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A3_CLOSE9.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.btm_A3_CLOSE9.Location = new System.Drawing.Point(511, 468);
+            this.btm_A3_CLOSE9.Name = "btm_A3_CLOSE9";
+            this.btm_A3_CLOSE9.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
+            this.btm_A3_CLOSE9.Size = new System.Drawing.Size(75, 30);
+            this.btm_A3_CLOSE9.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A3_CLOSE9.TabIndex = 41;
+            this.btm_A3_CLOSE9.Tag = "HMI.A3_CLOSE9;BOOL";
+            this.btm_A3_CLOSE9.Text = "A3关闭";
+            this.btm_A3_CLOSE9.Click += new System.EventHandler(this.btm_A3_CLOSE9_Click);
+            // 
+            // btm_A3_OPEN9
+            // 
+            this.btm_A3_OPEN9.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A3_OPEN9.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.btm_A3_OPEN9.Location = new System.Drawing.Point(511, 415);
+            this.btm_A3_OPEN9.Name = "btm_A3_OPEN9";
+            this.btm_A3_OPEN9.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
+            this.btm_A3_OPEN9.Size = new System.Drawing.Size(75, 30);
+            this.btm_A3_OPEN9.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A3_OPEN9.TabIndex = 40;
+            this.btm_A3_OPEN9.Tag = "HMI.A3_OPEN9;BOOL";
+            this.btm_A3_OPEN9.Text = "A3打开";
+            this.btm_A3_OPEN9.Click += new System.EventHandler(this.btm_A3_OPEN9_Click);
+            // 
+            // labelX39
+            // 
+            this.labelX39.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX39.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX39.ForeColor = System.Drawing.Color.White;
+            this.labelX39.Location = new System.Drawing.Point(339, 357);
+            this.labelX39.Name = "labelX39";
+            this.labelX39.Size = new System.Drawing.Size(89, 30);
+            this.labelX39.TabIndex = 39;
+            this.labelX39.Text = "8号位阀门";
+            // 
+            // btm_A6_CLOSE8
+            // 
+            this.btm_A6_CLOSE8.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A6_CLOSE8.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.btm_A6_CLOSE8.Location = new System.Drawing.Point(388, 468);
+            this.btm_A6_CLOSE8.Name = "btm_A6_CLOSE8";
+            this.btm_A6_CLOSE8.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
+            this.btm_A6_CLOSE8.Size = new System.Drawing.Size(75, 30);
+            this.btm_A6_CLOSE8.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A6_CLOSE8.TabIndex = 38;
+            this.btm_A6_CLOSE8.Tag = "HMI.A6_CLOSE8;BOOL";
+            this.btm_A6_CLOSE8.Text = "A6关闭";
+            this.btm_A6_CLOSE8.Click += new System.EventHandler(this.btm_A6_CLOSE8_Click);
+            // 
+            // btm_A6_OPEN8
+            // 
+            this.btm_A6_OPEN8.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A6_OPEN8.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.btm_A6_OPEN8.Location = new System.Drawing.Point(388, 415);
+            this.btm_A6_OPEN8.Name = "btm_A6_OPEN8";
+            this.btm_A6_OPEN8.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
+            this.btm_A6_OPEN8.Size = new System.Drawing.Size(75, 30);
+            this.btm_A6_OPEN8.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A6_OPEN8.TabIndex = 37;
+            this.btm_A6_OPEN8.Tag = "HMI.A6_OPEN8;BOOL";
+            this.btm_A6_OPEN8.Text = "A6打开";
+            this.btm_A6_OPEN8.Click += new System.EventHandler(this.btm_A6_OPEN8_Click);
+            // 
+            // btm_A3_CLOSE8
+            // 
+            this.btm_A3_CLOSE8.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A3_CLOSE8.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.btm_A3_CLOSE8.Location = new System.Drawing.Point(284, 468);
+            this.btm_A3_CLOSE8.Name = "btm_A3_CLOSE8";
+            this.btm_A3_CLOSE8.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
+            this.btm_A3_CLOSE8.Size = new System.Drawing.Size(75, 30);
+            this.btm_A3_CLOSE8.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A3_CLOSE8.TabIndex = 36;
+            this.btm_A3_CLOSE8.Tag = "HMI.A3_CLOSE8;BOOL";
+            this.btm_A3_CLOSE8.Text = "A3关闭";
+            this.btm_A3_CLOSE8.Click += new System.EventHandler(this.btm_A3_CLOSE8_Click);
+            // 
+            // btm_A3_OPEN8
+            // 
+            this.btm_A3_OPEN8.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A3_OPEN8.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.btm_A3_OPEN8.Location = new System.Drawing.Point(284, 415);
+            this.btm_A3_OPEN8.Name = "btm_A3_OPEN8";
+            this.btm_A3_OPEN8.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
+            this.btm_A3_OPEN8.Size = new System.Drawing.Size(75, 30);
+            this.btm_A3_OPEN8.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A3_OPEN8.TabIndex = 35;
+            this.btm_A3_OPEN8.Tag = "HMI.A3_OPEN8;BOOL";
+            this.btm_A3_OPEN8.Text = "A3打开";
+            this.btm_A3_OPEN8.Click += new System.EventHandler(this.btm_A3_OPEN8_Click);
+            // 
+            // labelX40
+            // 
+            this.labelX40.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX40.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX40.ForeColor = System.Drawing.Color.White;
+            this.labelX40.Location = new System.Drawing.Point(107, 357);
+            this.labelX40.Name = "labelX40";
+            this.labelX40.Size = new System.Drawing.Size(89, 30);
+            this.labelX40.TabIndex = 34;
+            this.labelX40.Text = "7号位阀门";
+            // 
+            // btm_A6_CLOSE7
+            // 
+            this.btm_A6_CLOSE7.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A6_CLOSE7.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.btm_A6_CLOSE7.Location = new System.Drawing.Point(156, 468);
+            this.btm_A6_CLOSE7.Name = "btm_A6_CLOSE7";
+            this.btm_A6_CLOSE7.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
+            this.btm_A6_CLOSE7.Size = new System.Drawing.Size(75, 30);
+            this.btm_A6_CLOSE7.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A6_CLOSE7.TabIndex = 33;
+            this.btm_A6_CLOSE7.Tag = "HMI.A6_CLOSE7;BOOL";
+            this.btm_A6_CLOSE7.Text = "A6关闭";
+            this.btm_A6_CLOSE7.Click += new System.EventHandler(this.btm_A6_CLOSE7_Click);
+            // 
+            // btm_A6_OPEN7
+            // 
+            this.btm_A6_OPEN7.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A6_OPEN7.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.btm_A6_OPEN7.Location = new System.Drawing.Point(156, 415);
+            this.btm_A6_OPEN7.Name = "btm_A6_OPEN7";
+            this.btm_A6_OPEN7.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
+            this.btm_A6_OPEN7.Size = new System.Drawing.Size(75, 30);
+            this.btm_A6_OPEN7.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A6_OPEN7.TabIndex = 32;
+            this.btm_A6_OPEN7.Tag = "HMI.A6_OPEN7;BOOL";
+            this.btm_A6_OPEN7.Text = "A6打开";
+            this.btm_A6_OPEN7.Click += new System.EventHandler(this.btm_A6_OPEN7_Click);
+            // 
+            // btm_A3_CLOSE7
+            // 
+            this.btm_A3_CLOSE7.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A3_CLOSE7.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.btm_A3_CLOSE7.Location = new System.Drawing.Point(52, 468);
+            this.btm_A3_CLOSE7.Name = "btm_A3_CLOSE7";
+            this.btm_A3_CLOSE7.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
+            this.btm_A3_CLOSE7.Size = new System.Drawing.Size(75, 30);
+            this.btm_A3_CLOSE7.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A3_CLOSE7.TabIndex = 31;
+            this.btm_A3_CLOSE7.Tag = "HMI.A3_CLOSE7;BOOL";
+            this.btm_A3_CLOSE7.Text = "A3关闭";
+            this.btm_A3_CLOSE7.Click += new System.EventHandler(this.btm_A3_CLOSE7_Click);
+            // 
+            // btm_A3_OPEN7
+            // 
+            this.btm_A3_OPEN7.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A3_OPEN7.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.btm_A3_OPEN7.Location = new System.Drawing.Point(52, 415);
+            this.btm_A3_OPEN7.Name = "btm_A3_OPEN7";
+            this.btm_A3_OPEN7.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
+            this.btm_A3_OPEN7.Size = new System.Drawing.Size(75, 30);
+            this.btm_A3_OPEN7.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A3_OPEN7.TabIndex = 30;
+            this.btm_A3_OPEN7.Tag = "HMI.A3_OPEN7;BOOL";
+            this.btm_A3_OPEN7.Text = "A3打开";
+            this.btm_A3_OPEN7.Click += new System.EventHandler(this.btm_A3_OPEN7_Click);
+            // 
+            // labelX35
+            // 
+            this.labelX35.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX35.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX35.ForeColor = System.Drawing.Color.White;
+            this.labelX35.Location = new System.Drawing.Point(565, 190);
+            this.labelX35.Name = "labelX35";
+            this.labelX35.Size = new System.Drawing.Size(96, 30);
+            this.labelX35.TabIndex = 29;
+            this.labelX35.Text = "6号位阀门";
+            // 
+            // btm_A6_CLOSE6
+            // 
+            this.btm_A6_CLOSE6.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A6_CLOSE6.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.btm_A6_CLOSE6.Location = new System.Drawing.Point(615, 302);
+            this.btm_A6_CLOSE6.Name = "btm_A6_CLOSE6";
+            this.btm_A6_CLOSE6.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
+            this.btm_A6_CLOSE6.Size = new System.Drawing.Size(75, 30);
+            this.btm_A6_CLOSE6.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A6_CLOSE6.TabIndex = 28;
+            this.btm_A6_CLOSE6.Tag = "HMI.A6_CLOSE6;BOOL";
+            this.btm_A6_CLOSE6.Text = "A6关闭";
+            this.btm_A6_CLOSE6.Click += new System.EventHandler(this.btm_A6_CLOSE6_Click);
+            // 
+            // btm_A6_OPEN6
+            // 
+            this.btm_A6_OPEN6.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A6_OPEN6.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.btm_A6_OPEN6.Location = new System.Drawing.Point(615, 248);
+            this.btm_A6_OPEN6.Name = "btm_A6_OPEN6";
+            this.btm_A6_OPEN6.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
+            this.btm_A6_OPEN6.Size = new System.Drawing.Size(75, 30);
+            this.btm_A6_OPEN6.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A6_OPEN6.TabIndex = 27;
+            this.btm_A6_OPEN6.Tag = "HMI.A6_OPEN6;BOOL";
+            this.btm_A6_OPEN6.Text = "A6打开";
+            this.btm_A6_OPEN6.Click += new System.EventHandler(this.btm_A6_OPEN6_Click);
+            // 
+            // btm_A3_CLOSE6
+            // 
+            this.btm_A3_CLOSE6.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A3_CLOSE6.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.btm_A3_CLOSE6.Location = new System.Drawing.Point(511, 302);
+            this.btm_A3_CLOSE6.Name = "btm_A3_CLOSE6";
+            this.btm_A3_CLOSE6.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
+            this.btm_A3_CLOSE6.Size = new System.Drawing.Size(75, 30);
+            this.btm_A3_CLOSE6.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A3_CLOSE6.TabIndex = 26;
+            this.btm_A3_CLOSE6.Tag = "HMI.A3_CLOSE6;BOOL";
+            this.btm_A3_CLOSE6.Text = "A3关闭";
+            this.btm_A3_CLOSE6.Click += new System.EventHandler(this.btm_A3_CLOSE6_Click);
+            // 
+            // btm_A3_OPEN6
+            // 
+            this.btm_A3_OPEN6.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A3_OPEN6.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.btm_A3_OPEN6.Location = new System.Drawing.Point(511, 248);
+            this.btm_A3_OPEN6.Name = "btm_A3_OPEN6";
+            this.btm_A3_OPEN6.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
+            this.btm_A3_OPEN6.Size = new System.Drawing.Size(75, 30);
+            this.btm_A3_OPEN6.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A3_OPEN6.TabIndex = 25;
+            this.btm_A3_OPEN6.Tag = "HMI.A3_OPEN6;BOOL";
+            this.btm_A3_OPEN6.Text = "A3打开";
+            this.btm_A3_OPEN6.Click += new System.EventHandler(this.btm_A3_OPEN6_Click);
+            // 
+            // labelX36
+            // 
+            this.labelX36.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX36.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX36.ForeColor = System.Drawing.Color.White;
+            this.labelX36.Location = new System.Drawing.Point(339, 190);
+            this.labelX36.Name = "labelX36";
+            this.labelX36.Size = new System.Drawing.Size(89, 30);
+            this.labelX36.TabIndex = 24;
+            this.labelX36.Text = "5号位阀门";
+            // 
+            // btm_A6_CLOSE5
+            // 
+            this.btm_A6_CLOSE5.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A6_CLOSE5.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.btm_A6_CLOSE5.Location = new System.Drawing.Point(388, 302);
+            this.btm_A6_CLOSE5.Name = "btm_A6_CLOSE5";
+            this.btm_A6_CLOSE5.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
+            this.btm_A6_CLOSE5.Size = new System.Drawing.Size(75, 30);
+            this.btm_A6_CLOSE5.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A6_CLOSE5.TabIndex = 23;
+            this.btm_A6_CLOSE5.Tag = "HMI.A6_CLOSE5;BOOL";
+            this.btm_A6_CLOSE5.Text = "A6关闭";
+            this.btm_A6_CLOSE5.Click += new System.EventHandler(this.btm_A6_CLOSE5_Click);
+            // 
+            // btm_A6_OPEN5
+            // 
+            this.btm_A6_OPEN5.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A6_OPEN5.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.btm_A6_OPEN5.Location = new System.Drawing.Point(388, 248);
+            this.btm_A6_OPEN5.Name = "btm_A6_OPEN5";
+            this.btm_A6_OPEN5.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
+            this.btm_A6_OPEN5.Size = new System.Drawing.Size(75, 30);
+            this.btm_A6_OPEN5.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A6_OPEN5.TabIndex = 22;
+            this.btm_A6_OPEN5.Tag = "HMI.A6_OPEN5;BOOL";
+            this.btm_A6_OPEN5.Text = "A6打开";
+            this.btm_A6_OPEN5.Click += new System.EventHandler(this.btm_A6_OPEN5_Click);
+            // 
+            // btm_A3_CLOSE5
+            // 
+            this.btm_A3_CLOSE5.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A3_CLOSE5.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.btm_A3_CLOSE5.Location = new System.Drawing.Point(284, 302);
+            this.btm_A3_CLOSE5.Name = "btm_A3_CLOSE5";
+            this.btm_A3_CLOSE5.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
+            this.btm_A3_CLOSE5.Size = new System.Drawing.Size(75, 30);
+            this.btm_A3_CLOSE5.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A3_CLOSE5.TabIndex = 21;
+            this.btm_A3_CLOSE5.Tag = "HMI.A3_CLOSE5;BOOL";
+            this.btm_A3_CLOSE5.Text = "A3关闭";
+            this.btm_A3_CLOSE5.Click += new System.EventHandler(this.btm_A3_CLOSE5_Click);
+            // 
+            // btm_A3_OPEN5
+            // 
+            this.btm_A3_OPEN5.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A3_OPEN5.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.btm_A3_OPEN5.Location = new System.Drawing.Point(284, 248);
+            this.btm_A3_OPEN5.Name = "btm_A3_OPEN5";
+            this.btm_A3_OPEN5.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
+            this.btm_A3_OPEN5.Size = new System.Drawing.Size(75, 30);
+            this.btm_A3_OPEN5.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A3_OPEN5.TabIndex = 20;
+            this.btm_A3_OPEN5.Tag = "HMI.A3_OPEN5;BOOL";
+            this.btm_A3_OPEN5.Text = "A3打开";
+            this.btm_A3_OPEN5.Click += new System.EventHandler(this.btm_A3_OPEN5_Click);
+            // 
+            // labelX37
+            // 
+            this.labelX37.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX37.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX37.ForeColor = System.Drawing.Color.White;
+            this.labelX37.Location = new System.Drawing.Point(107, 190);
+            this.labelX37.Name = "labelX37";
+            this.labelX37.Size = new System.Drawing.Size(89, 30);
+            this.labelX37.TabIndex = 19;
+            this.labelX37.Text = "4号位阀门";
+            // 
+            // btm_A6_CLOSE4
+            // 
+            this.btm_A6_CLOSE4.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A6_CLOSE4.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.btm_A6_CLOSE4.Location = new System.Drawing.Point(156, 302);
+            this.btm_A6_CLOSE4.Name = "btm_A6_CLOSE4";
+            this.btm_A6_CLOSE4.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
+            this.btm_A6_CLOSE4.Size = new System.Drawing.Size(75, 30);
+            this.btm_A6_CLOSE4.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A6_CLOSE4.TabIndex = 18;
+            this.btm_A6_CLOSE4.Tag = "HMI.A6_CLOSE4;BOOL";
+            this.btm_A6_CLOSE4.Text = "A6关闭";
+            this.btm_A6_CLOSE4.Click += new System.EventHandler(this.btm_A6_CLOSE4_Click);
+            // 
+            // btm_A6_OPEN4
+            // 
+            this.btm_A6_OPEN4.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A6_OPEN4.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.btm_A6_OPEN4.Location = new System.Drawing.Point(156, 248);
+            this.btm_A6_OPEN4.Name = "btm_A6_OPEN4";
+            this.btm_A6_OPEN4.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
+            this.btm_A6_OPEN4.Size = new System.Drawing.Size(75, 30);
+            this.btm_A6_OPEN4.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A6_OPEN4.TabIndex = 17;
+            this.btm_A6_OPEN4.Tag = "HMI.A6_OPEN4;BOOL";
+            this.btm_A6_OPEN4.Text = "A6打开";
+            this.btm_A6_OPEN4.Click += new System.EventHandler(this.btm_A6_OPEN4_Click);
+            // 
+            // btm_A3_CLOSE4
+            // 
+            this.btm_A3_CLOSE4.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A3_CLOSE4.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.btm_A3_CLOSE4.Location = new System.Drawing.Point(52, 302);
+            this.btm_A3_CLOSE4.Name = "btm_A3_CLOSE4";
+            this.btm_A3_CLOSE4.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
+            this.btm_A3_CLOSE4.Size = new System.Drawing.Size(75, 30);
+            this.btm_A3_CLOSE4.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A3_CLOSE4.TabIndex = 16;
+            this.btm_A3_CLOSE4.Tag = "HMI.A3_CLOSE4;BOOL";
+            this.btm_A3_CLOSE4.Text = "A3关闭";
+            this.btm_A3_CLOSE4.Click += new System.EventHandler(this.btm_A3_CLOSE4_Click);
+            // 
+            // btm_A3_OPEN4
+            // 
+            this.btm_A3_OPEN4.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A3_OPEN4.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.btm_A3_OPEN4.Location = new System.Drawing.Point(52, 248);
+            this.btm_A3_OPEN4.Name = "btm_A3_OPEN4";
+            this.btm_A3_OPEN4.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
+            this.btm_A3_OPEN4.Size = new System.Drawing.Size(75, 30);
+            this.btm_A3_OPEN4.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A3_OPEN4.TabIndex = 15;
+            this.btm_A3_OPEN4.Tag = "HMI.A3_OPEN4;BOOL";
+            this.btm_A3_OPEN4.Text = "A3打开";
+            this.btm_A3_OPEN4.Click += new System.EventHandler(this.btm_A3_OPEN4_Click);
+            // 
+            // labelX34
+            // 
+            this.labelX34.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX34.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX34.ForeColor = System.Drawing.Color.White;
+            this.labelX34.Location = new System.Drawing.Point(565, 25);
+            this.labelX34.Name = "labelX34";
+            this.labelX34.Size = new System.Drawing.Size(96, 30);
+            this.labelX34.TabIndex = 14;
+            this.labelX34.Text = "3号位阀门";
+            // 
+            // btm_A6_CLOSE3
+            // 
+            this.btm_A6_CLOSE3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A6_CLOSE3.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.btm_A6_CLOSE3.Location = new System.Drawing.Point(615, 137);
+            this.btm_A6_CLOSE3.Name = "btm_A6_CLOSE3";
+            this.btm_A6_CLOSE3.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
+            this.btm_A6_CLOSE3.Size = new System.Drawing.Size(75, 30);
+            this.btm_A6_CLOSE3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A6_CLOSE3.TabIndex = 13;
+            this.btm_A6_CLOSE3.Tag = "HMI.A6_CLOSE3;BOOL";
+            this.btm_A6_CLOSE3.Text = "A6关闭";
+            this.btm_A6_CLOSE3.Click += new System.EventHandler(this.btm_A6_CLOSE3_Click);
+            // 
+            // btm_A6_OPEN3
+            // 
+            this.btm_A6_OPEN3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A6_OPEN3.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.btm_A6_OPEN3.Location = new System.Drawing.Point(615, 83);
+            this.btm_A6_OPEN3.Name = "btm_A6_OPEN3";
+            this.btm_A6_OPEN3.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
+            this.btm_A6_OPEN3.Size = new System.Drawing.Size(75, 30);
+            this.btm_A6_OPEN3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A6_OPEN3.TabIndex = 12;
+            this.btm_A6_OPEN3.Tag = "HMI.A6_OPEN3;BOOL";
+            this.btm_A6_OPEN3.Text = "A6打开";
+            this.btm_A6_OPEN3.Click += new System.EventHandler(this.btm_A6_OPEN3_Click);
+            // 
+            // btm_A3_CLOSE3
+            // 
+            this.btm_A3_CLOSE3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A3_CLOSE3.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.btm_A3_CLOSE3.Location = new System.Drawing.Point(511, 137);
+            this.btm_A3_CLOSE3.Name = "btm_A3_CLOSE3";
+            this.btm_A3_CLOSE3.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
+            this.btm_A3_CLOSE3.Size = new System.Drawing.Size(75, 30);
+            this.btm_A3_CLOSE3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A3_CLOSE3.TabIndex = 11;
+            this.btm_A3_CLOSE3.Tag = "HMI.A3_CLOSE3;BOOL";
+            this.btm_A3_CLOSE3.Text = "A3关闭";
+            this.btm_A3_CLOSE3.Click += new System.EventHandler(this.btm_A3_CLOSE3_Click);
+            // 
+            // btm_A3_OPEN3
+            // 
+            this.btm_A3_OPEN3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A3_OPEN3.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.btm_A3_OPEN3.Location = new System.Drawing.Point(511, 83);
+            this.btm_A3_OPEN3.Name = "btm_A3_OPEN3";
+            this.btm_A3_OPEN3.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
+            this.btm_A3_OPEN3.Size = new System.Drawing.Size(75, 30);
+            this.btm_A3_OPEN3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A3_OPEN3.TabIndex = 10;
+            this.btm_A3_OPEN3.Tag = "HMI.A3_OPEN3;BOOL";
+            this.btm_A3_OPEN3.Text = "A3打开";
+            this.btm_A3_OPEN3.Click += new System.EventHandler(this.btm_A3_OPEN3_Click);
+            // 
+            // labelX33
+            // 
+            this.labelX33.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX33.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX33.ForeColor = System.Drawing.Color.White;
+            this.labelX33.Location = new System.Drawing.Point(339, 25);
+            this.labelX33.Name = "labelX33";
+            this.labelX33.Size = new System.Drawing.Size(89, 30);
+            this.labelX33.TabIndex = 9;
+            this.labelX33.Text = "2号位阀门";
+            // 
+            // btm_A6_CLOSE2
+            // 
+            this.btm_A6_CLOSE2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A6_CLOSE2.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.btm_A6_CLOSE2.Location = new System.Drawing.Point(388, 137);
+            this.btm_A6_CLOSE2.Name = "btm_A6_CLOSE2";
+            this.btm_A6_CLOSE2.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
+            this.btm_A6_CLOSE2.Size = new System.Drawing.Size(75, 30);
+            this.btm_A6_CLOSE2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A6_CLOSE2.TabIndex = 8;
+            this.btm_A6_CLOSE2.Tag = "HMI.A6_CLOSE2;BOOL";
+            this.btm_A6_CLOSE2.Text = "A6关闭";
+            this.btm_A6_CLOSE2.Click += new System.EventHandler(this.btm_A6_CLOSE2_Click);
+            // 
+            // btm_A6_OPEN2
+            // 
+            this.btm_A6_OPEN2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A6_OPEN2.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.btm_A6_OPEN2.Location = new System.Drawing.Point(388, 83);
+            this.btm_A6_OPEN2.Name = "btm_A6_OPEN2";
+            this.btm_A6_OPEN2.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
+            this.btm_A6_OPEN2.Size = new System.Drawing.Size(75, 30);
+            this.btm_A6_OPEN2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A6_OPEN2.TabIndex = 7;
+            this.btm_A6_OPEN2.Tag = "HMI.A6_OPEN2;BOOL";
+            this.btm_A6_OPEN2.Text = "A6打开";
+            this.btm_A6_OPEN2.Click += new System.EventHandler(this.btm_A6_OPEN2_Click);
+            // 
+            // btm_A3_CLOSE2
+            // 
+            this.btm_A3_CLOSE2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A3_CLOSE2.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.btm_A3_CLOSE2.Location = new System.Drawing.Point(284, 137);
+            this.btm_A3_CLOSE2.Name = "btm_A3_CLOSE2";
+            this.btm_A3_CLOSE2.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
+            this.btm_A3_CLOSE2.Size = new System.Drawing.Size(75, 30);
+            this.btm_A3_CLOSE2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A3_CLOSE2.TabIndex = 6;
+            this.btm_A3_CLOSE2.Tag = "HMI.A3_CLOSE2;BOOL";
+            this.btm_A3_CLOSE2.Text = "A3关闭";
+            this.btm_A3_CLOSE2.Click += new System.EventHandler(this.btm_A3_CLOSE2_Click);
+            // 
+            // btm_A3_OPEN2
+            // 
+            this.btm_A3_OPEN2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A3_OPEN2.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.btm_A3_OPEN2.Location = new System.Drawing.Point(284, 83);
+            this.btm_A3_OPEN2.Name = "btm_A3_OPEN2";
+            this.btm_A3_OPEN2.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
+            this.btm_A3_OPEN2.Size = new System.Drawing.Size(75, 30);
+            this.btm_A3_OPEN2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A3_OPEN2.TabIndex = 5;
+            this.btm_A3_OPEN2.Tag = "HMI.A3_OPEN2;BOOL";
+            this.btm_A3_OPEN2.Text = "A3打开";
+            this.btm_A3_OPEN2.Click += new System.EventHandler(this.btm_A3_OPEN2_Click);
+            // 
+            // labelX32
+            // 
+            this.labelX32.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX32.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX32.Font = new System.Drawing.Font("华文新魏", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelX32.ForeColor = System.Drawing.Color.White;
+            this.labelX32.Location = new System.Drawing.Point(107, 25);
+            this.labelX32.Name = "labelX32";
+            this.labelX32.Size = new System.Drawing.Size(89, 30);
+            this.labelX32.TabIndex = 4;
+            this.labelX32.Text = "1号位阀门";
+            // 
+            // btm_A6_CLOSE1
+            // 
+            this.btm_A6_CLOSE1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A6_CLOSE1.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.btm_A6_CLOSE1.Location = new System.Drawing.Point(156, 137);
+            this.btm_A6_CLOSE1.Name = "btm_A6_CLOSE1";
+            this.btm_A6_CLOSE1.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
+            this.btm_A6_CLOSE1.Size = new System.Drawing.Size(75, 30);
+            this.btm_A6_CLOSE1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A6_CLOSE1.TabIndex = 3;
+            this.btm_A6_CLOSE1.Tag = "HMI.A6_CLOSE1;BOOL";
+            this.btm_A6_CLOSE1.Text = "A6关闭";
+            this.btm_A6_CLOSE1.Click += new System.EventHandler(this.btm_A6_CLOSE1_Click);
+            // 
+            // btm_A6_OPEN1
+            // 
+            this.btm_A6_OPEN1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A6_OPEN1.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.btm_A6_OPEN1.Location = new System.Drawing.Point(156, 83);
+            this.btm_A6_OPEN1.Name = "btm_A6_OPEN1";
+            this.btm_A6_OPEN1.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
+            this.btm_A6_OPEN1.Size = new System.Drawing.Size(75, 30);
+            this.btm_A6_OPEN1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A6_OPEN1.TabIndex = 2;
+            this.btm_A6_OPEN1.Tag = "HMI.A6_OPEN1;BOOL";
+            this.btm_A6_OPEN1.Text = "A6打开";
+            this.btm_A6_OPEN1.Click += new System.EventHandler(this.btm_A6_OPEN1_Click);
+            // 
+            // btm_A3_CLOSE1
+            // 
+            this.btm_A3_CLOSE1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A3_CLOSE1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(91)))));
+            this.btm_A3_CLOSE1.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.btm_A3_CLOSE1.Location = new System.Drawing.Point(52, 137);
+            this.btm_A3_CLOSE1.Name = "btm_A3_CLOSE1";
+            this.btm_A3_CLOSE1.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
+            this.btm_A3_CLOSE1.Size = new System.Drawing.Size(75, 30);
+            this.btm_A3_CLOSE1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A3_CLOSE1.TabIndex = 1;
+            this.btm_A3_CLOSE1.Tag = "HMI.A3_CLOSE1;BOOL";
+            this.btm_A3_CLOSE1.Text = "A3关闭";
+            this.btm_A3_CLOSE1.Click += new System.EventHandler(this.btm_A3_CLOSE1_Click);
+            // 
+            // btm_A3_OPEN1
+            // 
+            this.btm_A3_OPEN1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btm_A3_OPEN1.BackColor = System.Drawing.Color.Transparent;
+            this.btm_A3_OPEN1.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.btm_A3_OPEN1.Location = new System.Drawing.Point(52, 83);
+            this.btm_A3_OPEN1.Name = "btm_A3_OPEN1";
+            this.btm_A3_OPEN1.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(8);
+            this.btm_A3_OPEN1.Size = new System.Drawing.Size(75, 30);
+            this.btm_A3_OPEN1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btm_A3_OPEN1.TabIndex = 0;
+            this.btm_A3_OPEN1.Tag = "HMI.A3_OPEN1;BOOL";
+            this.btm_A3_OPEN1.Text = "A3打开";
+            this.btm_A3_OPEN1.Click += new System.EventHandler(this.btm_A3_OPEN1_Click);
+            // 
+            // superTabItem3
+            // 
+            this.superTabItem3.AttachedControl = this.superTabControlPanel3;
+            this.superTabItem3.GlobalItem = false;
+            this.superTabItem3.Image = global::触摸屏界面.Properties.Resources.computer_link;
+            this.superTabItem3.Name = "superTabItem3";
+            this.superTabItem3.Text = "阀门操作";
+            // 
+            // superTabControlPanel5
+            // 
+            this.superTabControlPanel5.Controls.Add(this.sgc1);
+            this.superTabControlPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.superTabControlPanel5.Location = new System.Drawing.Point(0, 46);
+            this.superTabControlPanel5.Name = "superTabControlPanel5";
+            this.superTabControlPanel5.Size = new System.Drawing.Size(825, 517);
+            this.superTabControlPanel5.TabIndex = 5;
+            this.superTabControlPanel5.TabItem = this.superTabItem5;
+            // 
+            // sgc1
+            // 
+            this.sgc1.BackColor = System.Drawing.Color.White;
+            this.sgc1.DefaultVisualStyles.CellStyles.Default.Font = new System.Drawing.Font("宋体", 10.5F);
+            this.sgc1.DefaultVisualStyles.ColumnHeaderStyles.Default.Font = new System.Drawing.Font("宋体", 15F);
+            this.sgc1.DefaultVisualStyles.FooterStyles.Default.Font = new System.Drawing.Font("宋体", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.sgc1.DefaultVisualStyles.RowStyles.Default.RowHeaderStyle.AllowWrap = DevComponents.DotNetBar.SuperGrid.Style.Tbool.True;
+            this.sgc1.DefaultVisualStyles.RowStyles.Default.RowHeaderStyle.Font = new System.Drawing.Font("宋体", 15F);
+            this.sgc1.DefaultVisualStyles.RowStyles.NotSelectable.RowHeaderStyle.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.sgc1.DefaultVisualStyles.RowStyles.NotSelectable.RowHeaderStyle.TextColor = System.Drawing.Color.Red;
+            this.sgc1.DefaultVisualStyles.RowStyles.Selected.RowHeaderStyle.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.sgc1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.sgc1.Enabled = false;
+            this.sgc1.EnableFastScrolling = false;
+            this.sgc1.FilterExprColors.SysFunction = System.Drawing.Color.DarkRed;
+            this.sgc1.Font = new System.Drawing.Font("华文新魏", 10.5F);
+            this.sgc1.ForeColor = System.Drawing.Color.Black;
+            this.sgc1.Location = new System.Drawing.Point(0, 0);
+            this.sgc1.Name = "sgc1";
+            // 
+            // 
+            // 
+            this.sgc1.PrimaryGrid.AllowEdit = false;
+            this.sgc1.PrimaryGrid.AllowRowHeaderResize = true;
+            this.sgc1.PrimaryGrid.AllowRowResize = true;
+            this.sgc1.PrimaryGrid.ColumnAutoSizeMode = DevComponents.DotNetBar.SuperGrid.ColumnAutoSizeMode.Fill;
+            // 
+            // 
+            // 
+            this.sgc1.PrimaryGrid.ColumnHeader.RowHeaderText = "";
+            this.sgc1.PrimaryGrid.Columns.Add(this.gridColumn2);
+            this.sgc1.PrimaryGrid.Columns.Add(this.gridColumn3);
+            this.sgc1.PrimaryGrid.Columns.Add(this.gridColumn4);
+            this.sgc1.PrimaryGrid.Columns.Add(this.gridColumn5);
+            this.sgc1.PrimaryGrid.Columns.Add(this.gridColumn6);
+            this.sgc1.PrimaryGrid.Columns.Add(this.gridColumn7);
+            this.sgc1.PrimaryGrid.EnableColumnFiltering = true;
+            this.sgc1.PrimaryGrid.EnableFiltering = true;
+            this.sgc1.PrimaryGrid.EnableRowFiltering = true;
+            this.sgc1.PrimaryGrid.RowHeaderIndexOffset = 1;
+            this.sgc1.PrimaryGrid.Rows.Add(this.gridRow55);
+            this.sgc1.PrimaryGrid.Rows.Add(this.gridRow56);
+            this.sgc1.PrimaryGrid.ShowRowGridIndex = true;
+            this.sgc1.PrimaryGrid.UseAlternateColumnStyle = true;
+            this.sgc1.PrimaryGrid.UseAlternateRowStyle = true;
+            this.sgc1.Size = new System.Drawing.Size(825, 517);
+            this.sgc1.TabIndex = 0;
+            this.sgc1.Tag = "HMI.DATA_TEAM;TEAM_DATE";
+            this.sgc1.Text = "superGridControl1";
+            // 
+            // gridColumn2
+            // 
+            this.gridColumn2.CellStyles.Default.Font = new System.Drawing.Font("宋体", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.gridColumn2.Name = "日期";
+            this.gridColumn2.Width = 200;
+            // 
+            // gridColumn3
+            // 
+            this.gridColumn3.CellStyles.Default.Font = new System.Drawing.Font("宋体", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.gridColumn3.Name = "批次";
+            // 
+            // gridColumn4
+            // 
+            this.gridColumn4.CellStyles.Default.Font = new System.Drawing.Font("宋体", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.gridColumn4.Name = "工位";
+            // 
+            // gridColumn5
+            // 
+            this.gridColumn5.CellStyles.Default.Font = new System.Drawing.Font("宋体", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.gridColumn5.Name = "次数";
+            // 
+            // gridColumn6
+            // 
+            this.gridColumn6.CellStyles.Default.Font = new System.Drawing.Font("宋体", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.gridColumn6.Name = "优先级";
+            // 
+            // gridColumn7
+            // 
+            this.gridColumn7.CellStyles.Default.Font = new System.Drawing.Font("宋体", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.gridColumn7.Name = "插队标识";
+            // 
+            // gridRow55
+            // 
+            this.gridRow55.Cells.Add(this.gridCell3);
+            this.gridRow55.Cells.Add(this.gridCell4);
+            this.gridRow55.Cells.Add(this.gridCell5);
+            this.gridRow55.Cells.Add(this.gridCell6);
+            this.gridRow55.Cells.Add(this.gridCell7);
+            this.gridRow55.Cells.Add(this.gridCell8);
+            this.gridRow55.Expanded = true;
+            // 
+            // gridCell3
+            // 
+            this.gridCell3.Value = "20200810";
+            // 
+            // gridCell4
+            // 
+            this.gridCell4.Value = "0";
+            // 
+            // gridCell5
+            // 
+            this.gridCell5.Value = "0";
+            // 
+            // gridCell6
+            // 
+            this.gridCell6.Value = "1";
+            // 
+            // gridCell7
+            // 
+            this.gridCell7.Value = "1";
+            // 
+            // gridCell8
+            // 
+            this.gridCell8.Value = "0";
+            // 
+            // gridRow56
+            // 
+            this.gridRow56.Cells.Add(this.gridCell10);
+            this.gridRow56.Cells.Add(this.gridCell11);
+            this.gridRow56.Cells.Add(this.gridCell12);
+            this.gridRow56.Cells.Add(this.gridCell13);
+            this.gridRow56.Cells.Add(this.gridCell14);
+            this.gridRow56.Cells.Add(this.gridCell15);
+            this.gridRow56.Expanded = true;
+            // 
+            // gridCell10
+            // 
+            this.gridCell10.Value = "20200810";
+            // 
+            // gridCell11
+            // 
+            this.gridCell11.Value = "1";
+            // 
+            // gridCell12
+            // 
+            this.gridCell12.Value = "1";
+            // 
+            // gridCell13
+            // 
+            this.gridCell13.Value = "2";
+            // 
+            // gridCell14
+            // 
+            this.gridCell14.Value = "1";
+            // 
+            // gridCell15
+            // 
+            this.gridCell15.Value = "1";
+            // 
+            // superTabItem5
+            // 
+            this.superTabItem5.AttachedControl = this.superTabControlPanel5;
+            this.superTabItem5.GlobalItem = false;
+            this.superTabItem5.Image = global::触摸屏界面.Properties.Resources.control_equalizer_blue;
+            this.superTabItem5.Name = "superTabItem5";
+            this.superTabItem5.Tag = "HMI.DATA_TEAM;TEAM_DATE";
+            this.superTabItem5.Text = "队列信息";
+            // 
+            // superTabControlPanel7
+            // 
+            this.superTabControlPanel7.Controls.Add(this.sgc2);
+            this.superTabControlPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.superTabControlPanel7.Location = new System.Drawing.Point(0, 46);
+            this.superTabControlPanel7.Name = "superTabControlPanel7";
+            this.superTabControlPanel7.Size = new System.Drawing.Size(825, 517);
+            this.superTabControlPanel7.TabIndex = 7;
+            this.superTabControlPanel7.TabItem = this.superTabItem7;
+            // 
+            // sgc2
+            // 
+            this.sgc2.BackColor = System.Drawing.Color.White;
+            this.sgc2.DefaultVisualStyles.CellStyles.Default.Font = new System.Drawing.Font("宋体", 10.5F);
+            this.sgc2.DefaultVisualStyles.ColumnHeaderStyles.Default.Font = new System.Drawing.Font("宋体", 15F);
+            this.sgc2.DefaultVisualStyles.FooterStyles.Default.Font = new System.Drawing.Font("宋体", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.sgc2.DefaultVisualStyles.RowStyles.Default.RowHeaderStyle.AllowWrap = DevComponents.DotNetBar.SuperGrid.Style.Tbool.True;
+            this.sgc2.DefaultVisualStyles.RowStyles.Default.RowHeaderStyle.Font = new System.Drawing.Font("宋体", 15F);
+            this.sgc2.DefaultVisualStyles.RowStyles.NotSelectable.RowHeaderStyle.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.sgc2.DefaultVisualStyles.RowStyles.NotSelectable.RowHeaderStyle.TextColor = System.Drawing.Color.Red;
+            this.sgc2.DefaultVisualStyles.RowStyles.Selected.RowHeaderStyle.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.sgc2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.sgc2.Enabled = false;
+            this.sgc2.EnableFastScrolling = false;
+            this.sgc2.FilterExprColors.SysFunction = System.Drawing.Color.DarkRed;
+            this.sgc2.Font = new System.Drawing.Font("华文新魏", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.sgc2.ForeColor = System.Drawing.Color.Black;
+            this.sgc2.Location = new System.Drawing.Point(0, 0);
+            this.sgc2.Name = "sgc2";
+            // 
+            // 
+            // 
+            this.sgc2.PrimaryGrid.Columns.Add(this.gridColumn12);
+            this.sgc2.PrimaryGrid.Columns.Add(this.gridColumn15);
+            this.sgc2.PrimaryGrid.ReadOnly = true;
+            this.sgc2.PrimaryGrid.RowHeaderIndexOffset = 1;
+            this.sgc2.PrimaryGrid.Rows.Add(this.gridRow57);
+            this.sgc2.PrimaryGrid.ShowRowGridIndex = true;
+            this.sgc2.PrimaryGrid.UseAlternateColumnStyle = true;
+            this.sgc2.PrimaryGrid.UseAlternateRowStyle = true;
+            this.sgc2.Size = new System.Drawing.Size(825, 517);
+            this.sgc2.TabIndex = 1;
+            this.sgc2.Tag = "HMI.DATA_ALARM;Error_data";
+            this.sgc2.Text = "superGridControl2";
+            // 
+            // gridColumn12
+            // 
+            this.gridColumn12.AutoSizeMode = DevComponents.DotNetBar.SuperGrid.ColumnAutoSizeMode.DisplayedCells;
+            this.gridColumn12.Name = "时间";
+            // 
+            // gridColumn15
+            // 
+            this.gridColumn15.AutoSizeMode = DevComponents.DotNetBar.SuperGrid.ColumnAutoSizeMode.Fill;
+            this.gridColumn15.Name = "文本";
+            // 
+            // gridRow57
+            // 
+            this.gridRow57.Cells.Add(this.gridCell16);
+            this.gridRow57.Cells.Add(this.gridCell17);
+            this.gridRow57.CellStyles.Default.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.gridRow57.RowStyles.Default.RowHeaderStyle.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            // 
+            // gridCell16
+            // 
+            this.gridCell16.Value = "20200810";
+            // 
+            // gridCell17
+            // 
+            this.gridCell17.Value = "示例信息";
+            // 
+            // superTabItem7
+            // 
+            this.superTabItem7.AttachedControl = this.superTabControlPanel7;
+            this.superTabItem7.GlobalItem = false;
+            this.superTabItem7.Image = global::触摸屏界面.Properties.Resources.controller_error;
+            this.superTabItem7.Name = "superTabItem7";
+            this.superTabItem7.Tag = "HMI.DATA_ALARM;ERROR_DATA";
+            this.superTabItem7.Text = "报警列表";
             // 
             // superTabControlPanel8
             // 
@@ -4092,7 +4265,15 @@
             // 
             // socket_timer
             // 
+            this.socket_timer.Enabled = true;
+            this.socket_timer.Interval = 50;
             this.socket_timer.Tick += new System.EventHandler(this.socket_timer_Tick);
+            // 
+            // keep_timer
+            // 
+            this.keep_timer.Enabled = true;
+            this.keep_timer.Interval = 5000;
+            this.keep_timer.Tick += new System.EventHandler(this.keep_timer_Tick);
             // 
             // Main
             // 
@@ -4119,14 +4300,12 @@
             this.panelEx6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.superTabControl1)).EndInit();
             this.superTabControl1.ResumeLayout(false);
-            this.superTabControlPanel7.ResumeLayout(false);
+            this.superTabControlPanel4.ResumeLayout(false);
+            this.superTabControlPanel4.PerformLayout();
+            this.superTabControlPanel1.ResumeLayout(false);
             this.superTabControlPanel6.ResumeLayout(false);
             this.panelEx7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
-            this.superTabControlPanel5.ResumeLayout(false);
-            this.superTabControlPanel4.ResumeLayout(false);
-            this.superTabControlPanel3.ResumeLayout(false);
-            this.superTabControlPanel1.ResumeLayout(false);
             this.superTabControlPanel2.ResumeLayout(false);
             this.superTabControlPanel2.PerformLayout();
             this.panelEx15.ResumeLayout(false);
@@ -4137,6 +4316,9 @@
             this.panelEx10.ResumeLayout(false);
             this.panelEx9.ResumeLayout(false);
             this.panelEx8.ResumeLayout(false);
+            this.superTabControlPanel3.ResumeLayout(false);
+            this.superTabControlPanel5.ResumeLayout(false);
+            this.superTabControlPanel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bubbleBar1)).EndInit();
             this.panelEx2.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -4442,6 +4624,18 @@
         private DevComponents.DotNetBar.SuperTabItem superTabItem8;
         private System.Windows.Forms.Timer socket_timer;
         private DevComponents.DotNetBar.Controls.TextBoxX txt_AXIS1_SAFE1_POS;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Timer keep_timer;
+        private DevComponents.DotNetBar.LabelX labelX10;
+        private DevComponents.DotNetBar.LabelX labelX9;
+        private DevComponents.DotNetBar.LabelX labelX8;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private DevComponents.DotNetBar.ButtonX btm_change_tor;
+        private DevComponents.DotNetBar.ButtonX btm_change_vel;
+        private DevComponents.DotNetBar.ButtonX btm_change_pos;
     }
 }
 
