@@ -21,6 +21,7 @@ namespace 触摸屏界面
     public partial class Main : Office2007Form
     {
         private static DateTime START_TIME;
+        private static double START_TIMESTAMP;
         private TwcAds tas;
         PlcVariableClass pvc = new PlcVariableClass();
         Size _beforeDialogSize;
@@ -41,12 +42,13 @@ namespace 触摸屏界面
         private Single[] motorZero = new Single[] { 0, 0, 0 };
         
         private motorValue motor_value = new motorValue();
+        private bool saved = false;
         public Main()
         {
             InitializeComponent();
-            zeroName[0] = textBox1.Name;
-            zeroName[1] = textBox2.Name;
-            zeroName[2] = textBox3.Name;
+            zeroName[0] = tbx_zero1.Name;
+            zeroName[1] = tbx_zero2.Name;
+            zeroName[2] = tbx_zero3.Name;
             closePc(true);
             try
             {
@@ -60,16 +62,16 @@ namespace 触摸屏界面
                 //mes_socket = new socket2unity(8888);
 
                 XmlNode tmp = root.SelectSingleNode("/PLC/motor1zero");
-                textBox1.Text = tmp.Attributes["value"].Value;
+                tbx_zero1.Text = tmp.Attributes["value"].Value;
                 motorZero[0] = Convert.ToSingle(tmp.Attributes["value"].Value);
                 tmp = root.SelectSingleNode("/PLC/motor2zero");
-                textBox2.Text = tmp.Attributes["value"].Value;
+                tbx_zero2.Text = tmp.Attributes["value"].Value;
                 motorZero[1] = Convert.ToSingle(tmp.Attributes["value"].Value);
                 tmp = root.SelectSingleNode("/PLC/motor3zero");
-                textBox3.Text = tmp.Attributes["value"].Value;
+                tbx_zero3.Text = tmp.Attributes["value"].Value;
                 motorZero[2] = Convert.ToSingle(tmp.Attributes["value"].Value);
 
-            } catch(Exception ex)
+            } catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
@@ -94,11 +96,12 @@ namespace 触摸屏界面
                     }
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                MessageBox.Show(ex.Message,"配置文件错误");
+                MessageBox.Show(ex.Message, "配置文件错误");
             }
             START_TIME = DateTime.Now;
+            START_TIMESTAMP = Convert.ToDouble((DateTime.Now.ToUniversalTime() - new DateTime(1970, 1, 1, 0, 0, 0, 0)).TotalMilliseconds / 1000f);
         }
         //按下鼠标键触发的事件
         private void mh_MouseDownEvent(object sender, MouseEventArgs e)
@@ -315,7 +318,11 @@ namespace 触摸屏界面
 
                 //PLC反馈数据显示
                 ShowData();
+                motorZero[0] = Convert.ToSingle(pvc.value[Array.IndexOf(pvc.ControlsName, txt_AXIS1_DOWN_POS2.Name)]);
 
+                motorZero[2] = Convert.ToSingle(pvc.value[Array.IndexOf(pvc.ControlsName, txt_AXIS3_OPEN_POS.Name)]);
+                tbx_zero1.Text = motorZero[0].ToString();
+                tbx_zero3.Text = motorZero[2].ToString();
             }
             catch
             {
@@ -393,7 +400,11 @@ namespace 触摸屏界面
             name = name.Replace(":", string.Empty);
             try
             {
-                motor_value.save("D:/svgdata/"+name + ".csv");
+                if (!saved)
+                {
+                    motor_value.save("D:/QY43DATA/" + name + ".csv");
+                    saved = true;
+                }
             }catch(Exception ex)
             {
                 MessageBox.Show(ex.Message,name);
@@ -619,7 +630,13 @@ namespace 触摸屏界面
 
                     string[] step = { "运行", "复位", "","停止", "急停","","","","" };
                     index = Array.IndexOf(pvc.ControlsName, this.lb_RUN_SET.Name);
-                    this.lb_RUN_SET.Text = step[Convert.ToInt16(pvc.value[index])];
+                    this.lb_RUN_SET.Text = "";
+                    for(int i = 0; i < step.Length; i++)
+                    {
+                        if ((Convert.ToInt32(pvc.value[index]) & (1 << i)) > 0)
+                            this.lb_RUN_SET.Text += " " + step[i];
+                    }
+                    
                     this.lb_PA_PC_switch.Text =  (bool) pvc.value[Array.IndexOf(pvc.ControlsName, this.lb_PA_PC_switch.Name)]?"PA":"PC";
                     if (this.lb_PA_PC_switch.Text == "PA")
                     {
@@ -691,7 +708,7 @@ namespace 触摸屏界面
                     //文本框
                     if (control is DevComponents.DotNetBar.Controls.TextBoxX && !control.Focused)
                     {
-                        control.Text = pvc.value[index].ToString();
+                        control.Text = Convert.ToSingle(pvc.value[index]).ToString("F1");
                     }
 
                     //指示灯
@@ -832,7 +849,8 @@ namespace 触摸屏界面
                 {
                     MessageBox.Show(ex.Message, "文本内容写入变量错误");
                 }
-            }else
+            }
+            if(control.Name.StartsWith("tbx_zero"))
             {
                 int index = Array.IndexOf(zeroName, control.Name);
                 motorZero[index] = Convert.ToSingle(aim);
@@ -920,7 +938,7 @@ namespace 触摸屏界面
         {
             //DataPoint endp = this.chart1.Series[0].Points.Last();
             //DataPoint startp = this.chart1.Series[0].Points.First();
-            if (this.chart1.Series[0].Points.Count >1000)
+            while(this.chart1.Series[0].Points.Count >1000)
             {
                 this.chart1.Series[0].Points.RemoveAt(0);
                 this.chart1.Series[1].Points.RemoveAt(0);
@@ -934,38 +952,46 @@ namespace 触摸屏界面
             //this.chart1.Series[1].Points.AddXY(t, torque * 10);
             //this.chart1.Series[2].Points.AddXY(t, t*100%3000);
             //this.chart1.ChartAreas[0].AxisX.Maximum = endp.XValue + 50;
-            //this.chart1.ChartAreas[0].AxisX.Minimum = startp.XValue - 50;
-            TimeSpan ts = DateTime.Now - new DateTime(1970, 1, 1, 0, 0, 0, 0);
+            if (chart1.Series[0].Points.Count > 0)
+            {
+                this.chart1.ChartAreas[0].AxisX.Minimum = Convert.ToInt64(chart1.Series[0].Points.First().XValue);
+                this.chart1.ChartAreas[0].AxisX.Maximum = Convert.ToInt64(chart1.Series[0].Points.Last().XValue);
+            }
+
             try
             {
-                motor_value.time.Add(Convert.ToSingle(ts.TotalMilliseconds));
-                motor_value.pos[0].Add(Convert.ToSingle(pvc.value[Array.IndexOf(pvc.ControlsName, "txt_AXIS1_REAL_POS")]));
-                motor_value.pos[1].Add(Convert.ToSingle(pvc.value[Array.IndexOf(pvc.ControlsName, "txt_AXIS2_REAL_POS")]));
-                motor_value.pos[2].Add(Convert.ToSingle(pvc.value[Array.IndexOf(pvc.ControlsName, "txt_AXIS3_REAL_POS")]));
-                motor_value.vel[0].Add(Convert.ToSingle(pvc.value[Array.IndexOf(pvc.ControlsName, "txt_AXIS1_REAL_VEL")]));
-                motor_value.vel[1].Add(Convert.ToSingle(pvc.value[Array.IndexOf(pvc.ControlsName, "txt_AXIS2_REAL_VEL")]));
-                motor_value.vel[2].Add(Convert.ToSingle(pvc.value[Array.IndexOf(pvc.ControlsName, "txt_AXIS3_REAL_VEL")]));
-                motor_value.tor[0].Add(Convert.ToSingle(pvc.value[Array.IndexOf(pvc.ControlsName, "txt_AXIS1_REAL_TOR")]));
-                motor_value.tor[1].Add(Convert.ToSingle(pvc.value[Array.IndexOf(pvc.ControlsName, "txt_AXIS2_REAL_TOR")]));
-                motor_value.tor[2].Add(Convert.ToSingle(pvc.value[Array.IndexOf(pvc.ControlsName, "txt_AXIS3_REAL_TOR")]));
-
-                if (chart1.Titles[0].Text == titles[0])
+                if (lb_connectflag.ForeColor == Color.Blue)
                 {
-                    this.chart1.Series[0].Points.AddXY(t, motor_value.pos[0].Last());
-                    this.chart1.Series[1].Points.AddXY(t, motor_value.pos[1].Last());
-                    this.chart1.Series[2].Points.AddXY(t, motor_value.pos[2].Last());
-                }
-                if (chart1.Titles[0].Text == titles[1])
-                {
-                    this.chart1.Series[0].Points.AddXY(t, motor_value.vel[0].Last());
-                    this.chart1.Series[1].Points.AddXY(t, motor_value.vel[1].Last());
-                    this.chart1.Series[2].Points.AddXY(t, motor_value.vel[2].Last());
-                }
-                if (chart1.Titles[0].Text == titles[2])
-                {
-                    this.chart1.Series[0].Points.AddXY(t, motor_value.tor[0].Last());
-                    this.chart1.Series[1].Points.AddXY(t, motor_value.tor[1].Last());
-                    this.chart1.Series[2].Points.AddXY(t, motor_value.tor[2].Last());
+                    TimeSpan ts = DateTime.Now.ToUniversalTime() - new DateTime(1970, 1, 1, 0, 0, 0, 0);
+                    motor_value.time.Add(Convert.ToDouble(ts.TotalMilliseconds / 1000f));
+                    motor_value.pos[0].Add(Convert.ToSingle(pvc.value[Array.IndexOf(pvc.ControlsName, "txt_AXIS1_REAL_POS")]));
+                    motor_value.pos[1].Add(Convert.ToSingle(pvc.value[Array.IndexOf(pvc.ControlsName, "txt_AXIS2_REAL_POS")]));
+                    motor_value.pos[2].Add(Convert.ToSingle(pvc.value[Array.IndexOf(pvc.ControlsName, "txt_AXIS3_REAL_POS")]));
+                    motor_value.vel[0].Add(Convert.ToSingle(pvc.value[Array.IndexOf(pvc.ControlsName, "txt_AXIS1_REAL_VEL")]));
+                    motor_value.vel[1].Add(Convert.ToSingle(pvc.value[Array.IndexOf(pvc.ControlsName, "txt_AXIS2_REAL_VEL")]));
+                    motor_value.vel[2].Add(Convert.ToSingle(pvc.value[Array.IndexOf(pvc.ControlsName, "txt_AXIS3_REAL_VEL")]));
+                    motor_value.tor[0].Add(Convert.ToSingle(pvc.value[Array.IndexOf(pvc.ControlsName, "txt_AXIS1_REAL_TOR")]));
+                    motor_value.tor[1].Add(Convert.ToSingle(pvc.value[Array.IndexOf(pvc.ControlsName, "txt_AXIS2_REAL_TOR")]));
+                    motor_value.tor[2].Add(Convert.ToSingle(pvc.value[Array.IndexOf(pvc.ControlsName, "txt_AXIS3_REAL_TOR")]));
+                
+                    if (chart1.Titles[0].Text == titles[0])
+                    {
+                        this.chart1.Series[0].Points.AddXY(motor_value.time.Last()-START_TIMESTAMP, motor_value.pos[0].Last());
+                        this.chart1.Series[1].Points.AddXY(motor_value.time.Last()-START_TIMESTAMP, motor_value.pos[1].Last());
+                        this.chart1.Series[2].Points.AddXY(motor_value.time.Last()-START_TIMESTAMP, motor_value.pos[2].Last());
+                    }
+                    if (chart1.Titles[0].Text == titles[1])
+                    {
+                        this.chart1.Series[0].Points.AddXY(motor_value.time.Last()-START_TIMESTAMP, motor_value.vel[0].Last());
+                        this.chart1.Series[1].Points.AddXY(motor_value.time.Last()-START_TIMESTAMP, motor_value.vel[1].Last());
+                        this.chart1.Series[2].Points.AddXY(motor_value.time.Last()-START_TIMESTAMP, motor_value.vel[2].Last());
+                    }
+                    if (chart1.Titles[0].Text == titles[2])
+                    {
+                        this.chart1.Series[0].Points.AddXY(motor_value.time.Last()-START_TIMESTAMP, motor_value.tor[0].Last());
+                        this.chart1.Series[1].Points.AddXY(motor_value.time.Last()-START_TIMESTAMP, motor_value.tor[1].Last());
+                        this.chart1.Series[2].Points.AddXY(motor_value.time.Last()-START_TIMESTAMP, motor_value.tor[2].Last());
+                    }
                 }
             }
             catch { }
@@ -1490,13 +1516,13 @@ namespace 触摸屏界面
                     int index;
                     byte[] mes = new byte[24], tmp;
                     index = Array.IndexOf(pvc.ControlsName, txt_AXIS3_REAL_POS.Name);
-                    tmp = BitConverter.GetBytes((Single)(pvc.value[index])/1000f-motorZero[2]/1000f);
+                    tmp = BitConverter.GetBytes(-((Single)(pvc.value[index])/1000f-motorZero[2]/1000f));
                     for (int i = 0; i < tmp.Length; i++) mes[i] = tmp[i];
                     index = Array.IndexOf(pvc.ControlsName, txt_AXIS2_REAL_POS.Name);
-                    tmp = BitConverter.GetBytes((Single)pvc.value[index] - motorZero[1] / 1000f);
+                    tmp = BitConverter.GetBytes(+((Single)pvc.value[index] - motorZero[1] / 1000f));
                     for (int i = 0; i < tmp.Length; i++) mes[tmp.Length * 1 + i] = tmp[i];
                     index = Array.IndexOf(pvc.ControlsName, txt_AXIS1_REAL_POS.Name);
-                    tmp = BitConverter.GetBytes((Single)pvc.value[index]/1000f - motorZero[0] / 1000f);
+                    tmp = BitConverter.GetBytes(-((Single)pvc.value[index]/1000f - motorZero[0] / 1000f));
                     for (int i = 0; i < tmp.Length; i++) mes[tmp.Length * 2 + i] = tmp[i];
 
                     index = Array.IndexOf(pvc.ControlsName, btm_VAL_CLOSE.Name);
@@ -1588,43 +1614,66 @@ namespace 触摸屏界面
 
         private void btm_change_pos_Click(object sender, EventArgs e)
         {
+            this.chart_timer.Enabled = false;
             chart1.Titles[0].Text = titles[0];
             chart1.Series[0].Points.Clear();
             chart1.Series[1].Points.Clear();
             chart1.Series[2].Points.Clear();
+            for (int i = Math.Max(0, motor_value.time.Count - 1000); i < motor_value.time.Count; i++)
+            {
+                chart1.Series[0].Points.AddXY(motor_value.time[i]-START_TIMESTAMP, motor_value.pos[0][i]);
+                chart1.Series[1].Points.AddXY(motor_value.time[i]-START_TIMESTAMP, motor_value.pos[1][i]);
+                chart1.Series[2].Points.AddXY(motor_value.time[i]-START_TIMESTAMP, motor_value.pos[2][i]);
+            }
+            this.chart_timer.Enabled = true;
         }
 
         private void btm_change_vel_Click(object sender, EventArgs e)
         {
+            this.chart_timer.Enabled = false;
             chart1.Titles[0].Text = titles[1];
             chart1.Series[0].Points.Clear();
             chart1.Series[1].Points.Clear();
             chart1.Series[2].Points.Clear();
+            for(int i = Math.Max(0, motor_value.time.Count - 1000); i < motor_value.time.Count; i++)
+            {
+                chart1.Series[0].Points.AddXY(motor_value.time[i]-START_TIMESTAMP, motor_value.vel[0][i]);
+                chart1.Series[1].Points.AddXY(motor_value.time[i]-START_TIMESTAMP, motor_value.vel[1][i]);
+                chart1.Series[2].Points.AddXY(motor_value.time[i]-START_TIMESTAMP, motor_value.vel[2][i]);
+            }
+            this.chart_timer.Enabled = true;
 
         }
 
         private void btm_change_tor_Click(object sender, EventArgs e)
         {
+            this.chart_timer.Enabled = false;
             chart1.Titles[0].Text = titles[2];
             chart1.Series[0].Points.Clear();
             chart1.Series[1].Points.Clear();
             chart1.Series[2].Points.Clear();
-
+            for (int i = Math.Max(0, motor_value.time.Count - 1000); i < motor_value.time.Count; i++)
+            {
+                chart1.Series[0].Points.AddXY(motor_value.time[i]-START_TIMESTAMP, motor_value.tor[0][i]);
+                chart1.Series[1].Points.AddXY(motor_value.time[i]-START_TIMESTAMP, motor_value.tor[1][i]);
+                chart1.Series[2].Points.AddXY(motor_value.time[i]-START_TIMESTAMP, motor_value.tor[2][i]);
+            }
+            this.chart_timer.Enabled = true;
         }
 
         private void textBox1_KeyPress_1(object sender, KeyPressEventArgs e)
         {
-            txt_enter_write(textBox1,e);
+            txt_enter_write(tbx_zero1,e);
         }
 
         private void textBox2_KeyPress_1(object sender, KeyPressEventArgs e)
         {
-            txt_enter_write(textBox2, e);
+            txt_enter_write(tbx_zero2, e);
         }
 
         private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
         {
-            txt_enter_write(textBox3, e);
+            txt_enter_write(tbx_zero3, e);
         }
 
         private void txt_SAMPLING2_KeyPress(object sender, KeyPressEventArgs e)

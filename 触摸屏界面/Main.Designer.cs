@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
             this.panelEx3 = new DevComponents.DotNetBar.PanelEx();
             this.panelEx5 = new DevComponents.DotNetBar.PanelEx();
@@ -40,9 +40,9 @@
             this.panelEx6 = new DevComponents.DotNetBar.PanelEx();
             this.superTabControl1 = new DevComponents.DotNetBar.SuperTabControl();
             this.superTabControlPanel4 = new DevComponents.DotNetBar.SuperTabControlPanel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbx_zero3 = new System.Windows.Forms.TextBox();
+            this.tbx_zero2 = new System.Windows.Forms.TextBox();
+            this.tbx_zero1 = new System.Windows.Forms.TextBox();
             this.labelX10 = new DevComponents.DotNetBar.LabelX();
             this.labelX9 = new DevComponents.DotNetBar.LabelX();
             this.labelX8 = new DevComponents.DotNetBar.LabelX();
@@ -479,12 +479,12 @@
             this.superTabControl1.ControlBox.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.superTabControl1.ControlBox.MenuBox,
             this.superTabControl1.ControlBox.CloseBox});
+            this.superTabControl1.Controls.Add(this.superTabControlPanel2);
             this.superTabControl1.Controls.Add(this.superTabControlPanel4);
+            this.superTabControl1.Controls.Add(this.superTabControlPanel5);
             this.superTabControl1.Controls.Add(this.superTabControlPanel1);
             this.superTabControl1.Controls.Add(this.superTabControlPanel6);
-            this.superTabControl1.Controls.Add(this.superTabControlPanel2);
             this.superTabControl1.Controls.Add(this.superTabControlPanel3);
-            this.superTabControl1.Controls.Add(this.superTabControlPanel5);
             this.superTabControl1.Controls.Add(this.superTabControlPanel7);
             this.superTabControl1.Controls.Add(this.superTabControlPanel8);
             this.superTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -513,9 +513,9 @@
             // 
             // superTabControlPanel4
             // 
-            this.superTabControlPanel4.Controls.Add(this.textBox3);
-            this.superTabControlPanel4.Controls.Add(this.textBox2);
-            this.superTabControlPanel4.Controls.Add(this.textBox1);
+            this.superTabControlPanel4.Controls.Add(this.tbx_zero3);
+            this.superTabControlPanel4.Controls.Add(this.tbx_zero2);
+            this.superTabControlPanel4.Controls.Add(this.tbx_zero1);
             this.superTabControlPanel4.Controls.Add(this.labelX10);
             this.superTabControlPanel4.Controls.Add(this.labelX9);
             this.superTabControlPanel4.Controls.Add(this.labelX8);
@@ -572,32 +572,32 @@
             this.superTabControlPanel4.TabIndex = 4;
             this.superTabControlPanel4.TabItem = this.superTabItem4;
             // 
-            // textBox3
+            // tbx_zero3
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox3.Location = new System.Drawing.Point(677, 82);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 26);
-            this.textBox3.TabIndex = 60;
-            this.textBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox3_KeyPress);
+            this.tbx_zero3.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.tbx_zero3.Location = new System.Drawing.Point(677, 82);
+            this.tbx_zero3.Name = "tbx_zero3";
+            this.tbx_zero3.Size = new System.Drawing.Size(100, 26);
+            this.tbx_zero3.TabIndex = 60;
+            this.tbx_zero3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox3_KeyPress);
             // 
-            // textBox2
+            // tbx_zero2
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox2.Location = new System.Drawing.Point(561, 81);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 26);
-            this.textBox2.TabIndex = 59;
-            this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress_1);
+            this.tbx_zero2.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.tbx_zero2.Location = new System.Drawing.Point(561, 81);
+            this.tbx_zero2.Name = "tbx_zero2";
+            this.tbx_zero2.Size = new System.Drawing.Size(100, 26);
+            this.tbx_zero2.TabIndex = 59;
+            this.tbx_zero2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress_1);
             // 
-            // textBox1
+            // tbx_zero1
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox1.Location = new System.Drawing.Point(455, 81);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 26);
-            this.textBox1.TabIndex = 58;
-            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress_1);
+            this.tbx_zero1.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.tbx_zero1.Location = new System.Drawing.Point(455, 81);
+            this.tbx_zero1.Name = "tbx_zero1";
+            this.tbx_zero1.Size = new System.Drawing.Size(100, 26);
+            this.tbx_zero1.TabIndex = 58;
+            this.tbx_zero1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress_1);
             // 
             // labelX10
             // 
@@ -2006,32 +2006,32 @@
             // chart1
             // 
             this.chart1.BackColor = System.Drawing.Color.Black;
-            chartArea2.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea2.AxisX.LineColor = System.Drawing.Color.White;
-            chartArea2.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea2.AxisX.MajorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea2.AxisX.MinorGrid.LineColor = System.Drawing.Color.White;
-            chartArea2.AxisX.MinorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea2.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea2.AxisY.LineColor = System.Drawing.Color.White;
-            chartArea2.AxisY.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea2.AxisY.MajorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea2.AxisY.MinorGrid.LineColor = System.Drawing.Color.White;
-            chartArea2.AxisY.MinorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea2.AxisY.TitleForeColor = System.Drawing.Color.White;
-            chartArea2.BackColor = System.Drawing.Color.Black;
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
+            chartArea6.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea6.AxisX.LineColor = System.Drawing.Color.White;
+            chartArea6.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea6.AxisX.MajorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea6.AxisX.MinorGrid.LineColor = System.Drawing.Color.White;
+            chartArea6.AxisX.MinorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea6.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea6.AxisY.LineColor = System.Drawing.Color.White;
+            chartArea6.AxisY.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea6.AxisY.MajorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea6.AxisY.MinorGrid.LineColor = System.Drawing.Color.White;
+            chartArea6.AxisY.MinorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea6.AxisY.TitleForeColor = System.Drawing.Color.White;
+            chartArea6.BackColor = System.Drawing.Color.Black;
+            chartArea6.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea6);
             this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chart1.Enabled = false;
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
+            legend6.Name = "Legend1";
+            this.chart1.Legends.Add(legend6);
             this.chart1.Location = new System.Drawing.Point(0, 0);
             this.chart1.Name = "chart1";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chart1.Series.Add(series2);
+            series6.ChartArea = "ChartArea1";
+            series6.Legend = "Legend1";
+            series6.Name = "Series1";
+            this.chart1.Series.Add(series6);
             this.chart1.Size = new System.Drawing.Size(825, 517);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
@@ -2279,7 +2279,7 @@
             this.txt_AXIS1_JOG_VEL.PreventEnterBeep = true;
             this.txt_AXIS1_JOG_VEL.Size = new System.Drawing.Size(75, 26);
             this.txt_AXIS1_JOG_VEL.TabIndex = 45;
-            this.txt_AXIS1_JOG_VEL.Tag = "SAVE.AXIS1_JOG_VEL;REAL";
+            this.txt_AXIS1_JOG_VEL.Tag = "HMI.HMICMD[0].RJOGVELO;REAL";
             this.txt_AXIS1_JOG_VEL.Text = "0";
             this.txt_AXIS1_JOG_VEL.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_AXIS1_JOG_VEL_KeyPress);
             // 
@@ -4252,7 +4252,6 @@
             // timer1
             // 
             this.timer1.Enabled = true;
-            this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // chart_timer
@@ -4630,9 +4629,9 @@
         private DevComponents.DotNetBar.LabelX labelX10;
         private DevComponents.DotNetBar.LabelX labelX9;
         private DevComponents.DotNetBar.LabelX labelX8;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbx_zero3;
+        private System.Windows.Forms.TextBox tbx_zero2;
+        private System.Windows.Forms.TextBox tbx_zero1;
         private DevComponents.DotNetBar.ButtonX btm_change_tor;
         private DevComponents.DotNetBar.ButtonX btm_change_vel;
         private DevComponents.DotNetBar.ButtonX btm_change_pos;

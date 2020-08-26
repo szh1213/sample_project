@@ -46,13 +46,13 @@ namespace 触摸屏界面
                     string[] values = line.Split(',');
                     time.Add(Convert.ToDouble(values[0]));
                     pos[0].Add(Convert.ToSingle(values[1]));
-                    pos[1].Add(Convert.ToSingle(values[2]));
-                    pos[2].Add(Convert.ToSingle(values[3]));
-                    vel[0].Add(Convert.ToSingle(values[4]));
+                    pos[1].Add(Convert.ToSingle(values[4]));
+                    pos[2].Add(Convert.ToSingle(values[7]));
+                    vel[0].Add(Convert.ToSingle(values[2]));
                     vel[1].Add(Convert.ToSingle(values[5]));
-                    vel[2].Add(Convert.ToSingle(values[6]));
-                    tor[0].Add(Convert.ToSingle(values[7]));
-                    tor[1].Add(Convert.ToSingle(values[8]));
+                    vel[2].Add(Convert.ToSingle(values[8]));
+                    tor[0].Add(Convert.ToSingle(values[3]));
+                    tor[1].Add(Convert.ToSingle(values[6]));
                     tor[2].Add(Convert.ToSingle(values[9]));
                 }
             }
