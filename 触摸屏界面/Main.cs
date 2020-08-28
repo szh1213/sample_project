@@ -730,11 +730,13 @@ namespace 触摸屏界面
                         if (bl)
                         {
                             control.BackColor = Color.Lime;
+                            control.ForeColor = Color.Lime;
                             (control as DevComponents.DotNetBar.ButtonX).ColorTable = eButtonColor.Orange;
                         }
                         else
                         {
                             control.BackColor = Color.Transparent;
+                            control.ForeColor = Color.Transparent;
                             (control as DevComponents.DotNetBar.ButtonX).ColorTable = eButtonColor.OrangeWithBackground;
                         }
                     }
